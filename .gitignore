@@ -1,0 +1,34 @@
+# Dependency directories
+node_modules/
+.DS_Store
+
+# build
+dist/
+build/
+
+# History management
+.history/
+
+# Optional npm cache directory
+.npm
+
+# Optional vscode info
+.vscode/*
+!.vscode/settings.json
+
+.pnpm-store
+
+.env
+
+cloudsql_credentials.json
+.env.local
+.env.test
+
+# Auth credentials
+.htpasswd
+
+# Database dumps (contain prod data)
+bdd/*.sql
+
+# Legacy source code (reference only, kept locally)
+source/
