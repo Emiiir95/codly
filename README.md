@@ -1,40 +1,118 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Agency — Site vitrine
 
-## Getting Started
+Site vitrine multilingue d'une agence web spécialisée en création de sites internet et référencement Google. Construit avec **Next.js 16 (Pages Router)**, **TypeScript strict**, **Tailwind CSS v4** et un système d'i18n maison léger.
 
-First, run the development server:
+## Stack
+
+- Next.js 16.2 (Pages Router, Turbopack)
+- React 19, TypeScript strict
+- Tailwind CSS v4
+- next/font (Geist + Geist Mono, preload)
+- Zod (validation du formulaire de contact)
+- i18n maison sur fichiers JSON (`public/locales/{fr,en,es}/common.json`) couplé au routage i18n natif de Next
+
+## Fonctionnalités
+
+- 3 langues : `fr` (défaut), `en`, `es`
+- Slugs traduits par langue (ex. `/services/creation-site-internet`, `/en/services/web-design`, `/es/servicios/diseno-web`)
+- SEO complet : `<title>` et `<meta description>` uniques par page et par langue, Open Graph + Twitter Cards, canonicals, hreflang sur chaque page
+- JSON-LD structuré : Organization, LocalBusiness, WebSite, BreadcrumbList, Service (×2), FAQPage, AggregateRating/Review
+- `sitemap.xml` multilingue avec hreflang et `robots.txt` générés à la volée
+- Score Lighthouse ciblé 100/100 sur Performance, Accessibilité, Best Practices, SEO
+- Dark mode par défaut, light mode optionnel (toggle dans le header, persistance localStorage)
+- Design inspiré de reactflow.dev : fond sombre, motif de points, gradient text, cards translucides en backdrop-blur, micro-animations
+- Formulaire de contact avec validation Zod côté serveur (`/api/contact`)
+- Page 404 custom dans l'esprit du design
+
+## Installation
+
+```bash
+npm install
+```
+
+## Développement
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Build de production
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+npm run start
+```
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Lint
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+```bash
+npm run lint
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Pages
 
-## Learn More
+| Clé | FR | EN | ES |
+| --- | --- | --- | --- |
+| Home | `/` | `/en` | `/es` |
+| Création de site | `/services/creation-site-internet` | `/en/services/web-design` | `/es/servicios/diseno-web` |
+| Référencement SEO | `/services/referencement-seo` | `/en/services/seo` | `/es/servicios/seo` |
+| À propos | `/a-propos` | `/en/about` | `/es/sobre-nosotros` |
+| Contact | `/contact` | `/en/contact` | `/es/contacto` |
+| Mentions légales | `/mentions-legales` | `/en/legal-notice` | `/es/aviso-legal` |
+| Confidentialité | `/politique-confidentialite` | `/en/privacy-policy` | `/es/politica-de-privacidad` |
+| 404 | custom | custom | custom |
 
-To learn more about Next.js, take a look at the following resources:
+Les variantes EN/ES utilisent des `rewrites` Next pour exposer des slugs localisés tout en conservant un seul fichier source par page (cf. [`next.config.ts`](next.config.ts)).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+## Mots-clés ciblés
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Travaillés dans les `<title>`, `meta description`, `H1-H3`, contenus, URLs et `alt` :
 
-## Deploy on Vercel
+- création site internet, agence web, site vitrine, site e-commerce
+- référencement Google, SEO, agence SEO, référencement naturel
+- création site professionnel, refonte site web
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Architecture
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+```
+src/
+  components/        composants UI réutilisables (Header, Footer, Hero, FAQ, …)
+  lib/
+    site.ts          configuration site (nom, URL, contact)
+    routes.ts        mapping page → slug par locale + helpers hreflang
+    services.ts      données services + slugs traduits
+    i18n.ts          context React + helper buildI18n (côté client + serveur)
+    i18n.server.ts   loader fs des fichiers de traduction (server-only)
+    seo.ts           helpers canonical / hreflang
+    jsonld.ts        helpers JSON-LD (Organization, FAQ, …)
+  pages/
+    index.tsx
+    services/[slug].tsx
+    a-propos.tsx, contact.tsx, mentions-legales.tsx, politique-confidentialite.tsx
+    404.tsx
+    api/contact.ts            (Zod)
+    sitemap.xml.tsx, robots.txt.tsx
+public/
+  locales/{fr,en,es}/common.json
+```
+
+## Déploiement Vercel
+
+Le projet est prêt pour Vercel sans configuration supplémentaire.
+
+```bash
+npm i -g vercel
+vercel
+```
+
+Pensez à mettre à jour le domaine dans [`src/lib/site.ts`](src/lib/site.ts) (`SITE.domain`) avant le premier déploiement, faute de quoi les balises canoniques, le sitemap et hreflang pointeront vers `agency.example.com`.
+
+## À personnaliser avant mise en ligne
+
+- **Coordonnées** : `src/lib/site.ts` (email, téléphone, adresse, réseaux sociaux, domaine).
+- **Témoignages** : `home.testimonials.items` dans chaque fichier `public/locales/*/common.json`.
+- **Visuels / OG image** : déposer `public/og-default.png` (1200×630) et `public/favicon.ico`. Les chemins sont déjà câblés dans [`Seo.tsx`](src/components/Seo.tsx).
+- **JSON-LD LocalBusiness** : coordonnées GPS et horaires dans [`src/lib/jsonld.ts`](src/lib/jsonld.ts).
+- **API contact** : la route `/api/contact` valide la payload mais n'envoie rien. Brancher Resend / Postmark / SendGrid selon votre stack.
+- **Analytics** : aucun tracker n'est inclus volontairement (RGPD-friendly). Ajouter Plausible / Umami / GA si besoin.
