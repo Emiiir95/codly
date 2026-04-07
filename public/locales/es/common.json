@@ -1,0 +1,458 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "serviceWeb": "Diseño web",
+    "serviceSeo": "SEO",
+    "about": "Sobre nosotros",
+    "contact": "Contacto",
+    "cta": "Empezar un proyecto",
+    "toggleTheme": "Cambiar tema",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú"
+  },
+  "footer": {
+    "tagline": "Agencia web especializada en la creación de sitios web profesionales y el posicionamiento natural en Google.",
+    "navigation": "Navegación",
+    "services": "Servicios",
+    "legal": "Información",
+    "legalNotice": "Aviso legal",
+    "privacy": "Política de privacidad",
+    "rights": "Todos los derechos reservados.",
+    "madeIn": "Diseñado en París"
+  },
+  "home": {
+    "meta": {
+      "title": "Agency — Agencia web y SEO: creación de sitios y posicionamiento Google",
+      "description": "Agencia web especializada en la creación de sitios web profesionales y el posicionamiento SEO en Google. Sitios corporativos, e-commerce, rediseños y SEO a medida para empresas ambiciosas."
+    },
+    "hero": {
+      "eyebrow": "Agencia web y SEO Google",
+      "title": "Sitios que convierten. SEO que te impulsa.",
+      "subtitle": "Diseñamos sitios web rápidos, elegantes y pensados para el SEO. Cada proyecto es a medida para transformar tu visibilidad en clientes.",
+      "ctaPrimary": "Pedir presupuesto",
+      "ctaSecondary": "Descubrir nuestros servicios"
+    },
+    "stats": {
+      "projects": "proyectos entregados",
+      "retention": "de clientes fieles",
+      "lighthouse": "Lighthouse promedio",
+      "ranking": "de keywords en top 3"
+    },
+    "services": {
+      "eyebrow": "Nuestras especialidades",
+      "title": "Una agencia web completa, del diseño al SEO",
+      "subtitle": "Dos saberes complementarios para construir una presencia online que trabaja por ti 24/7.",
+      "webTitle": "Creación de sitios web",
+      "webDescription": "Sitios corporativos, e-commerce y rediseños a medida. Diseño moderno, rendimiento óptimo y accesibilidad impecable.",
+      "webBullets": [
+        "Sitio corporativo profesional",
+        "E-commerce y marketplaces",
+        "Rediseño estratégico",
+        "Next.js, React, headless CMS"
+      ],
+      "seoTitle": "Posicionamiento SEO Google",
+      "seoDescription": "SEO técnico, semántico y enlaces. Cada línea de código y cada palabra alineadas con tu estrategia de adquisición.",
+      "seoBullets": [
+        "Auditoría SEO completa",
+        "Estrategia de contenido",
+        "SEO técnico y Core Web Vitals",
+        "Reporting transparente"
+      ],
+      "learnMore": "Saber más"
+    },
+    "why": {
+      "eyebrow": "Por qué Agency",
+      "title": "Una agencia web que mide el impacto, no la cantidad.",
+      "subtitle": "Rechazamos lo aproximado. Cada decisión de diseño, cada línea de código y cada keyword están elegidas para servir tus objetivos de negocio.",
+      "items": [
+        {
+          "title": "Rendimiento obsesivo",
+          "body": "Lighthouse 100, Core Web Vitals en verde, tiempos de carga por debajo del segundo. La velocidad es palanca SEO y comercial."
+        },
+        {
+          "title": "SEO desde el diseño",
+          "body": "Estructura semántica, marcado Schema.org, enlazado interno, hreflang multilingüe: el SEO está integrado en el código."
+        },
+        {
+          "title": "Diseño que convierte",
+          "body": "La estética moderna no basta: cada sección guía al visitante hacia la acción que importa."
+        },
+        {
+          "title": "Acompañamiento transparente",
+          "body": "Un interlocutor único, un calendario claro, un reporting mensual. Siempre sabes dónde está tu proyecto y tu ROI."
+        }
+      ]
+    },
+    "process": {
+      "eyebrow": "Nuestro método",
+      "title": "Un proceso probado, sin sorpresas",
+      "subtitle": "Una metodología en cuatro etapas para entregar un sitio web de alto rendimiento y un SEO que dura.",
+      "steps": [
+        {
+          "title": "Encuadre estratégico",
+          "body": "Workshop de descubrimiento, auditoría del sitio existente, análisis de competidores y definición de keywords. Bases sólidas antes del primer mockup."
+        },
+        {
+          "title": "Diseño y arquitectura",
+          "body": "Mockups UX/UI, arquitectura de la información, sitemap SEO y validación colaborativa con prototipos interactivos."
+        },
+        {
+          "title": "Desarrollo y SEO técnico",
+          "body": "Desarrollo Next.js moderno, integración pixel-perfect, marcado Schema.org, sitemap multilingüe y rendimiento optimizado."
+        },
+        {
+          "title": "Lanzamiento y crecimiento",
+          "body": "Puesta online, monitoreo de posiciones, iteraciones SEO mensuales, optimización de la conversión y reporting transparente."
+        }
+      ]
+    },
+    "testimonials": {
+      "eyebrow": "Confían en nosotros",
+      "title": "Resultados que hablan",
+      "items": [
+        {
+          "quote": "Nuestro tráfico orgánico se triplicó en seis meses y por fin somos primeros en nuestras keywords estratégicas. Equipo reactivo y competente.",
+          "author": "Sophie Laurent",
+          "role": "CEO, Atelier Nova"
+        },
+        {
+          "quote": "Un sitio moderno, ultra rápido y perfectamente posicionado. Agency cumplió cada compromiso, en tiempo y en presupuesto.",
+          "author": "Julien Morel",
+          "role": "Fundador, Studio Kairos"
+        },
+        {
+          "quote": "Proceso claro, diseño precioso, SEO temible. Nuestros leads cualificados se duplicaron en el primer trimestre.",
+          "author": "Clara Benedetti",
+          "role": "Directora marketing, Lumen"
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Tus preguntas, nuestras respuestas",
+      "items": [
+        {
+          "q": "¿Cuánto cuesta la creación de un sitio web profesional?",
+          "a": "Un sitio corporativo a medida arranca en torno a 4 500 €, un e-commerce desde 9 000 €. Cada presupuesto se elabora tras un encuadre gratuito que refleja con precisión tus necesidades, el volumen de contenidos y la complejidad técnica."
+        },
+        {
+          "q": "¿En cuánto tiempo entregan un sitio web?",
+          "a": "Un sitio corporativo se entrega en 4 a 6 semanas, un proyecto más complejo en 8 a 12 semanas. Trabajamos por sprints con visibilidad total sobre cada etapa."
+        },
+        {
+          "q": "¿El SEO Google está incluido?",
+          "a": "El SEO técnico (estructura, etiquetas, rendimiento, Schema.org, sitemap) se integra en cada creación de sitio. El SEO editorial y los enlaces son un acompañamiento mensual opcional."
+        },
+        {
+          "q": "¿Trabajan con clientes internacionales?",
+          "a": "Sí. Acompañamos a clientes en toda Europa, España y Canadá. El multilingüe (hreflang, contenidos traducidos, SEO local) está en el corazón de nuestros proyectos."
+        },
+        {
+          "q": "¿Seré propietario de mi sitio tras la entrega?",
+          "a": "Por supuesto. Eres propietario del código y de los contenidos. Te formamos en la administración y permanecemos disponibles para cualquier necesidad."
+        }
+      ]
+    },
+    "cta": {
+      "title": "¿Listo para subir de nivel?",
+      "subtitle": "Hablemos de tu proyecto. Auditoría SEO gratuita y presupuesto en 48 horas.",
+      "button": "Empezar mi proyecto"
+    },
+    "content": {
+      "intro": "Agency es una agencia web francesa especializada en la creación de sitios web profesionales y en el posicionamiento natural en Google. Diseñamos experiencias digitales de alto rendimiento para pymes y scale-ups que quieren convertir su sitio en un verdadero motor de adquisición. De la estrategia SEO al diseño UX/UI, del desarrollo Next.js al seguimiento posterior al lanzamiento, pilotamos cada etapa con una exigencia técnica y estética sin concesiones.",
+      "paragraphs": [
+        "Un sitio web moderno ya no es un escaparate estático. Es un activo de negocio que debe atraer, convencer y convertir. En Agency diseñamos sitios web que combinan diseño cuidado, una arquitectura SEO friendly y un rendimiento impecable. Nuestros equipos dominan las últimas tecnologías —Next.js, React, TypeScript, headless CMS— para entregar una plataforma duradera, segura y fácil de mantener.",
+        "El posicionamiento Google está en el centro de nuestro enfoque. Desde los primeros mockups trabajamos la estructura semántica, las etiquetas Hn, los datos estructurados Schema.org, los Core Web Vitals y la arquitectura de contenido. Esta integración SEO nativa, junto con una estrategia editorial a medida y enlaces de calidad, propulsa a nuestros clientes al top 3 de Google en sus keywords estratégicas.",
+        "Ya sea la creación de un sitio corporativo, un e-commerce ambicioso, el rediseño de un sitio existente o una estrategia SEO completa, nuestra metodología es la misma: escuchar, medir, diseñar, entregar, iterar. No vendemos efectos especiales ni promesas vacías, sino resultados cuantificables: más tráfico cualificado, más leads, más facturación."
+      ]
+    }
+  },
+  "serviceWeb": {
+    "meta": {
+      "title": "Creación de sitios web profesionales — Agencia web Agency",
+      "description": "Creación de sitios web a medida por una agencia francesa: corporativos, e-commerce, rediseños. Diseño moderno, alto rendimiento y SEO Google integrado."
+    },
+    "hero": {
+      "eyebrow": "Creación de sitios web",
+      "title": "Sitios web profesionales que realmente convierten.",
+      "subtitle": "Agencia web francesa que diseña sitios corporativos, e-commerce y aplicaciones a medida. Diseño premium, SEO integrado, rendimiento impecable."
+    },
+    "breadcrumb": "Creación de sitios web",
+    "intro": "La creación de un sitio web profesional es una inversión estratégica. No se trata simplemente de existir online, sino de construir un activo de negocio capaz de atraer visitantes cualificados, contar tu historia y transformar prospectos en clientes fieles. En Agency cada sitio que entregamos está pensado para responder a estos tres objetivos, con una exigencia técnica, estética y SEO sin concesiones.",
+    "sections": [
+      {
+        "title": "Una agencia web que diseña sitios a medida",
+        "body": "No reutilizamos plantillas genéricas ni temas prefabricados. Cada sitio corporativo, e-commerce o plataforma web que construimos se diseña a partir de tu marca, tu posicionamiento y tu público. Nuestros diseñadores UX/UI realizan mockups interactivos, nuestros desarrolladores los traducen en código limpio y mantenible, y nuestros expertos SEO se aseguran de que cada página esté optimizada para el posicionamiento natural desde la primera línea."
+      },
+      {
+        "title": "Corporativos, e-commerce, rediseños: todas las tipologías",
+        "body": "Tanto si eres una pyme que necesita un primer sitio profesional, una marca e-commerce en crecimiento o una empresa que quiere rediseñar un sitio obsoleto, adaptamos nuestro enfoque a tus retos. Nuestro equipo domina sitios one-page, arquitecturas multilingües complejas, catálogos de productos y integraciones con herramientas de negocio (CRM, ERP, email, analytics)."
+      },
+      {
+        "title": "Next.js, React, TypeScript: un stack moderno y duradero",
+        "body": "Trabajamos con Next.js, el framework React de referencia para la web moderna. Esta tecnología nos permite entregar sitios ultra rápidos (gracias al renderizado estático y al streaming), perfectamente indexables por Google y fáciles de hacer evolucionar. TypeScript asegura cada línea de código, Tailwind CSS garantiza un sistema de diseño coherente y el ecosistema headless CMS te da total autonomía sobre tus contenidos."
+      },
+      {
+        "title": "Rendimiento y Core Web Vitals en el corazón del proyecto",
+        "body": "Un sitio lento pierde visitantes y baja en los resultados de Google. Monitorizamos en continuo los Core Web Vitals (LCP, INP, CLS), optimizamos las imágenes con AVIF y WebP, precargamos las fuentes críticas y eliminamos el JavaScript inútil. Apuntamos sistemáticamente a un Lighthouse de 100 en los cuatro pilares."
+      },
+      {
+        "title": "Un SEO Google integrado desde la concepción",
+        "body": "A diferencia de muchas agencias web, no tratamos el SEO como un módulo añadido al final. La jerarquía Hn, el marcado Schema.org (Organization, LocalBusiness, Service, FAQPage, BreadcrumbList), los sitemaps multilingües con hreflang, las URLs semánticas y las etiquetas Open Graph forman parte integral del desarrollo. Tu sitio se indexa y se optimiza desde su lanzamiento."
+      }
+    ],
+    "deliverables": {
+      "title": "Lo que incluye tu proyecto de sitio web",
+      "items": [
+        "Encuadre estratégico y auditoría competitiva",
+        "Diseño UX/UI a medida y prototipo interactivo",
+        "Desarrollo Next.js, React y TypeScript",
+        "Integración headless CMS para autonomía total",
+        "SEO técnico (Schema.org, sitemap, hreflang)",
+        "Optimización Core Web Vitals y Lighthouse 100",
+        "Hosting de alto rendimiento y HTTPS",
+        "Formación a la administración y documentación",
+        "Mantenimiento evolutivo y correctivo"
+      ]
+    },
+    "cta": {
+      "title": "Hablemos de tu futuro sitio web",
+      "subtitle": "Auditoría gratuita, presupuesto en 48 h, sin compromiso.",
+      "button": "Pedir presupuesto"
+    }
+  },
+  "serviceSeo": {
+    "meta": {
+      "title": "Agencia SEO y posicionamiento Google — Agency",
+      "description": "Agencia SEO francesa: auditoría, estrategia de contenidos, SEO técnico, enlaces y reporting. Lleva tu sitio al top 3 de Google en tus keywords estratégicas."
+    },
+    "hero": {
+      "eyebrow": "Posicionamiento natural",
+      "title": "Lleva tu sitio al top 3 de Google.",
+      "subtitle": "Agencia SEO especializada en posicionamiento técnico, editorial y off-site. Convertimos tu sitio en una máquina de tráfico cualificado."
+    },
+    "breadcrumb": "SEO",
+    "intro": "El posicionamiento natural en Google es el canal de adquisición más rentable de la web: trabaja por ti 24/7, no se detiene cuando cortas el presupuesto publicitario y refuerza la credibilidad de tu marca con cada posición ganada. Pero hay que abordarlo con método. En Agency combinamos SEO técnico, estrategia editorial y enlaces para llevar a nuestros clientes al top 3 de Google en sus keywords más estratégicas.",
+    "sections": [
+      {
+        "title": "Una auditoría SEO completa antes de actuar",
+        "body": "Cada misión arranca con una auditoría profunda: análisis técnico (crawl, indexación, Core Web Vitals, marcado Schema.org), análisis semántico (keywords, intenciones, competencia), análisis off-site (perfil de enlaces, autoridad) y análisis editorial (calidad y relevancia de los contenidos existentes). Este diagnóstico permite construir una estrategia SEO realista y priorizada."
+      },
+      {
+        "title": "SEO técnico: las bases invisibles pero decisivas",
+        "body": "El posicionamiento Google empieza por una arquitectura técnica impecable. Optimizamos la velocidad (Core Web Vitals), la estructura Hn, las URLs canónicas, los sitemaps multilingües, hreflang, los datos estructurados Schema.org, la gestión del crawl budget, los errores 404 y 301 y la compatibilidad móvil. Sin estas bases, ningún contenido puede performar de forma sostenible."
+      },
+      {
+        "title": "Estrategia de contenido y semántica",
+        "body": "Google clasifica las páginas que mejor responden a la intención de búsqueda del usuario. Identificamos las keywords con mayor potencial, mapeamos las intenciones (informacional, transaccional, navegacional) y construimos un calendario editorial alineado con tu funnel de conversión. Cada artículo está optimizado semánticamente y enlazado de forma inteligente."
+      },
+      {
+        "title": "Enlaces y autoridad de dominio",
+        "body": "Los backlinks siguen siendo un factor de ranking clave. Construimos tu perfil de enlaces con un enfoque cualitativo: partnerships temáticos, relaciones públicas digitales, guest-posts en medios relevantes, citaciones locales. Sin granjas de enlaces ni prácticas arriesgadas: solo enlaces que refuerzan tu autoridad de manera duradera."
+      },
+      {
+        "title": "Seguimiento, reporting e iteraciones mensuales",
+        "body": "El SEO es una disciplina iterativa. Cada mes seguimos tus posiciones, tu tráfico orgánico, tus conversiones y la evolución de tus competidores. Ajustamos la estrategia, publicamos nuevos contenidos y reforzamos las páginas que rinden. Recibes un reporting claro y accionable, sin jerga inútil."
+      }
+    ],
+    "deliverables": {
+      "title": "Lo que incluye nuestro acompañamiento SEO",
+      "items": [
+        "Auditoría SEO técnica, semántica y off-site",
+        "Estrategia de keywords e intenciones de búsqueda",
+        "Optimización on-page (etiquetas, Hn, enlazado interno)",
+        "Datos estructurados Schema.org completos",
+        "Optimización Core Web Vitals",
+        "Creación y optimización de contenidos SEO",
+        "Campaña de link-building cualitativo",
+        "Reporting mensual de rendimiento",
+        "Un experto SEO dedicado"
+      ]
+    },
+    "cta": {
+      "title": "Hablemos de tu estrategia SEO",
+      "subtitle": "Auditoría SEO gratuita y recomendaciones accionables en 7 días.",
+      "button": "Quiero mi auditoría SEO"
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "Sobre nosotros — Agency, agencia web y SEO en París",
+      "description": "Agency es una agencia web independiente con sede en París. Especializada en creación de sitios y posicionamiento Google, acompañamos a marcas ambiciosas."
+    },
+    "hero": {
+      "eyebrow": "Sobre nosotros",
+      "title": "La agencia web que rechaza las medias tintas.",
+      "subtitle": "Fundada en 2018 en París, Agency acompaña a las empresas que quieren convertir la web en una verdadera palanca de crecimiento."
+    },
+    "breadcrumb": "Sobre nosotros",
+    "sections": [
+      {
+        "title": "Una agencia web independiente y comprometida",
+        "body": "Agency nació de una convicción simple: es posible entregar sitios web a la vez elegantes, performantes y perfectamente posicionados, sin compromisos ni discursos comerciales vacíos. Independientes, elegimos a nuestros clientes igual que elegimos nuestras herramientas: con exigencia. Cada proyecto cuenta con un equipo dedicado, un interlocutor único y una metodología probada."
+      },
+      {
+        "title": "Un equipo pluridisciplinar",
+        "body": "Diseñadores, desarrolladores front-end y back-end, expertos SEO, redactores web: nuestro equipo cubre todas las experticias necesarias para el éxito de un proyecto digital ambicioso. Trabajamos en ciclos cortos, con rituales claros, y te involucramos en los momentos clave."
+      },
+      {
+        "title": "Valores que guían cada proyecto",
+        "body": "Creemos en la transparencia (calendario, presupuesto, reporting), en la exigencia técnica (Lighthouse 100, Core Web Vitals en verde), en la pedagogía (siempre entenderás lo que hacemos y por qué) y en el largo plazo (nuestros clientes permanecen en media 4 años con nosotros). No son eslóganes: son nuestros criterios de decisión a diario."
+      },
+      {
+        "title": "París, la francofonía y más allá",
+        "body": "Con sede en París, acompañamos a clientes en toda la francofonía, en España y en Canadá. Nuestra maestría del multilingüe (hreflang, contenidos traducidos, SEO local) nos permite construir sitios web que rinden en varios mercados a la vez."
+      }
+    ],
+    "values": {
+      "title": "Nuestros compromisos",
+      "items": [
+        {
+          "title": "Transparencia total",
+          "body": "Calendario, presupuesto, código fuente, datos analíticos: todo te pertenece y se comparte contigo."
+        },
+        {
+          "title": "Exigencia técnica",
+          "body": "Lighthouse 100, Core Web Vitals en verde, código TypeScript estricto. Sin compromisos."
+        },
+        {
+          "title": "Colaboración real",
+          "body": "Un interlocutor dedicado, rituales claros, disponibilidad real. Sin cadenas de emails interminables."
+        },
+        {
+          "title": "Impacto medible",
+          "body": "Seguimos los indicadores que importan para ti: tráfico cualificado, conversiones, facturación."
+        }
+      ]
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Contacto — Agency, tu agencia web y SEO",
+      "description": "Contacta con Agency para tu proyecto de creación de sitio web o posicionamiento Google. Presupuesto en 48 horas, auditoría SEO gratuita."
+    },
+    "hero": {
+      "eyebrow": "Contacto",
+      "title": "Hablemos de tu proyecto.",
+      "subtitle": "Un formulario, un email, una llamada: elige lo que más te convenga. Te respondemos en 48 horas laborables con un primer análisis."
+    },
+    "breadcrumb": "Contacto",
+    "form": {
+      "name": "Tu nombre",
+      "namePlaceholder": "Juana García",
+      "email": "Tu email profesional",
+      "emailPlaceholder": "juana@empresa.com",
+      "company": "Empresa (opcional)",
+      "companyPlaceholder": "Nombre de tu empresa",
+      "subject": "Tipo de proyecto",
+      "subjectOptions": {
+        "web": "Creación de sitio web",
+        "seo": "Posicionamiento SEO",
+        "refonte": "Rediseño de sitio existente",
+        "other": "Otra consulta"
+      },
+      "message": "Tu mensaje",
+      "messagePlaceholder": "Describe tu proyecto, contexto y objetivos…",
+      "consent": "Acepto que mis datos se traten según la política de privacidad.",
+      "submit": "Enviar mi mensaje",
+      "submitting": "Enviando…",
+      "success": "¡Gracias! Tu mensaje se ha enviado, te respondemos en 48 horas.",
+      "error": "Ha ocurrido un error. Inténtalo de nuevo o escríbenos a contact@agency.example.com.",
+      "errors": {
+        "name": "Tu nombre es obligatorio (mínimo 2 caracteres).",
+        "email": "Se requiere un email válido.",
+        "message": "Tu mensaje debe contener al menos 20 caracteres.",
+        "consent": "Por favor, acepta la política de privacidad.",
+        "subject": "Por favor, elige un tipo de proyecto."
+      }
+    },
+    "info": {
+      "title": "Otras formas de contactarnos",
+      "emailLabel": "Email",
+      "phoneLabel": "Teléfono",
+      "addressLabel": "Dirección",
+      "hours": "Lunes → Viernes, 9h → 18h CET"
+    }
+  },
+  "legal": {
+    "meta": {
+      "title": "Aviso legal — Agency",
+      "description": "Aviso legal del sitio Agency: editor, alojamiento, propiedad intelectual y responsabilidad."
+    },
+    "title": "Aviso legal",
+    "breadcrumb": "Aviso legal",
+    "sections": [
+      {
+        "title": "Editor del sitio",
+        "body": "El sitio Agency está editado por Agency SAS, sociedad por acciones simplificada con un capital de 10 000 €, inscrita en el Registro Mercantil de París con el número 123 456 789, con sede social en 12 rue de la République, 75001 París. NIF intracomunitario: FR12345678901. Director de la publicación: el representante legal de la sociedad."
+      },
+      {
+        "title": "Alojamiento",
+        "body": "El sitio está alojado por Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, Estados Unidos. Los datos transitan por una red segura conforme al RGPD."
+      },
+      {
+        "title": "Propiedad intelectual",
+        "body": "El conjunto de contenidos del sitio (textos, imágenes, logos, código fuente, elementos gráficos) es propiedad exclusiva de Agency SAS, salvo mención contraria. Toda reproducción, representación, modificación, publicación o adaptación, total o parcial, está prohibida sin autorización escrita previa."
+      },
+      {
+        "title": "Responsabilidad",
+        "body": "Agency SAS se esfuerza por ofrecer información exacta y actualizada. El editor no puede sin embargo garantizar la exactitud, la precisión o la exhaustividad de la información puesta a disposición. El usuario reconoce utilizar esta información bajo su exclusiva responsabilidad."
+      },
+      {
+        "title": "Contacto",
+        "body": "Para cualquier pregunta sobre este aviso legal, puedes contactarnos en contact@agency.example.com."
+      }
+    ]
+  },
+  "privacy": {
+    "meta": {
+      "title": "Política de privacidad — Agency",
+      "description": "Política de privacidad de Agency: tratamiento de datos personales, cookies y derechos RGPD."
+    },
+    "title": "Política de privacidad",
+    "breadcrumb": "Privacidad",
+    "sections": [
+      {
+        "title": "Responsable del tratamiento",
+        "body": "El responsable del tratamiento de los datos recogidos en este sitio es Agency SAS, 12 rue de la République, 75001 París. Para cualquier consulta sobre tus datos personales puedes escribirnos a contact@agency.example.com."
+      },
+      {
+        "title": "Datos recogidos",
+        "body": "Solo recogemos los datos necesarios para tramitar tu solicitud a través del formulario de contacto: nombre, email profesional, empresa (opcional), asunto y contenido del mensaje. No recogemos ningún dato sensible en el sentido del RGPD."
+      },
+      {
+        "title": "Finalidades y base legal",
+        "body": "Los datos se tratan para responder a tu solicitud y, en su caso, establecer una relación comercial. La base legal es tu consentimiento explícito (casilla del formulario) y la ejecución de medidas precontractuales adoptadas a tu petición."
+      },
+      {
+        "title": "Plazo de conservación",
+        "body": "Tus datos se conservan 3 años desde el último contacto. Más allá, se eliminan o anonimizan."
+      },
+      {
+        "title": "Tus derechos",
+        "body": "Conforme al RGPD, dispones de derecho de acceso, rectificación, supresión, limitación, oposición y portabilidad de tus datos, así como del derecho a definir el destino de tus datos tras tu fallecimiento. Puedes ejercer estos derechos escribiéndonos a contact@agency.example.com. También tienes derecho a presentar una reclamación ante la AEPD."
+      },
+      {
+        "title": "Cookies",
+        "body": "Este sitio no utiliza cookies publicitarias ni tracking de terceros. Solo se usan cookies técnicas necesarias para el correcto funcionamiento, sin identificación personal."
+      }
+    ]
+  },
+  "notFound": {
+    "meta": {
+      "title": "Página no encontrada — Agency",
+      "description": "La página solicitada no existe. Vuelve al inicio o explora nuestros servicios."
+    },
+    "code": "404",
+    "title": "Esta página se ha perdido por el camino.",
+    "subtitle": "Puede que haya sido movida, renombrada o que nunca existiera. Sin pánico, el resto del sitio está a un clic.",
+    "back": "Volver al inicio",
+    "services": "Ver nuestros servicios"
+  },
+  "common": {
+    "skipToContent": "Ir al contenido principal",
+    "language": "Idioma",
+    "home": "Inicio"
+  }
+}

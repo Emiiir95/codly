@@ -1,0 +1,458 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "serviceWeb": "Création de site internet",
+    "serviceSeo": "Référencement SEO",
+    "about": "À propos",
+    "contact": "Contact",
+    "cta": "Démarrer un projet",
+    "toggleTheme": "Changer le thème",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu"
+  },
+  "footer": {
+    "tagline": "Agence web spécialisée dans la création de sites internet professionnels et le référencement naturel sur Google.",
+    "navigation": "Navigation",
+    "services": "Services",
+    "legal": "Informations",
+    "legalNotice": "Mentions légales",
+    "privacy": "Politique de confidentialité",
+    "rights": "Tous droits réservés.",
+    "madeIn": "Conçu à Paris"
+  },
+  "home": {
+    "meta": {
+      "title": "Agency — Agence web & SEO : création de site internet et référencement Google",
+      "description": "Agence web spécialisée en création de site internet professionnel et en référencement naturel Google. Sites vitrines, e-commerce, refontes et SEO sur-mesure pour les entreprises ambitieuses."
+    },
+    "hero": {
+      "eyebrow": "Agence web & référencement Google",
+      "title": "Des sites qui convertissent, un SEO qui vous propulse.",
+      "subtitle": "Nous concevons des sites internet professionnels rapides, élégants et pensés pour le référencement naturel. Chaque projet est taillé sur mesure pour transformer votre visibilité en clients.",
+      "ctaPrimary": "Demander un devis",
+      "ctaSecondary": "Découvrir nos services"
+    },
+    "stats": {
+      "projects": "projets livrés",
+      "retention": "de clients fidèles",
+      "lighthouse": "score Lighthouse moyen",
+      "ranking": "des mots-clés en top 3"
+    },
+    "services": {
+      "eyebrow": "Nos expertises",
+      "title": "Une agence web complète, du design au référencement",
+      "subtitle": "Deux savoir-faire complémentaires pour construire une présence en ligne qui travaille pour vous, 24 heures sur 24.",
+      "webTitle": "Création de site internet",
+      "webDescription": "Sites vitrines, e-commerce et refontes sur-mesure. Design moderne, performances optimales, accessibilité irréprochable.",
+      "webBullets": [
+        "Site vitrine professionnel",
+        "E-commerce & marketplaces",
+        "Refonte stratégique",
+        "Next.js, React, headless CMS"
+      ],
+      "seoTitle": "Référencement naturel Google",
+      "seoDescription": "SEO technique, sémantique et netlinking. Nous alignons chaque ligne de code et chaque mot avec votre stratégie d'acquisition.",
+      "seoBullets": [
+        "Audit SEO complet",
+        "Stratégie de contenu",
+        "SEO technique & Core Web Vitals",
+        "Suivi et reporting transparent"
+      ],
+      "learnMore": "En savoir plus"
+    },
+    "why": {
+      "eyebrow": "Pourquoi Agency",
+      "title": "Une agence web qui mesure l'impact, pas la quantité.",
+      "subtitle": "Nous refusons l'à-peu-près. Chaque décision design, chaque ligne de code et chaque mot-clé sont choisis pour servir vos objectifs business.",
+      "items": [
+        {
+          "title": "Performance obsessionnelle",
+          "body": "Score Lighthouse à 100, Core Web Vitals au vert, temps de chargement sous la seconde. La vitesse est un levier SEO et commercial."
+        },
+        {
+          "title": "SEO pensé dès le design",
+          "body": "Structure sémantique, balisage Schema.org, maillage interne, hreflang multilingue : le référencement est intégré au code, pas ajouté après."
+        },
+        {
+          "title": "Design qui convertit",
+          "body": "Une esthétique moderne ne suffit pas : chaque section est pensée pour guider le visiteur vers l'action qui compte pour vous."
+        },
+        {
+          "title": "Accompagnement transparent",
+          "body": "Un interlocuteur unique, un planning clair, un reporting mensuel. Vous savez toujours où en est votre projet et votre ROI."
+        }
+      ]
+    },
+    "process": {
+      "eyebrow": "Notre méthode",
+      "title": "Un process éprouvé, sans mauvaise surprise",
+      "subtitle": "Une méthodologie en quatre étapes pour livrer un site internet performant et un SEO qui dure.",
+      "steps": [
+        {
+          "title": "Cadrage stratégique",
+          "body": "Atelier de découverte, audit de l'existant, étude des concurrents et définition des mots-clés cibles. Nous posons des fondations solides avant la première maquette."
+        },
+        {
+          "title": "Design & architecture",
+          "body": "Maquettes UX/UI, architecture de l'information, arborescence SEO et validation collaborative via prototypes interactifs."
+        },
+        {
+          "title": "Développement & SEO technique",
+          "body": "Développement Next.js moderne, intégration pixel-perfect, balisage Schema.org, sitemap multilingue, performance optimisée."
+        },
+        {
+          "title": "Lancement & croissance",
+          "body": "Mise en ligne, suivi des positions, itérations SEO mensuelles, optimisation du taux de conversion et reporting transparent."
+        }
+      ]
+    },
+    "testimonials": {
+      "eyebrow": "Ils nous font confiance",
+      "title": "Des résultats qui parlent",
+      "items": [
+        {
+          "quote": "Notre trafic organique a triplé en six mois et nous sommes enfin premiers sur nos mots-clés stratégiques. L'équipe est réactive et compétente.",
+          "author": "Sophie Laurent",
+          "role": "CEO, Atelier Nova"
+        },
+        {
+          "quote": "Un site moderne, ultra-rapide et parfaitement référencé. Agency a tenu chaque engagement pris, du planning au budget.",
+          "author": "Julien Morel",
+          "role": "Fondateur, Studio Kairos"
+        },
+        {
+          "quote": "Le process est clair, le design magnifique et le SEO redoutable. Nos leads qualifiés ont doublé dès le premier trimestre.",
+          "author": "Clara Benedetti",
+          "role": "Directrice marketing, Lumen"
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Vos questions, nos réponses",
+      "items": [
+        {
+          "q": "Combien coûte la création d'un site internet professionnel ?",
+          "a": "Un site vitrine sur-mesure démarre autour de 4 500 €, un site e-commerce à partir de 9 000 €. Chaque devis est établi après un cadrage gratuit pour refléter précisément vos besoins, le volume de contenus et la complexité technique."
+        },
+        {
+          "q": "En combien de temps pouvez-vous livrer mon site ?",
+          "a": "Un site vitrine est livré en 4 à 6 semaines, un projet plus complexe en 8 à 12 semaines. Nous travaillons par sprints et vous donnons de la visibilité sur chaque étape."
+        },
+        {
+          "q": "Le référencement Google est-il inclus ?",
+          "a": "Le SEO technique (structure, balises, performance, Schema.org, sitemap) est intégré à chaque création de site. Le référencement éditorial et le netlinking sont proposés en accompagnement mensuel si vous souhaitez accélérer votre croissance."
+        },
+        {
+          "q": "Travaillez-vous avec des clients hors de France ?",
+          "a": "Oui. Nous accompagnons des clients dans toute l'Europe francophone, en Espagne et au Canada. Notre maîtrise du multilingue (hreflang, contenus traduits, SEO local) est au cœur de nos projets."
+        },
+        {
+          "q": "Puis-je reprendre la main sur mon site après la livraison ?",
+          "a": "Absolument. Vous êtes propriétaire du code source et des contenus. Nous vous formons à l'administration et restons disponibles pour tout besoin futur."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Prêt à passer à la vitesse supérieure ?",
+      "subtitle": "Parlons de votre projet. Audit SEO offert, devis sous 48 heures.",
+      "button": "Démarrer mon projet"
+    },
+    "content": {
+      "intro": "Agency est une agence web française spécialisée dans la création de sites internet professionnels et le référencement naturel Google. Nous concevons des expériences digitales performantes pour les TPE, PME et scale-up qui veulent transformer leur site en véritable moteur d'acquisition. De la stratégie SEO au design UX/UI, du développement Next.js au suivi post-lancement, nous pilotons chaque étape avec une exigence technique et esthétique sans compromis.",
+      "paragraphs": [
+        "Un site internet moderne ne se résume plus à une vitrine statique. C'est un actif business qui doit attirer, convaincre et convertir. Chez Agency, nous concevons des sites web qui combinent un design soigné, une architecture SEO friendly et des performances irréprochables. Nos équipes maîtrisent les dernières technologies — Next.js, React, TypeScript, headless CMS — pour vous livrer une plateforme durable, sécurisée et simple à maintenir.",
+        "Le référencement Google est au cœur de notre approche. Dès les premières maquettes, nous travaillons la structure sémantique, les balises Hn, les données structurées Schema.org, les Core Web Vitals et l'architecture de contenu. Cette intégration SEO native, combinée à une stratégie éditoriale sur-mesure et à un netlinking de qualité, nous permet de propulser nos clients dans le top 3 de Google sur leurs mots-clés stratégiques.",
+        "Qu'il s'agisse d'une création de site vitrine, d'un site e-commerce ambitieux, d'une refonte de site web ou d'une stratégie SEO complète, notre méthodologie reste la même : écouter, mesurer, concevoir, livrer, itérer. Nous ne vendons ni effets spéciaux ni promesses creuses, mais des résultats quantifiables : plus de trafic qualifié, plus de leads, plus de chiffre d'affaires."
+      ]
+    }
+  },
+  "serviceWeb": {
+    "meta": {
+      "title": "Création de site internet professionnel — Agence web Agency",
+      "description": "Création de site internet sur-mesure par une agence web française : sites vitrines, e-commerce, refontes. Design moderne, performance optimale et référencement Google intégré."
+    },
+    "hero": {
+      "eyebrow": "Création de site internet",
+      "title": "Des sites internet professionnels qui convertissent vraiment.",
+      "subtitle": "Agence web française, nous concevons des sites vitrines, e-commerce et applications sur-mesure. Design haut de gamme, SEO intégré, performances irréprochables."
+    },
+    "breadcrumb": "Création de site internet",
+    "intro": "La création d'un site internet professionnel est un investissement stratégique. Il ne s'agit pas simplement d'avoir une présence en ligne, mais de bâtir un actif business capable d'attirer des visiteurs qualifiés, de raconter votre histoire et de transformer vos prospects en clients fidèles. Chez Agency, chaque site que nous livrons est pensé pour répondre à ces trois objectifs, avec une exigence technique, esthétique et SEO sans compromis.",
+    "sections": [
+      {
+        "title": "Une agence web qui conçoit des sites sur-mesure",
+        "body": "Nous ne réutilisons pas de thèmes génériques ni de templates tout faits. Chaque site vitrine, site e-commerce ou plateforme web que nous construisons est conçu sur-mesure à partir de votre marque, de votre positionnement et de votre cible. Nos designers UX/UI réalisent des maquettes interactives, nos développeurs les transposent en code propre et maintenable, et nos experts SEO veillent à ce que chaque page soit optimisée pour le référencement naturel dès la première ligne."
+      },
+      {
+        "title": "Sites vitrines, e-commerce, refontes : toutes les typologies couvertes",
+        "body": "Que vous soyez une TPE qui a besoin d'un premier site vitrine professionnel, une marque e-commerce en pleine croissance ou une entreprise qui souhaite refondre un site obsolète, nous adaptons notre approche à vos enjeux. Notre équipe maîtrise aussi bien les sites one-page que les architectures complexes multilingues, les catalogues produits sophistiqués et les intégrations avec des outils métiers (CRM, ERP, outils d'emailing, analytics)."
+      },
+      {
+        "title": "Next.js, React, TypeScript : un stack moderne et durable",
+        "body": "Nous travaillons avec Next.js, le framework React de référence pour le web moderne. Cette technologie nous permet de livrer des sites ultra-rapides (grâce au rendu statique et au streaming), parfaitement indexables par Google et faciles à faire évoluer. TypeScript sécurise chaque ligne de code, Tailwind CSS garantit un design system cohérent, et l'écosystème headless CMS vous donne une autonomie totale sur vos contenus."
+      },
+      {
+        "title": "Performance et Core Web Vitals au cœur du projet",
+        "body": "Un site lent perd des visiteurs et recule dans les résultats Google. Nous monitorons en permanence les Core Web Vitals (LCP, INP, CLS), optimisons les images avec les formats AVIF et WebP, préchargeons les polices critiques et éliminons le JavaScript inutile. Nos livraisons visent systématiquement un score Lighthouse de 100 sur les quatre piliers : Performance, Accessibilité, Best Practices et SEO."
+      },
+      {
+        "title": "Un référencement Google intégré dès la conception",
+        "body": "Contrairement à beaucoup d'agences web, nous ne traitons pas le SEO comme un module ajouté à la fin. La hiérarchie Hn, le balisage Schema.org (Organization, LocalBusiness, Service, FAQPage, BreadcrumbList), les sitemaps multilingues avec hreflang, les URLs sémantiques et les balises Open Graph font partie intégrante du développement. Votre site est indexé et optimisé dès son lancement."
+      }
+    ],
+    "deliverables": {
+      "title": "Ce que votre projet de site inclut",
+      "items": [
+        "Cadrage stratégique et audit concurrentiel",
+        "Design UX/UI sur-mesure et prototypage interactif",
+        "Développement Next.js, React et TypeScript",
+        "Intégration headless CMS pour une autonomie totale",
+        "Référencement technique (Schema.org, sitemap, hreflang)",
+        "Optimisation Core Web Vitals et score Lighthouse 100",
+        "Hébergement haute performance et HTTPS",
+        "Formation à l'administration et documentation",
+        "Maintenance évolutive et corrective"
+      ]
+    },
+    "cta": {
+      "title": "Parlons de votre futur site internet",
+      "subtitle": "Audit gratuit, devis sous 48h, aucun engagement.",
+      "button": "Demander un devis"
+    }
+  },
+  "serviceSeo": {
+    "meta": {
+      "title": "Agence SEO & référencement Google — Agency",
+      "description": "Agence SEO française : audit, stratégie de contenu, SEO technique, netlinking et suivi. Propulsez votre site dans le top 3 Google sur vos mots-clés stratégiques."
+    },
+    "hero": {
+      "eyebrow": "Référencement naturel",
+      "title": "Propulsez votre site dans le top 3 de Google.",
+      "subtitle": "Agence SEO spécialisée dans le référencement naturel technique, éditorial et off-site. Nous transformons votre site en machine à trafic qualifié."
+    },
+    "breadcrumb": "Référencement SEO",
+    "intro": "Le référencement naturel Google est le canal d'acquisition le plus rentable du web : il travaille pour vous 24 heures sur 24, il ne s'arrête pas quand vous coupez le budget publicitaire, et il renforce la crédibilité de votre marque à chaque position gagnée. Encore faut-il l'aborder avec méthode. Chez Agency, nous combinons SEO technique, stratégie éditoriale et netlinking pour propulser nos clients dans le top 3 des résultats Google sur leurs mots-clés les plus stratégiques.",
+    "sections": [
+      {
+        "title": "Un audit SEO complet avant toute action",
+        "body": "Nous démarrons chaque mission par un audit approfondi : analyse technique (crawl, indexation, Core Web Vitals, balisage Schema.org), analyse sémantique (mots-clés, intentions de recherche, concurrence), analyse off-site (profil de liens, autorité de domaine), et analyse éditoriale (qualité et pertinence des contenus existants). Ce diagnostic nous permet de construire une stratégie SEO réaliste et priorisée."
+      },
+      {
+        "title": "SEO technique : les fondations invisibles mais décisives",
+        "body": "Le référencement Google commence par une architecture technique irréprochable. Nous optimisons la vitesse (Core Web Vitals), la structure Hn, les URLs canoniques, les sitemaps multilingues, les balises hreflang, les données structurées Schema.org (Organization, LocalBusiness, Service, FAQPage, BreadcrumbList, Article), la gestion du crawl budget, les erreurs 404 et 301, et la compatibilité mobile. Sans ces fondations, aucun contenu ne peut performer durablement."
+      },
+      {
+        "title": "Stratégie de contenu et sémantique",
+        "body": "Google classe les pages qui répondent le mieux à l'intention de recherche de l'utilisateur. Nous identifions les mots-clés à fort potentiel, cartographions les intentions (informationnelle, transactionnelle, navigationnelle) et construisons un calendrier éditorial aligné sur votre tunnel de conversion. Chaque article est optimisé sémantiquement, maillé intelligemment et pensé pour gagner en autorité thématique."
+      },
+      {
+        "title": "Netlinking et autorité de domaine",
+        "body": "Les backlinks restent un facteur de classement majeur. Nous construisons votre profil de liens avec une approche qualitative : partenariats thématiques, relations presse digitales, guest-posts sur des médias pertinents, citations locales. Pas de fermes de liens, pas de pratiques risquées : uniquement des liens qui renforcent durablement votre autorité."
+      },
+      {
+        "title": "Suivi, reporting et itérations mensuelles",
+        "body": "Le SEO est une discipline itérative. Chaque mois, nous suivons vos positions, votre trafic organique, vos conversions et l'évolution de vos concurrents. Nous ajustons la stratégie, publions de nouveaux contenus et renforçons les pages qui performent. Vous recevez un reporting clair et actionnable, sans jargon inutile."
+      }
+    ],
+    "deliverables": {
+      "title": "Ce que comprend notre accompagnement SEO",
+      "items": [
+        "Audit SEO technique, sémantique et off-site",
+        "Stratégie de mots-clés et intentions de recherche",
+        "Optimisation on-page (balises, Hn, maillage interne)",
+        "Données structurées Schema.org complètes",
+        "Optimisation des Core Web Vitals",
+        "Création et optimisation de contenus SEO",
+        "Campagne de netlinking qualitatif",
+        "Reporting mensuel de performance",
+        "Suivi personnalisé par un expert dédié"
+      ]
+    },
+    "cta": {
+      "title": "Parlons de votre stratégie SEO",
+      "subtitle": "Audit SEO offert, recommandations actionnables sous 7 jours.",
+      "button": "Demander mon audit SEO"
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "À propos — Agency, agence web & SEO à Paris",
+      "description": "Agency est une agence web indépendante basée à Paris. Spécialisée en création de site internet et référencement Google, nous accompagnons les marques ambitieuses."
+    },
+    "hero": {
+      "eyebrow": "À propos",
+      "title": "L'agence web qui refuse les demi-mesures.",
+      "subtitle": "Fondée en 2018 à Paris, Agency accompagne les entreprises qui veulent faire du web un vrai levier de croissance."
+    },
+    "breadcrumb": "À propos",
+    "sections": [
+      {
+        "title": "Une agence web indépendante et engagée",
+        "body": "Agency est née d'une conviction simple : il est possible de livrer des sites internet à la fois élégants, performants et parfaitement référencés, sans compromis et sans discours commercial creux. Indépendants, nous choisissons nos clients comme nous choisissons nos outils : avec exigence. Chaque projet bénéficie d'une équipe dédiée, d'un interlocuteur unique et d'une méthodologie éprouvée."
+      },
+      {
+        "title": "Une équipe pluridisciplinaire",
+        "body": "Designers, développeurs front-end et back-end, experts SEO, rédacteurs web : notre équipe couvre l'ensemble des expertises nécessaires à la réussite d'un projet digital ambitieux. Nous travaillons en cycles courts, avec des rituels clairs, et vous impliquons aux moments clés pour garder le cap stratégique."
+      },
+      {
+        "title": "Des valeurs qui guident chaque projet",
+        "body": "Nous croyons à la transparence (planning, budget, reporting), à l'exigence technique (score Lighthouse à 100, Core Web Vitals au vert), à la pédagogie (vous comprendrez toujours ce qu'on fait et pourquoi) et au long terme (nos clients restent en moyenne 4 ans avec nous). Ces valeurs ne sont pas des slogans, ce sont nos critères de décision au quotidien."
+      },
+      {
+        "title": "Paris, francophonie et au-delà",
+        "body": "Basés à Paris, nous accompagnons des clients dans toute la francophonie, en Espagne et au Canada. Notre maîtrise du multilingue (hreflang, contenus traduits, SEO local) nous permet de bâtir des sites internet qui performent sur plusieurs marchés à la fois."
+      }
+    ],
+    "values": {
+      "title": "Nos engagements",
+      "items": [
+        {
+          "title": "Transparence totale",
+          "body": "Planning, budget, code source, données analytics : tout vous appartient et tout vous est partagé."
+        },
+        {
+          "title": "Exigence technique",
+          "body": "Score Lighthouse 100, Core Web Vitals dans le vert, code TypeScript strict. Pas de compromis."
+        },
+        {
+          "title": "Collaboration vraie",
+          "body": "Un interlocuteur dédié, des rituels clairs, une disponibilité réelle. Pas de chaîne d'emails sans fin."
+        },
+        {
+          "title": "Impact mesurable",
+          "body": "Nous suivons les indicateurs qui comptent pour vous : trafic qualifié, conversions, chiffre d'affaires."
+        }
+      ]
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Contact — Agency, votre agence web & SEO",
+      "description": "Contactez Agency pour votre projet de création de site internet ou de référencement Google. Devis sous 48 heures, audit SEO offert."
+    },
+    "hero": {
+      "eyebrow": "Contact",
+      "title": "Parlons de votre projet.",
+      "subtitle": "Un formulaire, un email, un appel : choisissez ce qui vous convient. Nous revenons vers vous sous 48 heures ouvrées avec une première analyse."
+    },
+    "breadcrumb": "Contact",
+    "form": {
+      "name": "Votre nom",
+      "namePlaceholder": "Jeanne Dupont",
+      "email": "Votre email professionnel",
+      "emailPlaceholder": "jeanne@entreprise.com",
+      "company": "Entreprise (optionnel)",
+      "companyPlaceholder": "Nom de votre entreprise",
+      "subject": "Type de projet",
+      "subjectOptions": {
+        "web": "Création de site internet",
+        "seo": "Référencement SEO",
+        "refonte": "Refonte de site existant",
+        "other": "Autre demande"
+      },
+      "message": "Votre message",
+      "messagePlaceholder": "Décrivez votre projet, votre contexte et vos objectifs…",
+      "consent": "J'accepte que mes données soient traitées conformément à la politique de confidentialité.",
+      "submit": "Envoyer mon message",
+      "submitting": "Envoi en cours…",
+      "success": "Merci ! Votre message a bien été envoyé, nous revenons vers vous sous 48 heures.",
+      "error": "Une erreur est survenue. Merci de réessayer ou de nous écrire directement à contact@agency.example.com.",
+      "errors": {
+        "name": "Votre nom est requis (2 caractères minimum).",
+        "email": "Un email valide est requis.",
+        "message": "Votre message doit contenir au moins 20 caractères.",
+        "consent": "Merci d'accepter la politique de confidentialité.",
+        "subject": "Merci de choisir un type de projet."
+      }
+    },
+    "info": {
+      "title": "Autres moyens de nous joindre",
+      "emailLabel": "Email",
+      "phoneLabel": "Téléphone",
+      "addressLabel": "Adresse",
+      "hours": "Lundi → Vendredi, 9h → 18h"
+    }
+  },
+  "legal": {
+    "meta": {
+      "title": "Mentions légales — Agency",
+      "description": "Mentions légales du site Agency : éditeur, hébergeur, propriété intellectuelle et responsabilités."
+    },
+    "title": "Mentions légales",
+    "breadcrumb": "Mentions légales",
+    "sections": [
+      {
+        "title": "Éditeur du site",
+        "body": "Le site Agency est édité par Agency SAS, société par actions simplifiée au capital de 10 000 €, immatriculée au RCS de Paris sous le numéro 123 456 789, dont le siège social est situé 12 rue de la République, 75001 Paris. Numéro de TVA intracommunautaire : FR12345678901. Directeur de la publication : le représentant légal de la société."
+      },
+      {
+        "title": "Hébergement",
+        "body": "Le site est hébergé par Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis. Les données transitent via un réseau sécurisé et sont conformes aux exigences du RGPD."
+      },
+      {
+        "title": "Propriété intellectuelle",
+        "body": "L'ensemble des contenus du site (textes, images, logos, code source, éléments graphiques) est la propriété exclusive d'Agency SAS, sauf mention contraire. Toute reproduction, représentation, modification, publication ou adaptation, totale ou partielle, est interdite sans autorisation écrite préalable."
+      },
+      {
+        "title": "Responsabilité",
+        "body": "Agency SAS s'efforce de fournir des informations exactes et à jour. L'éditeur ne peut toutefois garantir l'exactitude, la précision ou l'exhaustivité des informations mises à disposition sur ce site. L'utilisateur reconnaît utiliser ces informations sous sa responsabilité exclusive."
+      },
+      {
+        "title": "Contact",
+        "body": "Pour toute question relative aux présentes mentions légales, vous pouvez nous contacter à l'adresse contact@agency.example.com."
+      }
+    ]
+  },
+  "privacy": {
+    "meta": {
+      "title": "Politique de confidentialité — Agency",
+      "description": "Politique de confidentialité d'Agency : traitement des données personnelles, cookies, droits RGPD."
+    },
+    "title": "Politique de confidentialité",
+    "breadcrumb": "Confidentialité",
+    "sections": [
+      {
+        "title": "Responsable du traitement",
+        "body": "Le responsable du traitement des données collectées sur ce site est Agency SAS, 12 rue de la République, 75001 Paris. Pour toute demande relative à vos données personnelles, vous pouvez nous écrire à contact@agency.example.com."
+      },
+      {
+        "title": "Données collectées",
+        "body": "Nous collectons uniquement les données nécessaires au traitement de votre demande via le formulaire de contact : nom, email professionnel, entreprise (optionnel), sujet du message et contenu du message. Nous ne collectons aucune donnée sensible au sens du RGPD."
+      },
+      {
+        "title": "Finalités et base légale",
+        "body": "Les données sont traitées pour répondre à votre demande et, le cas échéant, établir une relation commerciale. La base légale est votre consentement explicite (case à cocher du formulaire) ainsi que l'exécution de mesures précontractuelles prises à votre demande."
+      },
+      {
+        "title": "Durée de conservation",
+        "body": "Vos données sont conservées 3 ans à compter du dernier contact. Au-delà, elles sont supprimées ou anonymisées."
+      },
+      {
+        "title": "Vos droits",
+        "body": "Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation, d'opposition et de portabilité de vos données, ainsi que du droit de définir le sort de vos données après votre décès. Vous pouvez exercer ces droits en nous écrivant à contact@agency.example.com. Vous avez également le droit d'introduire une réclamation auprès de la CNIL."
+      },
+      {
+        "title": "Cookies",
+        "body": "Ce site n'utilise aucun cookie publicitaire ni de tracking tiers. Les seuls cookies techniques nécessaires au bon fonctionnement du site peuvent être utilisés, sans identification personnelle."
+      }
+    ]
+  },
+  "notFound": {
+    "meta": {
+      "title": "Page introuvable — Agency",
+      "description": "La page demandée est introuvable. Revenez à l'accueil ou explorez nos services."
+    },
+    "code": "404",
+    "title": "Cette page s'est perdue en route.",
+    "subtitle": "Elle a peut-être été déplacée, renommée, ou n'a jamais existé. Pas de panique, tout le reste du site est à portée de clic.",
+    "back": "Retour à l'accueil",
+    "services": "Voir nos services"
+  },
+  "common": {
+    "skipToContent": "Aller au contenu principal",
+    "language": "Langue",
+    "home": "Accueil"
+  }
+}

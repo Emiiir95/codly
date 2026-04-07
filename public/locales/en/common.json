@@ -1,0 +1,458 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "serviceWeb": "Web design",
+    "serviceSeo": "SEO",
+    "about": "About",
+    "contact": "Contact",
+    "cta": "Start a project",
+    "toggleTheme": "Toggle theme",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "footer": {
+    "tagline": "A web agency specialised in professional website creation and Google search engine optimisation.",
+    "navigation": "Navigation",
+    "services": "Services",
+    "legal": "Information",
+    "legalNotice": "Legal notice",
+    "privacy": "Privacy policy",
+    "rights": "All rights reserved.",
+    "madeIn": "Crafted in Paris"
+  },
+  "home": {
+    "meta": {
+      "title": "Agency — Web design & SEO agency: build a website that ranks on Google",
+      "description": "Web agency specialised in professional website creation and Google SEO. Showcase sites, e-commerce, redesigns and tailor-made search engine optimisation for ambitious brands."
+    },
+    "hero": {
+      "eyebrow": "Web design & Google SEO agency",
+      "title": "Websites that convert. SEO that ranks.",
+      "subtitle": "We design fast, elegant, SEO-ready websites. Every project is tailor-made to turn your visibility into customers.",
+      "ctaPrimary": "Get a quote",
+      "ctaSecondary": "Explore our services"
+    },
+    "stats": {
+      "projects": "projects shipped",
+      "retention": "client retention",
+      "lighthouse": "average Lighthouse score",
+      "ranking": "of keywords in top 3"
+    },
+    "services": {
+      "eyebrow": "What we do",
+      "title": "A full-service web agency, from design to SEO",
+      "subtitle": "Two complementary skill sets to build an online presence that works for you 24/7.",
+      "webTitle": "Website creation",
+      "webDescription": "Showcase sites, e-commerce and redesigns, fully tailor-made. Modern design, optimal performance, perfect accessibility.",
+      "webBullets": [
+        "Professional showcase site",
+        "E-commerce & marketplaces",
+        "Strategic redesigns",
+        "Next.js, React, headless CMS"
+      ],
+      "seoTitle": "Google SEO",
+      "seoDescription": "Technical SEO, content strategy and link building. Every line of code and every word aligned with your acquisition goals.",
+      "seoBullets": [
+        "Comprehensive SEO audit",
+        "Content strategy",
+        "Technical SEO & Core Web Vitals",
+        "Transparent monthly reporting"
+      ],
+      "learnMore": "Learn more"
+    },
+    "why": {
+      "eyebrow": "Why Agency",
+      "title": "A web agency that measures impact, not output.",
+      "subtitle": "We refuse approximation. Every design decision, every line of code and every keyword is chosen to serve your business goals.",
+      "items": [
+        {
+          "title": "Obsessive performance",
+          "body": "Lighthouse score of 100, Core Web Vitals in the green, sub-second load times. Speed is both an SEO and a sales lever."
+        },
+        {
+          "title": "SEO baked into design",
+          "body": "Semantic structure, Schema.org markup, internal linking, multilingual hreflang: SEO is built in, never bolted on."
+        },
+        {
+          "title": "Design that converts",
+          "body": "Modern aesthetics aren't enough. Every section is engineered to guide visitors towards the action that matters to you."
+        },
+        {
+          "title": "Transparent partnership",
+          "body": "A single point of contact, a clear timeline, monthly reporting. You always know where your project and your ROI stand."
+        }
+      ]
+    },
+    "process": {
+      "eyebrow": "Our method",
+      "title": "A proven process, with no nasty surprises",
+      "subtitle": "A four-step methodology to deliver a high-performing website and lasting SEO results.",
+      "steps": [
+        {
+          "title": "Strategic framing",
+          "body": "Discovery workshop, audit of the existing site, competitor research and target keyword definition. We lay solid foundations before the first mockup."
+        },
+        {
+          "title": "Design & architecture",
+          "body": "UX/UI mockups, information architecture, SEO sitemap and collaborative validation through interactive prototypes."
+        },
+        {
+          "title": "Development & technical SEO",
+          "body": "Modern Next.js development, pixel-perfect implementation, Schema.org markup, multilingual sitemap and optimised performance."
+        },
+        {
+          "title": "Launch & growth",
+          "body": "Go-live, ranking monitoring, monthly SEO iterations, conversion rate optimisation and transparent reporting."
+        }
+      ]
+    },
+    "testimonials": {
+      "eyebrow": "Trusted by",
+      "title": "Results that speak for themselves",
+      "items": [
+        {
+          "quote": "Our organic traffic tripled in six months and we're finally ranking first on our strategic keywords. The team is responsive and skilled.",
+          "author": "Sophie Laurent",
+          "role": "CEO, Atelier Nova"
+        },
+        {
+          "quote": "A modern, lightning-fast and perfectly optimised website. Agency met every commitment, on time and on budget.",
+          "author": "Julien Morel",
+          "role": "Founder, Studio Kairos"
+        },
+        {
+          "quote": "Clear process, gorgeous design, killer SEO. Our qualified leads doubled in the first quarter.",
+          "author": "Clara Benedetti",
+          "role": "Marketing director, Lumen"
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Your questions, our answers",
+      "items": [
+        {
+          "q": "How much does a professional website cost?",
+          "a": "A tailor-made showcase site starts around €4,500, an e-commerce store from €9,000. Every quote is built after a free framing call to reflect your scope, content volume and technical complexity."
+        },
+        {
+          "q": "How long does it take to deliver a website?",
+          "a": "A showcase site is delivered in 4 to 6 weeks, a more complex project in 8 to 12 weeks. We work in sprints with full visibility on every milestone."
+        },
+        {
+          "q": "Is Google SEO included?",
+          "a": "Technical SEO (structure, tags, performance, Schema.org, sitemap) is built into every website project. Editorial SEO and link building are offered as an optional monthly retainer."
+        },
+        {
+          "q": "Do you work with international clients?",
+          "a": "Yes. We support clients across Europe, Spain and Canada. Multilingual mastery (hreflang, translated content, local SEO) is at the heart of our projects."
+        },
+        {
+          "q": "Will I own the website after launch?",
+          "a": "Absolutely. You own the source code and the content. We train your team and stay available for any future need."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to step it up?",
+      "subtitle": "Let's talk about your project. Free SEO audit, quote within 48 hours.",
+      "button": "Start my project"
+    },
+    "content": {
+      "intro": "Agency is a French web agency specialised in professional website creation and Google SEO. We design high-performing digital experiences for SMBs and scale-ups that want to turn their site into a true acquisition engine. From SEO strategy to UX/UI design, from Next.js development to post-launch monitoring, we own every step with uncompromising technical and aesthetic standards.",
+      "paragraphs": [
+        "A modern website is no longer a static brochure. It is a business asset that has to attract, convince and convert. At Agency we craft websites that combine careful design, an SEO-friendly architecture and outstanding performance. Our teams master the latest technologies — Next.js, React, TypeScript, headless CMS — to deliver a durable, secure and easy-to-maintain platform.",
+        "Google SEO sits at the heart of our approach. From the very first mockups, we work on semantic structure, Hn tags, Schema.org structured data, Core Web Vitals and content architecture. This native SEO integration, combined with bespoke editorial strategy and high-quality link building, propels our clients into Google's top 3 on their strategic keywords.",
+        "Whether it is a showcase website creation, an ambitious e-commerce store, a strategic redesign or a full SEO programme, our methodology stays the same: listen, measure, design, ship, iterate. We don't sell special effects or empty promises, but quantifiable results: more qualified traffic, more leads, more revenue."
+      ]
+    }
+  },
+  "serviceWeb": {
+    "meta": {
+      "title": "Professional website creation — Agency web agency",
+      "description": "Tailor-made website creation by a French web agency: showcase sites, e-commerce, redesigns. Modern design, top performance and Google SEO baked in."
+    },
+    "hero": {
+      "eyebrow": "Website creation",
+      "title": "Professional websites that actually convert.",
+      "subtitle": "A French web agency designing tailor-made showcase sites, e-commerce and applications. Premium design, integrated SEO, flawless performance."
+    },
+    "breadcrumb": "Website creation",
+    "intro": "Building a professional website is a strategic investment. It is not about merely existing online but about shaping a business asset that attracts qualified visitors, tells your story and turns prospects into loyal customers. At Agency, every site we ship is designed to deliver on those three promises with uncompromising technical, aesthetic and SEO standards.",
+    "sections": [
+      {
+        "title": "A web agency that designs tailor-made websites",
+        "body": "We never reuse generic themes or off-the-shelf templates. Every showcase site, e-commerce store or web platform we build is crafted from your brand, your positioning and your audience. Our UX/UI designers ship interactive mockups, our developers turn them into clean and maintainable code, and our SEO experts make sure every page is optimised for organic search from the very first line."
+      },
+      {
+        "title": "Showcase, e-commerce, redesigns: every typology covered",
+        "body": "Whether you are an SMB looking for a first professional website, a growing e-commerce brand or a company that wants to redesign an outdated site, we tailor our approach to your stakes. Our team handles single-page websites and complex multilingual architectures, sophisticated product catalogues and integrations with business tools (CRM, ERP, email, analytics)."
+      },
+      {
+        "title": "Next.js, React, TypeScript: a modern, durable stack",
+        "body": "We work with Next.js, the reference React framework for the modern web. This technology lets us deliver ultra-fast websites (thanks to static rendering and streaming), perfectly indexable by Google and easy to evolve. TypeScript secures every line, Tailwind CSS ensures a coherent design system, and the headless CMS ecosystem gives you full autonomy over your content."
+      },
+      {
+        "title": "Performance and Core Web Vitals at the core",
+        "body": "A slow site loses visitors and falls in Google rankings. We continuously monitor Core Web Vitals (LCP, INP, CLS), optimise images with AVIF and WebP, preload critical fonts and remove unused JavaScript. Our deliveries systematically target a perfect 100 Lighthouse score across Performance, Accessibility, Best Practices and SEO."
+      },
+      {
+        "title": "Google SEO integrated from day one",
+        "body": "Unlike many web agencies, we don't treat SEO as a final add-on. Hn hierarchy, Schema.org markup (Organization, LocalBusiness, Service, FAQPage, BreadcrumbList), multilingual hreflang sitemaps, semantic URLs and Open Graph tags are part of the development itself. Your site is indexed and optimised the moment it goes live."
+      }
+    ],
+    "deliverables": {
+      "title": "What your website project includes",
+      "items": [
+        "Strategic framing and competitive audit",
+        "Tailor-made UX/UI design and interactive prototypes",
+        "Next.js, React and TypeScript development",
+        "Headless CMS integration for full autonomy",
+        "Technical SEO (Schema.org, sitemap, hreflang)",
+        "Core Web Vitals optimisation and Lighthouse 100",
+        "High-performance hosting and HTTPS",
+        "Admin training and documentation",
+        "Evolutive and corrective maintenance"
+      ]
+    },
+    "cta": {
+      "title": "Let's talk about your future website",
+      "subtitle": "Free audit, quote within 48 hours, no commitment.",
+      "button": "Get a quote"
+    }
+  },
+  "serviceSeo": {
+    "meta": {
+      "title": "SEO agency & Google search optimisation — Agency",
+      "description": "French SEO agency: audit, content strategy, technical SEO, link building and reporting. Get your website into Google's top 3 on your strategic keywords."
+    },
+    "hero": {
+      "eyebrow": "Search engine optimisation",
+      "title": "Get your website into Google's top 3.",
+      "subtitle": "An SEO agency specialised in technical, editorial and off-site search optimisation. We turn your website into a qualified-traffic machine."
+    },
+    "breadcrumb": "SEO",
+    "intro": "Google SEO is the most profitable acquisition channel on the web: it works for you 24/7, doesn't stop when you cut the ad budget, and reinforces brand credibility with every position you win. But it must be approached with method. At Agency, we combine technical SEO, editorial strategy and link building to push our clients into Google's top 3 results on their most strategic keywords.",
+    "sections": [
+      {
+        "title": "A complete SEO audit before any action",
+        "body": "Every engagement starts with an in-depth audit: technical analysis (crawl, indexing, Core Web Vitals, Schema.org markup), semantic analysis (keywords, search intent, competitors), off-site analysis (link profile, domain authority) and editorial analysis (quality and relevance of existing content). This diagnosis lets us build a realistic, prioritised SEO strategy."
+      },
+      {
+        "title": "Technical SEO: invisible but decisive foundations",
+        "body": "Google search optimisation starts with rock-solid technical architecture. We optimise speed (Core Web Vitals), Hn structure, canonical URLs, multilingual sitemaps, hreflang, Schema.org structured data (Organization, LocalBusiness, Service, FAQPage, BreadcrumbList, Article), crawl budget management, 404 and 301 errors and mobile compatibility. Without these foundations, no content can perform sustainably."
+      },
+      {
+        "title": "Content strategy and semantics",
+        "body": "Google ranks pages that best answer the user's search intent. We identify high-potential keywords, map intents (informational, transactional, navigational) and build an editorial calendar aligned with your conversion funnel. Every article is semantically optimised, smartly internally linked and engineered to grow your topical authority."
+      },
+      {
+        "title": "Link building and domain authority",
+        "body": "Backlinks remain a major ranking factor. We grow your link profile with a quality-first approach: thematic partnerships, digital PR, guest posts on relevant media, local citations. No link farms, no risky tactics: only links that durably strengthen your authority."
+      },
+      {
+        "title": "Monitoring, reporting and monthly iterations",
+        "body": "SEO is an iterative discipline. Every month we track your rankings, organic traffic, conversions and competitor moves. We adjust the strategy, publish new content and reinforce performing pages. You get a clear, actionable report — no jargon."
+      }
+    ],
+    "deliverables": {
+      "title": "What our SEO retainer includes",
+      "items": [
+        "Technical, semantic and off-site SEO audit",
+        "Keyword and intent strategy",
+        "On-page optimisation (tags, Hn, internal linking)",
+        "Full Schema.org structured data",
+        "Core Web Vitals optimisation",
+        "SEO content creation and optimisation",
+        "Quality-first link-building campaign",
+        "Monthly performance reporting",
+        "A dedicated SEO expert"
+      ]
+    },
+    "cta": {
+      "title": "Let's talk about your SEO strategy",
+      "subtitle": "Free SEO audit, actionable recommendations within 7 days.",
+      "button": "Get my SEO audit"
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "About — Agency, web design & SEO agency in Paris",
+      "description": "Agency is an independent web agency based in Paris. Specialised in website creation and Google SEO, we serve ambitious brands."
+    },
+    "hero": {
+      "eyebrow": "About",
+      "title": "The web agency that refuses half-measures.",
+      "subtitle": "Founded in 2018 in Paris, Agency partners with companies that want the web to become a real growth lever."
+    },
+    "breadcrumb": "About",
+    "sections": [
+      {
+        "title": "An independent, committed web agency",
+        "body": "Agency was born from a simple belief: it is possible to deliver elegant, high-performing and perfectly optimised websites without compromise and without empty sales talk. Independent, we choose our clients the way we choose our tools: with high standards. Every project gets a dedicated team, a single point of contact and a proven methodology."
+      },
+      {
+        "title": "A multi-disciplinary team",
+        "body": "Designers, front-end and back-end developers, SEO experts, web copywriters: our team covers every skill set required to deliver an ambitious digital project. We work in short cycles with clear rituals and involve you at the strategic milestones."
+      },
+      {
+        "title": "Values that drive every project",
+        "body": "We believe in transparency (timeline, budget, reporting), in technical excellence (Lighthouse 100, Core Web Vitals in the green), in pedagogy (you will always understand what we do and why) and in the long term (our clients stay with us for an average of 4 years). These values are not slogans, they are our daily decision criteria."
+      },
+      {
+        "title": "Paris, the French-speaking world and beyond",
+        "body": "Based in Paris, we partner with clients across the French-speaking world, in Spain and in Canada. Multilingual mastery (hreflang, translated content, local SEO) lets us build websites that perform on several markets at once."
+      }
+    ],
+    "values": {
+      "title": "Our commitments",
+      "items": [
+        {
+          "title": "Total transparency",
+          "body": "Timeline, budget, source code, analytics: it all belongs to you and is shared with you."
+        },
+        {
+          "title": "Technical excellence",
+          "body": "Lighthouse 100, Core Web Vitals in the green, strict TypeScript. No compromise."
+        },
+        {
+          "title": "Real collaboration",
+          "body": "A dedicated point of contact, clear rituals, real availability. No endless email chains."
+        },
+        {
+          "title": "Measurable impact",
+          "body": "We track the indicators that matter to you: qualified traffic, conversions, revenue."
+        }
+      ]
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Contact — Agency, your web & SEO agency",
+      "description": "Get in touch with Agency for your website creation or Google SEO project. Quote within 48 hours, free SEO audit."
+    },
+    "hero": {
+      "eyebrow": "Contact",
+      "title": "Let's talk about your project.",
+      "subtitle": "A form, an email, a call: pick whichever works for you. We'll reply within 48 business hours with a first analysis."
+    },
+    "breadcrumb": "Contact",
+    "form": {
+      "name": "Your name",
+      "namePlaceholder": "Jane Doe",
+      "email": "Your business email",
+      "emailPlaceholder": "jane@company.com",
+      "company": "Company (optional)",
+      "companyPlaceholder": "Your company name",
+      "subject": "Project type",
+      "subjectOptions": {
+        "web": "Website creation",
+        "seo": "SEO",
+        "refonte": "Website redesign",
+        "other": "Other request"
+      },
+      "message": "Your message",
+      "messagePlaceholder": "Describe your project, context and goals…",
+      "consent": "I agree that my data will be processed in accordance with the privacy policy.",
+      "submit": "Send my message",
+      "submitting": "Sending…",
+      "success": "Thanks! Your message has been sent, we'll reply within 48 hours.",
+      "error": "Something went wrong. Please try again or write to contact@agency.example.com.",
+      "errors": {
+        "name": "Your name is required (minimum 2 characters).",
+        "email": "A valid email is required.",
+        "message": "Your message must contain at least 20 characters.",
+        "consent": "Please accept the privacy policy.",
+        "subject": "Please select a project type."
+      }
+    },
+    "info": {
+      "title": "Other ways to reach us",
+      "emailLabel": "Email",
+      "phoneLabel": "Phone",
+      "addressLabel": "Address",
+      "hours": "Monday → Friday, 9am → 6pm CET"
+    }
+  },
+  "legal": {
+    "meta": {
+      "title": "Legal notice — Agency",
+      "description": "Legal notice of the Agency website: publisher, host, intellectual property and liability."
+    },
+    "title": "Legal notice",
+    "breadcrumb": "Legal notice",
+    "sections": [
+      {
+        "title": "Publisher",
+        "body": "The Agency website is published by Agency SAS, a French simplified joint-stock company with a share capital of €10,000, registered with the Paris Trade and Companies Register under number 123 456 789, with its registered office at 12 rue de la République, 75001 Paris. Intra-community VAT number: FR12345678901. Publication director: the company's legal representative."
+      },
+      {
+        "title": "Hosting",
+        "body": "The website is hosted by Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, United States. Data is transmitted over a secure network compliant with the GDPR."
+      },
+      {
+        "title": "Intellectual property",
+        "body": "All content on the website (texts, images, logos, source code, graphic elements) is the exclusive property of Agency SAS unless stated otherwise. Any reproduction, representation, modification, publication or adaptation, in whole or in part, is forbidden without prior written authorisation."
+      },
+      {
+        "title": "Liability",
+        "body": "Agency SAS strives to provide accurate and up-to-date information. The publisher cannot however guarantee the accuracy, precision or completeness of the information made available. The user acknowledges using this information at their sole responsibility."
+      },
+      {
+        "title": "Contact",
+        "body": "For any question regarding this legal notice, please contact us at contact@agency.example.com."
+      }
+    ]
+  },
+  "privacy": {
+    "meta": {
+      "title": "Privacy policy — Agency",
+      "description": "Privacy policy of Agency: personal data processing, cookies, GDPR rights."
+    },
+    "title": "Privacy policy",
+    "breadcrumb": "Privacy",
+    "sections": [
+      {
+        "title": "Data controller",
+        "body": "The controller of personal data collected on this website is Agency SAS, 12 rue de la République, 75001 Paris. For any request relating to your personal data, please write to contact@agency.example.com."
+      },
+      {
+        "title": "Data collected",
+        "body": "We only collect the data needed to handle your request via the contact form: name, business email, company (optional), subject and message. We do not collect any sensitive data within the meaning of the GDPR."
+      },
+      {
+        "title": "Purposes and legal basis",
+        "body": "Data is processed to answer your request and, where applicable, to establish a commercial relationship. The legal basis is your explicit consent (form checkbox) and the performance of pre-contractual measures taken at your request."
+      },
+      {
+        "title": "Retention period",
+        "body": "Your data is kept for 3 years from the last contact. Beyond this period, it is deleted or anonymised."
+      },
+      {
+        "title": "Your rights",
+        "body": "Under the GDPR, you have the right to access, rectification, erasure, restriction, objection and portability of your data, as well as the right to define the fate of your data after death. You may exercise these rights by writing to contact@agency.example.com. You also have the right to lodge a complaint with the CNIL."
+      },
+      {
+        "title": "Cookies",
+        "body": "This website uses no advertising cookies and no third-party tracking. Only technical cookies needed for the proper functioning of the site may be used, with no personal identification."
+      }
+    ]
+  },
+  "notFound": {
+    "meta": {
+      "title": "Page not found — Agency",
+      "description": "The requested page could not be found. Go back to the home page or browse our services."
+    },
+    "code": "404",
+    "title": "This page got lost on the way.",
+    "subtitle": "It may have been moved, renamed or never existed. No worries, the rest of the site is one click away.",
+    "back": "Back to home",
+    "services": "See our services"
+  },
+  "common": {
+    "skipToContent": "Skip to main content",
+    "language": "Language",
+    "home": "Home"
+  }
+}
