@@ -2,6 +2,7 @@ import { useI18n } from "@/lib/i18n";
 import { localizedPath } from "@/lib/routes";
 import Eyebrow from "@/components/atoms/Eyebrow";
 import GradientHeading from "@/components/atoms/GradientHeading";
+import HeroBackground from "@/components/atoms/HeroBackground";
 import { ButtonLink } from "@/components/atoms/Button";
 import LighthousePreview from "@/components/molecules/LighthousePreview";
 
@@ -9,7 +10,8 @@ export default function HomeHero() {
   const { t, locale } = useI18n();
   return (
     <section className="relative overflow-hidden">
-      <div className="mx-auto grid w-full max-w-6xl gap-12 px-6 pb-20 pt-16 sm:pt-24 md:grid-cols-12 md:gap-16">
+      <HeroBackground />
+      <div className="relative mx-auto grid w-full max-w-6xl gap-12 px-6 pb-20 pt-16 sm:pt-24 md:grid-cols-12 md:gap-16">
         <div className="md:col-span-7">
           <Eyebrow withDot className="mb-4">
             {t("home.hero.eyebrow")}

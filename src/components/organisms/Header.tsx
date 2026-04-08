@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { useI18n } from "@/lib/i18n";
 import { localizedPath } from "@/lib/routes";
 import Logo from "@/components/atoms/Logo";
-import HeaderBackground from "@/components/atoms/HeaderBackground";
 import ThemeToggle from "@/components/atoms/ThemeToggle";
 import { ButtonLink } from "@/components/atoms/Button";
 import HeaderNav from "@/components/molecules/HeaderNav";
@@ -36,7 +35,6 @@ export default function Header() {
           : "border-b border-transparent"
       }`}
     >
-      <HeaderBackground />
       <a
         href="#main"
         className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-[var(--color-accent)] focus:px-3 focus:py-2 focus:text-white"
