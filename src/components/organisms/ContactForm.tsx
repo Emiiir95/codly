@@ -1,12 +1,12 @@
 import { useState, type FormEvent } from "react";
 import { useI18n } from "@/lib/i18n";
-import { Button } from "./Button";
+import { Button } from "@/components/atoms/Button";
 
 type FormState =
   | { status: "idle" }
   | { status: "submitting" }
   | { status: "success" }
-  | { status: "error"; message?: string };
+  | { status: "error" };
 
 export default function ContactForm() {
   const { t, raw } = useI18n();
@@ -41,9 +41,7 @@ export default function ContactForm() {
         const data = (await res.json().catch(() => ({}))) as {
           fieldErrors?: Record<string, string>;
         };
-        if (data.fieldErrors) {
-          setErrors(data.fieldErrors);
-        }
+        if (data.fieldErrors) setErrors(data.fieldErrors);
         setState({ status: "error" });
         return;
       }
@@ -58,7 +56,11 @@ export default function ContactForm() {
     "w-full rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-elev)]/60 px-4 py-3 text-sm text-[var(--color-fg)] outline-none transition focus:border-[var(--color-accent)]";
 
   return (
-    <form noValidate onSubmit={onSubmit} className="card flex flex-col gap-5 p-6 sm:p-8">
+    <form
+      noValidate
+      onSubmit={onSubmit}
+      className="card flex flex-col gap-5 p-6 sm:p-8"
+    >
       <div className="grid gap-5 sm:grid-cols-2">
         <label className="flex flex-col gap-2 text-sm">
           <span className="font-medium">{t("contact.form.name")}</span>

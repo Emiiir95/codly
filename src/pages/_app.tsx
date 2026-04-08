@@ -7,7 +7,7 @@ import {
   buildI18n,
   type Translations,
 } from "@/lib/i18n";
-import Layout from "@/components/Layout";
+import Layout from "@/components/organisms/Layout";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

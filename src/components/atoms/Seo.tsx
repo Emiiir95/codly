@@ -43,7 +43,6 @@ export default function Seo({
       ))}
       {noindex && <meta name="robots" content="noindex,nofollow" />}
 
-      {/* Open Graph */}
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content={SITE.name} />
       <meta property="og:locale" content={locale} />
@@ -54,7 +53,6 @@ export default function Seo({
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
 
-      {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />

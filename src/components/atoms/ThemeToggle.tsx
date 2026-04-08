@@ -23,7 +23,6 @@ export default function ThemeToggle({ label }: { label: string }) {
     } catch {
       /* ignore */
     }
-    // Force re-render via dispatching a custom event so getSnapshot returns fresh value
     window.dispatchEvent(new Event("themechange"));
   };
 
