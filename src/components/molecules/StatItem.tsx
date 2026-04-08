@@ -9,7 +9,7 @@ export default function StatItem({ value, label }: Props) {
       <dt className="text-xs uppercase tracking-widest text-[var(--color-fg-muted)]">
         {label}
       </dt>
-      <dd className="mt-1 text-2xl font-semibold tracking-tight sm:text-3xl">
+      <dd className="mt-1 text-2xl font-semibold tracking-tight text-[var(--color-fg)] sm:text-3xl">
         {value}
       </dd>
     </div>

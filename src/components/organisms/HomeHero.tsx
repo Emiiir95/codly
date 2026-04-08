@@ -13,7 +13,7 @@ export default function HomeHero() {
       <HeroBackground />
       <div className="relative mx-auto grid w-full max-w-6xl gap-12 px-6 pb-20 pt-16 sm:pt-24 md:grid-cols-12 md:gap-16">
         <div className="md:col-span-7">
-          <Eyebrow withDot className="mb-4">
+          <Eyebrow withDot className="mb-5">
             {t("home.hero.eyebrow")}
           </Eyebrow>
           <GradientHeading as={1} size="xl">

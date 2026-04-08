@@ -8,14 +8,14 @@ const LINKS = [
 
 export default function SocialLinks() {
   return (
-    <ul className="flex gap-3 text-xs text-[var(--color-fg-muted)]">
+    <ul className="flex gap-3 text-xs">
       {LINKS.map((link) => (
         <li key={link.label}>
           <a
             href={link.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block rounded-full border border-[var(--color-border)] px-3 py-1 hover:border-[var(--color-border-strong)]"
+            className="inline-block rounded-full border border-[var(--color-border)] bg-white px-3 py-1 text-[var(--color-fg-muted)] shadow-sm hover:border-[var(--color-fg)] hover:text-[var(--color-fg)]"
           >
             {link.label}
           </a>

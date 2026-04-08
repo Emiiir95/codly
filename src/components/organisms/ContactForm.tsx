@@ -53,7 +53,7 @@ export default function ContactForm() {
   };
 
   const inputCls =
-    "w-full rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-elev)]/60 px-4 py-3 text-sm text-[var(--color-fg)] outline-none transition focus:border-[var(--color-accent)]";
+    "w-full rounded-lg border border-[var(--color-border)] bg-white px-4 py-3 text-sm text-[var(--color-fg)] shadow-sm outline-none transition placeholder:text-[var(--color-fg-subtle)] focus:border-[var(--color-accent)] focus:ring-2 focus:ring-[var(--color-accent-soft)]";
 
   return (
     <form
@@ -63,7 +63,9 @@ export default function ContactForm() {
     >
       <div className="grid gap-5 sm:grid-cols-2">
         <label className="flex flex-col gap-2 text-sm">
-          <span className="font-medium">{t("contact.form.name")}</span>
+          <span className="font-medium text-[var(--color-fg)]">
+            {t("contact.form.name")}
+          </span>
           <input
             type="text"
             name="name"
@@ -74,11 +76,13 @@ export default function ContactForm() {
             aria-invalid={!!errors.name}
           />
           {errors.name && (
-            <span className="text-xs text-rose-400">{errors.name}</span>
+            <span className="text-xs text-rose-600">{errors.name}</span>
           )}
         </label>
         <label className="flex flex-col gap-2 text-sm">
-          <span className="font-medium">{t("contact.form.email")}</span>
+          <span className="font-medium text-[var(--color-fg)]">
+            {t("contact.form.email")}
+          </span>
           <input
             type="email"
             name="email"
@@ -88,12 +92,14 @@ export default function ContactForm() {
             aria-invalid={!!errors.email}
           />
           {errors.email && (
-            <span className="text-xs text-rose-400">{errors.email}</span>
+            <span className="text-xs text-rose-600">{errors.email}</span>
           )}
         </label>
       </div>
       <label className="flex flex-col gap-2 text-sm">
-        <span className="font-medium">{t("contact.form.company")}</span>
+        <span className="font-medium text-[var(--color-fg)]">
+          {t("contact.form.company")}
+        </span>
         <input
           type="text"
           name="company"
@@ -102,7 +108,9 @@ export default function ContactForm() {
         />
       </label>
       <label className="flex flex-col gap-2 text-sm">
-        <span className="font-medium">{t("contact.form.subject")}</span>
+        <span className="font-medium text-[var(--color-fg)]">
+          {t("contact.form.subject")}
+        </span>
         <select
           name="subject"
           required
@@ -120,11 +128,13 @@ export default function ContactForm() {
           ))}
         </select>
         {errors.subject && (
-          <span className="text-xs text-rose-400">{errors.subject}</span>
+          <span className="text-xs text-rose-600">{errors.subject}</span>
         )}
       </label>
       <label className="flex flex-col gap-2 text-sm">
-        <span className="font-medium">{t("contact.form.message")}</span>
+        <span className="font-medium text-[var(--color-fg)]">
+          {t("contact.form.message")}
+        </span>
         <textarea
           name="message"
           required
@@ -135,7 +145,7 @@ export default function ContactForm() {
           aria-invalid={!!errors.message}
         />
         {errors.message && (
-          <span className="text-xs text-rose-400">{errors.message}</span>
+          <span className="text-xs text-rose-600">{errors.message}</span>
         )}
       </label>
       <label className="flex items-start gap-3 text-xs text-[var(--color-fg-muted)]">
@@ -148,7 +158,7 @@ export default function ContactForm() {
         <span>{t("contact.form.consent")}</span>
       </label>
       {errors.consent && (
-        <span className="text-xs text-rose-400">{errors.consent}</span>
+        <span className="text-xs text-rose-600">{errors.consent}</span>
       )}
       <div className="flex items-center gap-4">
         <Button type="submit" disabled={state.status === "submitting"}>
@@ -157,12 +167,12 @@ export default function ContactForm() {
             : t("contact.form.submit")}
         </Button>
         {state.status === "success" && (
-          <p className="text-sm text-emerald-400" role="status">
+          <p className="text-sm text-emerald-600" role="status">
             {t("contact.form.success")}
           </p>
         )}
         {state.status === "error" && (
-          <p className="text-sm text-rose-400" role="alert">
+          <p className="text-sm text-rose-600" role="alert">
             {t("contact.form.error")}
           </p>
         )}

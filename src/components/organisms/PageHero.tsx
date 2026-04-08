@@ -14,7 +14,7 @@ type Props = {
 export default function PageHero({ eyebrow, title, subtitle }: Props) {
   return (
     <section className="mx-auto w-full max-w-6xl px-6 pb-12 pt-12">
-      <Eyebrow className="mb-4">{eyebrow}</Eyebrow>
+      <Eyebrow className="mb-5">{eyebrow}</Eyebrow>
       <GradientHeading as={1} size="xl">
         {title}
       </GradientHeading>

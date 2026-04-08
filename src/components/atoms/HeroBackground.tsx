@@ -10,13 +10,13 @@ export default function HeroBackground() {
     >
       <div className="absolute inset-0 bg-dots" />
       <div
-        className="absolute inset-x-0 -top-10 h-64"
+        className="absolute inset-x-0 -top-10 h-72"
         style={{
           background:
-            "radial-gradient(700px 260px at 50% 0%, color-mix(in oklab, var(--color-accent) 22%, transparent), transparent 70%)",
+            "radial-gradient(700px 280px at 50% 0%, color-mix(in oklab, var(--color-accent) 18%, transparent), transparent 70%)",
         }}
       />
-      <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-b from-transparent to-[var(--color-bg)]" />
+      <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-b from-transparent to-[var(--color-bg)]" />
     </div>
   );
 }

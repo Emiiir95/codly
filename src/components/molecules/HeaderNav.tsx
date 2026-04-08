@@ -19,8 +19,8 @@ export default function HeaderNav({
       : "flex flex-col gap-3";
   const itemCls =
     orientation === "horizontal"
-      ? "text-sm text-[var(--color-fg-muted)] transition-colors hover:text-[var(--color-fg)]"
-      : "block py-2 text-sm text-[var(--color-fg-muted)] hover:text-[var(--color-fg)]";
+      ? "text-sm font-medium text-[var(--color-fg-muted)] transition-colors hover:text-[var(--color-accent)]"
+      : "block py-2 text-sm font-medium text-[var(--color-fg-muted)] hover:text-[var(--color-accent)]";
 
   if (orientation === "vertical") {
     return (

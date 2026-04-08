@@ -5,14 +5,8 @@ export default function Document() {
     <Html>
       <Head>
         <meta charSet="utf-8" />
-        <meta name="theme-color" content="#07070b" />
+        <meta name="theme-color" content="#fafafa" />
         <link rel="icon" href="/favicon.ico" />
-        {/* Tiny script to apply saved theme before paint, no FOUC */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(){try{var t=localStorage.getItem('theme');if(t==='light'){document.documentElement.classList.add('light')}}catch(e){}})();`,
-          }}
-        />
       </Head>
       <body className="antialiased">
         <Main />

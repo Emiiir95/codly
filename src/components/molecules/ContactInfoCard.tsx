@@ -5,14 +5,16 @@ export default function ContactInfoCard() {
   const { t } = useI18n();
   return (
     <aside className="card flex flex-col gap-5 p-6">
-      <h2 className="text-lg font-semibold">{t("contact.info.title")}</h2>
+      <h2 className="text-lg font-semibold text-[var(--color-fg)]">
+        {t("contact.info.title")}
+      </h2>
       <div>
         <p className="text-xs uppercase tracking-widest text-[var(--color-fg-muted)]">
           {t("contact.info.emailLabel")}
         </p>
         <a
           href={`mailto:${SITE.email}`}
-          className="mt-1 block text-sm hover:text-[var(--color-accent-2)]"
+          className="mt-1 block text-sm text-[var(--color-fg)] hover:text-[var(--color-accent)]"
         >
           {SITE.email}
         </a>
@@ -23,7 +25,7 @@ export default function ContactInfoCard() {
         </p>
         <a
           href={`tel:${SITE.phone.replace(/\s/g, "")}`}
-          className="mt-1 block text-sm hover:text-[var(--color-accent-2)]"
+          className="mt-1 block text-sm text-[var(--color-fg)] hover:text-[var(--color-accent)]"
         >
           {SITE.phone}
         </a>

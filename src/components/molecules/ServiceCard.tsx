@@ -7,17 +7,7 @@ type Props = {
   bullets: string[];
   href: string;
   ctaLabel: string;
-  accent: "primary" | "secondary";
-};
-
-const iconBg: Record<Props["accent"], string> = {
-  primary: "from-[var(--color-accent-2)] to-[var(--color-accent)]",
-  secondary: "from-[var(--color-accent)] to-[var(--color-accent-3)]",
-};
-
-const dotColor: Record<Props["accent"], string> = {
-  primary: "bg-[var(--color-accent-2)]",
-  secondary: "bg-[var(--color-accent-3)]",
+  accent?: "primary" | "secondary";
 };
 
 export default function ServiceCard({
@@ -27,24 +17,33 @@ export default function ServiceCard({
   bullets,
   href,
   ctaLabel,
-  accent,
+  accent = "primary",
 }: Props) {
+  const iconBg =
+    accent === "primary"
+      ? "bg-[var(--color-accent)] text-white"
+      : "bg-[var(--color-accent-2)] text-white";
+  const dotColor =
+    accent === "primary" ? "bg-[var(--color-accent)]" : "bg-[var(--color-accent-2)]";
+
   return (
     <article className="card group flex flex-col gap-5 p-8">
       <div
         aria-hidden
-        className={`inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br ${iconBg[accent]} text-2xl`}
+        className={`inline-flex h-12 w-12 items-center justify-center rounded-xl ${iconBg} text-2xl shadow-sm`}
       >
         {icon}
       </div>
-      <h3 className="text-2xl font-semibold tracking-tight">{title}</h3>
+      <h3 className="text-2xl font-semibold tracking-tight text-[var(--color-fg)]">
+        {title}
+      </h3>
       <p className="text-[var(--color-fg-muted)]">{description}</p>
       <ul className="space-y-2 text-sm text-[var(--color-fg-muted)]">
         {bullets.map((b) => (
           <li key={b} className="flex items-center gap-2">
             <span
               aria-hidden
-              className={`h-1.5 w-1.5 rounded-full ${dotColor[accent]}`}
+              className={`h-1.5 w-1.5 rounded-full ${dotColor}`}
             />
             {b}
           </li>

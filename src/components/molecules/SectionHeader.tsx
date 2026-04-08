@@ -20,12 +20,12 @@ export default function SectionHeader({
   return (
     <header className={`max-w-3xl ${alignCls} mb-12 sm:mb-16 ${className}`}>
       {eyebrow && (
-        <p className="mb-3 text-sm font-medium uppercase tracking-[0.16em] text-[var(--color-accent-2)]">
+        <p className="mb-3 text-sm font-medium uppercase tracking-[0.16em] text-[var(--color-accent)]">
           {eyebrow}
         </p>
       )}
       {title && (
-        <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl md:text-5xl">
+        <h2 className="text-3xl font-semibold tracking-tight text-[var(--color-fg)] sm:text-4xl md:text-5xl">
           {title}
         </h2>
       )}

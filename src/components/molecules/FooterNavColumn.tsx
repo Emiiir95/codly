@@ -18,7 +18,7 @@ export default function FooterNavColumn({ title, links }: Props) {
           <li key={link.href}>
             <Link
               href={link.href}
-              className="text-sm text-[var(--color-fg-muted)] transition hover:text-[var(--color-fg)]"
+              className="text-sm text-[var(--color-fg-muted)] transition hover:text-[var(--color-accent)]"
             >
               {link.label}
             </Link>

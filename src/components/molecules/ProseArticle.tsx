@@ -9,7 +9,9 @@ type Props = {
 export default function ProseArticle({ title, body }: Props) {
   return (
     <article className="max-w-3xl">
-      <h2 className="text-2xl font-semibold tracking-tight">{title}</h2>
+      <h2 className="text-2xl font-semibold tracking-tight text-[var(--color-fg)]">
+        {title}
+      </h2>
       <p className="mt-3 text-base leading-relaxed text-[var(--color-fg-muted)]">
         {body}
       </p>

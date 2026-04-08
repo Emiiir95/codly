@@ -12,7 +12,7 @@ export default function HomeStats() {
 
   return (
     <div className="mx-auto w-full max-w-6xl px-6">
-      <dl className="grid grid-cols-2 gap-4 rounded-2xl border border-[var(--color-border)] bg-[var(--color-bg-elev)]/50 p-6 backdrop-blur sm:grid-cols-4">
+      <dl className="card grid grid-cols-2 gap-4 p-6 sm:grid-cols-4">
         {stats.map((s) => (
           <StatItem key={s.label} value={s.value} label={s.label} />
         ))}

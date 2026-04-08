@@ -13,12 +13,12 @@ export default function Eyebrow({
 }: Props) {
   return (
     <p
-      className={`inline-flex items-center gap-2 rounded-full border border-[var(--color-border)] bg-[var(--color-bg-elev)]/60 px-3 py-1 text-xs font-medium uppercase tracking-widest text-[var(--color-fg-muted)] ${className}`}
+      className={`inline-flex items-center gap-2 rounded-full border border-[var(--color-border)] bg-white px-3 py-1 text-xs font-medium uppercase tracking-widest text-[var(--color-fg-muted)] shadow-sm ${className}`}
     >
       {withDot && (
         <span
           aria-hidden
-          className="h-1.5 w-1.5 rounded-full bg-[var(--color-accent-2)]"
+          className="h-1.5 w-1.5 rounded-full bg-[var(--color-accent)]"
         />
       )}
       {children}

@@ -4,15 +4,15 @@ import type { ComponentPropsWithoutRef, ReactNode } from "react";
 type Variant = "primary" | "secondary" | "ghost";
 
 const base =
-  "inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-medium transition-all duration-200 select-none whitespace-nowrap";
+  "inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium transition-all duration-200 select-none whitespace-nowrap";
 
 const variants: Record<Variant, string> = {
   primary:
-    "text-white shadow-[0_0_0_1px_rgba(255,255,255,0.08)] bg-gradient-to-r from-[var(--color-accent-2)] via-[var(--color-accent)] to-[var(--color-accent-3)] hover:brightness-110 hover:shadow-[0_8px_30px_-8px_rgba(139,92,246,0.6)]",
+    "bg-[var(--color-accent)] text-white shadow-sm hover:bg-[color-mix(in_oklab,var(--color-accent)_90%,black)] hover:shadow-[0_10px_30px_-12px_rgba(206,28,107,0.55)]",
   secondary:
-    "border border-[var(--color-border-strong)] bg-[var(--color-bg-elev)]/60 backdrop-blur text-[var(--color-fg)] hover:border-[var(--color-accent)] hover:bg-[var(--color-bg-elev)]",
+    "bg-white text-[var(--color-fg)] border border-[var(--color-border)] hover:border-[var(--color-fg)] hover:bg-[var(--color-bg)]",
   ghost:
-    "text-[var(--color-fg-muted)] hover:text-[var(--color-fg)] hover:bg-white/5",
+    "text-[var(--color-fg-muted)] hover:text-[var(--color-accent)] hover:bg-[var(--color-accent-soft)]",
 };
 
 type CommonProps = {

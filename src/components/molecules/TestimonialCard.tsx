@@ -9,7 +9,7 @@ export default function TestimonialCard({ quote, author, role }: Props) {
     <li className="card flex flex-col gap-4 p-6">
       <div
         aria-hidden
-        className="flex gap-0.5 text-sm text-[var(--color-accent-2)]"
+        className="flex gap-0.5 text-sm text-[var(--color-accent)]"
       >
         ★★★★★
       </div>

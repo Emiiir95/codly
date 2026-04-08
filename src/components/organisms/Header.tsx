@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { useI18n } from "@/lib/i18n";
 import { localizedPath } from "@/lib/routes";
 import Logo from "@/components/atoms/Logo";
-import ThemeToggle from "@/components/atoms/ThemeToggle";
 import { ButtonLink } from "@/components/atoms/Button";
 import HeaderNav from "@/components/molecules/HeaderNav";
 import MenuToggle from "@/components/molecules/MenuToggle";
@@ -29,10 +28,10 @@ export default function Header() {
 
   return (
     <header
-      className={`relative sticky top-0 z-40 transition-all ${
+      className={`sticky top-0 z-40 transition-all ${
         scrolled
-          ? "border-b border-[var(--color-border)] bg-[var(--color-bg)]/80 backdrop-blur"
-          : "border-b border-transparent"
+          ? "border-b border-[var(--color-border)] bg-white/85 backdrop-blur"
+          : "border-b border-transparent bg-transparent"
       }`}
     >
       <a
@@ -41,13 +40,10 @@ export default function Header() {
       >
         {t("common.skipToContent")}
       </a>
-      <div className="relative mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-6 py-4">
+      <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-6 py-4">
         <Logo href={localizedPath("home", locale)} />
         <HeaderNav items={nav} />
         <div className="flex items-center gap-2">
-          <div className="hidden sm:block">
-            <ThemeToggle label={t("nav.toggleTheme")} />
-          </div>
           <LanguageSwitcher />
           <div className="hidden md:block">
             <ButtonLink
@@ -68,7 +64,7 @@ export default function Header() {
       {open && (
         <nav
           aria-label="Mobile"
-          className="relative border-t border-[var(--color-border)] bg-[var(--color-bg)]/95 px-6 py-4 md:hidden"
+          className="border-t border-[var(--color-border)] bg-white px-6 py-4 md:hidden"
         >
           <HeaderNav
             items={nav}
