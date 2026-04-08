@@ -13,7 +13,7 @@ export default function Eyebrow({
 }: Props) {
   return (
     <p
-      className={`inline-flex items-center gap-2 rounded-full border border-[var(--color-border)] bg-white px-3 py-1 text-xs font-medium uppercase tracking-widest text-[var(--color-fg-muted)] shadow-sm ${className}`}
+      className={`inline-flex items-center gap-2 rounded-full border border-[var(--color-border)] bg-[var(--color-bg-elev)] px-3 py-1 text-xs font-medium uppercase tracking-widest text-[var(--color-fg-muted)] shadow-sm ${className}`}
     >
       {withDot && (
         <span

@@ -41,7 +41,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="mt-24 border-t border-[var(--color-border)] bg-white">
+    <footer className="mt-24 border-t border-[var(--color-border)] bg-[var(--color-bg-elev)]">
       <div className="mx-auto grid w-full max-w-6xl gap-12 px-6 py-16 md:grid-cols-12">
         <div className="md:col-span-5">
           <Logo href={localizedPath("home", locale)} />

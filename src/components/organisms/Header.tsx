@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useI18n } from "@/lib/i18n";
 import { localizedPath } from "@/lib/routes";
 import Logo from "@/components/atoms/Logo";
+import ThemeToggle from "@/components/atoms/ThemeToggle";
 import { ButtonLink } from "@/components/atoms/Button";
 import HeaderNav from "@/components/molecules/HeaderNav";
 import MenuToggle from "@/components/molecules/MenuToggle";
@@ -30,7 +31,7 @@ export default function Header() {
     <header
       className={`sticky top-0 z-40 transition-all ${
         scrolled
-          ? "border-b border-[var(--color-border)] bg-white/85 backdrop-blur"
+          ? "border-b border-[var(--color-border)] bg-[var(--color-bg-elev)]/85 backdrop-blur"
           : "border-b border-transparent bg-transparent"
       }`}
     >
@@ -44,6 +45,9 @@ export default function Header() {
         <Logo href={localizedPath("home", locale)} />
         <HeaderNav items={nav} />
         <div className="flex items-center gap-2">
+          <div className="hidden sm:block">
+            <ThemeToggle label={t("nav.toggleTheme")} />
+          </div>
           <LanguageSwitcher />
           <div className="hidden md:block">
             <ButtonLink
@@ -64,7 +68,7 @@ export default function Header() {
       {open && (
         <nav
           aria-label="Mobile"
-          className="border-t border-[var(--color-border)] bg-white px-6 py-4 md:hidden"
+          className="border-t border-[var(--color-border)] bg-[var(--color-bg-elev)] px-6 py-4 md:hidden"
         >
           <HeaderNav
             items={nav}

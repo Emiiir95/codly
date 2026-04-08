@@ -53,7 +53,7 @@ export default function ContactForm() {
   };
 
   const inputCls =
-    "w-full rounded-lg border border-[var(--color-border)] bg-white px-4 py-3 text-sm text-[var(--color-fg)] shadow-sm outline-none transition placeholder:text-[var(--color-fg-subtle)] focus:border-[var(--color-accent)] focus:ring-2 focus:ring-[var(--color-accent-soft)]";
+    "w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-elev)] px-4 py-3 text-sm text-[var(--color-fg)] shadow-sm outline-none transition placeholder:text-[var(--color-fg-subtle)] focus:border-[var(--color-accent)] focus:ring-2 focus:ring-[var(--color-accent-soft)]";
 
   return (
     <form

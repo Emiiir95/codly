@@ -15,7 +15,7 @@ export default function SocialLinks() {
             href={link.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block rounded-full border border-[var(--color-border)] bg-white px-3 py-1 text-[var(--color-fg-muted)] shadow-sm hover:border-[var(--color-fg)] hover:text-[var(--color-fg)]"
+            className="inline-block rounded-full border border-[var(--color-border)] bg-[var(--color-bg-elev)] px-3 py-1 text-[var(--color-fg-muted)] shadow-sm hover:border-[var(--color-fg)] hover:text-[var(--color-fg)]"
           >
             {link.label}
           </a>

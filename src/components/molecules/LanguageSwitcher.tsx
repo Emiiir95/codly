@@ -40,7 +40,7 @@ export default function LanguageSwitcher() {
         aria-haspopup="listbox"
         aria-expanded={open}
         aria-label="Language"
-        className="inline-flex items-center gap-1.5 rounded-full border border-[var(--color-border)] bg-white px-3 py-1.5 text-xs font-medium text-[var(--color-fg)] shadow-sm hover:border-[var(--color-fg)]"
+        className="inline-flex items-center gap-1.5 rounded-full border border-[var(--color-border)] bg-[var(--color-bg-elev)] px-3 py-1.5 text-xs font-medium text-[var(--color-fg)] shadow-sm hover:border-[var(--color-fg)]"
       >
         <span aria-hidden>🌐</span>
         {LABELS[current]}
@@ -48,7 +48,7 @@ export default function LanguageSwitcher() {
       {open && (
         <ul
           role="listbox"
-          className="absolute right-0 z-50 mt-2 w-40 overflow-hidden rounded-xl border border-[var(--color-border)] bg-white py-1 shadow-xl"
+          className="absolute right-0 z-50 mt-2 w-40 overflow-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-elev)] py-1 shadow-xl"
         >
           {SITE.locales.map((loc) => (
             <li key={loc}>
