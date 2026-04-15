@@ -1,4 +1,5 @@
 import { useSyncExternalStore } from "react";
+import { Moon, Sun } from "lucide-react";
 
 const subscribe = (cb: () => void) => {
   window.addEventListener("themechange", cb);
@@ -26,17 +27,22 @@ export default function ThemeToggle({ label }: { label: string }) {
     window.dispatchEvent(new Event("themechange"));
   };
 
+  const Icon = theme === "light" ? Moon : Sun;
+
   return (
     <button
       type="button"
       onClick={toggle}
       aria-label={label}
       title={label}
-      className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[var(--color-border)] bg-[var(--color-bg-elev)] text-[var(--color-fg)] shadow-sm transition hover:border-[var(--color-fg)]"
+      className="group inline-flex h-9 w-9 items-center justify-center rounded-full border border-[var(--color-border)] bg-[var(--color-bg-elev)] text-[var(--color-fg)] shadow-sm transition-all duration-300 hover:scale-110 hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]"
     >
-      <span aria-hidden className="text-sm">
-        {theme === "light" ? "🌙" : "☀️"}
-      </span>
+      <Icon
+        size={16}
+        strokeWidth={2}
+        className="transition-transform duration-500 group-hover:rotate-[360deg]"
+        aria-hidden
+      />
     </button>
   );
 }

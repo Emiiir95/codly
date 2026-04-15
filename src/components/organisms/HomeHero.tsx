@@ -11,7 +11,7 @@ export default function HomeHero() {
   return (
     <section className="relative overflow-hidden">
       <HeroBackground />
-      <div className="relative mx-auto grid w-full max-w-6xl gap-12 px-6 pb-20 pt-16 sm:pt-24 md:grid-cols-12 md:gap-16">
+      <div className="relative mx-auto grid w-full max-w-6xl gap-12 px-6 pb-20 pt-28 sm:pt-36 md:grid-cols-12 md:gap-16">
         <div className="md:col-span-7">
           <div
             className="animate-fade-up mb-5"

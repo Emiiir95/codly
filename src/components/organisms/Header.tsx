@@ -1,107 +1,149 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import {
+  Globe,
+  ShoppingBag,
+  Code2,
+  Search,
+  Megaphone,
+  Share2,
+} from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { localizedPath } from "@/lib/routes";
 import Logo from "@/components/atoms/Logo";
 import ThemeToggle from "@/components/atoms/ThemeToggle";
+import TextReveal from "@/components/atoms/TextReveal";
 import { ButtonLink } from "@/components/atoms/Button";
 import HeaderNav from "@/components/molecules/HeaderNav";
-import NavDropdown from "@/components/molecules/NavDropdown";
+import MegaMenu, { type MegaMenuColumn } from "@/components/molecules/MegaMenu";
 import MenuToggle from "@/components/molecules/MenuToggle";
 import LanguageSwitcher from "@/components/molecules/LanguageSwitcher";
 
 export default function Header() {
   const { t, locale } = useI18n();
+  const router = useRouter();
   const [open, setOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 8);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+    const handler = () => setOpen(false);
+    router.events.on("routeChangeStart", handler);
+    return () => router.events.off("routeChangeStart", handler);
+  }, [router.events]);
 
-  const creationItems = [
+  const currentPath = router.asPath.split("?")[0].split("#")[0];
+  const isActive = (href: string) =>
+    href === "/" ? currentPath === "/" : currentPath === href;
+
+  const servicesColumns: MegaMenuColumn[] = [
     {
-      href: localizedPath("service-vitrine", locale),
-      label: t("nav.serviceVitrine"),
-      desc: "WordPress",
+      title: t("nav.creationSite"),
+      items: [
+        {
+          href: localizedPath("service-vitrine", locale),
+          label: t("nav.serviceVitrine"),
+          desc: "WordPress",
+          Icon: Globe,
+        },
+        {
+          href: localizedPath("service-ecommerce", locale),
+          label: t("nav.serviceEcommerce"),
+          desc: "Shopify",
+          Icon: ShoppingBag,
+        },
+        {
+          href: localizedPath("service-sur-mesure", locale),
+          label: t("nav.serviceSurMesure"),
+          desc: "Next.js / React",
+          Icon: Code2,
+        },
+      ],
     },
     {
-      href: localizedPath("service-ecommerce", locale),
-      label: t("nav.serviceEcommerce"),
-      desc: "Shopify",
-    },
-    {
-      href: localizedPath("service-sur-mesure", locale),
-      label: t("nav.serviceSurMesure"),
-      desc: "Next.js / React",
+      title: t("nav.communication"),
+      items: [
+        {
+          href: localizedPath("service-seo", locale),
+          label: t("nav.serviceSeo"),
+          desc: "SEO naturel Google",
+          Icon: Search,
+        },
+        {
+          href: localizedPath("service-ads", locale),
+          label: t("nav.serviceAds"),
+          desc: "Publicité Google",
+          Icon: Megaphone,
+        },
+        {
+          href: localizedPath("service-social", locale),
+          label: t("nav.serviceSocial"),
+          desc: "TikTok & Instagram",
+          Icon: Share2,
+        },
+      ],
     },
   ];
 
-  const communicationItems = [
-    {
-      href: localizedPath("service-seo", locale),
-      label: t("nav.serviceSeo"),
-      desc: "SEO naturel Google",
-    },
-    {
-      href: localizedPath("service-ads", locale),
-      label: t("nav.serviceAds"),
-      desc: "Publicité Google",
-    },
-    {
-      href: localizedPath("service-social", locale),
-      label: t("nav.serviceSocial"),
-      desc: "TikTok & Instagram",
-    },
-  ];
+  const allServiceHrefs = servicesColumns.flatMap((c) => c.items.map((i) => i.href));
+  const servicesActive = allServiceHrefs.some(isActive);
 
   const simpleNav = [
     { href: localizedPath("realisations", locale), label: t("nav.realisations") },
     { href: localizedPath("blog", locale), label: t("nav.blog") },
     { href: localizedPath("about", locale), label: t("nav.about") },
-    { href: localizedPath("contact", locale), label: t("nav.contact") },
   ];
 
-  // Mobile flat nav (all items)
-  const mobileNav = [
-    {
-      href: localizedPath("service-vitrine", locale),
-      label: t("nav.serviceVitrine"),
-    },
-    {
-      href: localizedPath("service-ecommerce", locale),
-      label: t("nav.serviceEcommerce"),
-    },
-    {
-      href: localizedPath("service-sur-mesure", locale),
-      label: t("nav.serviceSurMesure"),
-    },
-    { href: localizedPath("service-seo", locale), label: t("nav.serviceSeo") },
-    { href: localizedPath("service-ads", locale), label: t("nav.serviceAds") },
-    {
-      href: localizedPath("service-social", locale),
-      label: t("nav.serviceSocial"),
-    },
-    {
-      href: localizedPath("realisations", locale),
-      label: t("nav.realisations"),
-    },
-    { href: localizedPath("blog", locale), label: t("nav.blog") },
-    { href: localizedPath("about", locale), label: t("nav.about") },
-    { href: localizedPath("contact", locale), label: t("nav.contact") },
-  ];
+  const pillItem = (active: boolean) =>
+    `group rounded-full px-3 py-1.5 text-sm font-medium transition-all duration-200 ${
+      active
+        ? "bg-[var(--color-accent-soft)] text-[var(--color-accent)]"
+        : "text-[var(--color-fg-muted)] hover:bg-[var(--color-accent-soft)] hover:text-[var(--color-accent)]"
+    }`;
 
   return (
-    <header
-      className={`sticky top-0 z-40 transition-all ${
-        scrolled
-          ? "border-b border-[var(--color-border)] bg-[var(--color-bg-elev)]/85 backdrop-blur"
-          : "border-b border-transparent bg-transparent"
-      }`}
-    >
+    <header className="fixed inset-x-0 top-0 z-40 bg-transparent">
+      {/* Progressive blur: strongest at the very top, fading out towards the bottom.
+          Stacked layers with increasing blur + stepped mask gradients produce a smoother
+          gradient than a single backdrop-filter would. */}
+      <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
+        <div
+          className="absolute inset-0 backdrop-blur-[3px]"
+          style={{
+            maskImage:
+              "linear-gradient(to bottom, black 0%, black 70%, transparent 100%)",
+            WebkitMaskImage:
+              "linear-gradient(to bottom, black 0%, black 70%, transparent 100%)",
+          }}
+        />
+        <div
+          className="absolute inset-0 backdrop-blur-[8px]"
+          style={{
+            maskImage:
+              "linear-gradient(to bottom, black 0%, black 40%, transparent 70%)",
+            WebkitMaskImage:
+              "linear-gradient(to bottom, black 0%, black 40%, transparent 70%)",
+          }}
+        />
+        <div
+          className="absolute inset-0 backdrop-blur-[16px]"
+          style={{
+            maskImage:
+              "linear-gradient(to bottom, black 0%, black 20%, transparent 45%)",
+            WebkitMaskImage:
+              "linear-gradient(to bottom, black 0%, black 20%, transparent 45%)",
+          }}
+        />
+        <div
+          className="absolute inset-0 backdrop-blur-[28px]"
+          style={{
+            maskImage:
+              "linear-gradient(to bottom, black 0%, black 10%, transparent 30%)",
+            WebkitMaskImage:
+              "linear-gradient(to bottom, black 0%, black 10%, transparent 30%)",
+          }}
+        />
+      </div>
+
       <a
         href="#main"
         className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-[var(--color-accent)] focus:px-3 focus:py-2 focus:text-white"
@@ -109,31 +151,40 @@ export default function Header() {
         {t("common.skipToContent")}
       </a>
 
-      <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-6 py-4">
-        <Logo href={localizedPath("home", locale)} />
+      <div className="mx-auto flex w-full max-w-[1400px] items-center justify-between gap-4 px-8 py-4">
+        {/* Left: Logo */}
+        <div className="flex-1">
+          <Logo href={localizedPath("home", locale)} />
+        </div>
 
-        {/* Desktop nav */}
-        <nav aria-label="Primary" className="hidden items-center gap-6 md:flex">
-          <NavDropdown
-            label={t("nav.creationSite")}
-            items={creationItems}
+        {/* Center: Nav pill */}
+        <nav
+          aria-label="Primary"
+          className="hidden items-center gap-1 rounded-full border border-[var(--color-border)] bg-[var(--color-bg-elev)] p-1 shadow-sm md:flex"
+        >
+          <MegaMenu
+            label={t("nav.services")}
+            columns={servicesColumns}
+            active={servicesActive}
+            activeHref={currentPath}
           />
-          <NavDropdown
-            label={t("nav.communication")}
-            items={communicationItems}
-          />
-          {simpleNav.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="text-sm font-medium text-[var(--color-fg-muted)] transition-colors hover:text-[var(--color-accent)]"
-            >
-              {item.label}
-            </Link>
-          ))}
+          {simpleNav.map((item) => {
+            const active = isActive(item.href);
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                aria-current={active ? "page" : undefined}
+                className={pillItem(active)}
+              >
+                <TextReveal text={item.label} />
+              </Link>
+            );
+          })}
         </nav>
 
-        <div className="flex items-center gap-2">
+        {/* Right: actions */}
+        <div className="flex flex-1 items-center justify-end gap-2">
           <div className="hidden sm:block">
             <ThemeToggle label={t("nav.toggleTheme")} />
           </div>
@@ -141,7 +192,7 @@ export default function Header() {
           <div className="hidden md:block">
             <ButtonLink
               href={localizedPath("contact", locale)}
-              variant="primary"
+              variant="secondary"
             >
               {t("nav.cta")}
             </ButtonLink>
@@ -161,45 +212,41 @@ export default function Header() {
           aria-label="Mobile"
           className="border-t border-[var(--color-border)] bg-[var(--color-bg-elev)] px-6 py-4 md:hidden"
         >
-          {/* Creation group */}
-          <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-[var(--color-accent)]">
-            {t("nav.creationSite")}
-          </p>
-          <ul className="mb-4 flex flex-col gap-1">
-            {creationItems.map((item) => (
-              <li key={item.href}>
-                <Link
-                  href={item.href}
-                  onClick={() => setOpen(false)}
-                  className="block py-1.5 text-sm font-medium text-[var(--color-fg-muted)] hover:text-[var(--color-accent)]"
-                >
-                  {item.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-          {/* Communication group */}
-          <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-[var(--color-accent)]">
-            {t("nav.communication")}
-          </p>
-          <ul className="mb-4 flex flex-col gap-1">
-            {communicationItems.map((item) => (
-              <li key={item.href}>
-                <Link
-                  href={item.href}
-                  onClick={() => setOpen(false)}
-                  className="block py-1.5 text-sm font-medium text-[var(--color-fg-muted)] hover:text-[var(--color-accent)]"
-                >
-                  {item.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-          {/* Simple links */}
+          {servicesColumns.map((col) => (
+            <div key={col.title} className="mb-4">
+              <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-[var(--color-accent)]">
+                {col.title}
+              </p>
+              <ul className="flex flex-col gap-1">
+                {col.items.map((item) => {
+                  const active = isActive(item.href);
+                  const Icon = item.Icon;
+                  return (
+                    <li key={item.href}>
+                      <Link
+                        href={item.href}
+                        onClick={() => setOpen(false)}
+                        aria-current={active ? "page" : undefined}
+                        className={`flex items-center gap-2 border-l-2 py-1.5 pl-3 text-sm font-medium transition-all ${
+                          active
+                            ? "border-[var(--color-accent)] text-[var(--color-accent)]"
+                            : "border-transparent text-[var(--color-fg-muted)] hover:border-[var(--color-accent)] hover:pl-4 hover:text-[var(--color-accent)]"
+                        }`}
+                      >
+                        {Icon && <Icon size={14} strokeWidth={2} aria-hidden />}
+                        {item.label}
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          ))}
           <HeaderNav
-            items={simpleNav}
+            items={[...simpleNav, { href: localizedPath("contact", locale), label: t("nav.contact") }]}
             orientation="vertical"
             onItemClick={() => setOpen(false)}
+            activeHref={currentPath}
           />
           <div className="pt-3">
             <ButtonLink

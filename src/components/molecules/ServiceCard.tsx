@@ -1,7 +1,11 @@
+import { isValidElement, type ComponentType, type ReactNode, type SVGProps } from "react";
+import { Check } from "lucide-react";
 import { ButtonLink } from "@/components/atoms/Button";
 
+type IconType = ComponentType<SVGProps<SVGSVGElement> & { size?: number | string }>;
+
 type Props = {
-  icon: string;
+  icon: IconType | ReactNode;
   title: string;
   description: string;
   bullets: string[];
@@ -23,16 +27,24 @@ export default function ServiceCard({
     accent === "primary"
       ? "bg-[var(--color-accent)] text-white"
       : "bg-[var(--color-accent-2)] text-white";
-  const dotColor =
-    accent === "primary" ? "bg-[var(--color-accent)]" : "bg-[var(--color-accent-2)]";
+  const checkColor =
+    accent === "primary"
+      ? "text-[var(--color-accent)]"
+      : "text-[var(--color-accent-2)]";
+
+  const renderIcon = () => {
+    if (isValidElement(icon)) return icon;
+    const Icon = icon as IconType;
+    return <Icon size={22} strokeWidth={2} aria-hidden />;
+  };
 
   return (
-    <article className="card group flex flex-col gap-5 p-8">
+    <article className="card group flex flex-col gap-5 p-8 transition-transform duration-300 hover:-translate-y-1">
       <div
         aria-hidden
-        className={`inline-flex h-12 w-12 items-center justify-center rounded-xl ${iconBg} text-2xl shadow-sm`}
+        className={`inline-flex h-12 w-12 items-center justify-center rounded-xl ${iconBg} text-2xl shadow-sm transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3`}
       >
-        {icon}
+        {renderIcon()}
       </div>
       <h3 className="text-2xl font-semibold tracking-tight text-[var(--color-fg)]">
         {title}
@@ -40,10 +52,12 @@ export default function ServiceCard({
       <p className="text-[var(--color-fg-muted)]">{description}</p>
       <ul className="space-y-2 text-sm text-[var(--color-fg-muted)]">
         {bullets.map((b) => (
-          <li key={b} className="flex items-center gap-2">
-            <span
+          <li key={b} className="flex items-start gap-2">
+            <Check
+              size={14}
+              strokeWidth={2.5}
+              className={`mt-0.5 shrink-0 ${checkColor}`}
               aria-hidden
-              className={`h-1.5 w-1.5 rounded-full ${dotColor}`}
             />
             {b}
           </li>
