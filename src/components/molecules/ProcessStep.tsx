@@ -6,7 +6,7 @@ type Props = {
 
 export default function ProcessStep({ index, title, body }: Props) {
   return (
-    <li className="card flex flex-col gap-3 p-6">
+    <article className="card flex h-full flex-col gap-3 p-6">
       <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[var(--color-accent-soft)] font-mono text-xs font-semibold text-[var(--color-accent)]">
         {String(index).padStart(2, "0")}
       </span>
@@ -14,6 +14,6 @@ export default function ProcessStep({ index, title, body }: Props) {
       <p className="text-sm leading-relaxed text-[var(--color-fg-muted)]">
         {body}
       </p>
-    </li>
+    </article>
   );
 }

@@ -6,7 +6,7 @@ type Props = {
 
 export default function TestimonialCard({ quote, author, role }: Props) {
   return (
-    <li className="card flex flex-col gap-4 p-6">
+    <article className="card flex h-full flex-col gap-4 p-6">
       <div
         aria-hidden
         className="flex gap-0.5 text-sm text-[var(--color-accent)]"
@@ -22,6 +22,6 @@ export default function TestimonialCard({ quote, author, role }: Props) {
         </strong>
         {role}
       </footer>
-    </li>
+    </article>
   );
 }

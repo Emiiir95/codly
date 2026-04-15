@@ -6,14 +6,16 @@ import type {
 import { getI18nProps } from "@/lib/i18n.server";
 import { buildI18n } from "@/lib/i18n";
 import { SITE } from "@/lib/site";
-import { SERVICES, getServiceBySlug, type ServiceId } from "@/lib/services";
+import {
+  SERVICES,
+  getServiceBySlug,
+  SERVICE_NS,
+  SERVICE_PAGE_KEY,
+  type ServiceId,
+} from "@/lib/services";
 import Seo from "@/components/atoms/Seo";
 import ServiceContent from "@/components/organisms/ServiceContent";
-import {
-  breadcrumbJsonLd,
-  faqJsonLd,
-  serviceJsonLd,
-} from "@/lib/jsonld";
+import { breadcrumbJsonLd, faqJsonLd, serviceJsonLd } from "@/lib/jsonld";
 import { localizedPath } from "@/lib/routes";
 import type { Translations } from "@/lib/i18n";
 import type { Locale } from "@/lib/site";
@@ -42,12 +44,7 @@ export const getStaticProps: GetStaticProps<Props, { slug: string }> = async ({
   const i18n = getI18nProps(locale);
   const service = slug ? getServiceBySlug(slug, i18n.locale) : undefined;
   if (!service) return { notFound: true };
-  return {
-    props: {
-      ...i18n,
-      serviceId: service.id,
-    },
-  };
+  return { props: { ...i18n, serviceId: service.id } };
 };
 
 export default function ServicePage({
@@ -56,8 +53,8 @@ export default function ServicePage({
   serviceId,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   const { t, raw } = buildI18n(locale, translations);
-  const ns = serviceId === "web" ? "serviceWeb" : "serviceSeo";
-  const pageKey = serviceId === "web" ? "service-web" : "service-seo";
+  const ns = SERVICE_NS[serviceId];
+  const pageKey = SERVICE_PAGE_KEY[serviceId];
   const faqItems = raw<Array<{ q: string; a: string }>>("home.faq.items");
 
   return (
@@ -73,10 +70,7 @@ export default function ServicePage({
             description: t(`${ns}.meta.description`),
             pageKey,
             locale,
-            serviceType:
-              serviceId === "web"
-                ? "Website design and development"
-                : "Search engine optimization",
+            serviceType: t(`${ns}.hero.eyebrow`),
           }),
           faqJsonLd(faqItems),
           breadcrumbJsonLd([
