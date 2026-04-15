@@ -13,16 +13,30 @@ export default function HomeHero() {
       <HeroBackground />
       <div className="relative mx-auto grid w-full max-w-6xl gap-12 px-6 pb-20 pt-16 sm:pt-24 md:grid-cols-12 md:gap-16">
         <div className="md:col-span-7">
-          <Eyebrow withDot className="mb-5">
-            {t("home.hero.eyebrow")}
-          </Eyebrow>
-          <GradientHeading as={1} size="xl">
-            {t("home.hero.title")}
-          </GradientHeading>
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-[var(--color-fg-muted)]">
+          <div
+            className="animate-fade-up mb-5"
+            style={{ animationDelay: "0ms" }}
+          >
+            <Eyebrow withDot>{t("home.hero.eyebrow")}</Eyebrow>
+          </div>
+          <div
+            className="animate-fade-up"
+            style={{ animationDelay: "80ms" }}
+          >
+            <GradientHeading as={1} size="xl">
+              {t("home.hero.title")}
+            </GradientHeading>
+          </div>
+          <p
+            className="animate-fade-up mt-6 max-w-xl text-lg leading-relaxed text-fg-muted"
+            style={{ animationDelay: "180ms" }}
+          >
             {t("home.hero.subtitle")}
           </p>
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div
+            className="animate-fade-up mt-8 flex flex-wrap gap-3"
+            style={{ animationDelay: "280ms" }}
+          >
             <ButtonLink
               href={localizedPath("contact", locale)}
               variant="primary"
@@ -37,7 +51,10 @@ export default function HomeHero() {
             </ButtonLink>
           </div>
         </div>
-        <div className="relative md:col-span-5">
+        <div
+          className="animate-fade-in relative md:col-span-5"
+          style={{ animationDelay: "420ms" }}
+        >
           <LighthousePreview />
         </div>
       </div>

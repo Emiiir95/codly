@@ -2,8 +2,17 @@
   "nav": {
     "home": "Inicio",
     "services": "Servicios",
-    "serviceWeb": "Diseño web",
-    "serviceSeo": "SEO",
+    "creationSite": "Creación de sitios web",
+    "communication": "Comunicación",
+    "serviceWeb": "Creación de sitios web",
+    "serviceVitrine": "Sitio corporativo WordPress",
+    "serviceEcommerce": "Tienda Shopify",
+    "serviceSurMesure": "Sitio a medida",
+    "serviceSeo": "SEO Google",
+    "serviceAds": "Google Ads",
+    "serviceSocial": "Redes sociales",
+    "blog": "Blog",
+    "realisations": "Realizaciones",
     "about": "Sobre nosotros",
     "contact": "Contacto",
     "cta": "Empezar un proyecto",
@@ -14,7 +23,8 @@
   "footer": {
     "tagline": "Agencia web especializada en la creación de sitios web profesionales y el posicionamiento natural en Google.",
     "navigation": "Navegación",
-    "services": "Servicios",
+    "services": "Nuestros servicios",
+    "agency": "La agencia",
     "legal": "Información",
     "legalNotice": "Aviso legal",
     "privacy": "Política de privacidad",
@@ -44,20 +54,18 @@
       "title": "Una agencia web completa, del diseño al SEO",
       "subtitle": "Dos saberes complementarios para construir una presencia online que trabaja por ti 24/7.",
       "webTitle": "Creación de sitios web",
-      "webDescription": "Sitios corporativos, e-commerce y rediseños a medida. Diseño moderno, rendimiento óptimo y accesibilidad impecable.",
+      "webDescription": "Sitios WordPress, tiendas Shopify y desarrollo a medida. Diseño moderno, rendimiento óptimo y accesibilidad impecable.",
       "webBullets": [
-        "Sitio corporativo profesional",
-        "E-commerce y marketplaces",
-        "Rediseño estratégico",
-        "Next.js, React, headless CMS"
+        "Sitio corporativo WordPress",
+        "Tienda Shopify",
+        "Desarrollo a medida"
       ],
-      "seoTitle": "Posicionamiento SEO Google",
-      "seoDescription": "SEO técnico, semántico y enlaces. Cada línea de código y cada palabra alineadas con tu estrategia de adquisición.",
+      "seoTitle": "SEO y comunicación",
+      "seoDescription": "SEO Google, Google Ads y redes sociales. Cada acción alineada con tu estrategia de adquisición.",
       "seoBullets": [
-        "Auditoría SEO completa",
-        "Estrategia de contenido",
-        "SEO técnico y Core Web Vitals",
-        "Reporting transparente"
+        "SEO natural Google",
+        "Google Ads (publicidad)",
+        "TikTok e Instagram"
       ],
       "learnMore": "Saber más"
     },
@@ -99,7 +107,7 @@
         },
         {
           "title": "Desarrollo y SEO técnico",
-          "body": "Desarrollo Next.js moderno, integración pixel-perfect, marcado Schema.org, sitemap multilingüe y rendimiento optimizado."
+          "body": "Desarrollo moderno, integración pixel-perfect, marcado Schema.org, sitemap multilingüe y rendimiento optimizado."
         },
         {
           "title": "Lanzamiento y crecimiento",
@@ -134,7 +142,7 @@
       "items": [
         {
           "q": "¿Cuánto cuesta la creación de un sitio web profesional?",
-          "a": "Un sitio corporativo a medida arranca en torno a 4 500 €, un e-commerce desde 9 000 €. Cada presupuesto se elabora tras un encuadre gratuito que refleja con precisión tus necesidades, el volumen de contenidos y la complejidad técnica."
+          "a": "Un sitio corporativo WordPress arranca desde 1 500 €, una tienda Shopify desde 3 000 € y un sitio a medida desde 5 000 €. Cada presupuesto se elabora tras un encuadre gratuito."
         },
         {
           "q": "¿En cuánto tiempo entregan un sitio web?",
@@ -142,15 +150,15 @@
         },
         {
           "q": "¿El SEO Google está incluido?",
-          "a": "El SEO técnico (estructura, etiquetas, rendimiento, Schema.org, sitemap) se integra en cada creación de sitio. El SEO editorial y los enlaces son un acompañamiento mensual opcional."
+          "a": "El SEO técnico se integra en cada creación de sitio. El SEO editorial y los enlaces son un acompañamiento mensual opcional."
         },
         {
           "q": "¿Trabajan con clientes internacionales?",
-          "a": "Sí. Acompañamos a clientes en toda Europa, España y Canadá. El multilingüe (hreflang, contenidos traducidos, SEO local) está en el corazón de nuestros proyectos."
+          "a": "Sí. Acompañamos a clientes en toda Europa, España y Canadá. El multilingüe está en el corazón de nuestros proyectos."
         },
         {
           "q": "¿Seré propietario de mi sitio tras la entrega?",
-          "a": "Por supuesto. Eres propietario del código y de los contenidos. Te formamos en la administración y permanecemos disponibles para cualquier necesidad."
+          "a": "Por supuesto. Eres propietario del código y de los contenidos. Te formamos en la administración y permanecemos disponibles."
         }
       ]
     },
@@ -160,46 +168,42 @@
       "button": "Empezar mi proyecto"
     },
     "content": {
-      "intro": "Agency es una agencia web francesa especializada en la creación de sitios web profesionales y en el posicionamiento natural en Google. Diseñamos experiencias digitales de alto rendimiento para pymes y scale-ups que quieren convertir su sitio en un verdadero motor de adquisición. De la estrategia SEO al diseño UX/UI, del desarrollo Next.js al seguimiento posterior al lanzamiento, pilotamos cada etapa con una exigencia técnica y estética sin concesiones.",
+      "intro": "Agency es una agencia web francesa especializada en la creación de sitios web profesionales y en el posicionamiento natural en Google. Diseñamos experiencias digitales de alto rendimiento para pymes y scale-ups que quieren convertir su sitio en un verdadero motor de adquisición.",
       "paragraphs": [
-        "Un sitio web moderno ya no es un escaparate estático. Es un activo de negocio que debe atraer, convencer y convertir. En Agency diseñamos sitios web que combinan diseño cuidado, una arquitectura SEO friendly y un rendimiento impecable. Nuestros equipos dominan las últimas tecnologías —Next.js, React, TypeScript, headless CMS— para entregar una plataforma duradera, segura y fácil de mantener.",
-        "El posicionamiento Google está en el centro de nuestro enfoque. Desde los primeros mockups trabajamos la estructura semántica, las etiquetas Hn, los datos estructurados Schema.org, los Core Web Vitals y la arquitectura de contenido. Esta integración SEO nativa, junto con una estrategia editorial a medida y enlaces de calidad, propulsa a nuestros clientes al top 3 de Google en sus keywords estratégicas.",
-        "Ya sea la creación de un sitio corporativo, un e-commerce ambicioso, el rediseño de un sitio existente o una estrategia SEO completa, nuestra metodología es la misma: escuchar, medir, diseñar, entregar, iterar. No vendemos efectos especiales ni promesas vacías, sino resultados cuantificables: más tráfico cualificado, más leads, más facturación."
+        "Un sitio web moderno ya no es un escaparate estático. Es un activo de negocio que debe atraer, convencer y convertir. En Agency diseñamos sitios WordPress, tiendas Shopify y plataformas a medida con diseño cuidado, arquitectura SEO friendly y rendimiento impecable.",
+        "El posicionamiento Google está en el centro de nuestro enfoque. Desde los primeros mockups trabajamos la estructura semántica, las etiquetas Hn, los datos estructurados Schema.org, los Core Web Vitals y la arquitectura de contenido.",
+        "Ya sea un sitio WordPress, una tienda Shopify, un desarrollo a medida, Google Ads o redes sociales, nuestra metodología es la misma: escuchar, medir, diseñar, entregar, iterar."
       ]
     }
   },
   "serviceWeb": {
     "meta": {
       "title": "Creación de sitios web profesionales — Agencia web Agency",
-      "description": "Creación de sitios web a medida por una agencia francesa: corporativos, e-commerce, rediseños. Diseño moderno, alto rendimiento y SEO Google integrado."
+      "description": "Creación de sitios web a medida: corporativos WordPress, tiendas Shopify y desarrollo personalizado. Diseño moderno, alto rendimiento y SEO integrado."
     },
     "hero": {
       "eyebrow": "Creación de sitios web",
       "title": "Sitios web profesionales que realmente convierten.",
-      "subtitle": "Agencia web francesa que diseña sitios corporativos, e-commerce y aplicaciones a medida. Diseño premium, SEO integrado, rendimiento impecable."
+      "subtitle": "Agencia web que diseña sitios WordPress, tiendas Shopify y aplicaciones a medida. Diseño premium, SEO integrado, rendimiento impecable."
     },
     "breadcrumb": "Creación de sitios web",
-    "intro": "La creación de un sitio web profesional es una inversión estratégica. No se trata simplemente de existir online, sino de construir un activo de negocio capaz de atraer visitantes cualificados, contar tu historia y transformar prospectos en clientes fieles. En Agency cada sitio que entregamos está pensado para responder a estos tres objetivos, con una exigencia técnica, estética y SEO sin concesiones.",
+    "intro": "La creación de un sitio web profesional es una inversión estratégica. No se trata simplemente de existir online, sino de construir un activo de negocio capaz de atraer visitantes cualificados, contar tu historia y transformar prospectos en clientes fieles.",
     "sections": [
       {
-        "title": "Una agencia web que diseña sitios a medida",
-        "body": "No reutilizamos plantillas genéricas ni temas prefabricados. Cada sitio corporativo, e-commerce o plataforma web que construimos se diseña a partir de tu marca, tu posicionamiento y tu público. Nuestros diseñadores UX/UI realizan mockups interactivos, nuestros desarrolladores los traducen en código limpio y mantenible, y nuestros expertos SEO se aseguran de que cada página esté optimizada para el posicionamiento natural desde la primera línea."
+        "title": "WordPress, Shopify o a medida: la solución adecuada para cada proyecto",
+        "body": "Adaptamos la tecnología a tus necesidades reales. WordPress para un sitio corporativo fácil de actualizar, Shopify para una tienda robusta o código a medida para una plataforma sin límites. Cada solución se despliega con la misma exigencia de diseño, rendimiento y SEO."
       },
       {
-        "title": "Corporativos, e-commerce, rediseños: todas las tipologías",
-        "body": "Tanto si eres una pyme que necesita un primer sitio profesional, una marca e-commerce en crecimiento o una empresa que quiere rediseñar un sitio obsoleto, adaptamos nuestro enfoque a tus retos. Nuestro equipo domina sitios one-page, arquitecturas multilingües complejas, catálogos de productos y integraciones con herramientas de negocio (CRM, ERP, email, analytics)."
-      },
-      {
-        "title": "Next.js, React, TypeScript: un stack moderno y duradero",
-        "body": "Trabajamos con Next.js, el framework React de referencia para la web moderna. Esta tecnología nos permite entregar sitios ultra rápidos (gracias al renderizado estático y al streaming), perfectamente indexables por Google y fáciles de hacer evolucionar. TypeScript asegura cada línea de código, Tailwind CSS garantiza un sistema de diseño coherente y el ecosistema headless CMS te da total autonomía sobre tus contenidos."
+        "title": "Diseño UX/UI pensado para convertir",
+        "body": "Nuestros diseñadores crean interfaces que guían al visitante hacia la acción que importa: solicitud de presupuesto, compra, contacto. Cada sección está diseñada para reducir fricciones y maximizar tu tasa de conversión."
       },
       {
         "title": "Rendimiento y Core Web Vitals en el corazón del proyecto",
-        "body": "Un sitio lento pierde visitantes y baja en los resultados de Google. Monitorizamos en continuo los Core Web Vitals (LCP, INP, CLS), optimizamos las imágenes con AVIF y WebP, precargamos las fuentes críticas y eliminamos el JavaScript inútil. Apuntamos sistemáticamente a un Lighthouse de 100 en los cuatro pilares."
+        "body": "Un sitio lento pierde visitantes y baja en Google. Optimizamos Core Web Vitals (LCP, INP, CLS), imágenes (AVIF, WebP), fuentes y JavaScript. Apuntamos a Lighthouse 100."
       },
       {
-        "title": "Un SEO Google integrado desde la concepción",
-        "body": "A diferencia de muchas agencias web, no tratamos el SEO como un módulo añadido al final. La jerarquía Hn, el marcado Schema.org (Organization, LocalBusiness, Service, FAQPage, BreadcrumbList), los sitemaps multilingües con hreflang, las URLs semánticas y las etiquetas Open Graph forman parte integral del desarrollo. Tu sitio se indexa y se optimiza desde su lanzamiento."
+        "title": "SEO Google integrado desde la concepción",
+        "body": "La jerarquía Hn, el marcado Schema.org, los sitemaps multilingüe, las URLs semánticas y las etiquetas Open Graph forman parte del desarrollo. Tu sitio se indexa desde su lanzamiento."
       }
     ],
     "deliverables": {
@@ -207,8 +211,7 @@
       "items": [
         "Encuadre estratégico y auditoría competitiva",
         "Diseño UX/UI a medida y prototipo interactivo",
-        "Desarrollo Next.js, React y TypeScript",
-        "Integración headless CMS para autonomía total",
+        "Desarrollo WordPress, Shopify o a medida",
         "SEO técnico (Schema.org, sitemap, hreflang)",
         "Optimización Core Web Vitals y Lighthouse 100",
         "Hosting de alto rendimiento y HTTPS",
@@ -222,10 +225,159 @@
       "button": "Pedir presupuesto"
     }
   },
+  "serviceVitrine": {
+    "meta": {
+      "title": "Sitio corporativo WordPress profesional — Agencia web Agency",
+      "description": "Creación de sitio corporativo WordPress a medida. Diseño profesional, rendimiento óptimo, SEO integrado. Presupuesto gratuito en 48h."
+    },
+    "hero": {
+      "eyebrow": "Sitio corporativo WordPress",
+      "title": "Un sitio WordPress profesional que atrae y convierte.",
+      "subtitle": "Creamos sitios WordPress elegantes, rápidos y optimizados para Google. La solución ideal para pymes que quieren brillar online."
+    },
+    "breadcrumb": "Sitio corporativo WordPress",
+    "intro": "WordPress es la plataforma más usada del mundo para sitios corporativos profesionales. Flexible, robusta y fácil de administrar, permite crear sitios elegantes y de alto rendimiento sin conocimientos técnicos.",
+    "sections": [
+      {
+        "title": "WordPress a medida, sin plantillas genéricas",
+        "body": "A diferencia de otras agencias que instalan un tema premium y cambian los colores, desarrollamos temas hijo personalizados que reflejan exactamente tu identidad visual. El resultado: un sitio único, ligero y perfectamente mantenible."
+      },
+      {
+        "title": "SEO Google optimizado desde la configuración",
+        "body": "Configuramos Yoast SEO o Rank Math, estructuramos los permalinks, optimizamos etiquetas título y meta, creamos el sitemap XML e implementamos Schema.org. Tu WordPress parte con buen pie en Google."
+      },
+      {
+        "title": "Administración simple, autonomía total",
+        "body": "Una de las grandes ventajas de WordPress: puedes actualizar tus contenidos tú mismo, sin tocar el código. Te formamos en la interfaz de administración y configuramos bloques Gutenberg personalizados."
+      },
+      {
+        "title": "Rendimiento y seguridad máximos",
+        "body": "Un WordPress mal configurado es lento y vulnerable. Optimizamos el rendimiento (caché, CDN, lazy-load), securizamos la instalación y alojamos en servidores de alto rendimiento con HTTPS."
+      }
+    ],
+    "deliverables": {
+      "title": "Lo que incluye tu sitio corporativo WordPress",
+      "items": [
+        "Diseño UX/UI a medida (sin plantillas genéricas)",
+        "Desarrollo WordPress con tema hijo personalizado",
+        "Configuración SEO completa (Yoast/Rank Math, Schema.org)",
+        "Optimización Core Web Vitals y velocidad de carga",
+        "Hosting de alto rendimiento, HTTPS y backups diarios",
+        "Formación a la administración WordPress",
+        "Formularios de contacto e integración Google Analytics",
+        "Mantenimiento y actualizaciones incluidos 3 meses"
+      ]
+    },
+    "cta": {
+      "title": "Tu sitio corporativo WordPress en 4 semanas",
+      "subtitle": "Presupuesto gratuito en 48h. Sin compromiso.",
+      "button": "Pedir presupuesto"
+    }
+  },
+  "serviceEcommerce": {
+    "meta": {
+      "title": "Tienda e-commerce Shopify — Agencia web Agency",
+      "description": "Creación de tienda Shopify a medida. Diseño profesional, pagos seguros, SEO integrado. Aumenta tus ventas online."
+    },
+    "hero": {
+      "eyebrow": "Tienda Shopify",
+      "title": "Una tienda Shopify que vende, día y noche.",
+      "subtitle": "Creamos tiendas Shopify elegantes, rápidas y optimizadas para la conversión. La solución más robusta para vender online de forma eficaz."
+    },
+    "breadcrumb": "Tienda Shopify",
+    "intro": "Shopify es la plataforma de e-commerce de referencia para las marcas que quieren vender online sin restricciones técnicas. Fiable, segura y escalable, gestiona pagos, inventario, envíos y devoluciones.",
+    "sections": [
+      {
+        "title": "Diseño Shopify a medida, pensado para convertir",
+        "body": "Desarrollamos temas Shopify personalizados que reflejan tu identidad de marca y guían al cliente hacia la compra. Páginas de producto optimizadas, proceso de compra fluido y descripciones persuasivas."
+      },
+      {
+        "title": "Catálogo, variantes y gestión de inventario",
+        "body": "Ya sean 10 o 10 000 productos, estructuramos tu catálogo para una navegación intuitiva. Colecciones organizadas, filtros inteligentes, variantes (talla, color, material) e inventario en tiempo real."
+      },
+      {
+        "title": "Pago seguro y experiencia de compra óptima",
+        "body": "Configuramos Shopify Payments, Stripe, PayPal y otros métodos de pago. Checkout optimizado para reducir el abandono de carrito y emails transaccionales personalizados."
+      },
+      {
+        "title": "SEO e-commerce y posicionamiento de productos",
+        "body": "Las fichas de producto bien posicionadas generan tráfico cualificado a coste cero. Optimizamos URLs, etiquetas, descripciones, Product Schema y sitemaps para que tus productos aparezcan en Google Shopping."
+      }
+    ],
+    "deliverables": {
+      "title": "Lo que incluye tu tienda Shopify",
+      "items": [
+        "Diseño Shopify a medida (tema personalizado)",
+        "Catálogo de productos, variantes y gestión de inventario",
+        "Configuración de pagos (Shopify Payments, Stripe, PayPal)",
+        "SEO e-commerce (Product Schema, URLs, metas)",
+        "Optimización de la tasa de conversión (CRO)",
+        "Emails transaccionales personalizados",
+        "Integración Google Analytics y Facebook Pixel",
+        "Formación a la administración Shopify",
+        "Mantenimiento y soporte incluidos 3 meses"
+      ]
+    },
+    "cta": {
+      "title": "Lanza tu tienda Shopify en 6 semanas",
+      "subtitle": "Presupuesto gratuito, acompañamiento de principio a fin.",
+      "button": "Pedir presupuesto e-commerce"
+    }
+  },
+  "serviceSurMesure": {
+    "meta": {
+      "title": "Sitio web a medida (código) — Agencia web Agency",
+      "description": "Desarrollo de sitios web a medida en Next.js, React y TypeScript. Máximo rendimiento, SEO nativo, sin límites. Para proyectos ambiciosos."
+    },
+    "hero": {
+      "eyebrow": "Sitio a medida",
+      "title": "Un sitio web sin límites, construido de cero.",
+      "subtitle": "Cuando WordPress y Shopify no son suficientes, desarrollamos aplicaciones web a medida en Next.js, React y TypeScript. Rendimiento absoluto, SEO nativo."
+    },
+    "breadcrumb": "Sitio a medida",
+    "intro": "Algunos proyectos necesitan una solución que los CMS del mercado no pueden ofrecer: una plataforma SaaS, un portal cliente complejo, un marketplace o simplemente un sitio con rendimiento imposible de lograr con un tema.",
+    "sections": [
+      {
+        "title": "Next.js, React y TypeScript: el stack más potente de la web",
+        "body": "Desarrollamos con Next.js, el framework React de referencia. Renderizado estático (SSG), renderizado en servidor (SSR), streaming: elegimos la estrategia de renderizado óptima para cada página."
+      },
+      {
+        "title": "Arquitectura headless e integraciones de negocio",
+        "body": "Tu sitio puede integrarse con cualquier herramienta: CMS headless (Sanity, Contentful, Strapi), CRM, ERP, herramientas de email, analytics avanzado y APIs de terceros."
+      },
+      {
+        "title": "Rendimiento absoluto y Core Web Vitals perfectos",
+        "body": "Sin restricciones de CMS, alcanzamos rendimientos imposibles con WordPress o Shopify: Lighthouse 100/100, LCP por debajo de 1 segundo, CLS a cero."
+      },
+      {
+        "title": "SEO nativo y multilingüe",
+        "body": "Marcado Schema.org completo, sitemaps dinámicos, hreflang multilingüe, Open Graph y Twitter Card, renderizado en servidor para una indexación perfecta — todo integrado de forma nativa."
+      }
+    ],
+    "deliverables": {
+      "title": "Lo que incluye tu proyecto a medida",
+      "items": [
+        "Encuadre técnico y arquitectura de la aplicación",
+        "Diseño UX/UI a medida y prototipado",
+        "Desarrollo Next.js, React, TypeScript",
+        "Integración CMS headless y APIs de negocio",
+        "SEO técnico nativo (Schema.org, sitemap, hreflang)",
+        "Tests unitarios y de integración",
+        "Despliegue CI/CD en Vercel o infraestructura dedicada",
+        "Documentación técnica completa",
+        "Mantenimiento evolutivo y soporte dedicado"
+      ]
+    },
+    "cta": {
+      "title": "Hablemos de tu proyecto a medida",
+      "subtitle": "Encuadre técnico gratuito. Estimación en 48h.",
+      "button": "Iniciar el encuadre"
+    }
+  },
   "serviceSeo": {
     "meta": {
       "title": "Agencia SEO y posicionamiento Google — Agency",
-      "description": "Agencia SEO francesa: auditoría, estrategia de contenidos, SEO técnico, enlaces y reporting. Lleva tu sitio al top 3 de Google en tus keywords estratégicas."
+      "description": "Agencia SEO: auditoría, estrategia de contenidos, SEO técnico, enlaces y reporting. Lleva tu sitio al top 3 de Google en tus keywords estratégicas."
     },
     "hero": {
       "eyebrow": "Posicionamiento natural",
@@ -233,27 +385,27 @@
       "subtitle": "Agencia SEO especializada en posicionamiento técnico, editorial y off-site. Convertimos tu sitio en una máquina de tráfico cualificado."
     },
     "breadcrumb": "SEO",
-    "intro": "El posicionamiento natural en Google es el canal de adquisición más rentable de la web: trabaja por ti 24/7, no se detiene cuando cortas el presupuesto publicitario y refuerza la credibilidad de tu marca con cada posición ganada. Pero hay que abordarlo con método. En Agency combinamos SEO técnico, estrategia editorial y enlaces para llevar a nuestros clientes al top 3 de Google en sus keywords más estratégicas.",
+    "intro": "El posicionamiento natural en Google es el canal de adquisición más rentable de la web: trabaja por ti 24/7 y refuerza la credibilidad de tu marca con cada posición ganada.",
     "sections": [
       {
         "title": "Una auditoría SEO completa antes de actuar",
-        "body": "Cada misión arranca con una auditoría profunda: análisis técnico (crawl, indexación, Core Web Vitals, marcado Schema.org), análisis semántico (keywords, intenciones, competencia), análisis off-site (perfil de enlaces, autoridad) y análisis editorial (calidad y relevancia de los contenidos existentes). Este diagnóstico permite construir una estrategia SEO realista y priorizada."
+        "body": "Cada misión arranca con una auditoría profunda: análisis técnico (crawl, indexación, Core Web Vitals), análisis semántico (keywords, intenciones) y análisis off-site (perfil de enlaces)."
       },
       {
         "title": "SEO técnico: las bases invisibles pero decisivas",
-        "body": "El posicionamiento Google empieza por una arquitectura técnica impecable. Optimizamos la velocidad (Core Web Vitals), la estructura Hn, las URLs canónicas, los sitemaps multilingües, hreflang, los datos estructurados Schema.org, la gestión del crawl budget, los errores 404 y 301 y la compatibilidad móvil. Sin estas bases, ningún contenido puede performar de forma sostenible."
+        "body": "Optimizamos la velocidad (Core Web Vitals), la estructura Hn, las URLs canónicas, los sitemaps multilingüe, hreflang y los datos estructurados Schema.org."
       },
       {
         "title": "Estrategia de contenido y semántica",
-        "body": "Google clasifica las páginas que mejor responden a la intención de búsqueda del usuario. Identificamos las keywords con mayor potencial, mapeamos las intenciones (informacional, transaccional, navegacional) y construimos un calendario editorial alineado con tu funnel de conversión. Cada artículo está optimizado semánticamente y enlazado de forma inteligente."
+        "body": "Identificamos keywords con mayor potencial y construimos un calendario editorial alineado con tu funnel de conversión. Cada artículo está optimizado semánticamente."
       },
       {
         "title": "Enlaces y autoridad de dominio",
-        "body": "Los backlinks siguen siendo un factor de ranking clave. Construimos tu perfil de enlaces con un enfoque cualitativo: partnerships temáticos, relaciones públicas digitales, guest-posts en medios relevantes, citaciones locales. Sin granjas de enlaces ni prácticas arriesgadas: solo enlaces que refuerzan tu autoridad de manera duradera."
+        "body": "Construimos tu perfil de enlaces con enfoque cualitativo: partnerships temáticos, relaciones públicas digitales, guest-posts en medios relevantes."
       },
       {
         "title": "Seguimiento, reporting e iteraciones mensuales",
-        "body": "El SEO es una disciplina iterativa. Cada mes seguimos tus posiciones, tu tráfico orgánico, tus conversiones y la evolución de tus competidores. Ajustamos la estrategia, publicamos nuevos contenidos y reforzamos las páginas que rinden. Recibes un reporting claro y accionable, sin jerga inútil."
+        "body": "Cada mes seguimos tus posiciones, tráfico orgánico y conversiones. Recibes un reporting claro y accionable, sin jerga inútil."
       }
     ],
     "deliverables": {
@@ -276,6 +428,147 @@
       "button": "Quiero mi auditoría SEO"
     }
   },
+  "serviceAds": {
+    "meta": {
+      "title": "Google Ads (SEM) — Agencia de publicidad Agency",
+      "description": "Agencia Google Ads: creación, optimización y gestión de campañas publicitarias Google. ROI maximizado, segmentación precisa, reporting transparente."
+    },
+    "hero": {
+      "eyebrow": "Publicidad en Google",
+      "title": "Campañas Google Ads que generan clientes, no solo clics.",
+      "subtitle": "Creamos y optimizamos tus campañas Google Ads para atraer prospectos cualificados en el momento adecuado. Presupuesto controlado, ROI medido, resultados inmediatos."
+    },
+    "breadcrumb": "Google Ads",
+    "intro": "Google Ads permite aparecer inmediatamente en los primeros resultados de búsqueda, sin esperar los 6–12 meses necesarios para el SEO orgánico. Es una palanca potente para generar leads rápidamente o complementar tu estrategia SEO.",
+    "sections": [
+      {
+        "title": "Segmentación precisa: las keywords correctas en el momento justo",
+        "body": "Una campaña Google Ads eficaz comienza con una selección rigurosa de keywords. Analizamos volúmenes de búsqueda, competencia, coste por clic e intención de compra para dirigirnos solo a las consultas que convierten."
+      },
+      {
+        "title": "Anuncios que captan clics",
+        "body": "Redactamos anuncios de texto y anuncios responsivos que destacan: títulos atractivos, descripciones orientadas a beneficios, extensiones de anuncio. Cada anuncio se prueba en A/B."
+      },
+      {
+        "title": "Landing pages optimizadas para la conversión",
+        "body": "Buen tráfico hacia una mala página es presupuesto perdido. Optimizamos o creamos landing pages dedicadas con mensaje alineado con el anuncio, pruebas sociales y llamada a la acción clara."
+      },
+      {
+        "title": "Optimización continua y reporting mensual",
+        "body": "Analizamos diariamente el rendimiento de tus campañas: CTR, CPC, tasa de conversión, coste por adquisición. Ajustamos pujas, pausamos keywords y amplificamos lo que funciona."
+      }
+    ],
+    "deliverables": {
+      "title": "Lo que incluye tu gestión de Google Ads",
+      "items": [
+        "Auditoría y estrategia de campañas",
+        "Investigación y selección de keywords",
+        "Creación de campañas y grupos de anuncios",
+        "Redacción de anuncios y tests A/B",
+        "Optimización de landing pages",
+        "Configuración del seguimiento de conversiones",
+        "Gestión de pujas y presupuesto",
+        "Informe mensual de rendimiento (CTR, CPC, ROI)",
+        "Experto Google Ads dedicado"
+      ]
+    },
+    "cta": {
+      "title": "Lanza tu primera campaña Google Ads",
+      "subtitle": "Auditoría gratuita de tus campañas actuales. Presupuesto en 48h.",
+      "button": "Pedir auditoría Ads"
+    }
+  },
+  "serviceSocial": {
+    "meta": {
+      "title": "Gestión redes sociales TikTok e Instagram — Agencia Agency",
+      "description": "Agencia de redes sociales: estrategia, creación de contenido y gestión de tu presencia en TikTok e Instagram. Desarrolla tu audiencia."
+    },
+    "hero": {
+      "eyebrow": "Redes sociales",
+      "title": "Una presencia social que construye tu marca y atrae clientes.",
+      "subtitle": "Gestionamos tu presencia en TikTok e Instagram: estrategia de contenido, creación de visuales, publicación y análisis. Tu marca brilla, tu comunidad crece."
+    },
+    "breadcrumb": "Redes sociales",
+    "intro": "Las redes sociales son imprescindibles para llegar a tu audiencia donde pasa su tiempo. TikTok e Instagram son hoy las plataformas con mayor potencial de crecimiento orgánico para las marcas.",
+    "sections": [
+      {
+        "title": "Estrategia de contenido adaptada a tu marca",
+        "body": "Cada marca tiene su propia voz, valores y público. Comenzamos con una auditoría de tu presencia actual, un análisis de tu audiencia objetivo y un estudio de tus competidores para definir una línea editorial coherente."
+      },
+      {
+        "title": "TikTok: captar la atención, crear viralidad",
+        "body": "TikTok es la plataforma de mayor crecimiento en el mundo. Sus algoritmos favorecen el descubrimiento orgánico, lo que permite a marcas de cualquier tamaño alcanzar millones de personas. Creamos contenido de vídeo corto, dinámico y auténtico."
+      },
+      {
+        "title": "Instagram: construir una comunidad comprometida",
+        "body": "Instagram sigue siendo la referencia para el branding visual y la relación con el cliente. Gestionamos tu feed, Reels y Stories con consistencia estética y un calendario editorial pensado para maximizar el engagement."
+      },
+      {
+        "title": "Análisis del rendimiento y optimización",
+        "body": "Analizamos las métricas que realmente importan: alcance, impresiones, tasa de engagement, crecimiento de la audiencia y conversiones. Estos análisis alimentan una mejora continua de nuestra estrategia editorial."
+      }
+    ],
+    "deliverables": {
+      "title": "Lo que incluye tu gestión de redes sociales",
+      "items": [
+        "Auditoría de presencia actual y estrategia editorial",
+        "Calendario editorial mensual (TikTok + Instagram)",
+        "Creación de visuales, vídeos y textos",
+        "Publicación y gestión diaria de cuentas",
+        "Gestión de comunidad (respuesta a comentarios)",
+        "Estrategia de hashtags y colaboraciones con creadores",
+        "Informe mensual de rendimiento (alcance, engagement)",
+        "Community manager dedicado"
+      ]
+    },
+    "cta": {
+      "title": "Desarrolla tu presencia en redes sociales",
+      "subtitle": "Auditoría gratuita de tus cuentas. Primer mes sin compromiso.",
+      "button": "Pedir auditoría redes sociales"
+    }
+  },
+  "blog": {
+    "meta": {
+      "title": "Blog — Consejos web, SEO y marketing digital — Agency",
+      "description": "Consejos, guías y estudios de caso sobre creación de sitios web, SEO Google, Google Ads y redes sociales. El blog de la agencia Agency."
+    },
+    "hero": {
+      "eyebrow": "El blog Agency",
+      "title": "Recursos para impulsar tu presencia online.",
+      "subtitle": "Guías prácticas, estudios de caso y consejos de expertos sobre creación de sitios, SEO, Google Ads y redes sociales."
+    },
+    "breadcrumb": "Blog",
+    "comingSoon": "Artículos próximamente",
+    "comingSoonBody": "Nuestro equipo está preparando guías completas y estudios de caso para ayudarte a desarrollar tu presencia online. ¡Vuelve pronto!",
+    "categories": {
+      "all": "Todos los artículos",
+      "seo": "SEO",
+      "web": "Creación de sitios",
+      "ads": "Google Ads",
+      "social": "Redes sociales"
+    }
+  },
+  "realisations": {
+    "meta": {
+      "title": "Realizaciones y portfolio — Agency, agencia web y SEO",
+      "description": "Descubre nuestras realizaciones: sitios web, tiendas e-commerce, estrategias SEO y campañas digitales. Proyectos reales, resultados medibles."
+    },
+    "hero": {
+      "eyebrow": "Nuestras realizaciones",
+      "title": "Proyectos que transformaron ambiciones en resultados.",
+      "subtitle": "De startups a grupos internacionales, descubre cómo ayudamos a nuestros clientes a construir una presencia online que rinde de verdad."
+    },
+    "breadcrumb": "Realizaciones",
+    "comingSoon": "Estudios de caso en preparación",
+    "comingSoonBody": "Estamos preparando estudios de caso detallados para mostrarte nuestros procesos, decisiones técnicas y resultados obtenidos para cada cliente. ¡Vuelve pronto!",
+    "filters": {
+      "all": "Todos los proyectos",
+      "web": "Sitios web",
+      "ecommerce": "E-commerce",
+      "seo": "SEO",
+      "ads": "Google Ads"
+    }
+  },
   "about": {
     "meta": {
       "title": "Sobre nosotros — Agency, agencia web y SEO en París",
@@ -290,19 +583,19 @@
     "sections": [
       {
         "title": "Una agencia web independiente y comprometida",
-        "body": "Agency nació de una convicción simple: es posible entregar sitios web a la vez elegantes, performantes y perfectamente posicionados, sin compromisos ni discursos comerciales vacíos. Independientes, elegimos a nuestros clientes igual que elegimos nuestras herramientas: con exigencia. Cada proyecto cuenta con un equipo dedicado, un interlocutor único y una metodología probada."
+        "body": "Agency nació de una convicción simple: es posible entregar sitios web elegantes, performantes y perfectamente posicionados, sin compromisos. Independientes, elegimos a nuestros clientes igual que elegimos nuestras herramientas: con exigencia."
       },
       {
         "title": "Un equipo pluridisciplinar",
-        "body": "Diseñadores, desarrolladores front-end y back-end, expertos SEO, redactores web: nuestro equipo cubre todas las experticias necesarias para el éxito de un proyecto digital ambicioso. Trabajamos en ciclos cortos, con rituales claros, y te involucramos en los momentos clave."
+        "body": "Diseñadores, desarrolladores front-end y back-end, expertos SEO, redactores web: nuestro equipo cubre todas las experticias necesarias para el éxito de un proyecto digital ambicioso."
       },
       {
         "title": "Valores que guían cada proyecto",
-        "body": "Creemos en la transparencia (calendario, presupuesto, reporting), en la exigencia técnica (Lighthouse 100, Core Web Vitals en verde), en la pedagogía (siempre entenderás lo que hacemos y por qué) y en el largo plazo (nuestros clientes permanecen en media 4 años con nosotros). No son eslóganes: son nuestros criterios de decisión a diario."
+        "body": "Creemos en la transparencia, en la exigencia técnica (Lighthouse 100, Core Web Vitals en verde), en la pedagogía y en el largo plazo (nuestros clientes permanecen en media 4 años con nosotros)."
       },
       {
         "title": "París, la francofonía y más allá",
-        "body": "Con sede en París, acompañamos a clientes en toda la francofonía, en España y en Canadá. Nuestra maestría del multilingüe (hreflang, contenidos traducidos, SEO local) nos permite construir sitios web que rinden en varios mercados a la vez."
+        "body": "Con sede en París, acompañamos a clientes en toda la francofonía, en España y en Canadá. Nuestra maestría del multilingüe nos permite construir sitios que rinden en varios mercados."
       }
     ],
     "values": {
@@ -385,7 +678,7 @@
     "sections": [
       {
         "title": "Editor del sitio",
-        "body": "El sitio Agency está editado por Agency SAS, sociedad por acciones simplificada con un capital de 10 000 €, inscrita en el Registro Mercantil de París con el número 123 456 789, con sede social en 12 rue de la République, 75001 París. NIF intracomunitario: FR12345678901. Director de la publicación: el representante legal de la sociedad."
+        "body": "El sitio Agency está editado por Agency SAS, sociedad por acciones simplificada con un capital de 10 000 €, inscrita en el Registro Mercantil de París con el número 123 456 789, con sede social en 12 rue de la République, 75001 París."
       },
       {
         "title": "Alojamiento",
@@ -393,11 +686,11 @@
       },
       {
         "title": "Propiedad intelectual",
-        "body": "El conjunto de contenidos del sitio (textos, imágenes, logos, código fuente, elementos gráficos) es propiedad exclusiva de Agency SAS, salvo mención contraria. Toda reproducción, representación, modificación, publicación o adaptación, total o parcial, está prohibida sin autorización escrita previa."
+        "body": "El conjunto de contenidos del sitio es propiedad exclusiva de Agency SAS, salvo mención contraria. Toda reproducción o adaptación está prohibida sin autorización escrita previa."
       },
       {
         "title": "Responsabilidad",
-        "body": "Agency SAS se esfuerza por ofrecer información exacta y actualizada. El editor no puede sin embargo garantizar la exactitud, la precisión o la exhaustividad de la información puesta a disposición. El usuario reconoce utilizar esta información bajo su exclusiva responsabilidad."
+        "body": "Agency SAS se esfuerza por ofrecer información exacta pero no puede garantizar su exhaustividad. El usuario la utiliza bajo su exclusiva responsabilidad."
       },
       {
         "title": "Contacto",
@@ -415,15 +708,15 @@
     "sections": [
       {
         "title": "Responsable del tratamiento",
-        "body": "El responsable del tratamiento de los datos recogidos en este sitio es Agency SAS, 12 rue de la République, 75001 París. Para cualquier consulta sobre tus datos personales puedes escribirnos a contact@agency.example.com."
+        "body": "El responsable del tratamiento de los datos recogidos en este sitio es Agency SAS, 12 rue de la République, 75001 París. Escríbenos a contact@agency.example.com para cualquier consulta."
       },
       {
         "title": "Datos recogidos",
-        "body": "Solo recogemos los datos necesarios para tramitar tu solicitud a través del formulario de contacto: nombre, email profesional, empresa (opcional), asunto y contenido del mensaje. No recogemos ningún dato sensible en el sentido del RGPD."
+        "body": "Solo recogemos los datos necesarios para tramitar tu solicitud: nombre, email, empresa (opcional), asunto y mensaje. No recogemos datos sensibles."
       },
       {
         "title": "Finalidades y base legal",
-        "body": "Los datos se tratan para responder a tu solicitud y, en su caso, establecer una relación comercial. La base legal es tu consentimiento explícito (casilla del formulario) y la ejecución de medidas precontractuales adoptadas a tu petición."
+        "body": "Los datos se tratan para responder a tu solicitud y establecer una relación comercial. La base legal es tu consentimiento explícito."
       },
       {
         "title": "Plazo de conservación",
@@ -431,11 +724,11 @@
       },
       {
         "title": "Tus derechos",
-        "body": "Conforme al RGPD, dispones de derecho de acceso, rectificación, supresión, limitación, oposición y portabilidad de tus datos, así como del derecho a definir el destino de tus datos tras tu fallecimiento. Puedes ejercer estos derechos escribiéndonos a contact@agency.example.com. También tienes derecho a presentar una reclamación ante la AEPD."
+        "body": "Conforme al RGPD, dispones de derecho de acceso, rectificación, supresión, limitación, oposición y portabilidad. Escríbenos a contact@agency.example.com para ejercerlos."
       },
       {
         "title": "Cookies",
-        "body": "Este sitio no utiliza cookies publicitarias ni tracking de terceros. Solo se usan cookies técnicas necesarias para el correcto funcionamiento, sin identificación personal."
+        "body": "Este sitio no utiliza cookies publicitarias ni tracking de terceros. Solo se usan cookies técnicas necesarias, sin identificación personal."
       }
     ]
   },

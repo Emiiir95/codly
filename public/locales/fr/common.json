@@ -2,8 +2,17 @@
   "nav": {
     "home": "Accueil",
     "services": "Services",
+    "creationSite": "Création de site internet",
+    "communication": "Communication",
     "serviceWeb": "Création de site internet",
+    "serviceVitrine": "Site vitrine WordPress",
+    "serviceEcommerce": "Site e-commerce Shopify",
+    "serviceSurMesure": "Site sur mesure",
     "serviceSeo": "Référencement SEO",
+    "serviceAds": "Google Ads",
+    "serviceSocial": "Réseaux sociaux",
+    "blog": "Blog",
+    "realisations": "Réalisations",
     "about": "À propos",
     "contact": "Contact",
     "cta": "Démarrer un projet",
@@ -14,7 +23,8 @@
   "footer": {
     "tagline": "Agence web spécialisée dans la création de sites internet professionnels et le référencement naturel sur Google.",
     "navigation": "Navigation",
-    "services": "Services",
+    "services": "Nos services",
+    "agency": "L'agence",
     "legal": "Informations",
     "legalNotice": "Mentions légales",
     "privacy": "Politique de confidentialité",
@@ -46,18 +56,16 @@
       "webTitle": "Création de site internet",
       "webDescription": "Sites vitrines, e-commerce et refontes sur-mesure. Design moderne, performances optimales, accessibilité irréprochable.",
       "webBullets": [
-        "Site vitrine professionnel",
-        "E-commerce & marketplaces",
-        "Refonte stratégique",
-        "Next.js, React, headless CMS"
+        "Site vitrine WordPress",
+        "E-commerce Shopify",
+        "Site sur mesure (code)"
       ],
-      "seoTitle": "Référencement naturel Google",
-      "seoDescription": "SEO technique, sémantique et netlinking. Nous alignons chaque ligne de code et chaque mot avec votre stratégie d'acquisition.",
+      "seoTitle": "Référencement & communication",
+      "seoDescription": "SEO Google, Google Ads et réseaux sociaux. Nous alignons chaque action marketing avec votre stratégie d'acquisition.",
       "seoBullets": [
-        "Audit SEO complet",
-        "Stratégie de contenu",
-        "SEO technique & Core Web Vitals",
-        "Suivi et reporting transparent"
+        "Référencement naturel SEO",
+        "Google Ads (SEA)",
+        "Réseaux sociaux TikTok & Instagram"
       ],
       "learnMore": "En savoir plus"
     },
@@ -134,7 +142,7 @@
       "items": [
         {
           "q": "Combien coûte la création d'un site internet professionnel ?",
-          "a": "Un site vitrine sur-mesure démarre autour de 4 500 €, un site e-commerce à partir de 9 000 €. Chaque devis est établi après un cadrage gratuit pour refléter précisément vos besoins, le volume de contenus et la complexité technique."
+          "a": "Un site vitrine WordPress démarre autour de 1 500 €, un site e-commerce Shopify à partir de 3 000 €, et un site sur mesure dès 5 000 €. Chaque devis est établi après un cadrage gratuit."
         },
         {
           "q": "En combien de temps pouvez-vous livrer mon site ?",
@@ -142,11 +150,11 @@
         },
         {
           "q": "Le référencement Google est-il inclus ?",
-          "a": "Le SEO technique (structure, balises, performance, Schema.org, sitemap) est intégré à chaque création de site. Le référencement éditorial et le netlinking sont proposés en accompagnement mensuel si vous souhaitez accélérer votre croissance."
+          "a": "Le SEO technique est intégré à chaque création de site. Le référencement éditorial et le netlinking sont proposés en accompagnement mensuel."
         },
         {
           "q": "Travaillez-vous avec des clients hors de France ?",
-          "a": "Oui. Nous accompagnons des clients dans toute l'Europe francophone, en Espagne et au Canada. Notre maîtrise du multilingue (hreflang, contenus traduits, SEO local) est au cœur de nos projets."
+          "a": "Oui. Nous accompagnons des clients dans toute l'Europe francophone, en Espagne et au Canada. Notre maîtrise du multilingue est au cœur de nos projets."
         },
         {
           "q": "Puis-je reprendre la main sur mon site après la livraison ?",
@@ -160,46 +168,42 @@
       "button": "Démarrer mon projet"
     },
     "content": {
-      "intro": "Agency est une agence web française spécialisée dans la création de sites internet professionnels et le référencement naturel Google. Nous concevons des expériences digitales performantes pour les TPE, PME et scale-up qui veulent transformer leur site en véritable moteur d'acquisition. De la stratégie SEO au design UX/UI, du développement Next.js au suivi post-lancement, nous pilotons chaque étape avec une exigence technique et esthétique sans compromis.",
+      "intro": "Agency est une agence web française spécialisée dans la création de sites internet professionnels et le référencement naturel Google. Nous concevons des expériences digitales performantes pour les TPE, PME et scale-up qui veulent transformer leur site en véritable moteur d'acquisition.",
       "paragraphs": [
-        "Un site internet moderne ne se résume plus à une vitrine statique. C'est un actif business qui doit attirer, convaincre et convertir. Chez Agency, nous concevons des sites web qui combinent un design soigné, une architecture SEO friendly et des performances irréprochables. Nos équipes maîtrisent les dernières technologies — Next.js, React, TypeScript, headless CMS — pour vous livrer une plateforme durable, sécurisée et simple à maintenir.",
-        "Le référencement Google est au cœur de notre approche. Dès les premières maquettes, nous travaillons la structure sémantique, les balises Hn, les données structurées Schema.org, les Core Web Vitals et l'architecture de contenu. Cette intégration SEO native, combinée à une stratégie éditoriale sur-mesure et à un netlinking de qualité, nous permet de propulser nos clients dans le top 3 de Google sur leurs mots-clés stratégiques.",
-        "Qu'il s'agisse d'une création de site vitrine, d'un site e-commerce ambitieux, d'une refonte de site web ou d'une stratégie SEO complète, notre méthodologie reste la même : écouter, mesurer, concevoir, livrer, itérer. Nous ne vendons ni effets spéciaux ni promesses creuses, mais des résultats quantifiables : plus de trafic qualifié, plus de leads, plus de chiffre d'affaires."
+        "Un site internet moderne ne se résume plus à une vitrine statique. C'est un actif business qui doit attirer, convaincre et convertir. Chez Agency, nous concevons des sites web qui combinent un design soigné, une architecture SEO friendly et des performances irréprochables.",
+        "Le référencement Google est au cœur de notre approche. Dès les premières maquettes, nous travaillons la structure sémantique, les balises Hn, les données structurées Schema.org, les Core Web Vitals et l'architecture de contenu.",
+        "Qu'il s'agisse d'un site vitrine WordPress, d'un site e-commerce Shopify, d'un site sur mesure, d'une campagne Google Ads ou d'une stratégie réseaux sociaux, notre méthodologie reste la même : écouter, mesurer, concevoir, livrer, itérer."
       ]
     }
   },
   "serviceWeb": {
     "meta": {
       "title": "Création de site internet professionnel — Agence web Agency",
-      "description": "Création de site internet sur-mesure par une agence web française : sites vitrines, e-commerce, refontes. Design moderne, performance optimale et référencement Google intégré."
+      "description": "Création de site internet sur-mesure par une agence web française : sites vitrines WordPress, e-commerce Shopify, sites sur mesure. Design moderne, performance optimale et référencement Google intégré."
     },
     "hero": {
       "eyebrow": "Création de site internet",
       "title": "Des sites internet professionnels qui convertissent vraiment.",
-      "subtitle": "Agence web française, nous concevons des sites vitrines, e-commerce et applications sur-mesure. Design haut de gamme, SEO intégré, performances irréprochables."
+      "subtitle": "Agence web française, nous concevons des sites vitrines WordPress, des boutiques Shopify et des sites sur mesure. Design haut de gamme, SEO intégré, performances irréprochables."
     },
     "breadcrumb": "Création de site internet",
-    "intro": "La création d'un site internet professionnel est un investissement stratégique. Il ne s'agit pas simplement d'avoir une présence en ligne, mais de bâtir un actif business capable d'attirer des visiteurs qualifiés, de raconter votre histoire et de transformer vos prospects en clients fidèles. Chez Agency, chaque site que nous livrons est pensé pour répondre à ces trois objectifs, avec une exigence technique, esthétique et SEO sans compromis.",
+    "intro": "La création d'un site internet professionnel est un investissement stratégique. Il ne s'agit pas simplement d'avoir une présence en ligne, mais de bâtir un actif business capable d'attirer des visiteurs qualifiés, de raconter votre histoire et de transformer vos prospects en clients fidèles.",
     "sections": [
       {
-        "title": "Une agence web qui conçoit des sites sur-mesure",
-        "body": "Nous ne réutilisons pas de thèmes génériques ni de templates tout faits. Chaque site vitrine, site e-commerce ou plateforme web que nous construisons est conçu sur-mesure à partir de votre marque, de votre positionnement et de votre cible. Nos designers UX/UI réalisent des maquettes interactives, nos développeurs les transposent en code propre et maintenable, et nos experts SEO veillent à ce que chaque page soit optimisée pour le référencement naturel dès la première ligne."
+        "title": "WordPress, Shopify ou sur mesure : la bonne solution pour chaque projet",
+        "body": "Nous adaptons la technologie à vos besoins réels. WordPress pour un site vitrine rapide à mettre à jour, Shopify pour une boutique e-commerce robuste, ou du code sur mesure pour une plateforme sans limites. Chaque solution est déployée avec la même exigence de design, de performance et de référencement."
       },
       {
-        "title": "Sites vitrines, e-commerce, refontes : toutes les typologies couvertes",
-        "body": "Que vous soyez une TPE qui a besoin d'un premier site vitrine professionnel, une marque e-commerce en pleine croissance ou une entreprise qui souhaite refondre un site obsolète, nous adaptons notre approche à vos enjeux. Notre équipe maîtrise aussi bien les sites one-page que les architectures complexes multilingues, les catalogues produits sophistiqués et les intégrations avec des outils métiers (CRM, ERP, outils d'emailing, analytics)."
-      },
-      {
-        "title": "Next.js, React, TypeScript : un stack moderne et durable",
-        "body": "Nous travaillons avec Next.js, le framework React de référence pour le web moderne. Cette technologie nous permet de livrer des sites ultra-rapides (grâce au rendu statique et au streaming), parfaitement indexables par Google et faciles à faire évoluer. TypeScript sécurise chaque ligne de code, Tailwind CSS garantit un design system cohérent, et l'écosystème headless CMS vous donne une autonomie totale sur vos contenus."
+        "title": "Design UX/UI pensé pour convertir",
+        "body": "Nos designers créent des interfaces qui guident le visiteur vers l'action qui compte : demande de devis, achat, prise de contact. Une esthétique moderne ne suffit pas — chaque section est pensée pour réduire les frictions et maximiser votre taux de conversion."
       },
       {
         "title": "Performance et Core Web Vitals au cœur du projet",
-        "body": "Un site lent perd des visiteurs et recule dans les résultats Google. Nous monitorons en permanence les Core Web Vitals (LCP, INP, CLS), optimisons les images avec les formats AVIF et WebP, préchargeons les polices critiques et éliminons le JavaScript inutile. Nos livraisons visent systématiquement un score Lighthouse de 100 sur les quatre piliers : Performance, Accessibilité, Best Practices et SEO."
+        "body": "Un site lent perd des visiteurs et recule dans les résultats Google. Nous optimisons les Core Web Vitals (LCP, INP, CLS), les images (AVIF, WebP), les polices et le JavaScript. Nos livraisons visent un score Lighthouse de 100 sur les quatre piliers."
       },
       {
         "title": "Un référencement Google intégré dès la conception",
-        "body": "Contrairement à beaucoup d'agences web, nous ne traitons pas le SEO comme un module ajouté à la fin. La hiérarchie Hn, le balisage Schema.org (Organization, LocalBusiness, Service, FAQPage, BreadcrumbList), les sitemaps multilingues avec hreflang, les URLs sémantiques et les balises Open Graph font partie intégrante du développement. Votre site est indexé et optimisé dès son lancement."
+        "body": "La hiérarchie Hn, le balisage Schema.org, les sitemaps multilingues, les URLs sémantiques et les balises Open Graph font partie intégrante du développement. Votre site est indexé et optimisé dès son lancement."
       }
     ],
     "deliverables": {
@@ -207,8 +211,7 @@
       "items": [
         "Cadrage stratégique et audit concurrentiel",
         "Design UX/UI sur-mesure et prototypage interactif",
-        "Développement Next.js, React et TypeScript",
-        "Intégration headless CMS pour une autonomie totale",
+        "Développement WordPress, Shopify ou sur mesure",
         "Référencement technique (Schema.org, sitemap, hreflang)",
         "Optimisation Core Web Vitals et score Lighthouse 100",
         "Hébergement haute performance et HTTPS",
@@ -222,6 +225,155 @@
       "button": "Demander un devis"
     }
   },
+  "serviceVitrine": {
+    "meta": {
+      "title": "Site vitrine WordPress professionnel — Agence web Agency",
+      "description": "Création de site vitrine WordPress sur mesure. Design professionnel, performance optimale, SEO intégré. Devis gratuit sous 48h."
+    },
+    "hero": {
+      "eyebrow": "Site vitrine WordPress",
+      "title": "Un site vitrine WordPress professionnel qui attire et convertit.",
+      "subtitle": "Nous créons des sites vitrines WordPress élégants, rapides et optimisés pour le référencement Google. La solution idéale pour les TPE et PME qui veulent briller en ligne."
+    },
+    "breadcrumb": "Site vitrine WordPress",
+    "intro": "WordPress est la plateforme la plus utilisée au monde pour les sites vitrines professionnels. Flexible, robuste et facile à administrer, il permet de créer des sites élégants et performants sans avoir besoin de compétences techniques. Chez Agency, nous personnalisons WordPress à 100 % — pas de thèmes génériques, un design taillé sur mesure pour votre marque.",
+    "sections": [
+      {
+        "title": "WordPress sur mesure, pas de thème générique",
+        "body": "Contrairement à beaucoup d'agences qui installent un thème premium et changent les couleurs, nous développons des thèmes enfants ou des sites headless WordPress qui reflètent exactement votre identité visuelle. Le résultat : un site unique, léger et parfaitement maintenable."
+      },
+      {
+        "title": "Optimisé pour le référencement Google dès la configuration",
+        "body": "Nous configurons Yoast SEO ou Rank Math, structurons les permaliens, optimisons les balises titre et méta, créons le sitemap XML et mettons en place les données structurées Schema.org. Votre site WordPress part du bon pied sur Google."
+      },
+      {
+        "title": "Administration simple, autonomie totale",
+        "body": "L'un des grands avantages de WordPress : vous pouvez mettre à jour vos contenus vous-même, sans toucher au code. Nous vous formons à l'interface d'administration et configurons des blocs Gutenberg personnalisés pour une expérience d'édition simple et agréable."
+      },
+      {
+        "title": "Performance et sécurité maximales",
+        "body": "Un WordPress mal configuré est lent et vulnérable. Nous optimisons les performances (cache, CDN, images lazy-load), sécurisons l'installation (mises à jour automatiques, pare-feu, sauvegardes quotidiennes) et hébergeons sur des serveurs haute performance avec HTTPS."
+      }
+    ],
+    "deliverables": {
+      "title": "Ce que comprend votre site vitrine WordPress",
+      "items": [
+        "Design UX/UI sur mesure (pas de thème générique)",
+        "Développement WordPress avec thème enfant personnalisé",
+        "Configuration SEO complète (Yoast/Rank Math, Schema.org)",
+        "Optimisation Core Web Vitals et vitesse de chargement",
+        "Hébergement haute performance, HTTPS, sauvegardes",
+        "Formation à l'administration WordPress",
+        "Intégration de formulaires de contact et de suivi Google Analytics",
+        "Maintenance et mises à jour incluses 3 mois"
+      ]
+    },
+    "cta": {
+      "title": "Votre site vitrine WordPress en 4 semaines",
+      "subtitle": "Devis gratuit sous 48h. Aucun engagement.",
+      "button": "Demander un devis"
+    }
+  },
+  "serviceEcommerce": {
+    "meta": {
+      "title": "Boutique e-commerce Shopify — Agence web Agency",
+      "description": "Création de boutique e-commerce Shopify sur mesure. Design professionnel, paiement sécurisé, SEO intégré. Augmentez vos ventes en ligne."
+    },
+    "hero": {
+      "eyebrow": "Site e-commerce Shopify",
+      "title": "Une boutique Shopify qui vend, jour et nuit.",
+      "subtitle": "Nous créons des boutiques e-commerce Shopify élégantes, rapides et optimisées pour la conversion. La solution la plus robuste pour vendre en ligne efficacement."
+    },
+    "breadcrumb": "Site e-commerce Shopify",
+    "intro": "Shopify est la plateforme e-commerce de référence pour les marques qui veulent vendre en ligne sans contraintes techniques. Fiable, sécurisée et évolutive, elle gère les paiements, les stocks, les livraisons et les retours. Chez Agency, nous personnalisons Shopify pour créer une boutique à votre image, optimisée pour la conversion et le référencement.",
+    "sections": [
+      {
+        "title": "Design Shopify sur mesure, pensé pour convertir",
+        "body": "Nous développons des thèmes Shopify personnalisés qui reflètent votre identité de marque et guident le client vers l'achat. Pages produits optimisées, tunnel d'achat fluide, fiches produits persuasives : chaque détail est pensé pour augmenter votre taux de conversion."
+      },
+      {
+        "title": "Catalogue produits, variantes et gestion des stocks",
+        "body": "Qu'il s'agisse de 10 ou 10 000 produits, nous structurons votre catalogue pour une navigation intuitive. Collections organisées, filtres intelligents, variantes (taille, couleur, matière), gestion des stocks en temps réel et synchronisation avec vos fournisseurs si nécessaire."
+      },
+      {
+        "title": "Paiement sécurisé et expérience d'achat optimale",
+        "body": "Nous configurons Shopify Payments, Stripe, PayPal et d'autres moyens de paiement adaptés à votre marché. Checkout optimisé pour réduire l'abandon de panier, suivi des commandes transparent et emails transactionnels personnalisés."
+      },
+      {
+        "title": "SEO e-commerce et référencement produits",
+        "body": "Les fiches produits bien référencées génèrent un trafic qualifié à coût nul. Nous optimisons les URLs, les balises titre, les descriptions, les données structurées Product Schema, les avis clients et les plans de site pour que vos produits apparaissent sur Google Shopping et dans les résultats naturels."
+      }
+    ],
+    "deliverables": {
+      "title": "Ce que comprend votre boutique Shopify",
+      "items": [
+        "Design Shopify sur mesure (thème personnalisé)",
+        "Catalogue produits, variantes et gestion des stocks",
+        "Configuration des paiements (Shopify Payments, Stripe, PayPal)",
+        "SEO e-commerce (Product Schema, URLs, métas)",
+        "Optimisation du taux de conversion (CRO)",
+        "Emails transactionnels personnalisés",
+        "Intégration Google Analytics, Facebook Pixel",
+        "Formation à l'administration Shopify",
+        "Maintenance et support 3 mois inclus"
+      ]
+    },
+    "cta": {
+      "title": "Lancez votre boutique Shopify en 6 semaines",
+      "subtitle": "Devis gratuit, accompagnement de A à Z.",
+      "button": "Demander un devis e-commerce"
+    }
+  },
+  "serviceSurMesure": {
+    "meta": {
+      "title": "Site web sur mesure (code) — Agence web Agency",
+      "description": "Création de sites web sur mesure en Next.js, React et TypeScript. Performance maximale, SEO intégré, aucune limite. Pour les projets ambitieux."
+    },
+    "hero": {
+      "eyebrow": "Site sur mesure",
+      "title": "Un site web sans limites, conçu de zéro.",
+      "subtitle": "Quand WordPress et Shopify ne suffisent plus, nous développons des applications web sur mesure en Next.js, React et TypeScript. Performance absolue, SEO natif, évolutivité sans contraintes."
+    },
+    "breadcrumb": "Site sur mesure",
+    "intro": "Certains projets nécessitent une solution que les CMS du marché ne peuvent pas offrir : une plateforme SaaS, un portail client complexe, une marketplace, une application web avec des règles métier spécifiques, ou simplement un site qui exige des performances et un design impossibles à obtenir avec un thème. C'est là qu'intervient notre expertise en développement sur mesure.",
+    "sections": [
+      {
+        "title": "Next.js, React et TypeScript : le stack le plus performant du web",
+        "body": "Nous développons avec Next.js, le framework React de référence qui propulse des sites comme Vercel, Notion et Linear. Rendu statique (SSG), rendu côté serveur (SSR), streaming : nous choisissons la stratégie de rendu optimale pour chaque page. TypeScript sécurise le code, Tailwind CSS garantit un design system cohérent."
+      },
+      {
+        "title": "Architecture headless et intégrations métier",
+        "body": "Votre site peut s'intégrer à n'importe quel outil : CMS headless (Sanity, Contentful, Strapi), CRM (HubSpot, Salesforce), ERP, outils d'emailing, analytics avancés, APIs tierces. Nous concevons l'architecture pour que votre plateforme évolue avec votre business."
+      },
+      {
+        "title": "Performance absolue et Core Web Vitals parfaits",
+        "body": "Sans les contraintes d'un CMS, nous atteignons des performances impossibles avec WordPress ou Shopify : score Lighthouse 100/100, LCP sous 1 seconde, CLS à zéro. Chaque octtet de JavaScript, chaque image et chaque requête sont optimisés."
+      },
+      {
+        "title": "SEO natif et multilingue",
+        "body": "Le SEO n'est pas une option, c'est une fondation. Balisage Schema.org complet, sitemaps dynamiques, hreflang multilingue, données Open Graph et Twitter Card, rendu côté serveur pour une indexation parfaite par Google — tout est intégré nativement."
+      }
+    ],
+    "deliverables": {
+      "title": "Ce que comprend votre projet sur mesure",
+      "items": [
+        "Cadrage technique et architecture applicative",
+        "Design UX/UI sur mesure et prototypage",
+        "Développement Next.js, React, TypeScript",
+        "Intégration CMS headless et APIs métier",
+        "SEO technique natif (Schema.org, sitemap, hreflang)",
+        "Tests unitaires et d'intégration",
+        "Déploiement CI/CD sur Vercel ou infrastructure dédiée",
+        "Documentation technique complète",
+        "Maintenance évolutive et support dédié"
+      ]
+    },
+    "cta": {
+      "title": "Parlons de votre projet sur mesure",
+      "subtitle": "Cadrage technique gratuit. Estimation sous 48h.",
+      "button": "Démarrer le cadrage"
+    }
+  },
   "serviceSeo": {
     "meta": {
       "title": "Agence SEO & référencement Google — Agency",
@@ -233,27 +385,27 @@
       "subtitle": "Agence SEO spécialisée dans le référencement naturel technique, éditorial et off-site. Nous transformons votre site en machine à trafic qualifié."
     },
     "breadcrumb": "Référencement SEO",
-    "intro": "Le référencement naturel Google est le canal d'acquisition le plus rentable du web : il travaille pour vous 24 heures sur 24, il ne s'arrête pas quand vous coupez le budget publicitaire, et il renforce la crédibilité de votre marque à chaque position gagnée. Encore faut-il l'aborder avec méthode. Chez Agency, nous combinons SEO technique, stratégie éditoriale et netlinking pour propulser nos clients dans le top 3 des résultats Google sur leurs mots-clés les plus stratégiques.",
+    "intro": "Le référencement naturel Google est le canal d'acquisition le plus rentable du web : il travaille pour vous 24 heures sur 24, il ne s'arrête pas quand vous coupez le budget publicitaire, et il renforce la crédibilité de votre marque à chaque position gagnée. Encore faut-il l'aborder avec méthode.",
     "sections": [
       {
         "title": "Un audit SEO complet avant toute action",
-        "body": "Nous démarrons chaque mission par un audit approfondi : analyse technique (crawl, indexation, Core Web Vitals, balisage Schema.org), analyse sémantique (mots-clés, intentions de recherche, concurrence), analyse off-site (profil de liens, autorité de domaine), et analyse éditoriale (qualité et pertinence des contenus existants). Ce diagnostic nous permet de construire une stratégie SEO réaliste et priorisée."
+        "body": "Nous démarrons chaque mission par un audit approfondi : analyse technique (crawl, indexation, Core Web Vitals, balisage Schema.org), analyse sémantique (mots-clés, intentions de recherche, concurrence), analyse off-site (profil de liens, autorité de domaine)."
       },
       {
         "title": "SEO technique : les fondations invisibles mais décisives",
-        "body": "Le référencement Google commence par une architecture technique irréprochable. Nous optimisons la vitesse (Core Web Vitals), la structure Hn, les URLs canoniques, les sitemaps multilingues, les balises hreflang, les données structurées Schema.org (Organization, LocalBusiness, Service, FAQPage, BreadcrumbList, Article), la gestion du crawl budget, les erreurs 404 et 301, et la compatibilité mobile. Sans ces fondations, aucun contenu ne peut performer durablement."
+        "body": "Le référencement Google commence par une architecture technique irréprochable. Nous optimisons la vitesse (Core Web Vitals), la structure Hn, les URLs canoniques, les sitemaps multilingues, les balises hreflang et les données structurées Schema.org."
       },
       {
         "title": "Stratégie de contenu et sémantique",
-        "body": "Google classe les pages qui répondent le mieux à l'intention de recherche de l'utilisateur. Nous identifions les mots-clés à fort potentiel, cartographions les intentions (informationnelle, transactionnelle, navigationnelle) et construisons un calendrier éditorial aligné sur votre tunnel de conversion. Chaque article est optimisé sémantiquement, maillé intelligemment et pensé pour gagner en autorité thématique."
+        "body": "Google classe les pages qui répondent le mieux à l'intention de recherche. Nous identifions les mots-clés à fort potentiel, cartographions les intentions et construisons un calendrier éditorial aligné sur votre tunnel de conversion."
       },
       {
         "title": "Netlinking et autorité de domaine",
-        "body": "Les backlinks restent un facteur de classement majeur. Nous construisons votre profil de liens avec une approche qualitative : partenariats thématiques, relations presse digitales, guest-posts sur des médias pertinents, citations locales. Pas de fermes de liens, pas de pratiques risquées : uniquement des liens qui renforcent durablement votre autorité."
+        "body": "Les backlinks restent un facteur de classement majeur. Nous construisons votre profil de liens avec une approche qualitative : partenariats thématiques, relations presse digitales, guest-posts sur des médias pertinents."
       },
       {
         "title": "Suivi, reporting et itérations mensuelles",
-        "body": "Le SEO est une discipline itérative. Chaque mois, nous suivons vos positions, votre trafic organique, vos conversions et l'évolution de vos concurrents. Nous ajustons la stratégie, publions de nouveaux contenus et renforçons les pages qui performent. Vous recevez un reporting clair et actionnable, sans jargon inutile."
+        "body": "Chaque mois, nous suivons vos positions, votre trafic organique, vos conversions et l'évolution de vos concurrents. Vous recevez un reporting clair et actionnable, sans jargon inutile."
       }
     ],
     "deliverables": {
@@ -276,6 +428,147 @@
       "button": "Demander mon audit SEO"
     }
   },
+  "serviceAds": {
+    "meta": {
+      "title": "Google Ads (SEA) — Agence publicité Google Agency",
+      "description": "Agence Google Ads : création, optimisation et gestion de campagnes publicitaires Google. ROI maximisé, ciblage précis, reporting transparent."
+    },
+    "hero": {
+      "eyebrow": "Référencement payant",
+      "title": "Des campagnes Google Ads qui génèrent des clients, pas des clics.",
+      "subtitle": "Nous créons et optimisons vos campagnes Google Ads pour attirer des prospects qualifiés au bon moment. Budget maîtrisé, ROI mesuré, résultats immédiats."
+    },
+    "breadcrumb": "Google Ads",
+    "intro": "Le référencement payant Google Ads permet d'apparaître immédiatement en tête des résultats de recherche, sans attendre les 6 à 12 mois nécessaires au référencement naturel. C'est un levier puissant pour générer des leads rapidement, tester de nouveaux marchés ou compléter votre stratégie SEO. Encore faut-il savoir l'activer avec précision pour ne pas gaspiller votre budget.",
+    "sections": [
+      {
+        "title": "Ciblage précis : les bons mots-clés, au bon moment",
+        "body": "Une campagne Google Ads efficace commence par une sélection rigoureuse des mots-clés. Nous analysons les volumes de recherche, la concurrence, les coûts par clic et les intentions d'achat pour ne cibler que les requêtes susceptibles de se transformer en clients. Mots-clés exacts, expressions, correspondance large contrôlée : chaque type de correspondance est utilisé à bon escient."
+      },
+      {
+        "title": "Annonces percutantes qui attirent les clics",
+        "body": "Nous rédigeons des annonces textuelles et des annonces responsives qui se démarquent : titres accrocheurs, descriptions orientées bénéfices, extensions d'annonces (appels, liens annexes, extraits de site). Chaque annonce est testée en A/B pour identifier les formulations qui convertissent le mieux."
+      },
+      {
+        "title": "Landing pages optimisées pour la conversion",
+        "body": "Un bon trafic vers une mauvaise page, c'est du budget perdu. Nous optimisons ou créons des landing pages dédiées à vos campagnes : message aligné avec l'annonce, preuves sociales, formulaire de contact visible, appel à l'action clair. Le tout pour maximiser votre taux de conversion."
+      },
+      {
+        "title": "Optimisation continue et reporting mensuel",
+        "body": "Nous analysons quotidiennement les performances de vos campagnes : CTR, CPC, taux de conversion, coût par acquisition. Chaque semaine, nous ajustons les enchères, mettons en veille les mots-clés sous-performants et amplifions ce qui fonctionne. Vous recevez un rapport mensuel clair avec vos KPIs et les actions réalisées."
+      }
+    ],
+    "deliverables": {
+      "title": "Ce que comprend votre accompagnement Google Ads",
+      "items": [
+        "Audit et stratégie de campagnes",
+        "Recherche et sélection des mots-clés",
+        "Création des campagnes et groupes d'annonces",
+        "Rédaction des annonces et tests A/B",
+        "Optimisation des landing pages",
+        "Configuration du suivi des conversions (Google Ads + Analytics)",
+        "Gestion des enchères et du budget",
+        "Rapport mensuel de performance (CTR, CPC, ROI)",
+        "Expert Google Ads dédié"
+      ]
+    },
+    "cta": {
+      "title": "Lancez votre première campagne Google Ads",
+      "subtitle": "Audit de vos campagnes actuelles offert. Devis sous 48h.",
+      "button": "Demander un audit Ads"
+    }
+  },
+  "serviceSocial": {
+    "meta": {
+      "title": "Gestion réseaux sociaux TikTok & Instagram — Agence Agency",
+      "description": "Agence réseaux sociaux : stratégie, création de contenus et gestion de votre présence sur TikTok et Instagram. Développez votre audience et engagez votre communauté."
+    },
+    "hero": {
+      "eyebrow": "Réseaux sociaux",
+      "title": "Une présence sociale qui construit votre marque et attire des clients.",
+      "subtitle": "Nous gérons votre présence sur TikTok et Instagram : stratégie de contenu, création de visuels, publication et analyse des performances. Votre marque rayonne, votre communauté grandit."
+    },
+    "breadcrumb": "Réseaux sociaux",
+    "intro": "Les réseaux sociaux sont devenus incontournables pour toucher votre audience là où elle passe du temps. TikTok et Instagram sont aujourd'hui les plateformes à plus fort potentiel de croissance organique pour les marques. Mais une présence efficace demande une stratégie, de la régularité et une expertise créative que peu d'entreprises peuvent s'offrir en interne.",
+    "sections": [
+      {
+        "title": "Stratégie de contenu adaptée à votre marque",
+        "body": "Chaque marque a sa propre voix, ses propres valeurs et son propre public. Nous commençons par un audit de votre présence actuelle, une analyse de votre audience cible et une étude de vos concurrents pour définir une ligne éditoriale cohérente et différenciante sur TikTok et Instagram."
+      },
+      {
+        "title": "TikTok : capter l'attention, créer la viralité",
+        "body": "TikTok est la plateforme à la croissance la plus rapide au monde. Ses algorithmes favorisent la découverte organique, ce qui permet à des marques de toute taille d'atteindre des millions de personnes sans budget publicitaire. Nous créons des contenus vidéo courts, dynamiques et authentiques qui captent l'attention dans les 3 premières secondes."
+      },
+      {
+        "title": "Instagram : construire une communauté engagée",
+        "body": "Instagram reste la référence pour le branding visuel et la relation client. Nous gérons votre feed, vos Reels et vos Stories avec une cohérence esthétique et un calendrier éditorial pensé pour maximiser l'engagement. Hashtags stratégiques, collaborations avec des créateurs et réponse aux commentaires : nous animons votre communauté au quotidien."
+      },
+      {
+        "title": "Analyse des performances et optimisation",
+        "body": "Chaque publication est une donnée. Nous analysons les métriques qui comptent vraiment : portée, impressions, taux d'engagement, croissance de l'audience, clics sur le profil et conversions. Ces analyses nourrissent une optimisation continue de notre stratégie éditoriale."
+      }
+    ],
+    "deliverables": {
+      "title": "Ce que comprend votre accompagnement réseaux sociaux",
+      "items": [
+        "Audit de votre présence actuelle et stratégie éditoriale",
+        "Calendrier éditorial mensuel (TikTok + Instagram)",
+        "Création des visuels, vidéos et textes",
+        "Publication et gestion quotidienne des comptes",
+        "Animation de la communauté (réponse aux commentaires)",
+        "Stratégie de hashtags et collaborations créateurs",
+        "Rapport mensuel de performances (portée, engagement, croissance)",
+        "Community manager dédié"
+      ]
+    },
+    "cta": {
+      "title": "Développez votre présence sur les réseaux sociaux",
+      "subtitle": "Audit de vos comptes offert. Premier mois sans engagement.",
+      "button": "Demander un audit réseaux sociaux"
+    }
+  },
+  "blog": {
+    "meta": {
+      "title": "Blog — Conseils web, SEO et marketing digital — Agency",
+      "description": "Conseils, guides et études de cas sur la création de site internet, le référencement Google, Google Ads et les réseaux sociaux. Le blog de l'agence Agency."
+    },
+    "hero": {
+      "eyebrow": "Le blog Agency",
+      "title": "Ressources pour booster votre présence en ligne.",
+      "subtitle": "Guides pratiques, études de cas et conseils d'experts sur la création de site internet, le SEO, Google Ads et les réseaux sociaux."
+    },
+    "breadcrumb": "Blog",
+    "comingSoon": "Articles à venir",
+    "comingSoonBody": "Notre équipe prépare des guides complets et des études de cas pour vous aider à développer votre présence en ligne. Revenez bientôt !",
+    "categories": {
+      "all": "Tous les articles",
+      "seo": "SEO",
+      "web": "Création de site",
+      "ads": "Google Ads",
+      "social": "Réseaux sociaux"
+    }
+  },
+  "realisations": {
+    "meta": {
+      "title": "Réalisations & portfolio — Agency, agence web & SEO",
+      "description": "Découvrez nos réalisations : sites internet, boutiques e-commerce, stratégies SEO et campagnes digitales. Des projets concrets, des résultats mesurables."
+    },
+    "hero": {
+      "eyebrow": "Nos réalisations",
+      "title": "Des projets qui ont transformé des ambitions en résultats.",
+      "subtitle": "De la startup au groupe international, découvrez comment nous avons aidé nos clients à construire une présence en ligne qui performe vraiment."
+    },
+    "breadcrumb": "Réalisations",
+    "comingSoon": "Études de cas en cours de publication",
+    "comingSoonBody": "Nous préparons des études de cas détaillées pour vous montrer nos processus, nos choix techniques et les résultats obtenus pour chaque client. Revenez bientôt !",
+    "filters": {
+      "all": "Tous les projets",
+      "web": "Sites internet",
+      "ecommerce": "E-commerce",
+      "seo": "SEO",
+      "ads": "Google Ads"
+    }
+  },
   "about": {
     "meta": {
       "title": "À propos — Agency, agence web & SEO à Paris",
@@ -290,19 +583,19 @@
     "sections": [
       {
         "title": "Une agence web indépendante et engagée",
-        "body": "Agency est née d'une conviction simple : il est possible de livrer des sites internet à la fois élégants, performants et parfaitement référencés, sans compromis et sans discours commercial creux. Indépendants, nous choisissons nos clients comme nous choisissons nos outils : avec exigence. Chaque projet bénéficie d'une équipe dédiée, d'un interlocuteur unique et d'une méthodologie éprouvée."
+        "body": "Agency est née d'une conviction simple : il est possible de livrer des sites internet à la fois élégants, performants et parfaitement référencés, sans compromis et sans discours commercial creux. Indépendants, nous choisissons nos clients comme nous choisissons nos outils : avec exigence."
       },
       {
         "title": "Une équipe pluridisciplinaire",
-        "body": "Designers, développeurs front-end et back-end, experts SEO, rédacteurs web : notre équipe couvre l'ensemble des expertises nécessaires à la réussite d'un projet digital ambitieux. Nous travaillons en cycles courts, avec des rituels clairs, et vous impliquons aux moments clés pour garder le cap stratégique."
+        "body": "Designers, développeurs front-end et back-end, experts SEO, rédacteurs web : notre équipe couvre l'ensemble des expertises nécessaires à la réussite d'un projet digital ambitieux."
       },
       {
         "title": "Des valeurs qui guident chaque projet",
-        "body": "Nous croyons à la transparence (planning, budget, reporting), à l'exigence technique (score Lighthouse à 100, Core Web Vitals au vert), à la pédagogie (vous comprendrez toujours ce qu'on fait et pourquoi) et au long terme (nos clients restent en moyenne 4 ans avec nous). Ces valeurs ne sont pas des slogans, ce sont nos critères de décision au quotidien."
+        "body": "Nous croyons à la transparence (planning, budget, reporting), à l'exigence technique (score Lighthouse à 100, Core Web Vitals au vert), à la pédagogie et au long terme (nos clients restent en moyenne 4 ans avec nous)."
       },
       {
         "title": "Paris, francophonie et au-delà",
-        "body": "Basés à Paris, nous accompagnons des clients dans toute la francophonie, en Espagne et au Canada. Notre maîtrise du multilingue (hreflang, contenus traduits, SEO local) nous permet de bâtir des sites internet qui performent sur plusieurs marchés à la fois."
+        "body": "Basés à Paris, nous accompagnons des clients dans toute la francophonie, en Espagne et au Canada. Notre maîtrise du multilingue nous permet de bâtir des sites internet qui performent sur plusieurs marchés à la fois."
       }
     ],
     "values": {
@@ -385,7 +678,7 @@
     "sections": [
       {
         "title": "Éditeur du site",
-        "body": "Le site Agency est édité par Agency SAS, société par actions simplifiée au capital de 10 000 €, immatriculée au RCS de Paris sous le numéro 123 456 789, dont le siège social est situé 12 rue de la République, 75001 Paris. Numéro de TVA intracommunautaire : FR12345678901. Directeur de la publication : le représentant légal de la société."
+        "body": "Le site Agency est édité par Agency SAS, société par actions simplifiée au capital de 10 000 €, immatriculée au RCS de Paris sous le numéro 123 456 789, dont le siège social est situé 12 rue de la République, 75001 Paris. Directeur de la publication : le représentant légal de la société."
       },
       {
         "title": "Hébergement",
@@ -393,11 +686,11 @@
       },
       {
         "title": "Propriété intellectuelle",
-        "body": "L'ensemble des contenus du site (textes, images, logos, code source, éléments graphiques) est la propriété exclusive d'Agency SAS, sauf mention contraire. Toute reproduction, représentation, modification, publication ou adaptation, totale ou partielle, est interdite sans autorisation écrite préalable."
+        "body": "L'ensemble des contenus du site est la propriété exclusive d'Agency SAS, sauf mention contraire. Toute reproduction, représentation, modification, publication ou adaptation est interdite sans autorisation écrite préalable."
       },
       {
         "title": "Responsabilité",
-        "body": "Agency SAS s'efforce de fournir des informations exactes et à jour. L'éditeur ne peut toutefois garantir l'exactitude, la précision ou l'exhaustivité des informations mises à disposition sur ce site. L'utilisateur reconnaît utiliser ces informations sous sa responsabilité exclusive."
+        "body": "Agency SAS s'efforce de fournir des informations exactes et à jour. L'éditeur ne peut toutefois garantir l'exactitude ou l'exhaustivité des informations mises à disposition."
       },
       {
         "title": "Contact",
@@ -419,11 +712,11 @@
       },
       {
         "title": "Données collectées",
-        "body": "Nous collectons uniquement les données nécessaires au traitement de votre demande via le formulaire de contact : nom, email professionnel, entreprise (optionnel), sujet du message et contenu du message. Nous ne collectons aucune donnée sensible au sens du RGPD."
+        "body": "Nous collectons uniquement les données nécessaires au traitement de votre demande via le formulaire de contact : nom, email professionnel, entreprise (optionnel), sujet du message et contenu du message."
       },
       {
         "title": "Finalités et base légale",
-        "body": "Les données sont traitées pour répondre à votre demande et, le cas échéant, établir une relation commerciale. La base légale est votre consentement explicite (case à cocher du formulaire) ainsi que l'exécution de mesures précontractuelles prises à votre demande."
+        "body": "Les données sont traitées pour répondre à votre demande et établir une relation commerciale. La base légale est votre consentement explicite et l'exécution de mesures précontractuelles."
       },
       {
         "title": "Durée de conservation",
@@ -431,11 +724,11 @@
       },
       {
         "title": "Vos droits",
-        "body": "Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation, d'opposition et de portabilité de vos données, ainsi que du droit de définir le sort de vos données après votre décès. Vous pouvez exercer ces droits en nous écrivant à contact@agency.example.com. Vous avez également le droit d'introduire une réclamation auprès de la CNIL."
+        "body": "Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation, d'opposition et de portabilité de vos données. Vous pouvez exercer ces droits en nous écrivant à contact@agency.example.com."
       },
       {
         "title": "Cookies",
-        "body": "Ce site n'utilise aucun cookie publicitaire ni de tracking tiers. Les seuls cookies techniques nécessaires au bon fonctionnement du site peuvent être utilisés, sans identification personnelle."
+        "body": "Ce site n'utilise aucun cookie publicitaire ni de tracking tiers. Les seuls cookies techniques nécessaires au bon fonctionnement du site peuvent être utilisés."
       }
     ]
   },

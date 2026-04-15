@@ -2,8 +2,17 @@
   "nav": {
     "home": "Home",
     "services": "Services",
-    "serviceWeb": "Web design",
-    "serviceSeo": "SEO",
+    "creationSite": "Website creation",
+    "communication": "Communication",
+    "serviceWeb": "Website creation",
+    "serviceVitrine": "WordPress showcase site",
+    "serviceEcommerce": "Shopify e-commerce",
+    "serviceSurMesure": "Custom-built website",
+    "serviceSeo": "Google SEO",
+    "serviceAds": "Google Ads",
+    "serviceSocial": "Social media",
+    "blog": "Blog",
+    "realisations": "Portfolio",
     "about": "About",
     "contact": "Contact",
     "cta": "Start a project",
@@ -14,7 +23,8 @@
   "footer": {
     "tagline": "A web agency specialised in professional website creation and Google search engine optimisation.",
     "navigation": "Navigation",
-    "services": "Services",
+    "services": "Our services",
+    "agency": "The agency",
     "legal": "Information",
     "legalNotice": "Legal notice",
     "privacy": "Privacy policy",
@@ -44,20 +54,18 @@
       "title": "A full-service web agency, from design to SEO",
       "subtitle": "Two complementary skill sets to build an online presence that works for you 24/7.",
       "webTitle": "Website creation",
-      "webDescription": "Showcase sites, e-commerce and redesigns, fully tailor-made. Modern design, optimal performance, perfect accessibility.",
+      "webDescription": "WordPress showcase sites, Shopify stores and custom builds. Modern design, optimal performance, perfect accessibility.",
       "webBullets": [
-        "Professional showcase site",
-        "E-commerce & marketplaces",
-        "Strategic redesigns",
-        "Next.js, React, headless CMS"
+        "WordPress showcase site",
+        "Shopify e-commerce",
+        "Custom-built website"
       ],
-      "seoTitle": "Google SEO",
-      "seoDescription": "Technical SEO, content strategy and link building. Every line of code and every word aligned with your acquisition goals.",
+      "seoTitle": "SEO & communication",
+      "seoDescription": "Google SEO, Google Ads and social media. Every marketing action aligned with your acquisition strategy.",
       "seoBullets": [
-        "Comprehensive SEO audit",
-        "Content strategy",
-        "Technical SEO & Core Web Vitals",
-        "Transparent monthly reporting"
+        "Google SEO (organic)",
+        "Google Ads (paid)",
+        "TikTok & Instagram social media"
       ],
       "learnMore": "Learn more"
     },
@@ -134,7 +142,7 @@
       "items": [
         {
           "q": "How much does a professional website cost?",
-          "a": "A tailor-made showcase site starts around €4,500, an e-commerce store from €9,000. Every quote is built after a free framing call to reflect your scope, content volume and technical complexity."
+          "a": "A WordPress showcase site starts around €1,500, a Shopify e-commerce store from €3,000, and a custom-built site from €5,000. Every quote follows a free scoping call."
         },
         {
           "q": "How long does it take to deliver a website?",
@@ -142,11 +150,11 @@
         },
         {
           "q": "Is Google SEO included?",
-          "a": "Technical SEO (structure, tags, performance, Schema.org, sitemap) is built into every website project. Editorial SEO and link building are offered as an optional monthly retainer."
+          "a": "Technical SEO is built into every website project. Editorial SEO and link building are offered as an optional monthly retainer."
         },
         {
           "q": "Do you work with international clients?",
-          "a": "Yes. We support clients across Europe, Spain and Canada. Multilingual mastery (hreflang, translated content, local SEO) is at the heart of our projects."
+          "a": "Yes. We support clients across Europe, Spain and Canada. Multilingual mastery is at the heart of our projects."
         },
         {
           "q": "Will I own the website after launch?",
@@ -160,46 +168,42 @@
       "button": "Start my project"
     },
     "content": {
-      "intro": "Agency is a French web agency specialised in professional website creation and Google SEO. We design high-performing digital experiences for SMBs and scale-ups that want to turn their site into a true acquisition engine. From SEO strategy to UX/UI design, from Next.js development to post-launch monitoring, we own every step with uncompromising technical and aesthetic standards.",
+      "intro": "Agency is a French web agency specialised in professional website creation and Google SEO. We design high-performing digital experiences for SMBs and scale-ups that want to turn their site into a true acquisition engine.",
       "paragraphs": [
-        "A modern website is no longer a static brochure. It is a business asset that has to attract, convince and convert. At Agency we craft websites that combine careful design, an SEO-friendly architecture and outstanding performance. Our teams master the latest technologies — Next.js, React, TypeScript, headless CMS — to deliver a durable, secure and easy-to-maintain platform.",
-        "Google SEO sits at the heart of our approach. From the very first mockups, we work on semantic structure, Hn tags, Schema.org structured data, Core Web Vitals and content architecture. This native SEO integration, combined with bespoke editorial strategy and high-quality link building, propels our clients into Google's top 3 on their strategic keywords.",
-        "Whether it is a showcase website creation, an ambitious e-commerce store, a strategic redesign or a full SEO programme, our methodology stays the same: listen, measure, design, ship, iterate. We don't sell special effects or empty promises, but quantifiable results: more qualified traffic, more leads, more revenue."
+        "A modern website is no longer a static brochure. It is a business asset that has to attract, convince and convert. At Agency we craft websites that combine careful design, an SEO-friendly architecture and outstanding performance.",
+        "Google SEO sits at the heart of our approach. From the very first mockups, we work on semantic structure, Hn tags, Schema.org structured data, Core Web Vitals and content architecture.",
+        "Whether it is a WordPress showcase site, a Shopify e-commerce store, a custom-built platform, a Google Ads campaign or a social media strategy, our methodology stays the same: listen, measure, design, ship, iterate."
       ]
     }
   },
   "serviceWeb": {
     "meta": {
       "title": "Professional website creation — Agency web agency",
-      "description": "Tailor-made website creation by a French web agency: showcase sites, e-commerce, redesigns. Modern design, top performance and Google SEO baked in."
+      "description": "Tailor-made website creation: WordPress showcase sites, Shopify e-commerce stores, custom-built websites. Modern design, top performance and Google SEO baked in."
     },
     "hero": {
       "eyebrow": "Website creation",
       "title": "Professional websites that actually convert.",
-      "subtitle": "A French web agency designing tailor-made showcase sites, e-commerce and applications. Premium design, integrated SEO, flawless performance."
+      "subtitle": "A French web agency designing WordPress showcase sites, Shopify stores and custom-built applications. Premium design, integrated SEO, flawless performance."
     },
     "breadcrumb": "Website creation",
-    "intro": "Building a professional website is a strategic investment. It is not about merely existing online but about shaping a business asset that attracts qualified visitors, tells your story and turns prospects into loyal customers. At Agency, every site we ship is designed to deliver on those three promises with uncompromising technical, aesthetic and SEO standards.",
+    "intro": "Building a professional website is a strategic investment. It is not about merely existing online but about shaping a business asset that attracts qualified visitors, tells your story and turns prospects into loyal customers.",
     "sections": [
       {
-        "title": "A web agency that designs tailor-made websites",
-        "body": "We never reuse generic themes or off-the-shelf templates. Every showcase site, e-commerce store or web platform we build is crafted from your brand, your positioning and your audience. Our UX/UI designers ship interactive mockups, our developers turn them into clean and maintainable code, and our SEO experts make sure every page is optimised for organic search from the very first line."
+        "title": "WordPress, Shopify or custom: the right solution for every project",
+        "body": "We match the technology to your actual needs. WordPress for a showcase site that's quick to update, Shopify for a robust e-commerce store, or custom code for an unlimited platform. Each solution is deployed with the same standards of design, performance and SEO."
       },
       {
-        "title": "Showcase, e-commerce, redesigns: every typology covered",
-        "body": "Whether you are an SMB looking for a first professional website, a growing e-commerce brand or a company that wants to redesign an outdated site, we tailor our approach to your stakes. Our team handles single-page websites and complex multilingual architectures, sophisticated product catalogues and integrations with business tools (CRM, ERP, email, analytics)."
-      },
-      {
-        "title": "Next.js, React, TypeScript: a modern, durable stack",
-        "body": "We work with Next.js, the reference React framework for the modern web. This technology lets us deliver ultra-fast websites (thanks to static rendering and streaming), perfectly indexable by Google and easy to evolve. TypeScript secures every line, Tailwind CSS ensures a coherent design system, and the headless CMS ecosystem gives you full autonomy over your content."
+        "title": "UX/UI design engineered to convert",
+        "body": "Our designers create interfaces that guide visitors towards the action that matters: quote request, purchase, contact. Modern aesthetics aren't enough — every section is designed to reduce friction and maximise your conversion rate."
       },
       {
         "title": "Performance and Core Web Vitals at the core",
-        "body": "A slow site loses visitors and falls in Google rankings. We continuously monitor Core Web Vitals (LCP, INP, CLS), optimise images with AVIF and WebP, preload critical fonts and remove unused JavaScript. Our deliveries systematically target a perfect 100 Lighthouse score across Performance, Accessibility, Best Practices and SEO."
+        "body": "A slow site loses visitors and falls in Google rankings. We optimise Core Web Vitals (LCP, INP, CLS), images (AVIF, WebP), fonts and JavaScript. Our deliveries systematically target a perfect 100 Lighthouse score."
       },
       {
         "title": "Google SEO integrated from day one",
-        "body": "Unlike many web agencies, we don't treat SEO as a final add-on. Hn hierarchy, Schema.org markup (Organization, LocalBusiness, Service, FAQPage, BreadcrumbList), multilingual hreflang sitemaps, semantic URLs and Open Graph tags are part of the development itself. Your site is indexed and optimised the moment it goes live."
+        "body": "Hn hierarchy, Schema.org markup, multilingual sitemaps, semantic URLs and Open Graph tags are part of the development itself. Your site is indexed and optimised the moment it goes live."
       }
     ],
     "deliverables": {
@@ -207,8 +211,7 @@
       "items": [
         "Strategic framing and competitive audit",
         "Tailor-made UX/UI design and interactive prototypes",
-        "Next.js, React and TypeScript development",
-        "Headless CMS integration for full autonomy",
+        "WordPress, Shopify or custom development",
         "Technical SEO (Schema.org, sitemap, hreflang)",
         "Core Web Vitals optimisation and Lighthouse 100",
         "High-performance hosting and HTTPS",
@@ -222,6 +225,155 @@
       "button": "Get a quote"
     }
   },
+  "serviceVitrine": {
+    "meta": {
+      "title": "Professional WordPress showcase site — Agency web agency",
+      "description": "Custom WordPress showcase site creation. Professional design, optimal performance, integrated SEO. Free quote within 48h."
+    },
+    "hero": {
+      "eyebrow": "WordPress showcase site",
+      "title": "A professional WordPress showcase site that attracts and converts.",
+      "subtitle": "We build elegant, fast and Google-optimised WordPress showcase sites. The ideal solution for SMBs that want to shine online."
+    },
+    "breadcrumb": "WordPress showcase site",
+    "intro": "WordPress is the world's most-used platform for professional showcase sites. Flexible, robust and easy to manage, it enables elegant and high-performing sites without any technical skills. At Agency, we customise WordPress 100% — no generic themes, a design fully tailored to your brand.",
+    "sections": [
+      {
+        "title": "Custom WordPress, no generic themes",
+        "body": "Unlike many agencies that install a premium theme and change the colours, we develop child themes or headless WordPress sites that reflect your exact visual identity. The result: a unique, lightweight and perfectly maintainable site."
+      },
+      {
+        "title": "Google SEO-ready from day one",
+        "body": "We configure Yoast SEO or Rank Math, structure permalinks, optimise title and meta tags, create the XML sitemap and implement Schema.org structured data. Your WordPress site is off to the right start on Google."
+      },
+      {
+        "title": "Simple admin, total autonomy",
+        "body": "One of WordPress's great advantages: you can update your content yourself, without touching the code. We train you on the admin interface and configure custom Gutenberg blocks for a simple and enjoyable editing experience."
+      },
+      {
+        "title": "Maximum performance and security",
+        "body": "A poorly configured WordPress is slow and vulnerable. We optimise performance (cache, CDN, lazy-load images), secure the installation and host on high-performance servers with HTTPS."
+      }
+    ],
+    "deliverables": {
+      "title": "What your WordPress showcase site includes",
+      "items": [
+        "Custom UX/UI design (no generic themes)",
+        "WordPress development with custom child theme",
+        "Full SEO configuration (Yoast/Rank Math, Schema.org)",
+        "Core Web Vitals and loading speed optimisation",
+        "High-performance hosting, HTTPS, daily backups",
+        "WordPress admin training",
+        "Contact form and Google Analytics integration",
+        "Maintenance and updates included for 3 months"
+      ]
+    },
+    "cta": {
+      "title": "Your WordPress showcase site in 4 weeks",
+      "subtitle": "Free quote within 48h. No commitment.",
+      "button": "Get a quote"
+    }
+  },
+  "serviceEcommerce": {
+    "meta": {
+      "title": "Shopify e-commerce store — Agency web agency",
+      "description": "Custom Shopify e-commerce store creation. Professional design, secure payments, integrated SEO. Grow your online sales."
+    },
+    "hero": {
+      "eyebrow": "Shopify e-commerce",
+      "title": "A Shopify store that sells, day and night.",
+      "subtitle": "We build elegant, fast and conversion-optimised Shopify e-commerce stores. The most robust solution for selling online effectively."
+    },
+    "breadcrumb": "Shopify e-commerce",
+    "intro": "Shopify is the reference e-commerce platform for brands that want to sell online without technical constraints. Reliable, secure and scalable, it handles payments, inventory, shipping and returns. At Agency, we customise Shopify to create a store that reflects your brand, optimised for conversion and SEO.",
+    "sections": [
+      {
+        "title": "Custom Shopify design, built to convert",
+        "body": "We build custom Shopify themes that reflect your brand identity and guide customers towards purchase. Optimised product pages, smooth checkout, persuasive product descriptions: every detail is designed to increase your conversion rate."
+      },
+      {
+        "title": "Product catalogue, variants and inventory management",
+        "body": "Whether you have 10 or 10,000 products, we structure your catalogue for intuitive navigation. Organised collections, smart filters, variants (size, colour, material), real-time inventory and supplier sync if needed."
+      },
+      {
+        "title": "Secure payment and optimal buying experience",
+        "body": "We configure Shopify Payments, Stripe, PayPal and other payment methods suited to your market. Optimised checkout to reduce cart abandonment, transparent order tracking and personalised transactional emails."
+      },
+      {
+        "title": "E-commerce SEO and product ranking",
+        "body": "Well-ranked product pages generate qualified traffic at zero cost. We optimise URLs, title tags, descriptions, Product Schema structured data, customer reviews and sitemaps so your products appear on Google Shopping and in organic results."
+      }
+    ],
+    "deliverables": {
+      "title": "What your Shopify store includes",
+      "items": [
+        "Custom Shopify design (personalised theme)",
+        "Product catalogue, variants and inventory management",
+        "Payment configuration (Shopify Payments, Stripe, PayPal)",
+        "E-commerce SEO (Product Schema, URLs, metas)",
+        "Conversion rate optimisation (CRO)",
+        "Personalised transactional emails",
+        "Google Analytics and Facebook Pixel integration",
+        "Shopify admin training",
+        "Maintenance and support included for 3 months"
+      ]
+    },
+    "cta": {
+      "title": "Launch your Shopify store in 6 weeks",
+      "subtitle": "Free quote, end-to-end support.",
+      "button": "Get an e-commerce quote"
+    }
+  },
+  "serviceSurMesure": {
+    "meta": {
+      "title": "Custom-built website (code) — Agency web agency",
+      "description": "Custom website development in Next.js, React and TypeScript. Maximum performance, native SEO, no limits. For ambitious projects."
+    },
+    "hero": {
+      "eyebrow": "Custom-built website",
+      "title": "An unlimited website, built from scratch.",
+      "subtitle": "When WordPress and Shopify aren't enough, we develop custom web applications in Next.js, React and TypeScript. Absolute performance, native SEO, no constraints."
+    },
+    "breadcrumb": "Custom-built website",
+    "intro": "Some projects require a solution that off-the-shelf CMS platforms simply cannot offer: a SaaS platform, a complex client portal, a marketplace, a web application with specific business rules, or a site that demands performance and design impossible to achieve with a theme. That's where our custom development expertise comes in.",
+    "sections": [
+      {
+        "title": "Next.js, React and TypeScript: the web's most powerful stack",
+        "body": "We build with Next.js, the reference React framework powering sites like Vercel, Notion and Linear. Static rendering (SSG), server-side rendering (SSR), streaming: we choose the optimal rendering strategy for each page. TypeScript secures every line, Tailwind CSS ensures a coherent design system."
+      },
+      {
+        "title": "Headless architecture and business integrations",
+        "body": "Your site can integrate with any tool: headless CMS (Sanity, Contentful, Strapi), CRM (HubSpot, Salesforce), ERP, email tools, advanced analytics, third-party APIs. We design the architecture so your platform grows with your business."
+      },
+      {
+        "title": "Absolute performance and perfect Core Web Vitals",
+        "body": "Without CMS constraints, we achieve performance impossible with WordPress or Shopify: Lighthouse 100/100, LCP under 1 second, CLS at zero. Every byte of JavaScript, every image and every request is optimised."
+      },
+      {
+        "title": "Native SEO and multilingual support",
+        "body": "SEO is not an option, it's a foundation. Complete Schema.org markup, dynamic sitemaps, multilingual hreflang, Open Graph and Twitter Card tags, server-side rendering for perfect Google indexing — all natively integrated."
+      }
+    ],
+    "deliverables": {
+      "title": "What your custom project includes",
+      "items": [
+        "Technical scoping and application architecture",
+        "Custom UX/UI design and prototyping",
+        "Next.js, React, TypeScript development",
+        "Headless CMS and business API integration",
+        "Native technical SEO (Schema.org, sitemap, hreflang)",
+        "Unit and integration tests",
+        "CI/CD deployment on Vercel or dedicated infrastructure",
+        "Complete technical documentation",
+        "Evolutive maintenance and dedicated support"
+      ]
+    },
+    "cta": {
+      "title": "Let's talk about your custom project",
+      "subtitle": "Free technical scoping. Estimate within 48h.",
+      "button": "Start the scoping"
+    }
+  },
   "serviceSeo": {
     "meta": {
       "title": "SEO agency & Google search optimisation — Agency",
@@ -233,27 +385,27 @@
       "subtitle": "An SEO agency specialised in technical, editorial and off-site search optimisation. We turn your website into a qualified-traffic machine."
     },
     "breadcrumb": "SEO",
-    "intro": "Google SEO is the most profitable acquisition channel on the web: it works for you 24/7, doesn't stop when you cut the ad budget, and reinforces brand credibility with every position you win. But it must be approached with method. At Agency, we combine technical SEO, editorial strategy and link building to push our clients into Google's top 3 results on their most strategic keywords.",
+    "intro": "Google SEO is the most profitable acquisition channel on the web: it works for you 24/7, doesn't stop when you cut the ad budget, and reinforces brand credibility with every position you win.",
     "sections": [
       {
         "title": "A complete SEO audit before any action",
-        "body": "Every engagement starts with an in-depth audit: technical analysis (crawl, indexing, Core Web Vitals, Schema.org markup), semantic analysis (keywords, search intent, competitors), off-site analysis (link profile, domain authority) and editorial analysis (quality and relevance of existing content). This diagnosis lets us build a realistic, prioritised SEO strategy."
+        "body": "Every engagement starts with an in-depth audit: technical analysis (crawl, indexing, Core Web Vitals, Schema.org markup), semantic analysis (keywords, search intent, competitors) and off-site analysis (link profile, domain authority)."
       },
       {
         "title": "Technical SEO: invisible but decisive foundations",
-        "body": "Google search optimisation starts with rock-solid technical architecture. We optimise speed (Core Web Vitals), Hn structure, canonical URLs, multilingual sitemaps, hreflang, Schema.org structured data (Organization, LocalBusiness, Service, FAQPage, BreadcrumbList, Article), crawl budget management, 404 and 301 errors and mobile compatibility. Without these foundations, no content can perform sustainably."
+        "body": "Google search optimisation starts with rock-solid technical architecture. We optimise speed (Core Web Vitals), Hn structure, canonical URLs, multilingual sitemaps, hreflang and Schema.org structured data."
       },
       {
         "title": "Content strategy and semantics",
-        "body": "Google ranks pages that best answer the user's search intent. We identify high-potential keywords, map intents (informational, transactional, navigational) and build an editorial calendar aligned with your conversion funnel. Every article is semantically optimised, smartly internally linked and engineered to grow your topical authority."
+        "body": "Google ranks pages that best answer the user's search intent. We identify high-potential keywords, map intents and build an editorial calendar aligned with your conversion funnel."
       },
       {
         "title": "Link building and domain authority",
-        "body": "Backlinks remain a major ranking factor. We grow your link profile with a quality-first approach: thematic partnerships, digital PR, guest posts on relevant media, local citations. No link farms, no risky tactics: only links that durably strengthen your authority."
+        "body": "Backlinks remain a major ranking factor. We grow your link profile with a quality-first approach: thematic partnerships, digital PR, guest posts on relevant media, local citations."
       },
       {
         "title": "Monitoring, reporting and monthly iterations",
-        "body": "SEO is an iterative discipline. Every month we track your rankings, organic traffic, conversions and competitor moves. We adjust the strategy, publish new content and reinforce performing pages. You get a clear, actionable report — no jargon."
+        "body": "Every month we track your rankings, organic traffic, conversions and competitor moves. You get a clear, actionable report — no jargon."
       }
     ],
     "deliverables": {
@@ -276,6 +428,147 @@
       "button": "Get my SEO audit"
     }
   },
+  "serviceAds": {
+    "meta": {
+      "title": "Google Ads (PPC) — Agency advertising agency",
+      "description": "Google Ads agency: creation, optimisation and management of Google advertising campaigns. Maximised ROI, precise targeting, transparent reporting."
+    },
+    "hero": {
+      "eyebrow": "Paid search advertising",
+      "title": "Google Ads campaigns that generate clients, not just clicks.",
+      "subtitle": "We create and optimise your Google Ads campaigns to attract qualified prospects at the right moment. Controlled budget, measurable ROI, immediate results."
+    },
+    "breadcrumb": "Google Ads",
+    "intro": "Google Ads allows you to appear immediately at the top of search results, without waiting the 6–12 months needed for organic SEO. It's a powerful lever for generating leads quickly, testing new markets or complementing your SEO strategy — but it must be activated precisely to avoid wasting your budget.",
+    "sections": [
+      {
+        "title": "Precise targeting: the right keywords at the right moment",
+        "body": "An effective Google Ads campaign starts with rigorous keyword selection. We analyse search volumes, competition, cost-per-click and purchase intent to target only the queries likely to convert into customers."
+      },
+      {
+        "title": "Compelling ads that attract clicks",
+        "body": "We write text ads and responsive ads that stand out: catchy headlines, benefit-driven descriptions, ad extensions (calls, sitelinks, snippets). Every ad is A/B tested to identify the best-converting copy."
+      },
+      {
+        "title": "Conversion-optimised landing pages",
+        "body": "Good traffic to a bad page is wasted budget. We optimise or create dedicated landing pages for your campaigns: message aligned with the ad, social proof, visible contact form, clear call to action."
+      },
+      {
+        "title": "Continuous optimisation and monthly reporting",
+        "body": "We analyse your campaign performance daily: CTR, CPC, conversion rate, cost per acquisition. We adjust bids, pause underperforming keywords and amplify what works. You get a clear monthly report with your KPIs."
+      }
+    ],
+    "deliverables": {
+      "title": "What your Google Ads management includes",
+      "items": [
+        "Campaign audit and strategy",
+        "Keyword research and selection",
+        "Campaign and ad group creation",
+        "Ad copywriting and A/B testing",
+        "Landing page optimisation",
+        "Conversion tracking setup (Google Ads + Analytics)",
+        "Bid and budget management",
+        "Monthly performance report (CTR, CPC, ROI)",
+        "Dedicated Google Ads expert"
+      ]
+    },
+    "cta": {
+      "title": "Launch your first Google Ads campaign",
+      "subtitle": "Free audit of your current campaigns. Quote within 48h.",
+      "button": "Get an Ads audit"
+    }
+  },
+  "serviceSocial": {
+    "meta": {
+      "title": "TikTok & Instagram social media management — Agency",
+      "description": "Social media agency: strategy, content creation and management of your TikTok and Instagram presence. Grow your audience and engage your community."
+    },
+    "hero": {
+      "eyebrow": "Social media",
+      "title": "A social presence that builds your brand and attracts customers.",
+      "subtitle": "We manage your TikTok and Instagram presence: content strategy, visual creation, publishing and performance analysis. Your brand shines, your community grows."
+    },
+    "breadcrumb": "Social media",
+    "intro": "Social media has become essential for reaching your audience where they spend their time. TikTok and Instagram are today the platforms with the highest organic growth potential for brands. But an effective presence requires strategy, consistency and creative expertise.",
+    "sections": [
+      {
+        "title": "Content strategy tailored to your brand",
+        "body": "Every brand has its own voice, values and audience. We start with an audit of your current presence, an analysis of your target audience and a study of your competitors to define a coherent and distinctive editorial line on TikTok and Instagram."
+      },
+      {
+        "title": "TikTok: capture attention, create virality",
+        "body": "TikTok is the world's fastest-growing platform. Its algorithms favour organic discovery, allowing brands of any size to reach millions of people without an advertising budget. We create short, dynamic and authentic video content."
+      },
+      {
+        "title": "Instagram: build an engaged community",
+        "body": "Instagram remains the reference for visual branding and customer relationships. We manage your feed, Reels and Stories with aesthetic consistency and an editorial calendar designed to maximise engagement."
+      },
+      {
+        "title": "Performance analysis and optimisation",
+        "body": "Every post is a data point. We analyse the metrics that really matter: reach, impressions, engagement rate, audience growth, profile clicks and conversions. These insights fuel continuous improvement of our editorial strategy."
+      }
+    ],
+    "deliverables": {
+      "title": "What your social media management includes",
+      "items": [
+        "Current presence audit and editorial strategy",
+        "Monthly editorial calendar (TikTok + Instagram)",
+        "Visuals, videos and copy creation",
+        "Daily account publishing and management",
+        "Community management (comment replies)",
+        "Hashtag strategy and creator collaborations",
+        "Monthly performance report (reach, engagement, growth)",
+        "Dedicated community manager"
+      ]
+    },
+    "cta": {
+      "title": "Grow your social media presence",
+      "subtitle": "Free account audit. First month with no commitment.",
+      "button": "Get a social media audit"
+    }
+  },
+  "blog": {
+    "meta": {
+      "title": "Blog — Web, SEO & digital marketing tips — Agency",
+      "description": "Tips, guides and case studies on website creation, Google SEO, Google Ads and social media. The Agency blog."
+    },
+    "hero": {
+      "eyebrow": "The Agency blog",
+      "title": "Resources to boost your online presence.",
+      "subtitle": "Practical guides, case studies and expert advice on website creation, SEO, Google Ads and social media."
+    },
+    "breadcrumb": "Blog",
+    "comingSoon": "Articles coming soon",
+    "comingSoonBody": "Our team is preparing comprehensive guides and case studies to help you grow your online presence. Check back soon!",
+    "categories": {
+      "all": "All articles",
+      "seo": "SEO",
+      "web": "Website creation",
+      "ads": "Google Ads",
+      "social": "Social media"
+    }
+  },
+  "realisations": {
+    "meta": {
+      "title": "Portfolio & case studies — Agency, web & SEO agency",
+      "description": "Explore our work: websites, e-commerce stores, SEO strategies and digital campaigns. Real projects, measurable results."
+    },
+    "hero": {
+      "eyebrow": "Our work",
+      "title": "Projects that turned ambitions into results.",
+      "subtitle": "From startups to international groups, discover how we helped our clients build an online presence that truly performs."
+    },
+    "breadcrumb": "Portfolio",
+    "comingSoon": "Case studies coming soon",
+    "comingSoonBody": "We are preparing detailed case studies to show our processes, technical choices and results achieved for each client. Check back soon!",
+    "filters": {
+      "all": "All projects",
+      "web": "Websites",
+      "ecommerce": "E-commerce",
+      "seo": "SEO",
+      "ads": "Google Ads"
+    }
+  },
   "about": {
     "meta": {
       "title": "About — Agency, web design & SEO agency in Paris",
@@ -290,19 +583,19 @@
     "sections": [
       {
         "title": "An independent, committed web agency",
-        "body": "Agency was born from a simple belief: it is possible to deliver elegant, high-performing and perfectly optimised websites without compromise and without empty sales talk. Independent, we choose our clients the way we choose our tools: with high standards. Every project gets a dedicated team, a single point of contact and a proven methodology."
+        "body": "Agency was born from a simple belief: it is possible to deliver elegant, high-performing and perfectly optimised websites without compromise. Independent, we choose our clients the way we choose our tools: with high standards."
       },
       {
         "title": "A multi-disciplinary team",
-        "body": "Designers, front-end and back-end developers, SEO experts, web copywriters: our team covers every skill set required to deliver an ambitious digital project. We work in short cycles with clear rituals and involve you at the strategic milestones."
+        "body": "Designers, front-end and back-end developers, SEO experts, web copywriters: our team covers every skill set required to deliver an ambitious digital project."
       },
       {
         "title": "Values that drive every project",
-        "body": "We believe in transparency (timeline, budget, reporting), in technical excellence (Lighthouse 100, Core Web Vitals in the green), in pedagogy (you will always understand what we do and why) and in the long term (our clients stay with us for an average of 4 years). These values are not slogans, they are our daily decision criteria."
+        "body": "We believe in transparency (timeline, budget, reporting), in technical excellence (Lighthouse 100, Core Web Vitals in the green), in pedagogy and in the long term (our clients stay with us for an average of 4 years)."
       },
       {
         "title": "Paris, the French-speaking world and beyond",
-        "body": "Based in Paris, we partner with clients across the French-speaking world, in Spain and in Canada. Multilingual mastery (hreflang, translated content, local SEO) lets us build websites that perform on several markets at once."
+        "body": "Based in Paris, we partner with clients across the French-speaking world, in Spain and in Canada. Multilingual mastery lets us build websites that perform on several markets at once."
       }
     ],
     "values": {
@@ -385,7 +678,7 @@
     "sections": [
       {
         "title": "Publisher",
-        "body": "The Agency website is published by Agency SAS, a French simplified joint-stock company with a share capital of €10,000, registered with the Paris Trade and Companies Register under number 123 456 789, with its registered office at 12 rue de la République, 75001 Paris. Intra-community VAT number: FR12345678901. Publication director: the company's legal representative."
+        "body": "The Agency website is published by Agency SAS, a French simplified joint-stock company with a share capital of €10,000, registered with the Paris Trade and Companies Register under number 123 456 789, with its registered office at 12 rue de la République, 75001 Paris."
       },
       {
         "title": "Hosting",
@@ -393,11 +686,11 @@
       },
       {
         "title": "Intellectual property",
-        "body": "All content on the website (texts, images, logos, source code, graphic elements) is the exclusive property of Agency SAS unless stated otherwise. Any reproduction, representation, modification, publication or adaptation, in whole or in part, is forbidden without prior written authorisation."
+        "body": "All content on the website is the exclusive property of Agency SAS unless stated otherwise. Any reproduction, representation, modification, publication or adaptation is forbidden without prior written authorisation."
       },
       {
         "title": "Liability",
-        "body": "Agency SAS strives to provide accurate and up-to-date information. The publisher cannot however guarantee the accuracy, precision or completeness of the information made available. The user acknowledges using this information at their sole responsibility."
+        "body": "Agency SAS strives to provide accurate and up-to-date information but cannot guarantee completeness. The user acknowledges using this information at their sole responsibility."
       },
       {
         "title": "Contact",
@@ -419,11 +712,11 @@
       },
       {
         "title": "Data collected",
-        "body": "We only collect the data needed to handle your request via the contact form: name, business email, company (optional), subject and message. We do not collect any sensitive data within the meaning of the GDPR."
+        "body": "We only collect the data needed to handle your request via the contact form: name, business email, company (optional), subject and message."
       },
       {
         "title": "Purposes and legal basis",
-        "body": "Data is processed to answer your request and, where applicable, to establish a commercial relationship. The legal basis is your explicit consent (form checkbox) and the performance of pre-contractual measures taken at your request."
+        "body": "Data is processed to answer your request and establish a commercial relationship. The legal basis is your explicit consent and the performance of pre-contractual measures."
       },
       {
         "title": "Retention period",
@@ -431,11 +724,11 @@
       },
       {
         "title": "Your rights",
-        "body": "Under the GDPR, you have the right to access, rectification, erasure, restriction, objection and portability of your data, as well as the right to define the fate of your data after death. You may exercise these rights by writing to contact@agency.example.com. You also have the right to lodge a complaint with the CNIL."
+        "body": "Under the GDPR, you have the right to access, rectification, erasure, restriction, objection and portability. Write to contact@agency.example.com to exercise your rights."
       },
       {
         "title": "Cookies",
-        "body": "This website uses no advertising cookies and no third-party tracking. Only technical cookies needed for the proper functioning of the site may be used, with no personal identification."
+        "body": "This website uses no advertising cookies and no third-party tracking. Only necessary technical cookies may be used, with no personal identification."
       }
     ]
   },

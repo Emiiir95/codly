@@ -1,18 +1,20 @@
 import type { Locale } from "./site";
 
-/**
- * Canonical page keys → translated path per locale (without leading locale prefix).
- * The "real" Next.js page lives at the FR slug; English/Spanish slugs are exposed
- * via rewrites in next.config.ts so URLs are localized for SEO.
- */
 export type PageKey =
   | "home"
   | "about"
   | "contact"
   | "legal"
   | "privacy"
+  | "blog"
+  | "realisations"
   | "service-web"
-  | "service-seo";
+  | "service-seo"
+  | "service-vitrine"
+  | "service-ecommerce"
+  | "service-sur-mesure"
+  | "service-ads"
+  | "service-social";
 
 export const ROUTES: Record<PageKey, Record<Locale, string>> = {
   home: { fr: "/", en: "/", es: "/" },
@@ -36,6 +38,16 @@ export const ROUTES: Record<PageKey, Record<Locale, string>> = {
     en: "/privacy-policy",
     es: "/politica-de-privacidad",
   },
+  blog: {
+    fr: "/blog",
+    en: "/blog",
+    es: "/blog",
+  },
+  realisations: {
+    fr: "/realisations",
+    en: "/portfolio",
+    es: "/realizaciones",
+  },
   "service-web": {
     fr: "/services/creation-site-internet",
     en: "/services/web-design",
@@ -46,16 +58,39 @@ export const ROUTES: Record<PageKey, Record<Locale, string>> = {
     en: "/services/seo",
     es: "/servicios/seo",
   },
+  "service-vitrine": {
+    fr: "/services/site-vitrine-wordpress",
+    en: "/services/wordpress-showcase",
+    es: "/servicios/sitio-vitrina-wordpress",
+  },
+  "service-ecommerce": {
+    fr: "/services/site-ecommerce-shopify",
+    en: "/services/shopify-ecommerce",
+    es: "/servicios/tienda-shopify",
+  },
+  "service-sur-mesure": {
+    fr: "/services/site-sur-mesure",
+    en: "/services/custom-website",
+    es: "/servicios/sitio-a-medida",
+  },
+  "service-ads": {
+    fr: "/services/google-ads",
+    en: "/services/google-ads",
+    es: "/servicios/google-ads",
+  },
+  "service-social": {
+    fr: "/services/reseaux-sociaux",
+    en: "/services/social-media",
+    es: "/servicios/redes-sociales",
+  },
 };
 
-/** Build a fully-qualified localized URL path including the locale prefix. */
 export const localizedPath = (key: PageKey, locale: Locale): string => {
   const path = ROUTES[key][locale];
   if (locale === "fr") return path;
   return `/${locale}${path === "/" ? "" : path}`;
 };
 
-/** Get every locale variant of a given page (used for hreflang + sitemap). */
 export const allLocaleVariants = (
   key: PageKey,
 ): Array<{ locale: Locale; path: string }> =>
@@ -67,8 +102,15 @@ export const allLocaleVariants = (
 export const PAGE_KEYS: PageKey[] = [
   "home",
   "about",
+  "blog",
+  "realisations",
   "service-web",
   "service-seo",
+  "service-vitrine",
+  "service-ecommerce",
+  "service-sur-mesure",
+  "service-ads",
+  "service-social",
   "contact",
   "legal",
   "privacy",

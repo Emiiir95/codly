@@ -1,16 +1,57 @@
+import { useRef, useEffect, useState } from "react";
+
 type Props = {
   value: string;
   label: string;
 };
 
 export default function StatItem({ value, label }: Props) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [displayed, setDisplayed] = useState("0");
+
+  useEffect(() => {
+    const match = value.match(/^(\d+)(.*)/);
+    if (!match) {
+      setDisplayed(value);
+      return;
+    }
+    const target = parseInt(match[1], 10);
+    const suffix = match[2];
+
+    const el = ref.current;
+    if (!el) return;
+
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) return;
+        io.disconnect();
+
+        const start = performance.now();
+        const duration = 1400;
+
+        function tick(now: number) {
+          const elapsed = now - start;
+          const progress = Math.min(elapsed / duration, 1);
+          const ease = 1 - Math.pow(1 - progress, 3);
+          setDisplayed(Math.floor(ease * target) + suffix);
+          if (progress < 1) requestAnimationFrame(tick);
+        }
+
+        requestAnimationFrame(tick);
+      },
+      { threshold: 0.5 },
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, [value]);
+
   return (
-    <div className="text-center">
-      <dt className="text-xs uppercase tracking-widest text-[var(--color-fg-muted)]">
+    <div ref={ref} className="text-center">
+      <dt className="text-xs uppercase tracking-widest text-fg-muted">
         {label}
       </dt>
-      <dd className="mt-1 text-2xl font-semibold tracking-tight text-[var(--color-fg)] sm:text-3xl">
-        {value}
+      <dd className="mt-1 text-2xl font-semibold tracking-tight text-fg sm:text-3xl">
+        {displayed}
       </dd>
     </div>
   );

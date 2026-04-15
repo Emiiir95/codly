@@ -12,14 +12,16 @@ const nextConfig: NextConfig = {
   },
   async rewrites() {
     return [
-      // English route aliases
+      // ---------- English route aliases ----------
       { source: "/en/about", destination: "/en/a-propos" },
       { source: "/en/legal-notice", destination: "/en/mentions-legales" },
       {
         source: "/en/privacy-policy",
         destination: "/en/politique-confidentialite",
       },
-      // Spanish route aliases
+      { source: "/en/portfolio", destination: "/en/realisations" },
+
+      // ---------- Spanish route aliases ----------
       { source: "/es/sobre-nosotros", destination: "/es/a-propos" },
       { source: "/es/contacto", destination: "/es/contact" },
       { source: "/es/aviso-legal", destination: "/es/mentions-legales" },
@@ -27,7 +29,8 @@ const nextConfig: NextConfig = {
         source: "/es/politica-de-privacidad",
         destination: "/es/politique-confidentialite",
       },
-      // Service prefix alias (Spanish "servicios")
+      { source: "/es/realizaciones", destination: "/es/realisations" },
+      // Service prefix alias (Spanish "servicios" → "services")
       { source: "/es/servicios/:slug", destination: "/es/services/:slug" },
     ];
   },
