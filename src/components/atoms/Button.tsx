@@ -8,9 +8,9 @@ const base =
 
 const variants: Record<Variant, string> = {
   primary:
-    "bg-[var(--color-accent)] text-white shadow-sm hover:bg-[color-mix(in_oklab,var(--color-accent)_90%,black)] hover:shadow-[0_10px_30px_-12px_rgba(206,28,107,0.55)]",
+    "bg-[var(--color-accent)] !text-white shadow-sm hover:bg-[color-mix(in_oklab,var(--color-accent)_90%,black)] hover:shadow-[0_10px_30px_-12px_rgba(206,28,107,0.55)]",
   secondary:
-    "bg-white text-[var(--color-fg)] border border-[var(--color-border)] hover:border-[var(--color-fg)] hover:bg-[var(--color-bg)]",
+    "bg-[var(--color-bg-elev)] text-[var(--color-fg)] border border-[var(--color-border)] hover:border-[var(--color-fg)] hover:bg-[var(--color-bg)]",
   ghost:
     "text-[var(--color-fg-muted)] hover:text-[var(--color-accent)] hover:bg-[var(--color-accent-soft)]",
 };

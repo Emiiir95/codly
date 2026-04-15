@@ -1,3 +1,4 @@
+import { Code2, TrendingUp } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { localizedPath } from "@/lib/routes";
 import Section from "./Section";
@@ -20,7 +21,7 @@ export default function HomeServices() {
       <div className="grid gap-6 md:grid-cols-2">
         <Reveal delay={0}>
           <ServiceCard
-            icon="✦"
+            icon={Code2}
             accent="primary"
             title={t("home.services.webTitle")}
             description={t("home.services.webDescription")}
@@ -31,7 +32,7 @@ export default function HomeServices() {
         </Reveal>
         <Reveal delay={0.12}>
           <ServiceCard
-            icon="↗"
+            icon={TrendingUp}
             accent="secondary"
             title={t("home.services.seoTitle")}
             description={t("home.services.seoDescription")}

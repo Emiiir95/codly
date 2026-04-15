@@ -1,14 +1,17 @@
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
+import { ChevronDown } from "lucide-react";
 
 export type NavDropdownItem = { href: string; label: string; desc?: string };
 
 type Props = {
   label: string;
   items: NavDropdownItem[];
+  active?: boolean;
+  activeHref?: string;
 };
 
-export default function NavDropdown({ label, items }: Props) {
+export default function NavDropdown({ label, items, active, activeHref }: Props) {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -22,55 +25,68 @@ export default function NavDropdown({ label, items }: Props) {
     return () => document.removeEventListener("mousedown", handleOutside);
   }, []);
 
+  const stateCls = active || open
+    ? "bg-[var(--color-accent-soft)] text-[var(--color-accent)]"
+    : "text-[var(--color-fg-muted)] hover:bg-[var(--color-accent-soft)] hover:text-[var(--color-accent)]";
+
   return (
     <div ref={ref} className="relative">
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
         aria-expanded={open}
-        className="inline-flex items-center gap-1 text-sm font-medium text-[var(--color-fg-muted)] transition-colors hover:text-[var(--color-accent)]"
+        className={`inline-flex items-center gap-1 rounded-full px-3 py-1.5 text-sm font-medium transition-all duration-200 ${stateCls}`}
       >
         {label}
-        <svg
+        <ChevronDown
+          size={14}
+          strokeWidth={2}
           aria-hidden
-          width="12"
-          height="12"
-          viewBox="0 0 12 12"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.5"
           className={`transition-transform duration-200 ${open ? "rotate-180" : ""}`}
-        >
-          <path d="M2 4l4 4 4-4" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
+        />
       </button>
 
       {open && (
         <div
-          className="absolute left-0 top-full z-50 mt-2 min-w-[220px] overflow-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-elev)] shadow-lg"
+          className="absolute left-0 top-full z-50 mt-3 min-w-[240px] overflow-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-elev)] shadow-lg"
           style={{
             animation: "fade-up 0.18s cubic-bezier(0.22, 1, 0.36, 1) both",
           }}
         >
           <ul className="py-1.5">
-            {items.map((item) => (
-              <li key={item.href}>
-                <Link
-                  href={item.href}
-                  onClick={() => setOpen(false)}
-                  className="flex flex-col gap-0.5 px-4 py-2.5 text-sm transition-colors hover:bg-[var(--color-accent-soft)]"
-                >
-                  <span className="font-medium text-[var(--color-fg)]">
-                    {item.label}
-                  </span>
-                  {item.desc && (
-                    <span className="text-xs text-[var(--color-fg-subtle)]">
-                      {item.desc}
-                    </span>
-                  )}
-                </Link>
-              </li>
-            ))}
+            {items.map((item) => {
+              const isActive = activeHref === item.href;
+              return (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    onClick={() => setOpen(false)}
+                    className={`flex items-center gap-0.5 px-4 py-2.5 text-sm transition-all duration-200 ${
+                      isActive
+                        ? "bg-[var(--color-accent-soft)]"
+                        : "hover:bg-[var(--color-accent-soft)] hover:pl-5"
+                    }`}
+                  >
+                    <div className="flex flex-1 flex-col gap-0.5">
+                      <span
+                        className={`font-medium ${
+                          isActive
+                            ? "text-[var(--color-accent)]"
+                            : "text-[var(--color-fg)]"
+                        }`}
+                      >
+                        {item.label}
+                      </span>
+                      {item.desc && (
+                        <span className="text-xs text-[var(--color-fg-subtle)]">
+                          {item.desc}
+                        </span>
+                      )}
+                    </div>
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </div>
       )}
