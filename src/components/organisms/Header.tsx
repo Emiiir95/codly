@@ -65,51 +65,23 @@ export default function Header() {
     { href: localizedPath("contact", locale), label: t("nav.contact") },
   ];
 
-  // Mobile flat nav (all items)
-  const mobileNav = [
-    {
-      href: localizedPath("service-vitrine", locale),
-      label: t("nav.serviceVitrine"),
-    },
-    {
-      href: localizedPath("service-ecommerce", locale),
-      label: t("nav.serviceEcommerce"),
-    },
-    {
-      href: localizedPath("service-sur-mesure", locale),
-      label: t("nav.serviceSurMesure"),
-    },
-    { href: localizedPath("service-seo", locale), label: t("nav.serviceSeo") },
-    { href: localizedPath("service-ads", locale), label: t("nav.serviceAds") },
-    {
-      href: localizedPath("service-social", locale),
-      label: t("nav.serviceSocial"),
-    },
-    {
-      href: localizedPath("realisations", locale),
-      label: t("nav.realisations"),
-    },
-    { href: localizedPath("blog", locale), label: t("nav.blog") },
-    { href: localizedPath("about", locale), label: t("nav.about") },
-    { href: localizedPath("contact", locale), label: t("nav.contact") },
-  ];
 
   return (
     <header
       className={`sticky top-0 z-40 transition-all ${
         scrolled
-          ? "border-b border-[var(--color-border)] bg-[var(--color-bg-elev)]/85 backdrop-blur"
+          ? "border-b border-border bg-bg-elev/85 backdrop-blur"
           : "border-b border-transparent bg-transparent"
       }`}
     >
       <a
         href="#main"
-        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-[var(--color-accent)] focus:px-3 focus:py-2 focus:text-white"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-accent focus:px-3 focus:py-2 focus:text-white"
       >
         {t("common.skipToContent")}
       </a>
 
-      <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-6 py-4">
+      <div className="mx-auto flex w-full max-w-screen-2xl items-center justify-between gap-4 px-16 py-4">
         <Logo href={localizedPath("home", locale)} />
 
         {/* Desktop nav */}
@@ -126,7 +98,7 @@ export default function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm font-medium text-[var(--color-fg-muted)] transition-colors hover:text-[var(--color-accent)]"
+              className="text-sm font-medium text-fg-muted transition-colors hover:text-accent"
             >
               {item.label}
             </Link>
@@ -159,10 +131,10 @@ export default function Header() {
       {open && (
         <nav
           aria-label="Mobile"
-          className="border-t border-[var(--color-border)] bg-[var(--color-bg-elev)] px-6 py-4 md:hidden"
+          className="border-t border-border bg-bg-elev px-6 py-4 md:hidden"
         >
           {/* Creation group */}
-          <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-[var(--color-accent)]">
+          <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-accent">
             {t("nav.creationSite")}
           </p>
           <ul className="mb-4 flex flex-col gap-1">
@@ -171,7 +143,7 @@ export default function Header() {
                 <Link
                   href={item.href}
                   onClick={() => setOpen(false)}
-                  className="block py-1.5 text-sm font-medium text-[var(--color-fg-muted)] hover:text-[var(--color-accent)]"
+                  className="block py-1.5 text-sm font-medium text-fg-muted hover:text-accent"
                 >
                   {item.label}
                 </Link>
@@ -179,7 +151,7 @@ export default function Header() {
             ))}
           </ul>
           {/* Communication group */}
-          <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-[var(--color-accent)]">
+          <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-accent">
             {t("nav.communication")}
           </p>
           <ul className="mb-4 flex flex-col gap-1">
@@ -188,7 +160,7 @@ export default function Header() {
                 <Link
                   href={item.href}
                   onClick={() => setOpen(false)}
-                  className="block py-1.5 text-sm font-medium text-[var(--color-fg-muted)] hover:text-[var(--color-accent)]"
+                  className="block py-1.5 text-sm font-medium text-fg-muted hover:text-accent"
                 >
                   {item.label}
                 </Link>
