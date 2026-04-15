@@ -7,14 +7,15 @@ type Props = {
 
 export default function StatItem({ value, label }: Props) {
   const ref = useRef<HTMLDivElement>(null);
-  const [displayed, setDisplayed] = useState("0");
+  const [displayed, setDisplayed] = useState(() => {
+    const match = value.match(/^(\d+)(.*)/);
+    return match ? "0" : value;
+  });
 
   useEffect(() => {
     const match = value.match(/^(\d+)(.*)/);
-    if (!match) {
-      setDisplayed(value);
-      return;
-    }
+    if (!match) return;
+
     const target = parseInt(match[1], 10);
     const suffix = match[2];
 
@@ -46,11 +47,9 @@ export default function StatItem({ value, label }: Props) {
   }, [value]);
 
   return (
-    <div ref={ref} className="text-center">
-      <dt className="text-xs uppercase tracking-widest text-fg-muted">
-        {label}
-      </dt>
-      <dd className="mt-1 text-2xl font-semibold tracking-tight text-fg sm:text-3xl">
+    <div ref={ref} className="flex flex-col bg-fg/4 p-8 text-center">
+      <dt className="text-sm font-semibold text-fg-muted">{label}</dt>
+      <dd className="order-first text-3xl font-semibold tracking-tight text-fg">
         {displayed}
       </dd>
     </div>

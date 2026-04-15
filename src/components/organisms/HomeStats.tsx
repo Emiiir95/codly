@@ -11,8 +11,8 @@ export default function HomeStats() {
   ];
 
   return (
-    <div className="mx-auto w-full max-w-6xl px-6">
-      <dl className="card grid grid-cols-2 gap-4 p-6 sm:grid-cols-4">
+    <div className="mx-auto w-full max-w-5xl px-6">
+      <dl className="grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl sm:grid-cols-2 lg:grid-cols-4">
         {stats.map((s) => (
           <StatItem key={s.label} value={s.value} label={s.label} />
         ))}

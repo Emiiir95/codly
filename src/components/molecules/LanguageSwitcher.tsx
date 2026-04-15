@@ -3,7 +3,7 @@ import { useState, useRef, useEffect } from "react";
 import type { Locale } from "@/lib/site";
 import { SITE } from "@/lib/site";
 
-const LABELS: Record<Locale, string> = { fr: "FR", en: "EN", es: "ES" };
+const FLAG_CODE: Record<Locale, string> = { fr: "fr", en: "gb", es: "es" };
 const FULL: Record<Locale, string> = {
   fr: "Français",
   en: "English",
@@ -42,8 +42,11 @@ export default function LanguageSwitcher() {
         aria-label="Language"
         className="inline-flex items-center gap-1.5 rounded-full border border-[var(--color-border)] bg-[var(--color-bg-elev)] px-3 py-1.5 text-xs font-medium text-[var(--color-fg)] shadow-sm hover:border-[var(--color-fg)]"
       >
-        <span aria-hidden>🌐</span>
-        {LABELS[current]}
+        <span
+          aria-hidden
+          className={`fi fi-${FLAG_CODE[current]} rounded-sm text-base`}
+        />
+        <span className="text-xs">{FULL[current].slice(0, 2)}</span>
       </button>
       {open && (
         <ul
@@ -63,8 +66,16 @@ export default function LanguageSwitcher() {
                     : "text-[var(--color-fg-muted)]"
                 }`}
               >
-                <span>{FULL[loc]}</span>
-                <span className="text-xs opacity-60">{LABELS[loc]}</span>
+                <span className="flex items-center gap-2">
+                  <span
+                    aria-hidden
+                    className={`fi fi-${FLAG_CODE[loc]} rounded-sm text-base`}
+                  />
+                  {FULL[loc]}
+                </span>
+                {loc === current && (
+                  <span className="text-xs opacity-60">✓</span>
+                )}
               </button>
             </li>
           ))}
