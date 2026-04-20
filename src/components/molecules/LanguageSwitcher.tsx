@@ -40,13 +40,13 @@ export default function LanguageSwitcher() {
         aria-haspopup="listbox"
         aria-expanded={open}
         aria-label="Language"
-        className="inline-flex items-center gap-1.5 rounded-full border border-[var(--color-border)] bg-[var(--color-bg-elev)] px-3 py-1.5 text-xs font-medium text-[var(--color-fg)] shadow-sm hover:border-[var(--color-fg)]"
+        className="group inline-flex h-9 w-9 items-center justify-center rounded-full border border-border bg-bg-elev text-fg shadow-sm transition-all duration-300 hover:scale-110 hover:border-accent hover:text-accent"
       >
         <span
           aria-hidden
-          className={`fi fi-${FLAG_CODE[current]} rounded-sm text-base`}
+          className={`fi fi-${FLAG_CODE[current]} rounded-sm`}
+          style={{ fontSize: "1.1rem", lineHeight: 1 }}
         />
-        <span className="text-xs">{FULL[current].slice(0, 2)}</span>
       </button>
       {open && (
         <ul
