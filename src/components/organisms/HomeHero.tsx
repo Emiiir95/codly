@@ -20,10 +20,7 @@ export default function HomeHero() {
           >
             <Eyebrow withDot>{t("home.hero.eyebrow")}</Eyebrow>
           </div>
-          <div
-            className="animate-fade-up"
-            style={{ animationDelay: "80ms" }}
-          >
+          <div className="animate-fade-up" style={{ animationDelay: "80ms" }}>
             <GradientHeading as={1} size="xl">
               {t("home.hero.title")}
             </GradientHeading>

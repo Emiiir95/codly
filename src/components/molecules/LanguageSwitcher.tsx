@@ -4,7 +4,7 @@ import { Languages } from "lucide-react";
 import type { Locale } from "@/lib/site";
 import { SITE } from "@/lib/site";
 
-const LABELS: Record<Locale, string> = { fr: "FR", en: "EN", es: "ES" };
+const FLAG_CODE: Record<Locale, string> = { fr: "fr", en: "gb", es: "es" };
 const FULL: Record<Locale, string> = {
   fr: "Français",
   en: "English",
@@ -41,16 +41,21 @@ export default function LanguageSwitcher() {
         aria-haspopup="listbox"
         aria-expanded={open}
         aria-label="Language"
-        className="inline-flex items-center gap-1.5 rounded-full border border-[var(--color-border)] bg-[var(--color-bg-elev)] px-3 py-1.5 text-xs font-medium text-[var(--color-fg)] shadow-sm transition-all duration-200 hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]"
+        className="group inline-flex h-9 w-9 items-center justify-center rounded-full border border-border bg-bg-elev text-fg shadow-sm transition-all duration-300 hover:scale-110 hover:border-accent hover:text-accent"
       >
-        <Languages size={14} strokeWidth={2} aria-hidden />
-        {LABELS[current]}
+        <span
+          aria-hidden
+          className={`fi fi-${FLAG_CODE[current]} rounded-sm`}
+          style={{ fontSize: "1.1rem", lineHeight: 1 }}
+        />
       </button>
       {open && (
         <ul
           role="listbox"
           className="absolute right-0 z-50 mt-2 w-40 overflow-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-elev)] py-1 shadow-xl"
-          style={{ animation: "fade-up 0.15s cubic-bezier(0.22, 1, 0.36, 1) both" }}
+          style={{
+            animation: "fade-up 0.15s cubic-bezier(0.22, 1, 0.36, 1) both",
+          }}
         >
           {SITE.locales.map((loc) => (
             <li key={loc}>
@@ -65,8 +70,16 @@ export default function LanguageSwitcher() {
                     : "text-[var(--color-fg-muted)]"
                 }`}
               >
-                <span>{FULL[loc]}</span>
-                <span className="text-xs opacity-60">{LABELS[loc]}</span>
+                <span className="flex items-center gap-2">
+                  <span
+                    aria-hidden
+                    className={`fi fi-${FLAG_CODE[loc]} rounded-sm text-base`}
+                  />
+                  {FULL[loc]}
+                </span>
+                {loc === current && (
+                  <span className="text-xs opacity-60">✓</span>
+                )}
               </button>
             </li>
           ))}

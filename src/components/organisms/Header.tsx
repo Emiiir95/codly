@@ -84,11 +84,16 @@ export default function Header() {
     },
   ];
 
-  const allServiceHrefs = servicesColumns.flatMap((c) => c.items.map((i) => i.href));
+  const allServiceHrefs = servicesColumns.flatMap((c) =>
+    c.items.map((i) => i.href),
+  );
   const servicesActive = allServiceHrefs.some(isActive);
 
   const simpleNav = [
-    { href: localizedPath("realisations", locale), label: t("nav.realisations") },
+    {
+      href: localizedPath("realisations", locale),
+      label: t("nav.realisations"),
+    },
     { href: localizedPath("blog", locale), label: t("nav.blog") },
     { href: localizedPath("about", locale), label: t("nav.about") },
   ];
@@ -146,12 +151,12 @@ export default function Header() {
 
       <a
         href="#main"
-        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-[var(--color-accent)] focus:px-3 focus:py-2 focus:text-white"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-accent focus:px-3 focus:py-2 focus:text-white"
       >
         {t("common.skipToContent")}
       </a>
 
-      <div className="mx-auto flex w-full max-w-[1400px] items-center justify-between gap-4 px-8 py-4">
+      <div className="mx-auto flex w-full max-w-screen-2xl items-center justify-between gap-4 px-8 py-4">
         {/* Left: Logo */}
         <div className="flex-1">
           <Logo href={localizedPath("home", locale)} />
@@ -210,7 +215,7 @@ export default function Header() {
       {open && (
         <nav
           aria-label="Mobile"
-          className="border-t border-[var(--color-border)] bg-[var(--color-bg-elev)] px-6 py-4 md:hidden"
+          className="border-t border-border bg-bg-elev px-6 py-4 md:hidden"
         >
           {servicesColumns.map((col) => (
             <div key={col.title} className="mb-4">
@@ -243,7 +248,13 @@ export default function Header() {
             </div>
           ))}
           <HeaderNav
-            items={[...simpleNav, { href: localizedPath("contact", locale), label: t("nav.contact") }]}
+            items={[
+              ...simpleNav,
+              {
+                href: localizedPath("contact", locale),
+                label: t("nav.contact"),
+              },
+            ]}
             orientation="vertical"
             onItemClick={() => setOpen(false)}
             activeHref={currentPath}

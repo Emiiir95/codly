@@ -12,7 +12,7 @@ export default function Breadcrumbs({ items }: { items: Crumb[] }) {
   return (
     <nav
       aria-label="Breadcrumb"
-      className="mx-auto w-full max-w-6xl px-6 pt-8 text-xs text-[var(--color-fg-muted)]"
+      className="mx-auto w-full max-w-360 px-8 pt-8 text-xs text-[var(--color-fg-muted)]"
     >
       <ol className="flex flex-wrap items-center gap-2">
         {all.map((item, i) => {

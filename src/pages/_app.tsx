@@ -1,4 +1,5 @@
 import "@/styles/globals.css";
+import "flag-icons/css/flag-icons.min.css";
 import type { AppProps } from "next/app";
 import { useMemo } from "react";
 import { Geist, Geist_Mono } from "next/font/google";

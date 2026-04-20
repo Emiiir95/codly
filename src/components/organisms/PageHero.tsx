@@ -18,9 +18,7 @@ export default function PageHero({ eyebrow, title, subtitle }: Props) {
       <GradientHeading as={1} size="xl">
         {title}
       </GradientHeading>
-      <p className="mt-6 max-w-2xl text-lg text-[var(--color-fg-muted)]">
-        {subtitle}
-      </p>
+      <p className="mt-6 max-w-2xl text-lg text-fg-muted">{subtitle}</p>
     </section>
   );
 }

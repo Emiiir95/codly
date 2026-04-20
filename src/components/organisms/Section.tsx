@@ -23,7 +23,7 @@ export default function Section({
   return (
     <section
       id={id}
-      className={`mx-auto w-full max-w-6xl px-6 py-20 sm:py-28 ${className}`}
+      className={`mx-auto w-full max-w-360 px-8 py-20 sm:py-28 ${className}`}
     >
       <SectionHeader
         eyebrow={eyebrow}
