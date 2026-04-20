@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import { useState, useRef, useEffect } from "react";
+import { Languages } from "lucide-react";
 import type { Locale } from "@/lib/site";
 import { SITE } from "@/lib/site";
 
@@ -40,15 +41,16 @@ export default function LanguageSwitcher() {
         aria-haspopup="listbox"
         aria-expanded={open}
         aria-label="Language"
-        className="inline-flex items-center gap-1.5 rounded-full border border-[var(--color-border)] bg-[var(--color-bg-elev)] px-3 py-1.5 text-xs font-medium text-[var(--color-fg)] shadow-sm hover:border-[var(--color-fg)]"
+        className="inline-flex items-center gap-1.5 rounded-full border border-[var(--color-border)] bg-[var(--color-bg-elev)] px-3 py-1.5 text-xs font-medium text-[var(--color-fg)] shadow-sm transition-all duration-200 hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]"
       >
-        <span aria-hidden>🌐</span>
+        <Languages size={14} strokeWidth={2} aria-hidden />
         {LABELS[current]}
       </button>
       {open && (
         <ul
           role="listbox"
           className="absolute right-0 z-50 mt-2 w-40 overflow-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-elev)] py-1 shadow-xl"
+          style={{ animation: "fade-up 0.15s cubic-bezier(0.22, 1, 0.36, 1) both" }}
         >
           {SITE.locales.map((loc) => (
             <li key={loc}>
@@ -57,9 +59,9 @@ export default function LanguageSwitcher() {
                 role="option"
                 aria-selected={loc === current}
                 onClick={() => switchTo(loc)}
-                className={`flex w-full items-center justify-between px-3 py-2 text-sm hover:bg-[var(--color-bg)] ${
+                className={`flex w-full items-center justify-between px-3 py-2 text-sm transition-colors hover:bg-[var(--color-accent-soft)] ${
                   loc === current
-                    ? "text-[var(--color-accent)] font-medium"
+                    ? "font-medium text-[var(--color-accent)]"
                     : "text-[var(--color-fg-muted)]"
                 }`}
               >

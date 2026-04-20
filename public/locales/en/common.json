@@ -639,6 +639,7 @@
       "company": "Company (optional)",
       "companyPlaceholder": "Your company name",
       "subject": "Project type",
+      "subjectPlaceholder": "— Select —",
       "subjectOptions": {
         "web": "Website creation",
         "seo": "SEO",

@@ -639,6 +639,7 @@
       "company": "Entreprise (optionnel)",
       "companyPlaceholder": "Nom de votre entreprise",
       "subject": "Type de projet",
+      "subjectPlaceholder": "— Sélectionnez —",
       "subjectOptions": {
         "web": "Création de site internet",
         "seo": "Référencement SEO",

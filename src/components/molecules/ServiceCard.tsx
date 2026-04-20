@@ -1,5 +1,5 @@
 import { isValidElement, type ComponentType, type ReactNode, type SVGProps } from "react";
-import { Check } from "lucide-react";
+import { Check, ArrowRight } from "lucide-react";
 import { ButtonLink } from "@/components/atoms/Button";
 
 type IconType = ComponentType<SVGProps<SVGSVGElement> & { size?: number | string }>;
@@ -65,7 +65,7 @@ export default function ServiceCard({
       </ul>
       <div className="mt-auto pt-2">
         <ButtonLink href={href} variant="ghost">
-          {ctaLabel} →
+          {ctaLabel} <ArrowRight size={16} strokeWidth={2} aria-hidden />
         </ButtonLink>
       </div>
     </article>
