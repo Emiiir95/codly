@@ -133,6 +133,42 @@ export const aggregateRatingJsonLd = () => ({
   ],
 });
 
+export const articleJsonLd = (params: {
+  title: string;
+  description: string;
+  slug: string;
+  locale: Locale;
+  date: string;
+  author?: string;
+  cover?: string;
+  tags?: string[];
+}) => ({
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  headline: params.title,
+  description: params.description,
+  datePublished: params.date,
+  dateModified: params.date,
+  author: {
+    "@type": "Organization",
+    name: params.author ?? SITE.name,
+    url: SITE.domain,
+  },
+  publisher: {
+    "@type": "Organization",
+    name: SITE.name,
+    url: SITE.domain,
+    logo: { "@type": "ImageObject", url: `${SITE.domain}/logo.svg` },
+  },
+  image: params.cover ? [params.cover] : [`${SITE.domain}/og-default.png`],
+  inLanguage: params.locale,
+  keywords: params.tags?.join(", "),
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": `${SITE.domain}${localizedPath("blog", params.locale)}/${params.slug}`,
+  },
+});
+
 export const jsonLdScript = (data: unknown) => ({
   __html: JSON.stringify(data).replace(/</g, "\\u003c"),
 });
