@@ -2,13 +2,10 @@ import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Search, Tags, ChevronDown } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
-<<<<<<< HEAD
 import type { BlogPostMeta } from "@/lib/blog-utils";
 import { localizedPath } from "@/lib/routes";
-import Breadcrumbs from "@/components/molecules/Breadcrumbs";
 import BlogCard from "@/components/molecules/BlogCard";
-=======
->>>>>>> origin/main
+
 import PageHero from "./PageHero";
 import Section from "./Section";
 
@@ -121,7 +118,9 @@ export default function BlogContent({ posts }: Props) {
                         <button
                           key={tag}
                           type="button"
-                          onClick={() => setActiveTag(tag === activeTag ? null : tag)}
+                          onClick={() =>
+                            setActiveTag(tag === activeTag ? null : tag)
+                          }
                           className={`rounded-full border px-3.5 py-1.5 text-xs font-medium transition-all ${
                             tag === activeTag
                               ? "border-[var(--color-accent)] bg-[var(--color-accent-soft)] text-[var(--color-accent)]"
