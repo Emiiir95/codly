@@ -24,12 +24,21 @@ export default function Header() {
   const { t, locale } = useI18n();
   const router = useRouter();
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [megaOpen, setMegaOpen] = useState(false);
 
   useEffect(() => {
     const handler = () => setOpen(false);
     router.events.on("routeChangeStart", handler);
     return () => router.events.off("routeChangeStart", handler);
   }, [router.events]);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   const currentPath = router.asPath.split("?")[0].split("#")[0];
   const isActive = (href: string) =>
@@ -107,10 +116,25 @@ export default function Header() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-40 bg-transparent">
+      {/* Fullscreen backdrop behind the mega menu. Fades in (with blur + dim) when a
+          dropdown with multiple items is open, giving it focus like copyfy.io's nav. */}
+      <div
+        aria-hidden
+        className={`fixed inset-0 -z-20 bg-black/40 backdrop-blur-sm transition-opacity duration-300 ${
+          megaOpen ? "opacity-100" : "pointer-events-none opacity-0"
+        }`}
+      />
+
       {/* Progressive blur: strongest at the very top, fading out towards the bottom.
           Stacked layers with increasing blur + stepped mask gradients produce a smoother
-          gradient than a single backdrop-filter would. */}
-      <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
+          gradient than a single backdrop-filter would. Fades out once the header collapses
+          into its scrolled "pill" state. */}
+      <div
+        aria-hidden
+        className={`pointer-events-none absolute inset-0 -z-10 transition-opacity duration-300 ${
+          scrolled ? "opacity-0" : "opacity-100"
+        }`}
+      >
         <div
           className="absolute inset-0 backdrop-blur-[3px]"
           style={{
@@ -156,7 +180,13 @@ export default function Header() {
         {t("common.skipToContent")}
       </a>
 
-      <div className="mx-auto flex w-full max-w-screen-2xl items-center justify-between gap-4 px-8 py-4">
+      <div
+        className={`mx-auto flex items-center justify-between gap-4 transition-[max-width,margin,padding,border-radius,background-color,box-shadow,border-color] duration-300 ease-out ${
+          scrolled
+            ? "mt-3 w-[calc(100%-1.5rem)] max-w-5xl rounded-2xl border border-[var(--color-border)] bg-[var(--color-bg-elev)]/70 px-5 py-2.5 shadow-lg shadow-black/5 backdrop-blur-xl"
+            : "w-full max-w-screen-2xl rounded-none border border-transparent bg-transparent px-8 py-4"
+        }`}
+      >
         {/* Left: Logo */}
         <div className="flex-1">
           <Logo href={localizedPath("home", locale)} />
@@ -172,6 +202,7 @@ export default function Header() {
             columns={servicesColumns}
             active={servicesActive}
             activeHref={currentPath}
+            onOpenChange={setMegaOpen}
           />
           {simpleNav.map((item) => {
             const active = isActive(item.href);
