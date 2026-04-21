@@ -31,8 +31,8 @@
 
 :root.dark {
   color-scheme: dark;
-  --color-bg: #0b0b10;
-  --color-bg-elev: #16161d;
+  --color-bg: #07070d;
+  --color-bg-elev: #14141c;
   --color-fg: #f5f5fa;
   --color-fg-muted: #a1a1b3;
   --color-fg-subtle: #6b6b7a;
@@ -44,6 +44,7 @@
 }
 
 html {
+  background: var(--color-bg);
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -51,10 +52,69 @@ html {
 }
 
 body {
-  background: var(--color-bg);
   color: var(--color-fg);
   font-family: var(--font-sans);
   min-height: 100vh;
+  position: relative;
+  background: transparent;
+}
+
+/* Dark-mode ambient background: slow-drifting mesh gradient + subtle noise grain.
+ * Both layers are fixed + pointer-events:none so they never intercept clicks or scroll. */
+:root.dark body::before {
+  content: "";
+  position: fixed;
+  inset: -20%;
+  z-index: -2;
+  pointer-events: none;
+  background-image:
+    radial-gradient(
+      38rem 38rem at 18% 22%,
+      color-mix(in oklab, var(--color-accent) 22%, transparent),
+      transparent 60%
+    ),
+    radial-gradient(
+      42rem 42rem at 82% 18%,
+      color-mix(in oklab, var(--color-accent-2) 22%, transparent),
+      transparent 60%
+    ),
+    radial-gradient(
+      48rem 48rem at 50% 90%,
+      color-mix(in oklab, #3b82f6 18%, transparent),
+      transparent 62%
+    ),
+    radial-gradient(
+      36rem 36rem at 10% 78%,
+      color-mix(in oklab, var(--color-accent-2) 16%, transparent),
+      transparent 60%
+    );
+  filter: blur(40px) saturate(115%);
+  animation: mesh-drift 28s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+:root.dark body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.055;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.9 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  background-size: 220px 220px;
+}
+
+@keyframes mesh-drift {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(-3%, 2%, 0) scale(1.06);
+  }
+  100% {
+    transform: translate3d(2%, -2%, 0) scale(1.04);
+  }
 }
 
 ::selection {

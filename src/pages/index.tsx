@@ -46,14 +46,16 @@ export default function HomePage({
         ]}
       />
       <HomeHero />
-      <HomeStats />
-      <HomeServices />
-      <HomeWhy />
-      <HomeProcess />
-      <HomeTestimonials />
-      <HomeContent />
-      <HomeFaq />
-      <HomeCta />
+      <div className="relative z-10 rounded-t-[2.5rem] bg-[var(--color-bg)] shadow-[0_-24px_60px_-24px_rgba(0,0,0,0.18)]">
+        <HomeStats />
+        <HomeServices />
+        <HomeWhy />
+        <HomeProcess />
+        <HomeTestimonials />
+        <HomeContent />
+        <HomeFaq />
+        <HomeCta />
+      </div>
     </>
   );
 }

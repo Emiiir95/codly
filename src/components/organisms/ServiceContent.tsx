@@ -2,6 +2,7 @@ import { useI18n } from "@/lib/i18n";
 import { localizedPath } from "@/lib/routes";
 import type { ServiceId } from "@/lib/services";
 import { SERVICE_NS } from "@/lib/services";
+import { SERVICE_VISUALS } from "@/lib/service-visuals";
 import { ButtonLink } from "@/components/atoms/Button";
 import { Phone } from "lucide-react";
 import PageHero from "./PageHero";
@@ -13,6 +14,8 @@ import SolutionGrid from "@/components/molecules/SolutionGrid";
 import MidCta from "@/components/molecules/MidCta";
 import ProcessSteps from "@/components/molecules/ProcessSteps";
 import ServiceDeliverables from "@/components/molecules/ServiceDeliverables";
+import ServiceHeroMedia from "@/components/molecules/ServiceHeroMedia";
+import ServiceShowcase from "@/components/molecules/ServiceShowcase";
 import FinalCta from "@/components/molecules/FinalCta";
 
 type Props = {
@@ -22,6 +25,7 @@ type Props = {
 export default function ServiceContent({ serviceId }: Props) {
   const { t, raw, locale } = useI18n();
   const ns = SERVICE_NS[serviceId];
+  const visuals = SERVICE_VISUALS[serviceId];
 
   const sections = raw<Array<{ title: string; body: string }>>(
     `${ns}.sections`,
@@ -59,6 +63,15 @@ export default function ServiceContent({ serviceId }: Props) {
         </Reveal>
       </section>
 
+      {/* Hero visual */}
+      <section className="pb-16">
+        <ServiceHeroMedia
+          src={visuals.hero.src}
+          alt={visuals.hero.alt}
+          eyebrow={t(`${ns}.hero.eyebrow`)}
+        />
+      </section>
+
       {/* Trust Bar */}
       <Reveal>
         <section className="mx-auto w-full max-w-5xl px-6 pb-16">
@@ -87,6 +100,15 @@ export default function ServiceContent({ serviceId }: Props) {
           eyebrow={t("service.approachEyebrow")}
           title={t(`${ns}.solutionTitle`)}
           items={sections}
+        />
+      </Section>
+
+      {/* Visual showcase */}
+      <Section>
+        <ServiceShowcase
+          title={t(`${ns}.hero.title`)}
+          subtitle={t(`${ns}.hero.subtitle`)}
+          images={visuals.showcase}
         />
       </Section>
 
