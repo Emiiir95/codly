@@ -178,353 +178,625 @@
   },
   "serviceWeb": {
     "meta": {
-      "title": "Professional website creation — Agency web agency",
-      "description": "Tailor-made website creation: WordPress showcase sites, Shopify e-commerce stores, custom-built websites. Modern design, top performance and Google SEO baked in."
+      "title": "Professional website creation — Agency",
+      "description": "Custom website creation: WordPress showcase, Shopify e-commerce, custom Next.js. Modern design, built-in SEO, fast delivery."
     },
     "hero": {
       "eyebrow": "Website creation",
-      "title": "Professional websites that actually convert.",
-      "subtitle": "A French web agency designing WordPress showcase sites, Shopify stores and custom-built applications. Premium design, integrated SEO, flawless performance."
+      "title": "Your website. Your best salesperson. 24/7.",
+      "subtitle": "We build showcase sites, e-commerce stores and custom platforms that turn visitors into clients. Premium design, native SEO, maximum performance."
     },
     "breadcrumb": "Website creation",
-    "intro": "Building a professional website is a strategic investment. It is not about merely existing online but about shaping a business asset that attracts qualified visitors, tells your story and turns prospects into loyal customers.",
+    "pain": {
+      "eyebrow": "Sound familiar?",
+      "title": "Problems we solve",
+      "items": [
+        "Your current site generates zero leads or sales",
+        "You have a slow site that drives visitors away",
+        "You pay for hosting on a site that is never updated",
+        "Your site appears nowhere on Google"
+      ]
+    },
+    "solutionTitle": "What we actually do for you",
     "sections": [
       {
-        "title": "WordPress, Shopify or custom: the right solution for every project",
-        "body": "We match the technology to your actual needs. WordPress for a showcase site that's quick to update, Shopify for a robust e-commerce store, or custom code for an unlimited platform. Each solution is deployed with the same standards of design, performance and SEO."
+        "title": "Design that sells, not just decorates",
+        "body": "Every page, button, and color is designed to push visitors to contact you. We don't do pretty for pretty's sake — we do design that converts."
       },
       {
-        "title": "UX/UI design engineered to convert",
-        "body": "Our designers create interfaces that guide visitors towards the action that matters: quote request, purchase, contact. Modern aesthetics aren't enough — every section is designed to reduce friction and maximise your conversion rate."
+        "title": "Fast. Really fast.",
+        "body": "Lighthouse score 100/100. Your site loads in under 2 seconds. Google loves that, your visitors too. No more load times, no more lost clients."
       },
       {
-        "title": "Performance and Core Web Vitals at the core",
-        "body": "A slow site loses visitors and falls in Google rankings. We optimise Core Web Vitals (LCP, INP, CLS), images (AVIF, WebP), fonts and JavaScript. Our deliveries systematically target a perfect 100 Lighthouse score."
+        "title": "Visible on Google from day one",
+        "body": "Technical SEO is baked into the code: Schema.org, sitemap, optimized URLs, meta tags. Your site is ready to rank from launch day."
       },
       {
-        "title": "Google SEO integrated from day one",
-        "body": "Hn hierarchy, Schema.org markup, multilingual sitemaps, semantic URLs and Open Graph tags are part of the development itself. Your site is indexed and optimised the moment it goes live."
+        "title": "You keep total control",
+        "body": "We train you, we hand over the keys. You can edit texts, add pages, without calling us. Full autonomy, support available if needed."
       }
     ],
+    "midCta": {
+      "title": "Ready for a site that works for you?",
+      "subtitle": "We chat, propose mockups, you choose. Zero commitment.",
+      "button": "Discuss my project"
+    },
+    "process": {
+      "title": "How does it work?",
+      "steps": [
+        {
+          "step": "1",
+          "title": "We talk",
+          "desc": "Call or video to understand your business, goals and preferences."
+        },
+        {
+          "step": "2",
+          "title": "We propose",
+          "desc": "We present templates and mockups tailored to your industry."
+        },
+        {
+          "step": "3",
+          "title": "We build",
+          "desc": "You approve the design, we code. Unlimited changes until satisfaction."
+        },
+        {
+          "step": "4",
+          "title": "We deliver",
+          "desc": "Site live, training included, you are autonomous."
+        }
+      ]
+    },
     "deliverables": {
-      "title": "What your website project includes",
+      "title": "Everything included in your project",
       "items": [
-        "Strategic framing and competitive audit",
-        "Tailor-made UX/UI design and interactive prototypes",
-        "WordPress, Shopify or custom development",
-        "Technical SEO (Schema.org, sitemap, hreflang)",
-        "Core Web Vitals optimisation and Lighthouse 100",
-        "High-performance hosting and HTTPS",
-        "Admin training and documentation",
-        "Evolutive and corrective maintenance"
+        "Scoping call + business understanding",
+        "Custom UX/UI design (no generic themes)",
+        "WordPress, Shopify or Next.js development",
+        "Built-in technical SEO",
+        "Optimized Lighthouse score (100 performance)",
+        "High-performance hosting + HTTPS",
+        "Training to manage your site",
+        "Post-delivery support"
       ]
     },
     "cta": {
-      "title": "Let's talk about your future website",
-      "subtitle": "Free audit, quote within 48 hours, no commitment.",
-      "button": "Get a quote"
+      "title": "Let's talk about your future site",
+      "subtitle": "Call us or fill the form. We get back to you within 48h with a concrete proposal.",
+      "button": "Get a free quote"
     }
   },
   "serviceVitrine": {
     "meta": {
-      "title": "Professional WordPress showcase site — Agency web agency",
-      "description": "Custom WordPress showcase site creation. Professional design, optimal performance, integrated SEO. Free quote within 48h."
+      "title": "Professional WordPress showcase site — Agency",
+      "description": "WordPress showcase website with Salient theme. Unique design, built-in SEO, optimal performance. Free quote within 48h."
     },
     "hero": {
       "eyebrow": "WordPress showcase site",
-      "title": "A professional WordPress showcase site that attracts and converts.",
-      "subtitle": "We build elegant, fast and Google-optimised WordPress showcase sites. The ideal solution for SMBs that want to shine online."
+      "title": "A pro showcase site. That brings you clients. Not just likes.",
+      "subtitle": "We create your WordPress showcase site with Salient: professional design, built-in SEO, and you can modify everything yourself."
     },
-    "breadcrumb": "WordPress showcase site",
-    "intro": "WordPress is the world's most-used platform for professional showcase sites. Flexible, robust and easy to manage, it enables elegant and high-performing sites without any technical skills. At Agency, we customise WordPress 100% — no generic themes, a design fully tailored to your brand.",
+    "breadcrumb": "WordPress showcase",
+    "pain": {
+      "eyebrow": "Ring a bell?",
+      "title": "Why most showcase sites fail",
+      "items": [
+        "Generic WordPress themes that look like 10,000 other sites",
+        "A site never updated because too hard to modify",
+        "A design that doesn't reflect the seriousness of your business",
+        "A site that doesn't appear on Google, even when searching your name"
+      ]
+    },
+    "solutionTitle": "Your WordPress showcase, built to sell",
     "sections": [
       {
-        "title": "Custom WordPress, no generic themes",
-        "body": "Unlike many agencies that install a premium theme and change the colours, we develop child themes or headless WordPress sites that reflect your exact visual identity. The result: a unique, lightweight and perfectly maintainable site."
+        "title": "Salient: the premium theme we master",
+        "body": "We use Salient, one of the most powerful themes on the market. No copy-pasted templates: we customize everything so your site is unique."
       },
       {
-        "title": "Google SEO-ready from day one",
-        "body": "We configure Yoast SEO or Rank Math, structure permalinks, optimise title and meta tags, create the XML sitemap and implement Schema.org structured data. Your WordPress site is off to the right start on Google."
+        "title": "You modify everything, no code needed",
+        "body": "Texts, images, pages — you manage everything from WordPress. We train you in 30 minutes, you are autonomous."
       },
       {
-        "title": "Simple admin, total autonomy",
-        "body": "One of WordPress's great advantages: you can update your content yourself, without touching the code. We train you on the admin interface and configure custom Gutenberg blocks for a simple and enjoyable editing experience."
+        "title": "Visible on Google, fast",
+        "body": "Complete SEO setup: Rank Math, optimized tags, XML sitemap, Schema.org. Your site is built for Google to find and rank."
       },
       {
-        "title": "Maximum performance and security",
-        "body": "A poorly configured WordPress is slow and vulnerable. We optimise performance (cache, CDN, lazy-load images), secure the installation and host on high-performance servers with HTTPS."
+        "title": "Fast, secure, properly hosted",
+        "body": "Optimized cache, CDN, compressed images, HTTPS, automatic backups. Your site is fast and protected, not just pretty."
       }
     ],
+    "midCta": {
+      "title": "Your showcase site online in 3 weeks",
+      "subtitle": "We handle everything. You approve the design, we deliver.",
+      "button": "Start my project"
+    },
+    "process": {
+      "title": "From idea to launch",
+      "steps": [
+        {
+          "step": "1",
+          "title": "Exchange",
+          "desc": "We understand your business, needs and visual preferences."
+        },
+        {
+          "step": "2",
+          "title": "Proposal",
+          "desc": "We send mockups based on Salient, adapted to your industry."
+        },
+        {
+          "step": "3",
+          "title": "Customization",
+          "desc": "You approve, we adjust until it is perfect for you."
+        },
+        {
+          "step": "4",
+          "title": "Delivery",
+          "desc": "Launch + WordPress training. You are operational."
+        }
+      ]
+    },
     "deliverables": {
-      "title": "What your WordPress showcase site includes",
+      "title": "What is included in your showcase site",
       "items": [
-        "Custom UX/UI design (no generic themes)",
-        "WordPress development with custom child theme",
-        "Full SEO configuration (Yoast/Rank Math, Schema.org)",
-        "Core Web Vitals and loading speed optimisation",
-        "High-performance hosting, HTTPS, daily backups",
-        "WordPress admin training",
-        "Contact form and Google Analytics integration",
-        "Maintenance and updates included for 3 months"
+        "Custom design with Salient (no copied template)",
+        "WordPress installation + performant hosting",
+        "Complete SEO configuration (Rank Math, Schema.org)",
+        "Pages: Home, About, Services, Contact (+ as needed)",
+        "Functional contact form",
+        "Speed optimization and Core Web Vitals",
+        "WordPress training (30 min, video call)",
+        "3-month post-delivery support"
       ]
     },
     "cta": {
-      "title": "Your WordPress showcase site in 4 weeks",
-      "subtitle": "Free quote within 48h. No commitment.",
-      "button": "Get a quote"
+      "title": "Ready for a real pro site?",
+      "subtitle": "Free quote, fast delivery, zero hassle.",
+      "button": "Get my free quote"
     }
   },
   "serviceEcommerce": {
     "meta": {
-      "title": "Shopify e-commerce store — Agency web agency",
-      "description": "Custom Shopify e-commerce store creation. Professional design, secure payments, integrated SEO. Grow your online sales."
+      "title": "Shopify e-commerce store — Agency",
+      "description": "Custom Shopify store creation. Product catalog, secure payment, e-commerce SEO. Start selling online now."
     },
     "hero": {
-      "eyebrow": "Shopify e-commerce",
-      "title": "A Shopify store that sells, day and night.",
-      "subtitle": "We build elegant, fast and conversion-optimised Shopify e-commerce stores. The most robust solution for selling online effectively."
+      "eyebrow": "Shopify E-commerce",
+      "title": "Your Shopify store. Sales. Day and night.",
+      "subtitle": "We create your Shopify store from A to Z: converting design, optimized product catalog, secure payments. You sell, we handle the tech."
     },
     "breadcrumb": "Shopify e-commerce",
-    "intro": "Shopify is the reference e-commerce platform for brands that want to sell online without technical constraints. Reliable, secure and scalable, it handles payments, inventory, shipping and returns. At Agency, we customise Shopify to create a store that reflects your brand, optimised for conversion and SEO.",
+    "pain": {
+      "eyebrow": "Sound familiar?",
+      "title": "Why your online store isn't taking off",
+      "items": [
+        "A catastrophic cart abandonment rate",
+        "Product pages that don't make people want to buy",
+        "A complicated checkout that drives customers away",
+        "Zero visibility on Google Shopping"
+      ]
+    },
+    "solutionTitle": "A Shopify store built to sell",
     "sections": [
       {
-        "title": "Custom Shopify design, built to convert",
-        "body": "We build custom Shopify themes that reflect your brand identity and guide customers towards purchase. Optimised product pages, smooth checkout, persuasive product descriptions: every detail is designed to increase your conversion rate."
+        "title": "A design that triggers purchase",
+        "body": "Optimized product pages, smooth checkout funnel, striking visuals. Every element reduces hesitation and pushes to action."
       },
       {
-        "title": "Product catalogue, variants and inventory management",
-        "body": "Whether you have 10 or 10,000 products, we structure your catalogue for intuitive navigation. Organised collections, smart filters, variants (size, colour, material), real-time inventory and supplier sync if needed."
+        "title": "Intelligently structured product catalog",
+        "body": "Collections, filters, variants (size, color, material), real-time stock management. Smooth navigation, even with thousands of products."
       },
       {
-        "title": "Secure payment and optimal buying experience",
-        "body": "We configure Shopify Payments, Stripe, PayPal and other payment methods suited to your market. Optimised checkout to reduce cart abandonment, transparent order tracking and personalised transactional emails."
+        "title": "Payment in 3 clicks, secure",
+        "body": "Shopify Payments, Stripe, PayPal, Apple Pay — every payment method to never lose a customer. Mobile-optimized checkout."
       },
       {
-        "title": "E-commerce SEO and product ranking",
-        "body": "Well-ranked product pages generate qualified traffic at zero cost. We optimise URLs, title tags, descriptions, Product Schema structured data, customer reviews and sitemaps so your products appear on Google Shopping and in organic results."
+        "title": "Native e-commerce SEO",
+        "body": "Optimized URLs, Product Schema, automatic metas, product sitemap. Your products appear on Google and Google Shopping naturally."
       }
     ],
+    "midCta": {
+      "title": "Every day without a store = lost sales",
+      "subtitle": "Your Shopify store can be live in 4 to 6 weeks.",
+      "button": "Launch my store"
+    },
+    "process": {
+      "title": "From brief to first customer",
+      "steps": [
+        {
+          "step": "1",
+          "title": "Product brief",
+          "desc": "We understand your products, target audience and sales goals."
+        },
+        {
+          "step": "2",
+          "title": "Store design",
+          "desc": "Custom Shopify theme mockups, product pages, checkout."
+        },
+        {
+          "step": "3",
+          "title": "Development",
+          "desc": "Catalog integration, payment, transactional emails, tracking."
+        },
+        {
+          "step": "4",
+          "title": "Launch",
+          "desc": "Store live + Shopify training. You manage orders autonomously."
+        }
+      ]
+    },
     "deliverables": {
-      "title": "What your Shopify store includes",
+      "title": "Everything included in your store",
       "items": [
-        "Custom Shopify design (personalised theme)",
-        "Product catalogue, variants and inventory management",
-        "Payment configuration (Shopify Payments, Stripe, PayPal)",
-        "E-commerce SEO (Product Schema, URLs, metas)",
-        "Conversion rate optimisation (CRO)",
-        "Personalised transactional emails",
-        "Google Analytics and Facebook Pixel integration",
-        "Shopify admin training",
-        "Maintenance and support included for 3 months"
+        "Custom Shopify design (not a raw theme)",
+        "Product catalog + variants + stock management",
+        "Secure multi-method payment setup",
+        "Transactional emails (confirmation, shipping)",
+        "E-commerce SEO (Product Schema, metas, sitemap)",
+        "Google Analytics + Facebook Pixel integration",
+        "Shopify administration training",
+        "Support and maintenance 3 months"
       ]
     },
     "cta": {
-      "title": "Launch your Shopify store in 6 weeks",
-      "subtitle": "Free quote, end-to-end support.",
-      "button": "Get an e-commerce quote"
+      "title": "Your Shopify store, ready to sell",
+      "subtitle": "We create, you sell. Free quote, no commitment.",
+      "button": "Get my e-commerce quote"
     }
   },
   "serviceSurMesure": {
     "meta": {
-      "title": "Custom-built website (code) — Agency web agency",
-      "description": "Custom website development in Next.js, React and TypeScript. Maximum performance, native SEO, no limits. For ambitious projects."
+      "title": "Custom Next.js website — Agency",
+      "description": "Custom web development with Next.js, React, Tailwind. Absolute performance, native SEO, no technical limits."
     },
     "hero": {
-      "eyebrow": "Custom-built website",
-      "title": "An unlimited website, built from scratch.",
-      "subtitle": "When WordPress and Shopify aren't enough, we develop custom web applications in Next.js, React and TypeScript. Absolute performance, native SEO, no constraints."
+      "eyebrow": "Custom website",
+      "title": "A website without compromise. Built to dominate.",
+      "subtitle": "When WordPress and Shopify aren't enough, we develop your site from scratch with Next.js. Absolute performance, limitless design, native SEO."
     },
-    "breadcrumb": "Custom-built website",
-    "intro": "Some projects require a solution that off-the-shelf CMS platforms simply cannot offer: a SaaS platform, a complex client portal, a marketplace, a web application with specific business rules, or a site that demands performance and design impossible to achieve with a theme. That's where our custom development expertise comes in.",
+    "breadcrumb": "Custom website",
+    "pain": {
+      "eyebrow": "You deserve better",
+      "title": "The limits of classic solutions",
+      "items": [
+        "WordPress struggles with too many plugins and customizations",
+        "Your project has needs that CMS platforms can't handle",
+        "You want an ultra-fast site, not a compromise",
+        "You need specific business integrations (API, CRM, ERP)"
+      ]
+    },
+    "solutionTitle": "Custom code, no limits whatsoever",
     "sections": [
       {
-        "title": "Next.js, React and TypeScript: the web's most powerful stack",
-        "body": "We build with Next.js, the reference React framework powering sites like Vercel, Notion and Linear. Static rendering (SSG), server-side rendering (SSR), streaming: we choose the optimal rendering strategy for each page. TypeScript secures every line, Tailwind CSS ensures a coherent design system."
+        "title": "Next.js + React: the stack of leaders",
+        "body": "The same stack as Vercel, Notion, Linear. Ultra-fast static rendering, smooth interactions, perfect SEO. Your site loads instantly."
       },
       {
-        "title": "Headless architecture and business integrations",
-        "body": "Your site can integrate with any tool: headless CMS (Sanity, Contentful, Strapi), CRM (HubSpot, Salesforce), ERP, email tools, advanced analytics, third-party APIs. We design the architecture so your platform grows with your business."
+        "title": "Pixel-perfect design, premium animations",
+        "body": "Without theme constraints, the design is exactly what you want. Smooth animations, micro-interactions, world-class user experience."
       },
       {
-        "title": "Absolute performance and perfect Core Web Vitals",
-        "body": "Without CMS constraints, we achieve performance impossible with WordPress or Shopify: Lighthouse 100/100, LCP under 1 second, CLS at zero. Every byte of JavaScript, every image and every request is optimised."
+        "title": "Unbeatable performance",
+        "body": "Lighthouse score 100/100, LCP under 1 second, zero sluggish plugins. Every line of code is optimized. Your competitors can't keep up."
       },
       {
-        "title": "Native SEO and multilingual support",
-        "body": "SEO is not an option, it's a foundation. Complete Schema.org markup, dynamic sitemaps, multilingual hreflang, Open Graph and Twitter Card tags, server-side rendering for perfect Google indexing — all natively integrated."
+        "title": "Custom integrations",
+        "body": "Headless CMS, CRM, third-party APIs, payments, authentication — we connect everything your business needs. Scalable architecture, no tech debt."
       }
     ],
+    "midCta": {
+      "title": "Your project deserves more than a template",
+      "subtitle": "Let's talk tech. Free scoping within 48h.",
+      "button": "Free technical scoping"
+    },
+    "process": {
+      "title": "Our development process",
+      "steps": [
+        {
+          "step": "1",
+          "title": "Scoping",
+          "desc": "We define together the architecture, features and integrations."
+        },
+        {
+          "step": "2",
+          "title": "Design",
+          "desc": "High-fidelity mockups, interactive prototyping. You approve each screen."
+        },
+        {
+          "step": "3",
+          "title": "Development",
+          "desc": "Clean code, tested, continuously deployed. You track progress in real-time."
+        },
+        {
+          "step": "4",
+          "title": "Delivery",
+          "desc": "Deployed on Vercel, documentation, training. Your site is in production."
+        }
+      ]
+    },
     "deliverables": {
-      "title": "What your custom project includes",
+      "title": "What is included in your custom project",
       "items": [
-        "Technical scoping and application architecture",
-        "Custom UX/UI design and prototyping",
+        "Technical scoping and architecture",
+        "High-fidelity UX/UI design + prototyping",
         "Next.js, React, TypeScript development",
-        "Headless CMS and business API integration",
         "Native technical SEO (Schema.org, sitemap, hreflang)",
-        "Unit and integration tests",
-        "CI/CD deployment on Vercel or dedicated infrastructure",
+        "Guaranteed Lighthouse score 100/100",
+        "CI/CD deployment on Vercel",
         "Complete technical documentation",
-        "Evolutive maintenance and dedicated support"
+        "Post-delivery support and updates"
       ]
     },
     "cta": {
-      "title": "Let's talk about your custom project",
-      "subtitle": "Free technical scoping. Estimate within 48h.",
-      "button": "Start the scoping"
+      "title": "Let's talk about your ambitious project",
+      "subtitle": "Free technical scoping. We get back to you within 48h with an estimate.",
+      "button": "Start scoping"
     }
   },
   "serviceSeo": {
     "meta": {
-      "title": "SEO agency & Google search optimisation — Agency",
-      "description": "French SEO agency: audit, content strategy, technical SEO, link building and reporting. Get your website into Google's top 3 on your strategic keywords."
+      "title": "SEO Agency & Google ranking — Agency",
+      "description": "Technical SEO, content and link building. We position your site in the top Google results for your strategic keywords."
     },
     "hero": {
-      "eyebrow": "Search engine optimisation",
-      "title": "Get your website into Google's top 3.",
-      "subtitle": "An SEO agency specialised in technical, editorial and off-site search optimisation. We turn your website into a qualified-traffic machine."
+      "eyebrow": "SEO",
+      "title": "Page one of Google. Not page three.",
+      "subtitle": "We implement everything needed for your site to climb Google: technical, content, links. No empty promises — methodical work that delivers results."
     },
     "breadcrumb": "SEO",
-    "intro": "Google SEO is the most profitable acquisition channel on the web: it works for you 24/7, doesn't stop when you cut the ad budget, and reinforces brand credibility with every position you win.",
+    "pain": {
+      "eyebrow": "Invisible on Google?",
+      "title": "Why your site doesn't appear on Google",
+      "items": [
+        "Your site has no keyword strategy",
+        "Content is too thin or poorly structured for Google",
+        "No other sites link to yours (no backlinks)",
+        "Technical issues block indexing"
+      ]
+    },
+    "solutionTitle": "Our SEO method, step by step",
     "sections": [
       {
-        "title": "A complete SEO audit before any action",
-        "body": "Every engagement starts with an in-depth audit: technical analysis (crawl, indexing, Core Web Vitals, Schema.org markup), semantic analysis (keywords, search intent, competitors) and off-site analysis (link profile, domain authority)."
+        "title": "Complete audit: we diagnose everything",
+        "body": "Technical analysis (crawl, indexation, speed), semantic (keywords, intents, competition) and off-site (backlinks, authority). We identify exactly what blocks and what will accelerate."
       },
       {
-        "title": "Technical SEO: invisible but decisive foundations",
-        "body": "Google search optimisation starts with rock-solid technical architecture. We optimise speed (Core Web Vitals), Hn structure, canonical URLs, multilingual sitemaps, hreflang and Schema.org structured data."
+        "title": "Technical SEO: the foundations",
+        "body": "Core Web Vitals, Hn structure, canonical URLs, sitemap, Schema.org markup, hreflang. We make your site technically perfect for Google."
       },
       {
-        "title": "Content strategy and semantics",
-        "body": "Google ranks pages that best answer the user's search intent. We identify high-potential keywords, map intents and build an editorial calendar aligned with your conversion funnel."
+        "title": "Content optimized for the right queries",
+        "body": "We identify keywords your customers actually search for and create content that answers them. Not content for content's sake — content that ranks and converts."
       },
       {
-        "title": "Link building and domain authority",
-        "body": "Backlinks remain a major ranking factor. We grow your link profile with a quality-first approach: thematic partnerships, digital PR, guest posts on relevant media, local citations."
-      },
-      {
-        "title": "Monitoring, reporting and monthly iterations",
-        "body": "Every month we track your rankings, organic traffic, conversions and competitor moves. You get a clear, actionable report — no jargon."
+        "title": "Link building: gaining authority",
+        "body": "Quality backlinks from relevant sites in your industry. Guest posts, partnerships, digital PR. Your domain gains credibility with Google."
       }
     ],
+    "midCta": {
+      "title": "SEO takes time. All the more reason to start now.",
+      "subtitle": "Every month that passes, your competitors get further ahead.",
+      "button": "Request my SEO audit"
+    },
+    "process": {
+      "title": "How we work your SEO",
+      "steps": [
+        {
+          "step": "1",
+          "title": "Audit",
+          "desc": "Complete analysis of your site, competitors and opportunities."
+        },
+        {
+          "step": "2",
+          "title": "Strategy",
+          "desc": "Prioritized action plan: quick wins + long-term actions."
+        },
+        {
+          "step": "3",
+          "title": "Execution",
+          "desc": "Technical optimizations, content, link building. We progress every month."
+        },
+        {
+          "step": "4",
+          "title": "Reporting",
+          "desc": "Position tracking, traffic, conversions. Clear report every month."
+        }
+      ]
+    },
     "deliverables": {
-      "title": "What our SEO retainer includes",
+      "title": "What the SEO package includes",
       "items": [
-        "Technical, semantic and off-site SEO audit",
-        "Keyword and intent strategy",
-        "On-page optimisation (tags, Hn, internal linking)",
-        "Full Schema.org structured data",
-        "Core Web Vitals optimisation",
-        "SEO content creation and optimisation",
-        "Quality-first link-building campaign",
-        "Monthly performance reporting",
-        "A dedicated SEO expert"
+        "Complete SEO audit (technical + semantic + off-site)",
+        "Keyword strategy and search intent mapping",
+        "On-page optimizations (tags, Hn, internal linking)",
+        "Schema.org structured data",
+        "Core Web Vitals optimization",
+        "SEO content creation and optimization",
+        "Quality link building campaign",
+        "Clear and actionable monthly reporting"
       ]
     },
     "cta": {
-      "title": "Let's talk about your SEO strategy",
-      "subtitle": "Free SEO audit, actionable recommendations within 7 days.",
-      "button": "Get my SEO audit"
+      "title": "Your SEO audit, free and no commitment",
+      "subtitle": "We analyze your site and tell you exactly what to do. Within 7 days.",
+      "button": "Get my free SEO audit"
     }
   },
   "serviceAds": {
     "meta": {
-      "title": "Google Ads (PPC) — Agency advertising agency",
-      "description": "Google Ads agency: creation, optimisation and management of Google advertising campaigns. Maximised ROI, precise targeting, transparent reporting."
+      "title": "Google Ads — Agency",
+      "description": "Optimized Google Ads campaigns: precise targeting, compelling ads, maximized ROI. Clients, not just clicks."
     },
     "hero": {
-      "eyebrow": "Paid search advertising",
-      "title": "Google Ads campaigns that generate clients, not just clicks.",
-      "subtitle": "We create and optimise your Google Ads campaigns to attract qualified prospects at the right moment. Controlled budget, measurable ROI, immediate results."
+      "eyebrow": "Google Ads",
+      "title": "Clients tomorrow morning. Not in 6 months.",
+      "subtitle": "We create and manage your Google Ads campaigns to attract qualified prospects immediately. Controlled budget, measurable results, transparent ROI."
     },
     "breadcrumb": "Google Ads",
-    "intro": "Google Ads allows you to appear immediately at the top of search results, without waiting the 6–12 months needed for organic SEO. It's a powerful lever for generating leads quickly, testing new markets or complementing your SEO strategy — but it must be activated precisely to avoid wasting your budget.",
+    "pain": {
+      "eyebrow": "Happening to you?",
+      "title": "Why your Google ads don't work",
+      "items": [
+        "You spend budget on clicks that don't convert",
+        "Your ads show up on the wrong keywords",
+        "No dedicated landing page — traffic lands on your homepage",
+        "No conversion tracking, impossible to know what works"
+      ]
+    },
+    "solutionTitle": "Ads campaigns that bring clients",
     "sections": [
       {
-        "title": "Precise targeting: the right keywords at the right moment",
-        "body": "An effective Google Ads campaign starts with rigorous keyword selection. We analyse search volumes, competition, cost-per-click and purchase intent to target only the queries likely to convert into customers."
+        "title": "The right keywords, the right clients",
+        "body": "We target only queries with buying intent. No curious clicks that cost money — prospects ready to contact you now."
       },
       {
-        "title": "Compelling ads that attract clicks",
-        "body": "We write text ads and responsive ads that stand out: catchy headlines, benefit-driven descriptions, ad extensions (calls, sitelinks, snippets). Every ad is A/B tested to identify the best-converting copy."
+        "title": "Ads that make people want to click",
+        "body": "Punchy headlines, clear benefits, complete ad extensions. Every ad is A/B tested to keep only what performs."
       },
       {
-        "title": "Conversion-optimised landing pages",
-        "body": "Good traffic to a bad page is wasted budget. We optimise or create dedicated landing pages for your campaigns: message aligned with the ad, social proof, visible contact form, clear call to action."
+        "title": "Landing pages that convert",
+        "body": "Traffic lands on dedicated pages, not your homepage. Message aligned with the ad, visible form, social proof. Result: more conversions for the same budget."
       },
       {
-        "title": "Continuous optimisation and monthly reporting",
-        "body": "We analyse your campaign performance daily: CTR, CPC, conversion rate, cost per acquisition. We adjust bids, pause underperforming keywords and amplify what works. You get a clear monthly report with your KPIs."
+        "title": "Continuous optimization, transparent reporting",
+        "body": "We adjust bids, cut what doesn't work, amplify what converts. Every euro spent is justified in a clear monthly report."
       }
     ],
+    "midCta": {
+      "title": "Your competitors are already on Google Ads",
+      "subtitle": "Every day without a campaign = clients going to them.",
+      "button": "Launch my campaigns"
+    },
+    "process": {
+      "title": "How we launch your campaigns",
+      "steps": [
+        {
+          "step": "1",
+          "title": "Audit & Strategy",
+          "desc": "Market analysis, keyword selection, recommended budget."
+        },
+        {
+          "step": "2",
+          "title": "Creation",
+          "desc": "Campaigns, ad groups, ad copy and landing pages."
+        },
+        {
+          "step": "3",
+          "title": "Launch",
+          "desc": "Live, conversion tracking configured, first results."
+        },
+        {
+          "step": "4",
+          "title": "Optimization",
+          "desc": "A/B tests, bid adjustments, scaling what works."
+        }
+      ]
+    },
     "deliverables": {
-      "title": "What your Google Ads management includes",
+      "title": "What Google Ads management includes",
       "items": [
         "Campaign audit and strategy",
         "Keyword research and selection",
         "Campaign and ad group creation",
-        "Ad copywriting and A/B testing",
-        "Landing page optimisation",
-        "Conversion tracking setup (Google Ads + Analytics)",
-        "Bid and budget management",
-        "Monthly performance report (CTR, CPC, ROI)",
-        "Dedicated Google Ads expert"
+        "Ad copy writing + A/B tests",
+        "Landing page creation/optimization",
+        "Conversion tracking setup",
+        "Daily bid and budget management",
+        "Monthly report (CTR, CPC, conversions, ROI)"
       ]
     },
     "cta": {
-      "title": "Launch your first Google Ads campaign",
-      "subtitle": "Free audit of your current campaigns. Quote within 48h.",
-      "button": "Get an Ads audit"
+      "title": "Results from the first week",
+      "subtitle": "Free audit of your current campaigns. Recommendations within 48h.",
+      "button": "Get my free Ads audit"
     }
   },
   "serviceSocial": {
     "meta": {
       "title": "TikTok & Instagram social media management — Agency",
-      "description": "Social media agency: strategy, content creation and management of your TikTok and Instagram presence. Grow your audience and engage your community."
+      "description": "Social media strategy, TikTok content creation, Instagram Reels and YouTube Shorts. We manage your socials, you manage your business."
     },
     "hero": {
       "eyebrow": "Social media",
-      "title": "A social presence that builds your brand and attracts customers.",
-      "subtitle": "We manage your TikTok and Instagram presence: content strategy, visual creation, publishing and performance analysis. Your brand shines, your community grows."
+      "title": "Your social media. Managed by pros. Finally.",
+      "subtitle": "We handle your TikTok, Instagram and YouTube Shorts: strategy, content creation, publishing, analysis. Your brand is visible where your clients are."
     },
     "breadcrumb": "Social media",
-    "intro": "Social media has become essential for reaching your audience where they spend their time. TikTok and Instagram are today the platforms with the highest organic growth potential for brands. But an effective presence requires strategy, consistency and creative expertise.",
+    "pain": {
+      "eyebrow": "No time?",
+      "title": "Why your social media isn't growing",
+      "items": [
+        "You post when you remember (meaning never)",
+        "No strategy, no editorial line, no consistency",
+        "Trends change too fast to keep up",
+        "You don't have time to create quality content"
+      ]
+    },
+    "solutionTitle": "A pro social presence, zero effort on your part",
     "sections": [
       {
-        "title": "Content strategy tailored to your brand",
-        "body": "Every brand has its own voice, values and audience. We start with an audit of your current presence, an analysis of your target audience and a study of your competitors to define a coherent and distinctive editorial line on TikTok and Instagram."
+        "title": "Custom strategy for your brand",
+        "body": "We define your voice, editorial line and publishing calendar. Consistent, regular, aligned with your business goals."
       },
       {
         "title": "TikTok: capture attention, create virality",
-        "body": "TikTok is the world's fastest-growing platform. Its algorithms favour organic discovery, allowing brands of any size to reach millions of people without an advertising budget. We create short, dynamic and authentic video content."
+        "body": "Short, dynamic, authentic video content. The first 3 seconds capture, the rest converts. We ride trends to maximize organic reach."
       },
       {
-        "title": "Instagram: build an engaged community",
-        "body": "Instagram remains the reference for visual branding and customer relationships. We manage your feed, Reels and Stories with aesthetic consistency and an editorial calendar designed to maximise engagement."
+        "title": "Instagram Reels & Stories: engaged community",
+        "body": "Cohesive feed, performing Reels, engaging Stories. We animate your community daily: strategic hashtags, comment responses, collaborations."
       },
       {
-        "title": "Performance analysis and optimisation",
-        "body": "Every post is a data point. We analyse the metrics that really matter: reach, impressions, engagement rate, audience growth, profile clicks and conversions. These insights fuel continuous improvement of our editorial strategy."
+        "title": "YouTube Shorts: multi-platform presence",
+        "body": "We adapt your short-form content for YouTube Shorts. Same creative effort, multiplied visibility. Your brand is everywhere your clients are."
       }
     ],
+    "midCta": {
+      "title": "While you hesitate, your competitors are posting",
+      "subtitle": "We take over your social media. First month no commitment.",
+      "button": "Discuss my strategy"
+    },
+    "process": {
+      "title": "How it works",
+      "steps": [
+        {
+          "step": "1",
+          "title": "Audit",
+          "desc": "Analysis of your current accounts, audience and competitors."
+        },
+        {
+          "step": "2",
+          "title": "Strategy",
+          "desc": "Editorial line, publishing calendar, content formats."
+        },
+        {
+          "step": "3",
+          "title": "Creation",
+          "desc": "We produce visuals, videos and texts. You approve before publishing."
+        },
+        {
+          "step": "4",
+          "title": "Publish & analyze",
+          "desc": "We publish, engage, analyze. Monthly performance report."
+        }
+      ]
+    },
     "deliverables": {
-      "title": "What your social media management includes",
+      "title": "What social media management includes",
       "items": [
-        "Current presence audit and editorial strategy",
-        "Monthly editorial calendar (TikTok + Instagram)",
-        "Visuals, videos and copy creation",
-        "Daily account publishing and management",
-        "Community management (comment replies)",
-        "Hashtag strategy and creator collaborations",
-        "Monthly performance report (reach, engagement, growth)",
+        "Complete audit of your current presence",
+        "Editorial strategy and monthly calendar",
+        "Visual, video and text creation",
+        "Daily publishing (TikTok + Instagram + YouTube Shorts)",
+        "Community management (responses, engagement)",
+        "Trend monitoring and content adaptation",
+        "Monthly report (reach, engagement, growth)",
         "Dedicated community manager"
       ]
     },
     "cta": {
-      "title": "Grow your social media presence",
-      "subtitle": "Free account audit. First month with no commitment.",
-      "button": "Get a social media audit"
+      "title": "Your social media, finally managed",
+      "subtitle": "Free audit of your accounts. First month no commitment.",
+      "button": "Launch my social media strategy"
     }
   },
   "blog": {

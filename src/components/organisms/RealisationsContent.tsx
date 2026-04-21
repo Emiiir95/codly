@@ -1,5 +1,4 @@
 import { useI18n } from "@/lib/i18n";
-import Breadcrumbs from "@/components/molecules/Breadcrumbs";
 import PageHero from "./PageHero";
 import Section from "./Section";
 import Reveal from "@/components/atoms/Reveal";
@@ -9,12 +8,11 @@ export default function RealisationsContent() {
 
   return (
     <>
-      <Breadcrumbs items={[{ label: t("realisations.breadcrumb") }]} />
-
       <PageHero
         eyebrow={t("realisations.hero.eyebrow")}
         title={t("realisations.hero.title")}
         subtitle={t("realisations.hero.subtitle")}
+        breadcrumbs={[{ label: t("realisations.breadcrumb") }]}
       />
 
       <Section className="pt-0!">

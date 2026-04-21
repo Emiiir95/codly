@@ -15,9 +15,11 @@ export default function LegalContent({ namespace }: Props) {
 
   return (
     <>
-      <Breadcrumbs items={[{ label: t(`${namespace}.breadcrumb`) }]} />
+      <div className="pt-28 sm:pt-32">
+        <Breadcrumbs items={[{ label: t(`${namespace}.breadcrumb`) }]} />
+      </div>
 
-      <Section className="!pt-12" align="left">
+      <Section className="pt-8!" align="left">
         <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
           {t(`${namespace}.title`)}
         </h1>
