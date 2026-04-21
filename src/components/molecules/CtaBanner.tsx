@@ -1,3 +1,4 @@
+import { ArrowRight } from "lucide-react";
 import { ButtonLink } from "@/components/atoms/Button";
 
 type Props = {
@@ -27,7 +28,7 @@ export default function CtaBanner({ title, subtitle, ctaLabel, href }: Props) {
         </p>
         <div className="mt-6 flex justify-center">
           <ButtonLink href={href} variant="primary">
-            {ctaLabel} →
+            {ctaLabel} <ArrowRight size={16} strokeWidth={2} aria-hidden />
           </ButtonLink>
         </div>
       </div>

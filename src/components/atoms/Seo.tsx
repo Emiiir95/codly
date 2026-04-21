@@ -12,6 +12,16 @@ type Props = {
   image?: string;
   noindex?: boolean;
   jsonLd?: unknown[];
+  /** Override the auto-computed canonical URL — used for dynamic pages like /blog/[slug]. */
+  canonicalOverride?: string;
+  /** Override hreflang alternates — used for dynamic pages. */
+  alternatesOverride?: Array<{ hrefLang: string; href: string }>;
+  /** Open Graph object type. Defaults to "website". Use "article" for blog posts. */
+  ogType?: "website" | "article";
+  /** Published date (ISO) for articles — adds <meta property="article:published_time">. */
+  articlePublishedTime?: string;
+  /** Tags for articles — adds <meta property="article:tag">. */
+  articleTags?: string[];
 };
 
 export default function Seo({
@@ -22,9 +32,14 @@ export default function Seo({
   image,
   noindex,
   jsonLd = [],
+  canonicalOverride,
+  alternatesOverride,
+  ogType = "website",
+  articlePublishedTime,
+  articleTags,
 }: Props) {
-  const canonical = buildCanonical(pageKey, locale);
-  const hreflang = buildHreflang(pageKey);
+  const canonical = canonicalOverride ?? buildCanonical(pageKey, locale);
+  const hreflang = alternatesOverride ?? buildHreflang(pageKey);
   const ogImage = image ?? `${SITE.domain}/og-default.png`;
 
   return (
@@ -43,7 +58,7 @@ export default function Seo({
       ))}
       {noindex && <meta name="robots" content="noindex,nofollow" />}
 
-      <meta property="og:type" content="website" />
+      <meta property="og:type" content={ogType} />
       <meta property="og:site_name" content={SITE.name} />
       <meta property="og:locale" content={locale} />
       <meta property="og:title" content={title} />
@@ -52,6 +67,13 @@ export default function Seo({
       <meta property="og:image" content={ogImage} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
+      {ogType === "article" && articlePublishedTime && (
+        <meta property="article:published_time" content={articlePublishedTime} />
+      )}
+      {ogType === "article" &&
+        articleTags?.map((tag) => (
+          <meta key={tag} property="article:tag" content={tag} />
+        ))}
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />

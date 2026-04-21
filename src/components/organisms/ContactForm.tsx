@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from "react";
 import { useI18n } from "@/lib/i18n";
 import { Button } from "@/components/atoms/Button";
+import CustomSelect from "@/components/atoms/CustomSelect";
 
 type FormState =
   | { status: "idle" }
@@ -20,7 +21,8 @@ export default function ContactForm() {
   const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setErrors({});
-    const fd = new FormData(e.currentTarget);
+    const form = e.currentTarget;
+    const fd = new FormData(form);
     const payload = {
       name: String(fd.get("name") ?? ""),
       email: String(fd.get("email") ?? ""),
@@ -46,8 +48,9 @@ export default function ContactForm() {
         return;
       }
       setState({ status: "success" });
-      e.currentTarget.reset();
-    } catch {
+      form.reset();
+    } catch (err) {
+      console.error("[ContactForm] submit error:", err);
       setState({ status: "error" });
     }
   };
@@ -107,30 +110,24 @@ export default function ContactForm() {
           className={inputCls}
         />
       </label>
-      <label className="flex flex-col gap-2 text-sm">
+      <div className="flex flex-col gap-2 text-sm">
         <span className="font-medium text-[var(--color-fg)]">
           {t("contact.form.subject")}
         </span>
-        <select
+        <CustomSelect
           name="subject"
           required
-          defaultValue=""
-          className={inputCls}
+          placeholder={t("contact.form.subjectPlaceholder")}
+          options={Object.entries(subjectOptions).map(([key, label]) => ({
+            value: key,
+            label,
+          }))}
           aria-invalid={!!errors.subject}
-        >
-          <option value="" disabled>
-            —
-          </option>
-          {Object.entries(subjectOptions).map(([key, label]) => (
-            <option key={key} value={key}>
-              {label}
-            </option>
-          ))}
-        </select>
+        />
         {errors.subject && (
           <span className="text-xs text-rose-600">{errors.subject}</span>
         )}
-      </label>
+      </div>
       <label className="flex flex-col gap-2 text-sm">
         <span className="font-medium text-[var(--color-fg)]">
           {t("contact.form.message")}

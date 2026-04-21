@@ -234,6 +234,129 @@ a {
   transform: translateY(-100%);
 }
 
+/* Article prose — custom typography used for blog article bodies. */
+.prose-article {
+  color: var(--color-fg);
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  max-width: 72ch;
+}
+.prose-article > * + * {
+  margin-top: 1.25em;
+}
+.prose-article h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-top: 2.25em;
+  margin-bottom: 0.5em;
+  scroll-margin-top: 6rem;
+  color: var(--color-fg);
+}
+.prose-article h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1.75em;
+  margin-bottom: 0.25em;
+  scroll-margin-top: 6rem;
+  color: var(--color-fg);
+}
+.prose-article p {
+  color: var(--color-fg-muted);
+}
+.prose-article a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color 150ms ease;
+}
+.prose-article a:hover {
+  color: color-mix(in oklab, var(--color-accent) 70%, var(--color-fg));
+}
+.prose-article strong {
+  color: var(--color-fg);
+  font-weight: 600;
+}
+.prose-article ul,
+.prose-article ol {
+  padding-left: 1.5em;
+  color: var(--color-fg-muted);
+}
+.prose-article ul {
+  list-style: disc;
+}
+.prose-article ol {
+  list-style: decimal;
+}
+.prose-article li {
+  margin-top: 0.5em;
+}
+.prose-article li::marker {
+  color: var(--color-accent);
+}
+.prose-article blockquote {
+  border-left: 3px solid var(--color-accent);
+  padding: 0.5em 1em;
+  background: var(--color-accent-soft);
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  color: var(--color-fg);
+}
+.prose-article code {
+  background: var(--color-bg-elev);
+  border: 1px solid var(--color-border);
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-family: var(--font-mono);
+}
+.prose-article pre {
+  background: var(--color-bg-elev);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 1.25em;
+  overflow-x: auto;
+  font-size: 0.9em;
+  line-height: 1.6;
+}
+.prose-article pre code {
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
+.prose-article hr {
+  border: 0;
+  border-top: 1px solid var(--color-border);
+  margin: 2.5em 0;
+}
+.prose-article table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95em;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.prose-article th,
+.prose-article td {
+  padding: 0.75em 1em;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+}
+.prose-article th {
+  background: var(--color-bg-elev);
+  font-weight: 600;
+  color: var(--color-fg);
+}
+.prose-article tr:last-child td {
+  border-bottom: 0;
+}
+.prose-article img {
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

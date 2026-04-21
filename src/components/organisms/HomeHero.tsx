@@ -1,3 +1,4 @@
+import { ArrowRight } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { localizedPath } from "@/lib/routes";
 import Eyebrow from "@/components/atoms/Eyebrow";
@@ -38,7 +39,7 @@ export default function HomeHero() {
               href={localizedPath("contact", locale)}
               variant="primary"
             >
-              {t("home.hero.ctaPrimary")} →
+              {t("home.hero.ctaPrimary")} <ArrowRight size={16} strokeWidth={2} aria-hidden />
             </ButtonLink>
             <ButtonLink
               href={localizedPath("service-web", locale)}
