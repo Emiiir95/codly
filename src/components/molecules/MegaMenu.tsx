@@ -20,12 +20,27 @@ type Props = {
   columns: MegaMenuColumn[];
   active?: boolean;
   activeHref?: string;
+  onOpenChange?: (open: boolean) => void;
 };
 
-export default function MegaMenu({ label, columns, active, activeHref }: Props) {
-  const [open, setOpen] = useState(false);
+export default function MegaMenu({
+  label,
+  columns,
+  active,
+  activeHref,
+  onOpenChange,
+}: Props) {
+  const [open, setOpenState] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const setOpen = (next: boolean | ((v: boolean) => boolean)) => {
+    setOpenState((prev) => {
+      const resolved = typeof next === "function" ? next(prev) : next;
+      if (resolved !== prev) onOpenChange?.(resolved);
+      return resolved;
+    });
+  };
 
   useEffect(() => {
     const handleOutside = (e: MouseEvent) => {
@@ -33,6 +48,7 @@ export default function MegaMenu({ label, columns, active, activeHref }: Props) 
     };
     document.addEventListener("mousedown", handleOutside);
     return () => document.removeEventListener("mousedown", handleOutside);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const openWithDelay = () => {

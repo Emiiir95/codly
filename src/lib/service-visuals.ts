@@ -27,7 +27,7 @@ export const SERVICE_VISUALS: Record<ServiceId, ServiceVisual> = {
     },
     showcase: [
       { src: u("photo-1551288049-bebda4e38f71", 800), alt: "Graphiques data" },
-      { src: u("photo-1551288049-bebda4e38f71", 800), alt: "Analytics" },
+      { src: u("photo-1543286386-713bdd548da4", 800), alt: "Analytics" },
       { src: u("photo-1432888622747-4eb9a8efeb07", 800), alt: "Recherche Google" },
     ],
   },
@@ -37,7 +37,7 @@ export const SERVICE_VISUALS: Record<ServiceId, ServiceVisual> = {
       alt: "Site vitrine professionnel",
     },
     showcase: [
-      { src: u("photo-1460925895917-afdab827c52f", 800), alt: "WordPress" },
+      { src: u("photo-1499951360447-b19be8fe80f5", 800), alt: "WordPress" },
       { src: u("photo-1551434678-e076c223a692", 800), alt: "Équipe digitale" },
       { src: u("photo-1460472178825-e5240623afd5", 800), alt: "Design propre" },
     ],
@@ -71,7 +71,7 @@ export const SERVICE_VISUALS: Record<ServiceId, ServiceVisual> = {
     },
     showcase: [
       { src: u("photo-1563013544-824ae1b704d3", 800), alt: "Performance ads" },
-      { src: u("photo-1460925895917-afdab827c52f", 800), alt: "Conversions" },
+      { src: u("photo-1611926653458-09294b3142bf", 800), alt: "Conversions" },
       { src: u("photo-1551836022-d5d88e9218df", 800), alt: "ROI marketing" },
     ],
   },

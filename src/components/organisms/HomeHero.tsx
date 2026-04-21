@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { useI18n } from "@/lib/i18n";
 import { localizedPath } from "@/lib/routes";
 import Eyebrow from "@/components/atoms/Eyebrow";
@@ -9,10 +10,19 @@ import LighthousePreview from "@/components/molecules/LighthousePreview";
 
 export default function HomeHero() {
   const { t, locale } = useI18n();
+  const { scrollY } = useScroll();
+  // As user scrolls the first ~600px, hero content fades + scales + lifts slightly.
+  const opacity = useTransform(scrollY, [0, 600], [1, 0.15]);
+  const scale = useTransform(scrollY, [0, 600], [1, 0.94]);
+  const y = useTransform(scrollY, [0, 600], [0, -40]);
+
   return (
-    <section className="relative overflow-hidden">
+    <section className="sticky top-0 z-0 overflow-hidden">
       <HeroBackground />
-      <div className="relative mx-auto grid w-full max-w-6xl gap-12 px-6 pb-20 pt-28 sm:pt-36 md:grid-cols-12 md:gap-16">
+      <motion.div
+        style={{ opacity, scale, y }}
+        className="relative mx-auto grid w-full max-w-6xl gap-12 px-6 pb-20 pt-28 sm:pt-36 md:grid-cols-12 md:gap-16"
+      >
         <div className="md:col-span-7">
           <div
             className="animate-fade-up mb-5"
@@ -55,7 +65,7 @@ export default function HomeHero() {
         >
           <LighthousePreview />
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
