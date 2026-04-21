@@ -4,7 +4,13 @@ import { localizedPath } from "@/lib/routes";
 
 export type Crumb = { label: string; href?: string };
 
-export default function Breadcrumbs({ items }: { items: Crumb[] }) {
+export default function Breadcrumbs({
+  items,
+  inline = false,
+}: {
+  items: Crumb[];
+  inline?: boolean;
+}) {
   const { t, locale } = useI18n();
   const home = { label: t("common.home"), href: localizedPath("home", locale) };
   const all = [home, ...items];
@@ -12,7 +18,11 @@ export default function Breadcrumbs({ items }: { items: Crumb[] }) {
   return (
     <nav
       aria-label="Breadcrumb"
-      className="mx-auto w-full max-w-360 px-8 pt-8 text-xs text-[var(--color-fg-muted)]"
+      className={
+        inline
+          ? "text-xs text-[var(--color-fg-muted)]"
+          : "mx-auto w-full max-w-360 px-8 pt-8 text-xs text-[var(--color-fg-muted)]"
+      }
     >
       <ol className="flex flex-wrap items-center gap-2">
         {all.map((item, i) => {

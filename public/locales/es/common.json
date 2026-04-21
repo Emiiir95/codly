@@ -178,353 +178,625 @@
   },
   "serviceWeb": {
     "meta": {
-      "title": "Creación de sitios web profesionales — Agencia web Agency",
-      "description": "Creación de sitios web a medida: corporativos WordPress, tiendas Shopify y desarrollo personalizado. Diseño moderno, alto rendimiento y SEO integrado."
+      "title": "Creación de sitio web profesional — Agency",
+      "description": "Creación de sitios web a medida: WordPress, Shopify, Next.js. Diseño moderno, SEO integrado, entrega rápida."
     },
     "hero": {
-      "eyebrow": "Creación de sitios web",
-      "title": "Sitios web profesionales que realmente convierten.",
-      "subtitle": "Agencia web que diseña sitios WordPress, tiendas Shopify y aplicaciones a medida. Diseño premium, SEO integrado, rendimiento impecable."
+      "eyebrow": "Creación web",
+      "title": "Tu sitio web. Tu mejor vendedor. 24/7.",
+      "subtitle": "Creamos sitios web, tiendas e-commerce y plataformas a medida que convierten visitantes en clientes. Diseño premium, SEO nativo, rendimiento máximo."
     },
-    "breadcrumb": "Creación de sitios web",
-    "intro": "La creación de un sitio web profesional es una inversión estratégica. No se trata simplemente de existir online, sino de construir un activo de negocio capaz de atraer visitantes cualificados, contar tu historia y transformar prospectos en clientes fieles.",
+    "breadcrumb": "Creación web",
+    "pain": {
+      "eyebrow": "¿Te suena?",
+      "title": "Problemas que resolvemos",
+      "items": [
+        "Tu sitio actual no genera ningún contacto ni venta",
+        "Tienes un sitio lento que espanta a los visitantes",
+        "Pagas hosting por un sitio que nunca se actualiza",
+        "Tu sitio no aparece en Google"
+      ]
+    },
+    "solutionTitle": "Lo que hacemos concretamente por ti",
     "sections": [
       {
-        "title": "WordPress, Shopify o a medida: la solución adecuada para cada proyecto",
-        "body": "Adaptamos la tecnología a tus necesidades reales. WordPress para un sitio corporativo fácil de actualizar, Shopify para una tienda robusta o código a medida para una plataforma sin límites. Cada solución se despliega con la misma exigencia de diseño, rendimiento y SEO."
+        "title": "Diseño que vende, no que decora",
+        "body": "Cada página, botón y color está diseñado para impulsar al visitante a contactarte. No hacemos bonito por hacer — hacemos diseño que convierte."
       },
       {
-        "title": "Diseño UX/UI pensado para convertir",
-        "body": "Nuestros diseñadores crean interfaces que guían al visitante hacia la acción que importa: solicitud de presupuesto, compra, contacto. Cada sección está diseñada para reducir fricciones y maximizar tu tasa de conversión."
+        "title": "Rápido. Realmente rápido.",
+        "body": "Lighthouse 100/100. Tu sitio carga en menos de 2 segundos. Google lo ama, tus visitantes también."
       },
       {
-        "title": "Rendimiento y Core Web Vitals en el corazón del proyecto",
-        "body": "Un sitio lento pierde visitantes y baja en Google. Optimizamos Core Web Vitals (LCP, INP, CLS), imágenes (AVIF, WebP), fuentes y JavaScript. Apuntamos a Lighthouse 100."
+        "title": "Visible en Google desde el lanzamiento",
+        "body": "SEO técnico integrado en el código: Schema.org, sitemap, URLs optimizadas, meta tags. Tu sitio está listo para posicionar desde el día 1."
       },
       {
-        "title": "SEO Google integrado desde la concepción",
-        "body": "La jerarquía Hn, el marcado Schema.org, los sitemaps multilingüe, las URLs semánticas y las etiquetas Open Graph forman parte del desarrollo. Tu sitio se indexa desde su lanzamiento."
+        "title": "Control total para ti",
+        "body": "Te formamos, te damos las llaves. Puedes modificar textos, añadir páginas, sin llamarnos. Autonomía total."
       }
     ],
+    "midCta": {
+      "title": "¿Listo para un sitio que trabaje por ti?",
+      "subtitle": "Hablamos, proponemos maquetas, tú eliges. Sin compromiso.",
+      "button": "Hablar de mi proyecto"
+    },
+    "process": {
+      "title": "¿Cómo funciona?",
+      "steps": [
+        {
+          "step": "1",
+          "title": "Hablamos",
+          "desc": "Llamada o video para entender tu negocio y preferencias."
+        },
+        {
+          "step": "2",
+          "title": "Proponemos",
+          "desc": "Te presentamos plantillas y maquetas adaptadas a tu sector."
+        },
+        {
+          "step": "3",
+          "title": "Desarrollamos",
+          "desc": "Apruebas el diseño, codificamos. Cambios ilimitados hasta tu satisfacción."
+        },
+        {
+          "step": "4",
+          "title": "Entregamos",
+          "desc": "Sitio en línea, formación incluida, eres autónomo."
+        }
+      ]
+    },
     "deliverables": {
-      "title": "Lo que incluye tu proyecto de sitio web",
+      "title": "Todo incluido en tu proyecto",
       "items": [
-        "Encuadre estratégico y auditoría competitiva",
-        "Diseño UX/UI a medida y prototipo interactivo",
-        "Desarrollo WordPress, Shopify o a medida",
-        "SEO técnico (Schema.org, sitemap, hreflang)",
-        "Optimización Core Web Vitals y Lighthouse 100",
-        "Hosting de alto rendimiento y HTTPS",
-        "Formación a la administración y documentación",
-        "Mantenimiento evolutivo y correctivo"
+        "Llamada de alcance + comprensión de tu negocio",
+        "Diseño UX/UI a medida (sin temas genéricos)",
+        "Desarrollo WordPress, Shopify o Next.js",
+        "SEO técnico integrado",
+        "Puntuación Lighthouse optimizada (100)",
+        "Hosting de alto rendimiento + HTTPS",
+        "Formación para gestionar tu sitio",
+        "Soporte post-entrega"
       ]
     },
     "cta": {
-      "title": "Hablemos de tu futuro sitio web",
-      "subtitle": "Auditoría gratuita, presupuesto en 48 h, sin compromiso.",
-      "button": "Pedir presupuesto"
+      "title": "Hablemos de tu futuro sitio",
+      "subtitle": "Llámanos o rellena el formulario. Te respondemos en 48h con una propuesta concreta.",
+      "button": "Pedir presupuesto gratis"
     }
   },
   "serviceVitrine": {
     "meta": {
-      "title": "Sitio corporativo WordPress profesional — Agencia web Agency",
-      "description": "Creación de sitio corporativo WordPress a medida. Diseño profesional, rendimiento óptimo, SEO integrado. Presupuesto gratuito en 48h."
+      "title": "Sitio vitrina WordPress profesional — Agency",
+      "description": "Creación de sitio vitrina WordPress con Salient. Diseño único, SEO integrado, rendimiento óptimo."
     },
     "hero": {
-      "eyebrow": "Sitio corporativo WordPress",
-      "title": "Un sitio WordPress profesional que atrae y convierte.",
-      "subtitle": "Creamos sitios WordPress elegantes, rápidos y optimizados para Google. La solución ideal para pymes que quieren brillar online."
+      "eyebrow": "Sitio vitrina WordPress",
+      "title": "Un sitio vitrina pro. Que te trae clientes. No solo likes.",
+      "subtitle": "Creamos tu sitio vitrina WordPress con Salient: diseño profesional, SEO integrado, y puedes modificar todo tú mismo."
     },
-    "breadcrumb": "Sitio corporativo WordPress",
-    "intro": "WordPress es la plataforma más usada del mundo para sitios corporativos profesionales. Flexible, robusta y fácil de administrar, permite crear sitios elegantes y de alto rendimiento sin conocimientos técnicos.",
+    "breadcrumb": "Sitio vitrina WordPress",
+    "pain": {
+      "eyebrow": "¿Te suena?",
+      "title": "Por qué la mayoría de sitios vitrina fracasan",
+      "items": [
+        "Temas WordPress genéricos iguales a otros 10.000 sitios",
+        "Un sitio nunca actualizado porque es muy difícil de modificar",
+        "Un diseño que no refleja la seriedad de tu negocio",
+        "Un sitio invisible en Google"
+      ]
+    },
+    "solutionTitle": "Tu sitio vitrina WordPress, hecho para vender",
     "sections": [
       {
-        "title": "WordPress a medida, sin plantillas genéricas",
-        "body": "A diferencia de otras agencias que instalan un tema premium y cambian los colores, desarrollamos temas hijo personalizados que reflejan exactamente tu identidad visual. El resultado: un sitio único, ligero y perfectamente mantenible."
+        "title": "Salient: el tema premium que dominamos",
+        "body": "Usamos Salient, uno de los temas más potentes del mercado. Sin plantillas copiadas: personalizamos todo para que tu sitio sea único."
       },
       {
-        "title": "SEO Google optimizado desde la configuración",
-        "body": "Configuramos Yoast SEO o Rank Math, estructuramos los permalinks, optimizamos etiquetas título y meta, creamos el sitemap XML e implementamos Schema.org. Tu WordPress parte con buen pie en Google."
+        "title": "Modificas todo, sin tocar código",
+        "body": "Textos, imágenes, páginas — gestionas todo desde WordPress. Te formamos en 30 minutos, eres autónomo."
       },
       {
-        "title": "Administración simple, autonomía total",
-        "body": "Una de las grandes ventajas de WordPress: puedes actualizar tus contenidos tú mismo, sin tocar el código. Te formamos en la interfaz de administración y configuramos bloques Gutenberg personalizados."
+        "title": "Visible en Google, rápidamente",
+        "body": "Configuración SEO completa: Rank Math, etiquetas optimizadas, sitemap XML, Schema.org."
       },
       {
-        "title": "Rendimiento y seguridad máximos",
-        "body": "Un WordPress mal configurado es lento y vulnerable. Optimizamos el rendimiento (caché, CDN, lazy-load), securizamos la instalación y alojamos en servidores de alto rendimiento con HTTPS."
+        "title": "Rápido, seguro, bien alojado",
+        "body": "Caché optimizado, CDN, imágenes comprimidas, HTTPS, copias de seguridad automáticas."
       }
     ],
+    "midCta": {
+      "title": "Tu sitio vitrina en línea en 3 semanas",
+      "subtitle": "Nos encargamos de todo. Apruebas el diseño, entregamos.",
+      "button": "Lanzar mi proyecto"
+    },
+    "process": {
+      "title": "De la idea al lanzamiento",
+      "steps": [
+        {
+          "step": "1",
+          "title": "Intercambio",
+          "desc": "Entendemos tu negocio, necesidades y gustos visuales."
+        },
+        {
+          "step": "2",
+          "title": "Propuesta",
+          "desc": "Te enviamos maquetas basadas en Salient, adaptadas a tu sector."
+        },
+        {
+          "step": "3",
+          "title": "Personalización",
+          "desc": "Apruebas, ajustamos hasta que sea perfecto para ti."
+        },
+        {
+          "step": "4",
+          "title": "Entrega",
+          "desc": "Lanzamiento + formación WordPress. Estás operativo."
+        }
+      ]
+    },
     "deliverables": {
-      "title": "Lo que incluye tu sitio corporativo WordPress",
+      "title": "Lo que incluye tu sitio vitrina",
       "items": [
-        "Diseño UX/UI a medida (sin plantillas genéricas)",
-        "Desarrollo WordPress con tema hijo personalizado",
-        "Configuración SEO completa (Yoast/Rank Math, Schema.org)",
-        "Optimización Core Web Vitals y velocidad de carga",
-        "Hosting de alto rendimiento, HTTPS y backups diarios",
-        "Formación a la administración WordPress",
-        "Formularios de contacto e integración Google Analytics",
-        "Mantenimiento y actualizaciones incluidos 3 meses"
+        "Diseño personalizado con Salient",
+        "Instalación WordPress + hosting performante",
+        "Configuración SEO completa (Rank Math, Schema.org)",
+        "Páginas: Inicio, Nosotros, Servicios, Contacto",
+        "Formulario de contacto funcional",
+        "Optimización de velocidad y Core Web Vitals",
+        "Formación WordPress (30 min, videollamada)",
+        "Soporte 3 meses post-entrega"
       ]
     },
     "cta": {
-      "title": "Tu sitio corporativo WordPress en 4 semanas",
-      "subtitle": "Presupuesto gratuito en 48h. Sin compromiso.",
-      "button": "Pedir presupuesto"
+      "title": "¿Listo para un sitio profesional de verdad?",
+      "subtitle": "Presupuesto gratis, entrega rápida, sin complicaciones.",
+      "button": "Obtener mi presupuesto gratis"
     }
   },
   "serviceEcommerce": {
     "meta": {
-      "title": "Tienda e-commerce Shopify — Agencia web Agency",
-      "description": "Creación de tienda Shopify a medida. Diseño profesional, pagos seguros, SEO integrado. Aumenta tus ventas online."
+      "title": "Tienda e-commerce Shopify — Agency",
+      "description": "Creación de tienda Shopify a medida. Catálogo, pago seguro, SEO e-commerce. Vende en línea ahora."
     },
     "hero": {
-      "eyebrow": "Tienda Shopify",
-      "title": "Una tienda Shopify que vende, día y noche.",
-      "subtitle": "Creamos tiendas Shopify elegantes, rápidas y optimizadas para la conversión. La solución más robusta para vender online de forma eficaz."
+      "eyebrow": "E-commerce Shopify",
+      "title": "Tu tienda Shopify. Ventas. Día y noche.",
+      "subtitle": "Creamos tu tienda Shopify de A a Z: diseño que convierte, catálogo optimizado, pago seguro. Tú vendes, nosotros nos encargamos de lo técnico."
     },
-    "breadcrumb": "Tienda Shopify",
-    "intro": "Shopify es la plataforma de e-commerce de referencia para las marcas que quieren vender online sin restricciones técnicas. Fiable, segura y escalable, gestiona pagos, inventario, envíos y devoluciones.",
+    "breadcrumb": "E-commerce Shopify",
+    "pain": {
+      "eyebrow": "¿Te suena?",
+      "title": "Por qué tu tienda online no despega",
+      "items": [
+        "Tasa de abandono de carrito catastrófica",
+        "Fichas de producto que no dan ganas de comprar",
+        "Un checkout complicado que espanta clientes",
+        "Cero visibilidad en Google Shopping"
+      ]
+    },
+    "solutionTitle": "Una tienda Shopify pensada para vender",
     "sections": [
       {
-        "title": "Diseño Shopify a medida, pensado para convertir",
-        "body": "Desarrollamos temas Shopify personalizados que reflejan tu identidad de marca y guían al cliente hacia la compra. Páginas de producto optimizadas, proceso de compra fluido y descripciones persuasivas."
+        "title": "Un diseño que dispara la compra",
+        "body": "Páginas de producto optimizadas, túnel de compra fluido, visuales impactantes. Cada elemento reduce las dudas e impulsa a la acción."
       },
       {
-        "title": "Catálogo, variantes y gestión de inventario",
-        "body": "Ya sean 10 o 10 000 productos, estructuramos tu catálogo para una navegación intuitiva. Colecciones organizadas, filtros inteligentes, variantes (talla, color, material) e inventario en tiempo real."
+        "title": "Catálogo estructurado inteligentemente",
+        "body": "Colecciones, filtros, variantes (talla, color, material), gestión de stock en tiempo real. Navegación fluida incluso con miles de productos."
       },
       {
-        "title": "Pago seguro y experiencia de compra óptima",
-        "body": "Configuramos Shopify Payments, Stripe, PayPal y otros métodos de pago. Checkout optimizado para reducir el abandono de carrito y emails transaccionales personalizados."
+        "title": "Pago en 3 clics, seguro",
+        "body": "Shopify Payments, Stripe, PayPal, Apple Pay — todos los métodos de pago para no perder ningún cliente."
       },
       {
-        "title": "SEO e-commerce y posicionamiento de productos",
-        "body": "Las fichas de producto bien posicionadas generan tráfico cualificado a coste cero. Optimizamos URLs, etiquetas, descripciones, Product Schema y sitemaps para que tus productos aparezcan en Google Shopping."
+        "title": "SEO e-commerce nativo",
+        "body": "URLs optimizadas, Product Schema, metas automáticas, sitemap de productos. Tus productos aparecen en Google Shopping naturalmente."
       }
     ],
+    "midCta": {
+      "title": "Cada día sin tienda = ventas perdidas",
+      "subtitle": "Tu tienda Shopify puede estar en línea en 4 a 6 semanas.",
+      "button": "Lanzar mi tienda"
+    },
+    "process": {
+      "title": "Del brief al primer cliente",
+      "steps": [
+        {
+          "step": "1",
+          "title": "Brief producto",
+          "desc": "Entendemos tus productos, tu target y tus objetivos de venta."
+        },
+        {
+          "step": "2",
+          "title": "Diseño tienda",
+          "desc": "Maquetas del tema Shopify personalizado, páginas de producto, checkout."
+        },
+        {
+          "step": "3",
+          "title": "Desarrollo",
+          "desc": "Integración catálogo, pago, emails transaccionales, tracking."
+        },
+        {
+          "step": "4",
+          "title": "Lanzamiento",
+          "desc": "Tienda en línea + formación Shopify. Gestionas pedidos con autonomía."
+        }
+      ]
+    },
     "deliverables": {
-      "title": "Lo que incluye tu tienda Shopify",
+      "title": "Todo incluido en tu tienda",
       "items": [
-        "Diseño Shopify a medida (tema personalizado)",
-        "Catálogo de productos, variantes y gestión de inventario",
-        "Configuración de pagos (Shopify Payments, Stripe, PayPal)",
-        "SEO e-commerce (Product Schema, URLs, metas)",
-        "Optimización de la tasa de conversión (CRO)",
-        "Emails transaccionales personalizados",
-        "Integración Google Analytics y Facebook Pixel",
-        "Formación a la administración Shopify",
-        "Mantenimiento y soporte incluidos 3 meses"
+        "Diseño Shopify personalizado",
+        "Catálogo + variantes + gestión de stock",
+        "Configuración de pago seguro multi-método",
+        "Emails transaccionales (confirmación, envío)",
+        "SEO e-commerce (Product Schema, metas, sitemap)",
+        "Integración Google Analytics + Facebook Pixel",
+        "Formación administración Shopify",
+        "Soporte y mantenimiento 3 meses"
       ]
     },
     "cta": {
-      "title": "Lanza tu tienda Shopify en 6 semanas",
-      "subtitle": "Presupuesto gratuito, acompañamiento de principio a fin.",
-      "button": "Pedir presupuesto e-commerce"
+      "title": "Tu tienda Shopify, lista para vender",
+      "subtitle": "Creamos, tú vendes. Presupuesto gratis y sin compromiso.",
+      "button": "Recibir mi presupuesto e-commerce"
     }
   },
   "serviceSurMesure": {
     "meta": {
-      "title": "Sitio web a medida (código) — Agencia web Agency",
-      "description": "Desarrollo de sitios web a medida en Next.js, React y TypeScript. Máximo rendimiento, SEO nativo, sin límites. Para proyectos ambiciosos."
+      "title": "Sitio web a medida Next.js — Agency",
+      "description": "Desarrollo web a medida con Next.js, React, Tailwind. Rendimiento absoluto, SEO nativo, sin límites técnicos."
     },
     "hero": {
       "eyebrow": "Sitio a medida",
-      "title": "Un sitio web sin límites, construido de cero.",
-      "subtitle": "Cuando WordPress y Shopify no son suficientes, desarrollamos aplicaciones web a medida en Next.js, React y TypeScript. Rendimiento absoluto, SEO nativo."
+      "title": "Un sitio sin compromisos. Codificado para dominar.",
+      "subtitle": "Cuando WordPress y Shopify no alcanzan, desarrollamos tu sitio desde cero con Next.js. Rendimiento absoluto, diseño sin límites, SEO nativo."
     },
     "breadcrumb": "Sitio a medida",
-    "intro": "Algunos proyectos necesitan una solución que los CMS del mercado no pueden ofrecer: una plataforma SaaS, un portal cliente complejo, un marketplace o simplemente un sitio con rendimiento imposible de lograr con un tema.",
+    "pain": {
+      "eyebrow": "Mereces más",
+      "title": "Los límites de las soluciones clásicas",
+      "items": [
+        "WordPress se arrastra con demasiados plugins",
+        "Tu proyecto tiene necesidades que los CMS no cubren",
+        "Quieres un sitio ultra-rápido, no un compromiso",
+        "Necesitas integraciones específicas (API, CRM, ERP)"
+      ]
+    },
+    "solutionTitle": "Código a medida, sin ningún límite",
     "sections": [
       {
-        "title": "Next.js, React y TypeScript: el stack más potente de la web",
-        "body": "Desarrollamos con Next.js, el framework React de referencia. Renderizado estático (SSG), renderizado en servidor (SSR), streaming: elegimos la estrategia de renderizado óptima para cada página."
+        "title": "Next.js + React: el stack de los líderes",
+        "body": "El mismo stack que Vercel, Notion, Linear. Renderizado estático ultra-rápido, interacciones fluidas, SEO perfecto."
       },
       {
-        "title": "Arquitectura headless e integraciones de negocio",
-        "body": "Tu sitio puede integrarse con cualquier herramienta: CMS headless (Sanity, Contentful, Strapi), CRM, ERP, herramientas de email, analytics avanzado y APIs de terceros."
+        "title": "Diseño pixel-perfect, animaciones premium",
+        "body": "Sin restricciones de tema, el diseño es exactamente lo que quieres. Animaciones fluidas, micro-interacciones, UX de clase mundial."
       },
       {
-        "title": "Rendimiento absoluto y Core Web Vitals perfectos",
-        "body": "Sin restricciones de CMS, alcanzamos rendimientos imposibles con WordPress o Shopify: Lighthouse 100/100, LCP por debajo de 1 segundo, CLS a cero."
+        "title": "Rendimiento imbatible",
+        "body": "Lighthouse 100/100, LCP bajo 1 segundo, cero plugins lentos. Cada línea de código está optimizada."
       },
       {
-        "title": "SEO nativo y multilingüe",
-        "body": "Marcado Schema.org completo, sitemaps dinámicos, hreflang multilingüe, Open Graph y Twitter Card, renderizado en servidor para una indexación perfecta — todo integrado de forma nativa."
+        "title": "Integraciones a medida",
+        "body": "CMS headless, CRM, APIs de terceros, pagos, autenticación — conectamos todo lo que tu negocio necesita."
       }
     ],
+    "midCta": {
+      "title": "Tu proyecto merece más que una plantilla",
+      "subtitle": "Hablemos de técnica. Alcance técnico gratuito en 48h.",
+      "button": "Alcance técnico gratuito"
+    },
+    "process": {
+      "title": "Nuestro proceso de desarrollo",
+      "steps": [
+        {
+          "step": "1",
+          "title": "Alcance",
+          "desc": "Definimos juntos la arquitectura, funcionalidades e integraciones."
+        },
+        {
+          "step": "2",
+          "title": "Diseño",
+          "desc": "Maquetas de alta fidelidad, prototipado interactivo. Apruebas cada pantalla."
+        },
+        {
+          "step": "3",
+          "title": "Desarrollo",
+          "desc": "Código limpio, testeado, desplegado continuamente. Sigues el avance en tiempo real."
+        },
+        {
+          "step": "4",
+          "title": "Entrega",
+          "desc": "Desplegado en Vercel, documentación, formación. Tu sitio está en producción."
+        }
+      ]
+    },
     "deliverables": {
       "title": "Lo que incluye tu proyecto a medida",
       "items": [
-        "Encuadre técnico y arquitectura de la aplicación",
-        "Diseño UX/UI a medida y prototipado",
+        "Alcance técnico y arquitectura",
+        "Diseño UX/UI de alta fidelidad + prototipado",
         "Desarrollo Next.js, React, TypeScript",
-        "Integración CMS headless y APIs de negocio",
         "SEO técnico nativo (Schema.org, sitemap, hreflang)",
-        "Tests unitarios y de integración",
-        "Despliegue CI/CD en Vercel o infraestructura dedicada",
+        "Lighthouse 100/100 garantizado",
+        "Despliegue CI/CD en Vercel",
         "Documentación técnica completa",
-        "Mantenimiento evolutivo y soporte dedicado"
+        "Soporte y evoluciones post-entrega"
       ]
     },
     "cta": {
-      "title": "Hablemos de tu proyecto a medida",
-      "subtitle": "Encuadre técnico gratuito. Estimación en 48h.",
-      "button": "Iniciar el encuadre"
+      "title": "Hablemos de tu proyecto ambicioso",
+      "subtitle": "Alcance técnico gratuito. Te respondemos en 48h con una estimación.",
+      "button": "Iniciar el alcance"
     }
   },
   "serviceSeo": {
     "meta": {
-      "title": "Agencia SEO y posicionamiento Google — Agency",
-      "description": "Agencia SEO: auditoría, estrategia de contenidos, SEO técnico, enlaces y reporting. Lleva tu sitio al top 3 de Google en tus keywords estratégicas."
+      "title": "Agencia SEO — Agency",
+      "description": "SEO técnico, contenido y link building. Posicionamos tu sitio en el top de Google."
     },
     "hero": {
-      "eyebrow": "Posicionamiento natural",
-      "title": "Lleva tu sitio al top 3 de Google.",
-      "subtitle": "Agencia SEO especializada en posicionamiento técnico, editorial y off-site. Convertimos tu sitio en una máquina de tráfico cualificado."
+      "eyebrow": "SEO",
+      "title": "Primera página de Google. No la tercera.",
+      "subtitle": "Implementamos todo lo necesario para que tu sitio suba en Google: técnica, contenido, enlaces. Sin promesas vacías — trabajo metódico con resultados."
     },
     "breadcrumb": "SEO",
-    "intro": "El posicionamiento natural en Google es el canal de adquisición más rentable de la web: trabaja por ti 24/7 y refuerza la credibilidad de tu marca con cada posición ganada.",
+    "pain": {
+      "eyebrow": "¿Invisible en Google?",
+      "title": "Por qué tu sitio no aparece en Google",
+      "items": [
+        "Tu sitio no tiene estrategia de palabras clave",
+        "El contenido es pobre o mal estructurado para Google",
+        "Ningún otro sitio enlaza al tuyo (sin backlinks)",
+        "Problemas técnicos bloquean la indexación"
+      ]
+    },
+    "solutionTitle": "Nuestro método SEO, paso a paso",
     "sections": [
       {
-        "title": "Una auditoría SEO completa antes de actuar",
-        "body": "Cada misión arranca con una auditoría profunda: análisis técnico (crawl, indexación, Core Web Vitals), análisis semántico (keywords, intenciones) y análisis off-site (perfil de enlaces)."
+        "title": "Auditoría completa: diagnosticamos todo",
+        "body": "Análisis técnico (crawl, indexación, velocidad), semántico (keywords, intenciones, competencia) y off-site (backlinks, autoridad)."
       },
       {
-        "title": "SEO técnico: las bases invisibles pero decisivas",
-        "body": "Optimizamos la velocidad (Core Web Vitals), la estructura Hn, las URLs canónicas, los sitemaps multilingüe, hreflang y los datos estructurados Schema.org."
+        "title": "SEO técnico: los cimientos",
+        "body": "Core Web Vitals, estructura Hn, URLs canónicas, sitemap, Schema.org, hreflang. Hacemos tu sitio técnicamente perfecto para Google."
       },
       {
-        "title": "Estrategia de contenido y semántica",
-        "body": "Identificamos keywords con mayor potencial y construimos un calendario editorial alineado con tu funnel de conversión. Cada artículo está optimizado semánticamente."
+        "title": "Contenido optimizado para las consultas correctas",
+        "body": "Identificamos las palabras clave que tus clientes realmente buscan y creamos contenido que responde. Contenido que posiciona y convierte."
       },
       {
-        "title": "Enlaces y autoridad de dominio",
-        "body": "Construimos tu perfil de enlaces con enfoque cualitativo: partnerships temáticos, relaciones públicas digitales, guest-posts en medios relevantes."
-      },
-      {
-        "title": "Seguimiento, reporting e iteraciones mensuales",
-        "body": "Cada mes seguimos tus posiciones, tráfico orgánico y conversiones. Recibes un reporting claro y accionable, sin jerga inútil."
+        "title": "Link building: ganar autoridad",
+        "body": "Backlinks de calidad desde sitios relevantes en tu sector. Guest posts, partnerships, PR digital."
       }
     ],
+    "midCta": {
+      "title": "El SEO toma tiempo. Razón de más para empezar ahora.",
+      "subtitle": "Cada mes que pasa, tus competidores avanzan más.",
+      "button": "Pedir mi auditoría SEO"
+    },
+    "process": {
+      "title": "Cómo trabajamos tu SEO",
+      "steps": [
+        {
+          "step": "1",
+          "title": "Auditoría",
+          "desc": "Análisis completo de tu sitio, competidores y oportunidades."
+        },
+        {
+          "step": "2",
+          "title": "Estrategia",
+          "desc": "Plan de acción priorizado: quick wins + acciones a largo plazo."
+        },
+        {
+          "step": "3",
+          "title": "Ejecución",
+          "desc": "Optimizaciones técnicas, contenido, link building. Avanzamos cada mes."
+        },
+        {
+          "step": "4",
+          "title": "Reporting",
+          "desc": "Seguimiento de posiciones, tráfico, conversiones. Informe claro cada mes."
+        }
+      ]
+    },
     "deliverables": {
-      "title": "Lo que incluye nuestro acompañamiento SEO",
+      "title": "Lo que incluye el acompañamiento SEO",
       "items": [
-        "Auditoría SEO técnica, semántica y off-site",
-        "Estrategia de keywords e intenciones de búsqueda",
-        "Optimización on-page (etiquetas, Hn, enlazado interno)",
-        "Datos estructurados Schema.org completos",
+        "Auditoría SEO completa (técnica + semántica + off-site)",
+        "Estrategia de palabras clave e intenciones de búsqueda",
+        "Optimizaciones on-page (etiquetas, Hn, enlazado interno)",
+        "Datos estructurados Schema.org",
         "Optimización Core Web Vitals",
         "Creación y optimización de contenidos SEO",
-        "Campaña de link-building cualitativo",
-        "Reporting mensual de rendimiento",
-        "Un experto SEO dedicado"
+        "Campaña de link building cualitativo",
+        "Reporting mensual claro y accionable"
       ]
     },
     "cta": {
-      "title": "Hablemos de tu estrategia SEO",
-      "subtitle": "Auditoría SEO gratuita y recomendaciones accionables en 7 días.",
-      "button": "Quiero mi auditoría SEO"
+      "title": "Tu auditoría SEO, gratis y sin compromiso",
+      "subtitle": "Analizamos tu sitio y te decimos exactamente qué hacer. En 7 días.",
+      "button": "Recibir mi auditoría SEO gratis"
     }
   },
   "serviceAds": {
     "meta": {
-      "title": "Google Ads (SEM) — Agencia de publicidad Agency",
-      "description": "Agencia Google Ads: creación, optimización y gestión de campañas publicitarias Google. ROI maximizado, segmentación precisa, reporting transparente."
+      "title": "Google Ads — Agency",
+      "description": "Campañas Google Ads optimizadas: segmentación precisa, anuncios impactantes, ROI maximizado."
     },
     "hero": {
-      "eyebrow": "Publicidad en Google",
-      "title": "Campañas Google Ads que generan clientes, no solo clics.",
-      "subtitle": "Creamos y optimizamos tus campañas Google Ads para atraer prospectos cualificados en el momento adecuado. Presupuesto controlado, ROI medido, resultados inmediatos."
+      "eyebrow": "Google Ads",
+      "title": "Clientes mañana por la mañana. No en 6 meses.",
+      "subtitle": "Creamos y gestionamos tus campañas Google Ads para atraer prospectos cualificados inmediatamente. Presupuesto controlado, resultados medibles."
     },
     "breadcrumb": "Google Ads",
-    "intro": "Google Ads permite aparecer inmediatamente en los primeros resultados de búsqueda, sin esperar los 6–12 meses necesarios para el SEO orgánico. Es una palanca potente para generar leads rápidamente o complementar tu estrategia SEO.",
+    "pain": {
+      "eyebrow": "¿Te pasa?",
+      "title": "Por qué tus anuncios de Google no funcionan",
+      "items": [
+        "Gastas presupuesto en clics que no convierten",
+        "Tus anuncios aparecen en palabras clave equivocadas",
+        "Sin landing page dedicada — el tráfico llega a tu inicio",
+        "Sin seguimiento de conversiones"
+      ]
+    },
+    "solutionTitle": "Campañas Ads que traen clientes",
     "sections": [
       {
-        "title": "Segmentación precisa: las keywords correctas en el momento justo",
-        "body": "Una campaña Google Ads eficaz comienza con una selección rigurosa de keywords. Analizamos volúmenes de búsqueda, competencia, coste por clic e intención de compra para dirigirnos solo a las consultas que convierten."
+        "title": "Las palabras clave correctas, los clientes correctos",
+        "body": "Solo segmentamos consultas con intención de compra. Sin clics curiosos que cuestan caro."
       },
       {
-        "title": "Anuncios que captan clics",
-        "body": "Redactamos anuncios de texto y anuncios responsivos que destacan: títulos atractivos, descripciones orientadas a beneficios, extensiones de anuncio. Cada anuncio se prueba en A/B."
+        "title": "Anuncios que dan ganas de clicar",
+        "body": "Títulos impactantes, beneficios claros, extensiones completas. Cada anuncio se testea en A/B."
       },
       {
-        "title": "Landing pages optimizadas para la conversión",
-        "body": "Buen tráfico hacia una mala página es presupuesto perdido. Optimizamos o creamos landing pages dedicadas con mensaje alineado con el anuncio, pruebas sociales y llamada a la acción clara."
+        "title": "Landing pages que convierten",
+        "body": "El tráfico aterriza en páginas dedicadas, no en tu inicio. Mensaje alineado, formulario visible, prueba social."
       },
       {
-        "title": "Optimización continua y reporting mensual",
-        "body": "Analizamos diariamente el rendimiento de tus campañas: CTR, CPC, tasa de conversión, coste por adquisición. Ajustamos pujas, pausamos keywords y amplificamos lo que funciona."
+        "title": "Optimización continua, reporting transparente",
+        "body": "Ajustamos pujas, cortamos lo que no funciona, amplificamos lo que convierte. Cada euro gastado se justifica."
       }
     ],
+    "midCta": {
+      "title": "Tus competidores ya están en Google Ads",
+      "subtitle": "Cada día sin campaña = clientes que van a ellos.",
+      "button": "Lanzar mis campañas"
+    },
+    "process": {
+      "title": "Cómo lanzamos tus campañas",
+      "steps": [
+        {
+          "step": "1",
+          "title": "Auditoría",
+          "desc": "Análisis de mercado, selección de palabras clave, presupuesto recomendado."
+        },
+        {
+          "step": "2",
+          "title": "Creación",
+          "desc": "Campañas, grupos de anuncios, textos publicitarios y landing pages."
+        },
+        {
+          "step": "3",
+          "title": "Lanzamiento",
+          "desc": "En línea, tracking configurado, primeros resultados."
+        },
+        {
+          "step": "4",
+          "title": "Optimización",
+          "desc": "Tests A/B, ajustes de pujas, escalado de lo que funciona."
+        }
+      ]
+    },
     "deliverables": {
-      "title": "Lo que incluye tu gestión de Google Ads",
+      "title": "Lo que incluye la gestión Google Ads",
       "items": [
         "Auditoría y estrategia de campañas",
-        "Investigación y selección de keywords",
+        "Investigación y selección de palabras clave",
         "Creación de campañas y grupos de anuncios",
-        "Redacción de anuncios y tests A/B",
-        "Optimización de landing pages",
+        "Redacción de anuncios + tests A/B",
+        "Creación/optimización de landing pages",
         "Configuración del seguimiento de conversiones",
-        "Gestión de pujas y presupuesto",
-        "Informe mensual de rendimiento (CTR, CPC, ROI)",
-        "Experto Google Ads dedicado"
+        "Gestión diaria de pujas y presupuesto",
+        "Informe mensual (CTR, CPC, conversiones, ROI)"
       ]
     },
     "cta": {
-      "title": "Lanza tu primera campaña Google Ads",
-      "subtitle": "Auditoría gratuita de tus campañas actuales. Presupuesto en 48h.",
-      "button": "Pedir auditoría Ads"
+      "title": "Resultados desde la primera semana",
+      "subtitle": "Auditoría de tus campañas actuales gratis. Recomendaciones en 48h.",
+      "button": "Recibir mi auditoría Ads gratis"
     }
   },
   "serviceSocial": {
     "meta": {
-      "title": "Gestión redes sociales TikTok e Instagram — Agencia Agency",
-      "description": "Agencia de redes sociales: estrategia, creación de contenido y gestión de tu presencia en TikTok e Instagram. Desarrolla tu audiencia."
+      "title": "Gestión redes sociales TikTok & Instagram — Agency",
+      "description": "Estrategia social media, creación de contenidos TikTok, Instagram Reels y YouTube Shorts."
     },
     "hero": {
       "eyebrow": "Redes sociales",
-      "title": "Una presencia social que construye tu marca y atrae clientes.",
-      "subtitle": "Gestionamos tu presencia en TikTok e Instagram: estrategia de contenido, creación de visuales, publicación y análisis. Tu marca brilla, tu comunidad crece."
+      "title": "Tus redes sociales. Gestionadas por profesionales. Por fin.",
+      "subtitle": "Nos encargamos de tu TikTok, Instagram y YouTube Shorts: estrategia, creación de contenidos, publicación, análisis."
     },
     "breadcrumb": "Redes sociales",
-    "intro": "Las redes sociales son imprescindibles para llegar a tu audiencia donde pasa su tiempo. TikTok e Instagram son hoy las plataformas con mayor potencial de crecimiento orgánico para las marcas.",
+    "pain": {
+      "eyebrow": "¿Sin tiempo?",
+      "title": "Por qué tus redes no despegan",
+      "items": [
+        "Publicas cuando te acuerdas (o sea nunca)",
+        "Sin estrategia, sin línea editorial, sin coherencia",
+        "Las tendencias cambian demasiado rápido",
+        "No tienes tiempo para crear contenido de calidad"
+      ]
+    },
+    "solutionTitle": "Presencia social profesional, sin esfuerzo de tu parte",
     "sections": [
       {
-        "title": "Estrategia de contenido adaptada a tu marca",
-        "body": "Cada marca tiene su propia voz, valores y público. Comenzamos con una auditoría de tu presencia actual, un análisis de tu audiencia objetivo y un estudio de tus competidores para definir una línea editorial coherente."
+        "title": "Estrategia a medida para tu marca",
+        "body": "Definimos tu voz, línea editorial y calendario de publicación. Coherente, regular, alineado con tus objetivos."
       },
       {
-        "title": "TikTok: captar la atención, crear viralidad",
-        "body": "TikTok es la plataforma de mayor crecimiento en el mundo. Sus algoritmos favorecen el descubrimiento orgánico, lo que permite a marcas de cualquier tamaño alcanzar millones de personas. Creamos contenido de vídeo corto, dinámico y auténtico."
+        "title": "TikTok: captar atención, crear viralidad",
+        "body": "Contenidos de video cortos, dinámicos, auténticos. Los primeros 3 segundos captan, el resto convierte."
       },
       {
-        "title": "Instagram: construir una comunidad comprometida",
-        "body": "Instagram sigue siendo la referencia para el branding visual y la relación con el cliente. Gestionamos tu feed, Reels y Stories con consistencia estética y un calendario editorial pensado para maximizar el engagement."
+        "title": "Instagram Reels & Stories: comunidad comprometida",
+        "body": "Feed coherente, Reels que funcionan, Stories que enganchan. Animamos tu comunidad diariamente."
       },
       {
-        "title": "Análisis del rendimiento y optimización",
-        "body": "Analizamos las métricas que realmente importan: alcance, impresiones, tasa de engagement, crecimiento de la audiencia y conversiones. Estos análisis alimentan una mejora continua de nuestra estrategia editorial."
+        "title": "YouTube Shorts: presencia multiplataforma",
+        "body": "Adaptamos tus contenidos cortos para YouTube Shorts. Mismo esfuerzo creativo, visibilidad multiplicada."
       }
     ],
+    "midCta": {
+      "title": "Mientras dudas, tus competidores publican",
+      "subtitle": "Tomamos el relevo de tus redes. Primer mes sin compromiso.",
+      "button": "Hablar de mi estrategia"
+    },
+    "process": {
+      "title": "Cómo funciona",
+      "steps": [
+        {
+          "step": "1",
+          "title": "Auditoría",
+          "desc": "Análisis de tus cuentas actuales, audiencia y competidores."
+        },
+        {
+          "step": "2",
+          "title": "Estrategia",
+          "desc": "Línea editorial, calendario de publicación, formatos de contenido."
+        },
+        {
+          "step": "3",
+          "title": "Creación",
+          "desc": "Producimos visuales, videos y textos. Apruebas antes de publicar."
+        },
+        {
+          "step": "4",
+          "title": "Publicación y análisis",
+          "desc": "Publicamos, enganchamos, analizamos. Informe mensual de rendimiento."
+        }
+      ]
+    },
     "deliverables": {
-      "title": "Lo que incluye tu gestión de redes sociales",
+      "title": "Lo que incluye la gestión de tus redes",
       "items": [
-        "Auditoría de presencia actual y estrategia editorial",
-        "Calendario editorial mensual (TikTok + Instagram)",
-        "Creación de visuales, vídeos y textos",
-        "Publicación y gestión diaria de cuentas",
-        "Gestión de comunidad (respuesta a comentarios)",
-        "Estrategia de hashtags y colaboraciones con creadores",
-        "Informe mensual de rendimiento (alcance, engagement)",
+        "Auditoría completa de tu presencia actual",
+        "Estrategia editorial y calendario mensual",
+        "Creación de visuales, videos y textos",
+        "Publicación diaria (TikTok + Instagram + YouTube Shorts)",
+        "Gestión de comunidad (respuestas, engagement)",
+        "Vigilancia de tendencias y adaptación",
+        "Informe mensual (alcance, engagement, crecimiento)",
         "Community manager dedicado"
       ]
     },
     "cta": {
-      "title": "Desarrolla tu presencia en redes sociales",
-      "subtitle": "Auditoría gratuita de tus cuentas. Primer mes sin compromiso.",
-      "button": "Pedir auditoría redes sociales"
+      "title": "Tus redes sociales, por fin gestionadas",
+      "subtitle": "Auditoría gratis de tus cuentas. Primer mes sin compromiso.",
+      "button": "Lanzar mi estrategia social media"
     }
   },
   "blog": {

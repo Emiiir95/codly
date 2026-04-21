@@ -1,5 +1,4 @@
 import { useI18n } from "@/lib/i18n";
-import Breadcrumbs from "@/components/molecules/Breadcrumbs";
 import ProseArticle from "@/components/molecules/ProseArticle";
 import FeatureCard from "@/components/molecules/FeatureCard";
 import PageHero from "./PageHero";
@@ -7,21 +6,18 @@ import Section from "./Section";
 
 export default function AboutContent() {
   const { t, raw } = useI18n();
-  const sections = raw<Array<{ title: string; body: string }>>(
-    "about.sections",
-  );
-  const values = raw<Array<{ title: string; body: string }>>(
-    "about.values.items",
-  );
+  const sections =
+    raw<Array<{ title: string; body: string }>>("about.sections");
+  const values =
+    raw<Array<{ title: string; body: string }>>("about.values.items");
 
   return (
     <>
-      <Breadcrumbs items={[{ label: t("about.breadcrumb") }]} />
-
       <PageHero
         eyebrow={t("about.hero.eyebrow")}
         title={t("about.hero.title")}
         subtitle={t("about.hero.subtitle")}
+        breadcrumbs={[{ label: t("about.breadcrumb") }]}
       />
 
       <Section className="!pt-0" align="left">
