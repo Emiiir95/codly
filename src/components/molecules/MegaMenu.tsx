@@ -34,12 +34,12 @@ export default function MegaMenu({
   const ref = useRef<HTMLDivElement>(null);
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
+  useEffect(() => {
+    onOpenChange?.(open);
+  }, [open, onOpenChange]);
+
   const setOpen = (next: boolean | ((v: boolean) => boolean)) => {
-    setOpenState((prev) => {
-      const resolved = typeof next === "function" ? next(prev) : next;
-      if (resolved !== prev) onOpenChange?.(resolved);
-      return resolved;
-    });
+    setOpenState(next);
   };
 
   useEffect(() => {

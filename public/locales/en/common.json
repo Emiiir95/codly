@@ -954,65 +954,89 @@
   },
   "legal": {
     "meta": {
-      "title": "Legal notice — Agency",
-      "description": "Legal notice of the Agency website: publisher, host, intellectual property and liability."
+      "title": "Legal Notice — Agency",
+      "description": "Legal notice for Agency website: publisher, hosting, intellectual property, liability and contact."
     },
-    "title": "Legal notice",
-    "breadcrumb": "Legal notice",
+    "title": "Legal Notice",
+    "breadcrumb": "Legal Notice",
     "sections": [
       {
-        "title": "Publisher",
-        "body": "The Agency website is published by Agency SAS, a French simplified joint-stock company with a share capital of €10,000, registered with the Paris Trade and Companies Register under number 123 456 789, with its registered office at 12 rue de la République, 75001 Paris."
+        "title": "1. Website Publisher",
+        "body": "The website accessible at <strong>agency.example.com</strong> is published by:<br><br><strong>Emir Sen</strong><br>Sole proprietor (auto-entrepreneur)<br>SIRET: 983 251 810 00013<br>RCS Paris: 983 251 810<br><br><strong>Registered address:</strong> 60 rue François 1er, 75008 Paris, France<br><strong>Publication director:</strong> Emir Sen<br><strong>Contact:</strong> <a href=\"mailto:contact@agency.example.com\">contact@agency.example.com</a><br><strong>Phone:</strong> +33 6 03 00 44 95"
       },
       {
-        "title": "Hosting",
-        "body": "The website is hosted by Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, United States. Data is transmitted over a secure network compliant with the GDPR."
+        "title": "2. Hosting",
+        "body": "The website is hosted by:<br><br><strong>GitHub, Inc.</strong><br>A subsidiary of Microsoft Corporation<br>88 Colin P Kelly Jr St, San Francisco, CA 94107, United States<br>Website: <a href=\"https://github.com\" target=\"_blank\" rel=\"noopener noreferrer\">github.com</a>"
       },
       {
-        "title": "Intellectual property",
-        "body": "All content on the website is the exclusive property of Agency SAS unless stated otherwise. Any reproduction, representation, modification, publication or adaptation is forbidden without prior written authorisation."
+        "title": "3. Intellectual Property",
+        "body": "All content on this website (text, images, graphics, logos, icons, source code) is the exclusive property of Emir Sen, unless otherwise stated. Any reproduction, representation, modification, publication or adaptation of all or part of the website elements, by any means or process, is prohibited without prior written authorization from Emir Sen."
       },
       {
-        "title": "Liability",
-        "body": "Agency SAS strives to provide accurate and up-to-date information but cannot guarantee completeness. The user acknowledges using this information at their sole responsibility."
+        "title": "4. Limitation of Liability",
+        "body": "Emir Sen endeavors to provide accurate information on the website. However, he cannot be held responsible for omissions, inaccuracies or shortcomings in updates, whether caused by himself or by third-party partners providing such information."
       },
       {
-        "title": "Contact",
-        "body": "For any question regarding this legal notice, please contact us at contact@agency.example.com."
+        "title": "5. Hyperlinks",
+        "body": "The website may contain hyperlinks to other websites. Emir Sen has no control over the content of these third-party sites and accepts no responsibility for their content or any damages that may result from visiting them."
+      },
+      {
+        "title": "6. Applicable Law",
+        "body": "Any dispute related to the use of this website is subject to French law. Exclusive jurisdiction is attributed to the competent courts of Paris, France."
+      },
+      {
+        "title": "7. Contact",
+        "body": "For any questions regarding this legal notice:<br><br><strong>Email:</strong> <a href=\"mailto:contact@agency.example.com\">contact@agency.example.com</a><br><strong>Mail:</strong> Emir Sen, 60 rue François 1er, 75008 Paris, France"
       }
     ]
   },
   "privacy": {
     "meta": {
-      "title": "Privacy policy — Agency",
-      "description": "Privacy policy of Agency: personal data processing, cookies, GDPR rights."
+      "title": "Privacy Policy — Agency",
+      "description": "Agency privacy policy: personal data collection, purposes, GDPR rights and cookies."
     },
-    "title": "Privacy policy",
+    "title": "Privacy Policy",
     "breadcrumb": "Privacy",
     "sections": [
       {
-        "title": "Data controller",
-        "body": "The controller of personal data collected on this website is Agency SAS, 12 rue de la République, 75001 Paris. For any request relating to your personal data, please write to contact@agency.example.com."
+        "title": "1. Data Controller",
+        "body": "The data controller for personal data collected on <strong>agency.example.com</strong> is:<br><br><strong>Emir Sen</strong><br>Sole proprietor<br>60 rue François 1er, 75008 Paris, France<br>Contact: <a href=\"mailto:contact@agency.example.com\">contact@agency.example.com</a>"
       },
       {
-        "title": "Data collected",
-        "body": "We only collect the data needed to handle your request via the contact form: name, business email, company (optional), subject and message."
+        "title": "2. Data Collected",
+        "body": "When you use the contact form, we collect the following data:<br><br>• <strong>Name</strong><br>• <strong>Email address</strong><br><br>This data is collected when you fill out and submit the contact form. No other personal data is collected automatically."
       },
       {
-        "title": "Purposes and legal basis",
-        "body": "Data is processed to answer your request and establish a commercial relationship. The legal basis is your explicit consent and the performance of pre-contractual measures."
+        "title": "3. Purpose of Processing",
+        "body": "The personal data collected is used solely to respond to your contact or information request. It is not used for any other purpose (commercial prospecting, resale to third parties, profiling, etc.)."
       },
       {
-        "title": "Retention period",
-        "body": "Your data is kept for 3 years from the last contact. Beyond this period, it is deleted or anonymised."
+        "title": "4. Legal Basis",
+        "body": "The processing of your personal data is based on your consent (Article 6.1.a of the GDPR), expressed by submitting the contact form, and on the performance of pre-contractual measures taken at your request (Article 6.1.b of the GDPR)."
       },
       {
-        "title": "Your rights",
-        "body": "Under the GDPR, you have the right to access, rectification, erasure, restriction, objection and portability. Write to contact@agency.example.com to exercise your rights."
+        "title": "5. Data Recipients",
+        "body": "Data collected through the contact form is sent by email to Emir Sen only. It is not shared with any third party, subcontractor or partner. No data is stored in a database or CRM."
       },
       {
-        "title": "Cookies",
-        "body": "This website uses no advertising cookies and no third-party tracking. Only necessary technical cookies may be used, with no personal identification."
+        "title": "6. Data Retention",
+        "body": "Data submitted through the form is kept in our email inbox for the time necessary to process your request. In the absence of an established business relationship, data is deleted within a maximum of 3 years from your last contact, in accordance with CNIL recommendations."
+      },
+      {
+        "title": "7. Your Rights",
+        "body": "In accordance with the <strong>General Data Protection Regulation (GDPR)</strong>, you have the following rights:<br><br>• <strong>Right of access</strong> to your personal data<br>• <strong>Right of rectification</strong><br>• <strong>Right of erasure</strong> (\"right to be forgotten\")<br>• <strong>Right to restriction</strong> of processing<br>• <strong>Right to object</strong> to processing<br>• <strong>Right to data portability</strong><br><br>To exercise these rights, send your request by email to <a href=\"mailto:contact@agency.example.com\">contact@agency.example.com</a> with a copy of your ID. We will respond within one month.<br><br>In case of dispute, you may file a complaint with the <strong>CNIL</strong> (French Data Protection Authority): <a href=\"https://www.cnil.fr\" target=\"_blank\" rel=\"noopener noreferrer\">www.cnil.fr</a>"
+      },
+      {
+        "title": "8. Cookies",
+        "body": "This website does not use any advertising cookies, tracking cookies or third-party cookies. Only strictly necessary technical cookies (language preference, light/dark theme preference) may be stored in your browser. These technical cookies do not require your consent under Article 82 of the French Data Protection Act."
+      },
+      {
+        "title": "9. Data Transfers Outside the EU",
+        "body": "The website is hosted by GitHub, Inc. (United States). Data transmitted through the contact form may therefore transit through servers located outside the European Union. GitHub adheres to the EU-US Data Privacy Framework (DPF), ensuring an adequate level of protection in accordance with GDPR requirements."
+      },
+      {
+        "title": "10. Policy Changes",
+        "body": "This privacy policy may be updated at any time. The date of the last update is indicated below. We invite you to consult it regularly. Last update: April 2026."
       }
     ]
   },
