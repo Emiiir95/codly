@@ -1,5 +1,5 @@
 import { SITE, type Locale } from "./site";
-import { localizedPath, type PageKey } from "./routes";
+import { seoPath, type PageKey } from "./routes";
 
 const url = (path: string) => `${SITE.domain}${path}`;
 
@@ -84,7 +84,7 @@ export const serviceJsonLd = (params: {
   name: params.name,
   description: params.description,
   serviceType: params.serviceType,
-  url: url(localizedPath(params.pageKey, params.locale)),
+  url: url(seoPath(params.pageKey, params.locale)),
   provider: {
     "@type": "Organization",
     name: SITE.name,
@@ -165,7 +165,7 @@ export const articleJsonLd = (params: {
   keywords: params.tags?.join(", "),
   mainEntityOfPage: {
     "@type": "WebPage",
-    "@id": `${SITE.domain}${localizedPath("blog", params.locale)}/${params.slug}`,
+    "@id": `${SITE.domain}${seoPath("blog", params.locale)}/${params.slug}`,
   },
 });
 

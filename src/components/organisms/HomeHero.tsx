@@ -42,7 +42,7 @@ export default function HomeHero() {
               {t("home.hero.ctaPrimary")} <ArrowRight size={16} strokeWidth={2} aria-hidden />
             </ButtonLink>
             <ButtonLink
-              href={localizedPath("service-web", locale)}
+              href={localizedPath("services", locale)}
               variant="secondary"
             >
               {t("home.hero.ctaSecondary")}

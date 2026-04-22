@@ -1031,5 +1031,75 @@
     "skipToContent": "Ir al contenido principal",
     "language": "Idioma",
     "home": "Inicio"
+  },
+  "services": {
+    "meta": {
+      "title": "Nuestros servicios — Agency",
+      "description": "Creación de sitios web, SEO, e-commerce Shopify, Google Ads, redes sociales. Descubre todos nuestros servicios."
+    },
+    "hero": {
+      "eyebrow": "Nuestros servicios",
+      "title": "Todo lo que necesitas para triunfar en línea.",
+      "subtitle": "Sitios web, SEO, publicidad, redes sociales. Nos encargamos de todo para que puedas concentrarte en tu negocio."
+    },
+    "breadcrumb": "Servicios",
+    "categories": {
+      "web": {
+        "title": "Creación de sitios web",
+        "subtitle": "Un sitio profesional que trabaja por ti, 24/7."
+      },
+      "marketing": {
+        "title": "Marketing digital",
+        "subtitle": "Atrae clientes con SEO, Google Ads y redes sociales."
+      }
+    },
+    "cards": {
+      "vitrine": {
+        "tag": "WordPress",
+        "title": "Sitio vitrina",
+        "desc": "Un sitio profesional con Salient, fácil de gestionar, optimizado SEO."
+      },
+      "ecommerce": {
+        "tag": "Shopify",
+        "title": "Tienda e-commerce",
+        "desc": "Vende en línea con una tienda Shopify a medida. Pago seguro, catálogo optimizado."
+      },
+      "surMesure": {
+        "tag": "Next.js",
+        "title": "Sitio a medida",
+        "desc": "Rendimiento absoluto, diseño sin límites. Para proyectos ambiciosos."
+      },
+      "seo": {
+        "tag": "SEO",
+        "title": "Posicionamiento Google",
+        "desc": "Auditoría, optimización técnica, contenido y link building. Te posicionamos en Google."
+      },
+      "ads": {
+        "tag": "SEA",
+        "title": "Google Ads",
+        "desc": "Campañas segmentadas que traen clientes, no solo clics. ROI medible."
+      },
+      "social": {
+        "tag": "Social",
+        "title": "Redes sociales",
+        "desc": "TikTok, Instagram, YouTube Shorts. Estrategia, creación de contenido, publicación diaria."
+      }
+    },
+    "cta": "Descubrir",
+    "ctaBanner": {
+      "title": "¿No sabes qué necesitas?",
+      "subtitle": "Llámanos o rellena el formulario. Te aconsejamos gratis sobre la mejor solución para tu negocio.",
+      "button": "Hablar de mi proyecto"
+    }
+  },
+  "service": {
+    "trustProjects": "6 proyectos entregados",
+    "trustSatisfaction": "100% clientes satisfechos",
+    "trustLocation": "París y toda Francia",
+    "callFree": "Llamada gratuita",
+    "orCallUs": "O llámanos",
+    "quoteFooter": "Presupuesto gratis en 48h · Sin compromiso",
+    "approachEyebrow": "Nuestro enfoque",
+    "processEyebrow": "Simple y eficaz"
   }
 }

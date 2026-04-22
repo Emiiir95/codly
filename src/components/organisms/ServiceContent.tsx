@@ -41,7 +41,10 @@ export default function ServiceContent({ serviceId }: Props) {
         eyebrow={t(`${ns}.hero.eyebrow`)}
         title={t(`${ns}.hero.title`)}
         subtitle={t(`${ns}.hero.subtitle`)}
-        breadcrumbs={[{ label: t(`${ns}.breadcrumb`) }]}
+        breadcrumbs={[
+          { label: t("services.breadcrumb"), href: localizedPath("services", locale) },
+          { label: t(`${ns}.breadcrumb`) },
+        ]}
       />
       <section className="mx-auto w-full max-w-6xl px-6 -mt-4 pb-12">
         <Reveal>
@@ -50,7 +53,7 @@ export default function ServiceContent({ serviceId }: Props) {
               {t(`${ns}.cta.button`)} &rarr;
             </ButtonLink>
             <ButtonLink href="tel:+33000000000" variant="secondary">
-              <Phone size={16} /> Appel gratuit
+              <Phone size={16} /> {t("service.callFree")}
             </ButtonLink>
           </div>
         </Reveal>
@@ -59,7 +62,11 @@ export default function ServiceContent({ serviceId }: Props) {
       {/* Trust Bar */}
       <Reveal>
         <section className="mx-auto w-full max-w-5xl px-6 pb-16">
-          <TrustBar />
+          <TrustBar
+            projectsLabel={t("service.trustProjects")}
+            satisfactionLabel={t("service.trustSatisfaction")}
+            locationLabel={t("service.trustLocation")}
+          />
         </section>
       </Reveal>
 
@@ -77,7 +84,7 @@ export default function ServiceContent({ serviceId }: Props) {
       {/* Solution Grid */}
       <Section align="left">
         <SolutionGrid
-          eyebrow="Notre approche"
+          eyebrow={t("service.approachEyebrow")}
           title={t(`${ns}.solutionTitle`)}
           items={sections}
         />
@@ -96,6 +103,7 @@ export default function ServiceContent({ serviceId }: Props) {
       {/* Process */}
       <Section>
         <ProcessSteps
+          eyebrow={t("service.processEyebrow")}
           title={t(`${ns}.process.title`)}
           steps={process}
         />
@@ -119,6 +127,8 @@ export default function ServiceContent({ serviceId }: Props) {
             subtitle={t(`${ns}.cta.subtitle`)}
             buttonLabel={t(`${ns}.cta.button`)}
             href={contactPath}
+            orCallLabel={t("service.orCallUs")}
+            footerNote={t("service.quoteFooter")}
           />
         </Reveal>
       </Section>

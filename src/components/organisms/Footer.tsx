@@ -10,6 +10,7 @@ export default function Footer() {
   const navigation = {
     nav: [
       { href: localizedPath("home", locale), label: t("nav.home") },
+      { href: localizedPath("services", locale), label: t("nav.services") },
       {
         href: localizedPath("realisations", locale),
         label: t("nav.realisations"),

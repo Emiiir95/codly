@@ -1,14 +1,29 @@
 import { useRouter } from "next/router";
 import { useState, useRef, useEffect } from "react";
-import { Languages } from "lucide-react";
 import type { Locale } from "@/lib/site";
 import { SITE } from "@/lib/site";
+import { localizedPath, type PageKey } from "@/lib/routes";
+import { SERVICES } from "@/lib/services";
 
 const FLAG_CODE: Record<Locale, string> = { fr: "fr", en: "gb", es: "es" };
 const FULL: Record<Locale, string> = {
   fr: "Français",
   en: "English",
   es: "Español",
+};
+
+/**
+ * Map from Next.js file-based pathname to PageKey.
+ */
+const PATHNAME_TO_KEY: Record<string, PageKey> = {
+  "/": "home",
+  "/a-propos": "about",
+  "/contact": "contact",
+  "/mentions-legales": "legal",
+  "/politique-confidentialite": "privacy",
+  "/blog": "blog",
+  "/realisations": "realisations",
+  "/services": "services",
 };
 
 export default function LanguageSwitcher() {
@@ -29,8 +44,43 @@ export default function LanguageSwitcher() {
 
   const switchTo = (locale: Locale) => {
     setOpen(false);
-    const { pathname, query, asPath } = router;
-    void router.push({ pathname, query }, asPath, { locale });
+
+    // 1. Service pages: find service by current slug, get target locale URL
+    if (router.pathname === "/services/[slug]" && router.query.slug) {
+      const slug = String(router.query.slug);
+      const service = SERVICES.find((s) => s.slugs[current] === slug);
+      if (service) {
+        void router.push(localizedPath(service.pageKey, locale), undefined, {
+          locale: false,
+        });
+        return;
+      }
+    }
+
+    // 2. Blog post pages: keep same slug, change locale
+    if (router.pathname === "/blog/[slug]" && router.query.slug) {
+      const blogBase = localizedPath("blog", locale);
+      void router.push(`${blogBase}/${String(router.query.slug)}`, undefined, {
+        locale: false,
+      });
+      return;
+    }
+
+    // 3. Static pages: lookup PageKey from pathname, get target locale URL
+    const pageKey = PATHNAME_TO_KEY[router.pathname];
+    if (pageKey) {
+      void router.push(localizedPath(pageKey, locale), undefined, {
+        locale: false,
+      });
+      return;
+    }
+
+    // 4. Fallback: just switch locale on current path
+    void router.push(
+      { pathname: router.pathname, query: router.query },
+      undefined,
+      { locale },
+    );
   };
 
   return (
@@ -78,7 +128,7 @@ export default function LanguageSwitcher() {
                   {FULL[loc]}
                 </span>
                 {loc === current && (
-                  <span className="text-xs opacity-60">✓</span>
+                  <span className="text-xs opacity-60">&#10003;</span>
                 )}
               </button>
             </li>

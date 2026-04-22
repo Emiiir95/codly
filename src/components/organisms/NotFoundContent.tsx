@@ -20,7 +20,7 @@ export default function NotFoundContent() {
           {t("notFound.back")}
         </ButtonLink>
         <ButtonLink
-          href={localizedPath("service-web", locale)}
+          href={localizedPath("services", locale)}
           variant="secondary"
         >
           {t("notFound.services")}

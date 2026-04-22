@@ -1031,5 +1031,75 @@
     "skipToContent": "Skip to main content",
     "language": "Language",
     "home": "Home"
+  },
+  "services": {
+    "meta": {
+      "title": "Our services — Agency",
+      "description": "Website creation, SEO, Shopify e-commerce, Google Ads, social media. Discover all our web agency services."
+    },
+    "hero": {
+      "eyebrow": "Our services",
+      "title": "Everything you need to succeed online.",
+      "subtitle": "Websites, SEO, advertising, social media. We handle it all so you can focus on your business."
+    },
+    "breadcrumb": "Services",
+    "categories": {
+      "web": {
+        "title": "Website creation",
+        "subtitle": "A professional site that works for you, 24/7."
+      },
+      "marketing": {
+        "title": "Digital marketing",
+        "subtitle": "Attract clients with SEO, Google Ads and social media."
+      }
+    },
+    "cards": {
+      "vitrine": {
+        "tag": "WordPress",
+        "title": "Showcase site",
+        "desc": "A professional site with Salient, easy to manage, SEO optimized. Ideal for SMBs."
+      },
+      "ecommerce": {
+        "tag": "Shopify",
+        "title": "E-commerce store",
+        "desc": "Sell online with a custom Shopify store. Secure payments, optimized catalog."
+      },
+      "surMesure": {
+        "tag": "Next.js",
+        "title": "Custom website",
+        "desc": "Absolute performance, limitless design. For ambitious projects beyond CMS limits."
+      },
+      "seo": {
+        "tag": "SEO",
+        "title": "Google ranking",
+        "desc": "Audit, technical optimization, content and link building. We rank you on Google."
+      },
+      "ads": {
+        "tag": "SEA",
+        "title": "Google Ads",
+        "desc": "Targeted campaigns that bring clients, not just clicks. Measurable ROI."
+      },
+      "social": {
+        "tag": "Social",
+        "title": "Social media",
+        "desc": "TikTok, Instagram, YouTube Shorts. Strategy, content creation, daily publishing."
+      }
+    },
+    "cta": "Learn more",
+    "ctaBanner": {
+      "title": "Not sure what you need?",
+      "subtitle": "Call us or fill the form. We advise you for free on the best solution for your business.",
+      "button": "Discuss my project"
+    }
+  },
+  "service": {
+    "trustProjects": "6 projects delivered",
+    "trustSatisfaction": "100% satisfied clients",
+    "trustLocation": "Paris & all of France",
+    "callFree": "Free call",
+    "orCallUs": "Or call us",
+    "quoteFooter": "Free quote within 48h · No commitment",
+    "approachEyebrow": "Our approach",
+    "processEyebrow": "Simple & effective"
   }
 }

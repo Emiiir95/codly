@@ -8,6 +8,7 @@ export type PageKey =
   | "privacy"
   | "blog"
   | "realisations"
+  | "services"
   | "service-web"
   | "service-seo"
   | "service-vitrine"
@@ -16,18 +17,16 @@ export type PageKey =
   | "service-ads"
   | "service-social";
 
+/**
+ * Single source of truth for all routes.
+ * Pretty translated URLs for every locale.
+ * Server-side rewrites (beforeFiles) in next.config.ts ensure these resolve
+ * to the actual page files.
+ */
 export const ROUTES: Record<PageKey, Record<Locale, string>> = {
   home: { fr: "/", en: "/", es: "/" },
-  about: {
-    fr: "/a-propos",
-    en: "/about",
-    es: "/sobre-nosotros",
-  },
-  contact: {
-    fr: "/contact",
-    en: "/contact",
-    es: "/contacto",
-  },
+  about: { fr: "/a-propos", en: "/about", es: "/sobre-nosotros" },
+  contact: { fr: "/contact", en: "/contact", es: "/contacto" },
   legal: {
     fr: "/mentions-legales",
     en: "/legal-notice",
@@ -38,16 +37,9 @@ export const ROUTES: Record<PageKey, Record<Locale, string>> = {
     en: "/privacy-policy",
     es: "/politica-de-privacidad",
   },
-  blog: {
-    fr: "/blog",
-    en: "/blog",
-    es: "/blog",
-  },
-  realisations: {
-    fr: "/realisations",
-    en: "/portfolio",
-    es: "/realizaciones",
-  },
+  blog: { fr: "/blog", en: "/blog", es: "/blog" },
+  realisations: { fr: "/realisations", en: "/portfolio", es: "/realizaciones" },
+  services: { fr: "/services", en: "/services", es: "/servicios" },
   "service-web": {
     fr: "/services/creation-site-internet",
     en: "/services/web-design",
@@ -85,11 +77,17 @@ export const ROUTES: Record<PageKey, Record<Locale, string>> = {
   },
 };
 
+/**
+ * Generate a localized URL — used everywhere (navigation, SEO, links).
+ */
 export const localizedPath = (key: PageKey, locale: Locale): string => {
   const path = ROUTES[key][locale];
   if (locale === "fr") return path;
   return `/${locale}${path === "/" ? "" : path}`;
 };
+
+/** Alias for localizedPath — kept for clarity in SEO contexts. */
+export const seoPath = localizedPath;
 
 export const allLocaleVariants = (
   key: PageKey,
@@ -104,6 +102,7 @@ export const PAGE_KEYS: PageKey[] = [
   "about",
   "blog",
   "realisations",
+  "services",
   "service-web",
   "service-seo",
   "service-vitrine",

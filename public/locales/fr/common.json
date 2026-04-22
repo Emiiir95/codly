@@ -1031,5 +1031,75 @@
     "skipToContent": "Aller au contenu principal",
     "language": "Langue",
     "home": "Accueil"
+  },
+  "services": {
+    "meta": {
+      "title": "Nos services — Agence web Agency",
+      "description": "Création de sites internet, SEO, e-commerce Shopify, Google Ads, réseaux sociaux. Découvrez tous les services de notre agence web."
+    },
+    "hero": {
+      "eyebrow": "Nos services",
+      "title": "Tout ce qu'il faut pour réussir en ligne.",
+      "subtitle": "Sites internet, référencement, publicité, réseaux sociaux. On s'occupe de tout pour que vous puissiez vous concentrer sur votre activité."
+    },
+    "breadcrumb": "Services",
+    "categories": {
+      "web": {
+        "title": "Création de sites internet",
+        "subtitle": "Un site professionnel qui travaille pour vous, 24h/24."
+      },
+      "marketing": {
+        "title": "Marketing digital",
+        "subtitle": "Attirez des clients grâce au SEO, Google Ads et les réseaux sociaux."
+      }
+    },
+    "cards": {
+      "vitrine": {
+        "tag": "WordPress",
+        "title": "Site vitrine",
+        "desc": "Un site professionnel avec Salient, facile à gérer, optimisé SEO. Idéal pour les TPE/PME."
+      },
+      "ecommerce": {
+        "tag": "Shopify",
+        "title": "Boutique e-commerce",
+        "desc": "Vendez en ligne avec une boutique Shopify sur mesure. Paiement sécurisé, catalogue optimisé."
+      },
+      "surMesure": {
+        "tag": "Next.js",
+        "title": "Site sur mesure",
+        "desc": "Performance absolue, design sans limites. Pour les projets ambitieux qui dépassent les CMS."
+      },
+      "seo": {
+        "tag": "SEO",
+        "title": "Référencement Google",
+        "desc": "Audit, optimisation technique, contenu et netlinking. On vous positionne dans le top Google."
+      },
+      "ads": {
+        "tag": "SEA",
+        "title": "Google Ads",
+        "desc": "Des campagnes ciblées qui ramènent des clients, pas juste des clics. ROI mesurable."
+      },
+      "social": {
+        "tag": "Social",
+        "title": "Réseaux sociaux",
+        "desc": "TikTok, Instagram, YouTube Shorts. Stratégie, création de contenu, publication quotidienne."
+      }
+    },
+    "cta": "Découvrir",
+    "ctaBanner": {
+      "title": "Pas sûr de ce qu'il vous faut ?",
+      "subtitle": "Appelez-nous ou remplissez le formulaire. On vous conseille gratuitement sur la meilleure solution pour votre activité.",
+      "button": "Discuter de mon projet"
+    }
+  },
+  "service": {
+    "trustProjects": "6 projets livrés",
+    "trustSatisfaction": "100% clients satisfaits",
+    "trustLocation": "Paris & toute la France",
+    "callFree": "Appel gratuit",
+    "orCallUs": "Ou appelez-nous",
+    "quoteFooter": "Devis gratuit sous 48h · Aucun engagement",
+    "approachEyebrow": "Notre approche",
+    "processEyebrow": "Simple & efficace"
   }
 }

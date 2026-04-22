@@ -8,17 +8,18 @@ type Step = {
 };
 
 type Props = {
+  eyebrow: string;
   title: string;
   steps: Step[];
 };
 
-export default function ProcessSteps({ title, steps }: Props) {
+export default function ProcessSteps({ eyebrow, title, steps }: Props) {
   return (
     <>
       <Reveal>
         <div className="text-center">
           <p className="text-sm font-medium uppercase tracking-widest text-[var(--color-accent)]">
-            Simple & efficace
+            {eyebrow}
           </p>
           <GradientHeading as={2} size="md" className="mt-3">
             {title}
