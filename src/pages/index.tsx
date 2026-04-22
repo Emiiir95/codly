@@ -47,6 +47,25 @@ export default function HomePage({
       />
       <HomeHero />
       <div className="relative z-10 rounded-t-[2.5rem] bg-[var(--color-bg)] shadow-[0_-24px_60px_-24px_rgba(0,0,0,0.18)]">
+        {/* Accent halo at the seam — pink/violet radial glow that bleeds
+            across the rounded top edge so the transition from the hero is
+            visually marked rather than a plain shadow line. */}
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-x-0 -top-24 h-40 blur-2xl"
+          style={{
+            background:
+              "radial-gradient(600px 180px at 50% 100%, color-mix(in oklab, var(--color-accent) 20%, transparent), transparent 75%)",
+          }}
+        />
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-x-0 -top-px h-px"
+          style={{
+            background:
+              "linear-gradient(to right, transparent, color-mix(in oklab, var(--color-accent) 55%, transparent), transparent)",
+          }}
+        />
         <HomeStats />
         <HomeServices />
         <HomeWhy />

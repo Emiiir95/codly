@@ -4,6 +4,7 @@ import { localizedPath } from "@/lib/routes";
 import Section from "./Section";
 import ServiceCard from "@/components/molecules/ServiceCard";
 import Reveal from "@/components/atoms/Reveal";
+import SpotlightCard from "@/components/atoms/SpotlightCard";
 
 export default function HomeServices() {
   const { t, locale, raw } = useI18n();
@@ -20,26 +21,30 @@ export default function HomeServices() {
     >
       <div className="grid gap-6 md:grid-cols-2">
         <Reveal delay={0}>
-          <ServiceCard
-            icon={Code2}
-            accent="primary"
-            title={t("home.services.webTitle")}
-            description={t("home.services.webDescription")}
-            bullets={webBullets}
-            href={localizedPath("service-web", locale)}
-            ctaLabel={learnMore}
-          />
+          <SpotlightCard bare>
+            <ServiceCard
+              icon={Code2}
+              accent="primary"
+              title={t("home.services.webTitle")}
+              description={t("home.services.webDescription")}
+              bullets={webBullets}
+              href={localizedPath("service-web", locale)}
+              ctaLabel={learnMore}
+            />
+          </SpotlightCard>
         </Reveal>
         <Reveal delay={0.12}>
-          <ServiceCard
-            icon={TrendingUp}
-            accent="secondary"
-            title={t("home.services.seoTitle")}
-            description={t("home.services.seoDescription")}
-            bullets={seoBullets}
-            href={localizedPath("service-seo", locale)}
-            ctaLabel={learnMore}
-          />
+          <SpotlightCard bare>
+            <ServiceCard
+              icon={TrendingUp}
+              accent="secondary"
+              title={t("home.services.seoTitle")}
+              description={t("home.services.seoDescription")}
+              bullets={seoBullets}
+              href={localizedPath("service-seo", locale)}
+              ctaLabel={learnMore}
+            />
+          </SpotlightCard>
         </Reveal>
       </div>
     </Section>

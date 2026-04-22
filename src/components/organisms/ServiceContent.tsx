@@ -10,7 +10,8 @@ import Section from "./Section";
 import Reveal from "@/components/atoms/Reveal";
 import TrustBar from "@/components/molecules/TrustBar";
 import PainPoints from "@/components/molecules/PainPoints";
-import SolutionGrid from "@/components/molecules/SolutionGrid";
+import CardSwap, { Card } from "@/components/molecules/CardSwap";
+import SolutionMobileCarousel from "@/components/molecules/SolutionMobileCarousel";
 import MidCta from "@/components/molecules/MidCta";
 import ProcessSteps from "@/components/molecules/ProcessSteps";
 import ServiceDeliverables from "@/components/molecules/ServiceDeliverables";
@@ -87,13 +88,73 @@ export default function ServiceContent({ serviceId }: Props) {
         </Reveal>
       </Section>
 
-      {/* Solution Grid */}
-      <Section align="left">
-        <SolutionGrid
-          eyebrow="Notre approche"
-          title={t(`${ns}.solutionTitle`)}
-          items={sections}
-        />
+      {/* Notre approche — CardSwap showcase */}
+      <Section align="left" className="md:px-32">
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-20">
+          {/* Left — intro */}
+          <Reveal>
+            <p className="text-sm font-medium uppercase md:pt-10 tracking-widest text-[var(--color-accent)]">
+              Notre approche
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-[var(--color-fg)] sm:text-4xl">
+              {t(`${ns}.solutionTitle`)}
+            </h2>
+            <div className="mt-5 h-px w-24 bg-gradient-to-r from-[var(--color-accent)] to-transparent" />
+            <ul className="mt-8 space-y-3 text-sm text-[var(--color-fg-muted)]">
+              {sections.map((s, i) => (
+                <li key={s.title} className="flex items-start gap-3">
+                  <span className="mt-0.5 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[var(--color-accent-soft)] font-mono text-[10px] font-bold text-[var(--color-accent)]">
+                    {i + 1}
+                  </span>
+                  <span className="font-medium text-[var(--color-fg)]">
+                    {s.title}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </Reveal>
+
+          {/* Right — CardSwap on desktop, simple carousel on mobile */}
+          <div className="w-full">
+            {/* Mobile / tablet — reliable fade carousel with dots + prev/next */}
+            <div className="mx-auto w-full max-w-md lg:hidden">
+              <SolutionMobileCarousel sections={sections} />
+            </div>
+
+            {/* Desktop — 3D CardSwap stack, click to advance */}
+            <div className="relative mx-auto hidden h-[480px] w-full max-w-[480px] lg:block">
+              <CardSwap
+                width={360}
+                height={300}
+                cardDistance={48}
+                verticalDistance={56}
+                easing="linear"
+                clickToAdvance
+                pauseOnHover={false}
+              >
+                {sections.map((s, i) => (
+                  <Card key={s.title}>
+                    <div className="flex h-full w-full flex-col gap-4 p-7">
+                      <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[var(--color-accent-soft)] font-mono text-sm font-bold text-[var(--color-accent)]">
+                        {String(i + 1).padStart(2, "0")}
+                      </span>
+                      <h3 className="text-xl font-semibold tracking-tight text-[var(--color-fg)]">
+                        {s.title}
+                      </h3>
+                      <p className="text-sm leading-relaxed text-[var(--color-fg-muted)]">
+                        {s.body}
+                      </p>
+                      <div className="mt-auto flex items-center gap-2 border-t border-[var(--color-border)] pt-4 text-[11px] font-medium uppercase tracking-widest text-[var(--color-fg-subtle)]">
+                        <span className="h-1 w-1 rounded-full bg-[var(--color-accent)]" />
+                        Étape {i + 1} / {sections.length}
+                      </div>
+                    </div>
+                  </Card>
+                ))}
+              </CardSwap>
+            </div>
+          </div>
+        </div>
       </Section>
 
       {/* Visual showcase */}
@@ -117,10 +178,7 @@ export default function ServiceContent({ serviceId }: Props) {
 
       {/* Process */}
       <Section>
-        <ProcessSteps
-          title={t(`${ns}.process.title`)}
-          steps={process}
-        />
+        <ProcessSteps title={t(`${ns}.process.title`)} steps={process} />
       </Section>
 
       {/* Deliverables */}

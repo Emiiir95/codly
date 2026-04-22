@@ -2,6 +2,7 @@ import { useI18n } from "@/lib/i18n";
 import Section from "./Section";
 import ProcessStep from "@/components/molecules/ProcessStep";
 import Reveal from "@/components/atoms/Reveal";
+import SpotlightCard from "@/components/atoms/SpotlightCard";
 
 export default function HomeProcess() {
   const { t, raw } = useI18n();
@@ -19,7 +20,9 @@ export default function HomeProcess() {
       <ol className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {steps.map((step, i) => (
           <Reveal key={step.title} as="li" delay={i * 0.1}>
-            <ProcessStep index={i + 1} title={step.title} body={step.body} />
+            <SpotlightCard bare className="h-full">
+              <ProcessStep index={i + 1} title={step.title} body={step.body} />
+            </SpotlightCard>
           </Reveal>
         ))}
       </ol>

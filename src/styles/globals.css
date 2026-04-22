@@ -417,6 +417,124 @@ a {
   border: 1px solid var(--color-border);
 }
 
+/* CardSwap — reactbits-style GSAP 3D card stack.
+ * The container is anchored to the bottom-right and renders its cards with
+ * perspective so the stack has depth. */
+.card-swap-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+  perspective: 900px;
+  overflow: visible;
+}
+
+.card-swap-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-elev);
+  color: var(--color-fg);
+  transform-style: preserve-3d;
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* SpotlightCard — card with cursor-following radial gradient on hover.
+ * Mouse coordinates are pushed to --mouse-x / --mouse-y via JS; the ::before
+ * pseudo uses them to render a radial-gradient "spotlight" at the cursor. */
+.card-spotlight {
+  position: relative;
+  border-radius: 1.5rem;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-bg-elev);
+  padding: 1.75rem;
+  overflow: hidden;
+  --mouse-x: 50%;
+  --mouse-y: 50%;
+  --spotlight-color: color-mix(in oklab, var(--color-accent) 45%, transparent);
+  transition:
+    border-color 200ms ease,
+    transform 200ms ease;
+}
+
+.card-spotlight::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    420px circle at var(--mouse-x) var(--mouse-y),
+    var(--spotlight-color),
+    transparent 70%
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.card-spotlight:hover,
+.card-spotlight:focus-within {
+  border-color: color-mix(
+    in oklab,
+    var(--color-accent) 45%,
+    var(--color-border)
+  );
+}
+
+.card-spotlight:hover::before,
+.card-spotlight:focus-within::before {
+  opacity: 0.8;
+}
+
+/* Bare variant — no bg/border/padding on the wrapper; only the cursor-follow
+ * spotlight rendered ON TOP of the child via blend mode, so existing styled
+ * cards (e.g. `.card`) remain visually intact. Uses different blend modes
+ * per theme so the accent shows through on both light and dark cards:
+ *   - light: `multiply` — accent tints the white card pink/violet.
+ *   - dark:  `screen`   — accent lightens the dark card with pink glow. */
+.card-spotlight-bare {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  --mouse-x: 50%;
+  --mouse-y: 50%;
+  --spotlight-color: color-mix(in oklab, var(--color-accent) 60%, transparent);
+}
+
+.card-spotlight-bare::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    420px circle at var(--mouse-x) var(--mouse-y),
+    var(--spotlight-color),
+    transparent 70%
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+  z-index: 2;
+}
+
+:root.dark .card-spotlight-bare::after {
+  mix-blend-mode: screen;
+}
+
+.card-spotlight-bare:hover::after,
+.card-spotlight-bare:focus-within::after {
+  opacity: 0.55;
+}
+
+:root.dark .card-spotlight-bare:hover::after,
+:root.dark .card-spotlight-bare:focus-within::after {
+  opacity: 0.65;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
