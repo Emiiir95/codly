@@ -2,11 +2,11 @@ export const SITE = {
   name: "Agency",
   domain: "https://agency.example.com",
   email: "contact@agency.example.com",
-  phone: "+33 1 23 45 67 89",
+  phone: "+33 6 03 00 44 95",
   address: {
-    street: "12 rue de la République",
+    street: "60 rue François 1er",
     city: "Paris",
-    postalCode: "75001",
+    postalCode: "75008",
     country: "FR",
   },
   social: {
