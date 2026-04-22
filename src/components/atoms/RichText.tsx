@@ -23,9 +23,6 @@ export default function RichText({
   });
 
   return (
-    <Tag
-      className={className}
-      dangerouslySetInnerHTML={{ __html: clean }}
-    />
+    <Tag className={className} dangerouslySetInnerHTML={{ __html: clean }} />
   );
 }

@@ -30,25 +30,13 @@ export default function MegaMenu({
   activeHref,
   onOpenChange,
 }: Props) {
-  const [open, setOpenState] = useState(false);
+  const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
-
-  const setOpen = (next: boolean | ((v: boolean) => boolean)) => {
-    setOpenState((prev) => {
-      const resolved = typeof next === "function" ? next(prev) : next;
-      if (resolved !== prev) onOpenChange?.(resolved);
-      return resolved;
-    });
-  };
 
   useEffect(() => {
     onOpenChange?.(open);
   }, [open, onOpenChange]);
-
-  const setOpen = (next: boolean | ((v: boolean) => boolean)) => {
-    setOpenState(next);
-  };
 
   useEffect(() => {
     const handleOutside = (e: MouseEvent) => {
@@ -56,7 +44,6 @@ export default function MegaMenu({
     };
     document.addEventListener("mousedown", handleOutside);
     return () => document.removeEventListener("mousedown", handleOutside);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const openWithDelay = () => {

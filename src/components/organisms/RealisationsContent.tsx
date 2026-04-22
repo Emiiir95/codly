@@ -191,6 +191,8 @@ export default function RealisationsContent() {
             subtitle="Parlons de votre projet — on vous dit en 30 minutes ce qu'on peut faire pour vous, sans engagement."
             buttonLabel="Démarrer un projet"
             href={localizedPath("contact", locale)}
+            orCallLabel="Appel gratuit"
+            footerNote="Réponse sous 24 h · Sans engagement"
           />
         </Reveal>
       </Section>
