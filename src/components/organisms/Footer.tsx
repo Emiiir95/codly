@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useI18n } from "@/lib/i18n";
 import { localizedPath } from "@/lib/routes";
 import { SITE } from "@/lib/site";
@@ -10,6 +11,7 @@ export default function Footer() {
   const navigation = {
     nav: [
       { href: localizedPath("home", locale), label: t("nav.home") },
+      { href: localizedPath("services", locale), label: t("nav.services") },
       {
         href: localizedPath("realisations", locale),
         label: t("nav.realisations"),
@@ -91,12 +93,12 @@ export default function Footer() {
               <ul role="list" className="mt-3 space-y-2">
                 {navigation.nav.map((item) => (
                   <li key={item.href}>
-                    <a
+                    <Link
                       href={item.href}
                       className="text-sm/6 text-fg-muted hover:text-fg"
                     >
                       {item.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -110,12 +112,12 @@ export default function Footer() {
               <ul role="list" className="mt-3 space-y-2">
                 {navigation.legal.map((item) => (
                   <li key={item.href}>
-                    <a
+                    <Link
                       href={item.href}
                       className="text-sm/6 text-fg-muted hover:text-fg"
                     >
                       {item.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>

@@ -43,6 +43,14 @@ export default function MegaMenu({
   };
 
   useEffect(() => {
+    onOpenChange?.(open);
+  }, [open, onOpenChange]);
+
+  const setOpen = (next: boolean | ((v: boolean) => boolean)) => {
+    setOpenState(next);
+  };
+
+  useEffect(() => {
     const handleOutside = (e: MouseEvent) => {
       if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
     };

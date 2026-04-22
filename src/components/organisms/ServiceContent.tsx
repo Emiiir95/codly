@@ -10,14 +10,14 @@ import Section from "./Section";
 import Reveal from "@/components/atoms/Reveal";
 import TrustBar from "@/components/molecules/TrustBar";
 import PainPoints from "@/components/molecules/PainPoints";
-import CardSwap, { Card } from "@/components/molecules/CardSwap";
-import SolutionMobileCarousel from "@/components/molecules/SolutionMobileCarousel";
 import MidCta from "@/components/molecules/MidCta";
 import ProcessSteps from "@/components/molecules/ProcessSteps";
 import ServiceDeliverables from "@/components/molecules/ServiceDeliverables";
 import ServiceHeroMedia from "@/components/molecules/ServiceHeroMedia";
 import ServiceShowcase from "@/components/molecules/ServiceShowcase";
 import FinalCta from "@/components/molecules/FinalCta";
+import SolutionMobileCarousel from "../molecules/SolutionMobileCarousel";
+import CardSwap, { Card } from "../molecules/CardSwap";
 
 type Props = {
   serviceId: ServiceId;
@@ -46,7 +46,13 @@ export default function ServiceContent({ serviceId }: Props) {
         eyebrow={t(`${ns}.hero.eyebrow`)}
         title={t(`${ns}.hero.title`)}
         subtitle={t(`${ns}.hero.subtitle`)}
-        breadcrumbs={[{ label: t(`${ns}.breadcrumb`) }]}
+        breadcrumbs={[
+          {
+            label: t("services.breadcrumb"),
+            href: localizedPath("services", locale),
+          },
+          { label: t(`${ns}.breadcrumb`) },
+        ]}
       />
       <section className="mx-auto w-full max-w-6xl px-6 -mt-4 pb-12">
         <Reveal>
@@ -55,7 +61,7 @@ export default function ServiceContent({ serviceId }: Props) {
               {t(`${ns}.cta.button`)} &rarr;
             </ButtonLink>
             <ButtonLink href="tel:+33000000000" variant="secondary">
-              <Phone size={16} /> Appel gratuit
+              <Phone size={16} /> {t("service.callFree")}
             </ButtonLink>
           </div>
         </Reveal>
@@ -73,7 +79,11 @@ export default function ServiceContent({ serviceId }: Props) {
       {/* Trust Bar */}
       <Reveal>
         <section className="mx-auto w-full max-w-5xl px-6 pb-16">
-          <TrustBar />
+          <TrustBar
+            projectsLabel={t("service.trustProjects")}
+            satisfactionLabel={t("service.trustSatisfaction")}
+            locationLabel={t("service.trustLocation")}
+          />
         </section>
       </Reveal>
 
@@ -166,6 +176,15 @@ export default function ServiceContent({ serviceId }: Props) {
         />
       </Section>
 
+      {/* Visual showcase */}
+      <Section>
+        <ServiceShowcase
+          title={t(`${ns}.hero.title`)}
+          subtitle={t(`${ns}.hero.subtitle`)}
+          images={visuals.showcase}
+        />
+      </Section>
+
       {/* Mid CTA */}
       <Reveal>
         <MidCta
@@ -178,7 +197,11 @@ export default function ServiceContent({ serviceId }: Props) {
 
       {/* Process */}
       <Section>
-        <ProcessSteps title={t(`${ns}.process.title`)} steps={process} />
+        <ProcessSteps
+          eyebrow={t("service.processEyebrow")}
+          title={t(`${ns}.process.title`)}
+          steps={process}
+        />
       </Section>
 
       {/* Deliverables */}
@@ -199,6 +222,8 @@ export default function ServiceContent({ serviceId }: Props) {
             subtitle={t(`${ns}.cta.subtitle`)}
             buttonLabel={t(`${ns}.cta.button`)}
             href={contactPath}
+            orCallLabel={t("service.orCallUs")}
+            footerNote={t("service.quoteFooter")}
           />
         </Reveal>
       </Section>

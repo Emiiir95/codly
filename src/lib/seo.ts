@@ -1,5 +1,5 @@
 import { SITE, type Locale } from "./site";
-import { allLocaleVariants, localizedPath, type PageKey } from "./routes";
+import { allLocaleVariants, seoPath, type PageKey } from "./routes";
 
 export type SeoProps = {
   title: string;
@@ -21,10 +21,10 @@ export const buildHreflang = (
   }));
   variants.push({
     hrefLang: "x-default",
-    href: `${SITE.domain}${localizedPath(pageKey, "fr")}`,
+    href: `${SITE.domain}${seoPath(pageKey, "fr")}`,
   });
   return variants;
 };
 
 export const buildCanonical = (pageKey: PageKey, locale: Locale): string =>
-  `${SITE.domain}${localizedPath(pageKey, locale)}`;
+  `${SITE.domain}${seoPath(pageKey, locale)}`;

@@ -221,9 +221,7 @@ export default function Header() {
 
         {/* Right: actions */}
         <div className="flex flex-1 items-center justify-end gap-2">
-          <div className="hidden sm:block">
-            <ThemeToggle label={t("nav.toggleTheme")} />
-          </div>
+          <ThemeToggle label={t("nav.toggleTheme")} />
           <LanguageSwitcher />
           <div className="hidden md:block">
             <ButtonLink
@@ -246,7 +244,7 @@ export default function Header() {
       {open && (
         <nav
           aria-label="Mobile"
-          className="border-t border-border bg-bg-elev px-6 py-4 md:hidden"
+          className="border-t border-border bg-bg-elev/80 px-6 py-4 backdrop-blur-xl md:hidden"
         >
           {servicesColumns.map((col) => (
             <div key={col.title} className="mb-4">

@@ -955,64 +955,88 @@
   "legal": {
     "meta": {
       "title": "Aviso legal — Agency",
-      "description": "Aviso legal del sitio Agency: editor, alojamiento, propiedad intelectual y responsabilidad."
+      "description": "Aviso legal del sitio Agency: editor, alojamiento, propiedad intelectual, responsabilidad y contacto."
     },
     "title": "Aviso legal",
     "breadcrumb": "Aviso legal",
     "sections": [
       {
-        "title": "Editor del sitio",
-        "body": "El sitio Agency está editado por Agency SAS, sociedad por acciones simplificada con un capital de 10 000 €, inscrita en el Registro Mercantil de París con el número 123 456 789, con sede social en 12 rue de la République, 75001 París."
+        "title": "1. Editor del sitio",
+        "body": "El sitio accesible en <strong>agency.example.com</strong> es editado por:<br><br><strong>Emir Sen</strong><br>Empresario individual (auto-entrepreneur)<br>SIRET: 983 251 810 00013<br>RCS París: 983 251 810<br><br><strong>Domicilio social:</strong> 60 rue François 1er, 75008 París, Francia<br><strong>Director de la publicación:</strong> Emir Sen<br><strong>Contacto:</strong> <a href=\"mailto:contact@agency.example.com\">contact@agency.example.com</a><br><strong>Tel.:</strong> +33 6 03 00 44 95"
       },
       {
-        "title": "Alojamiento",
-        "body": "El sitio está alojado por Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, Estados Unidos. Los datos transitan por una red segura conforme al RGPD."
+        "title": "2. Alojamiento",
+        "body": "El sitio está alojado por:<br><br><strong>GitHub, Inc.</strong><br>Filial de Microsoft Corporation<br>88 Colin P Kelly Jr St, San Francisco, CA 94107, Estados Unidos<br>Sitio web: <a href=\"https://github.com\" target=\"_blank\" rel=\"noopener noreferrer\">github.com</a>"
       },
       {
-        "title": "Propiedad intelectual",
-        "body": "El conjunto de contenidos del sitio es propiedad exclusiva de Agency SAS, salvo mención contraria. Toda reproducción o adaptación está prohibida sin autorización escrita previa."
+        "title": "3. Propiedad intelectual",
+        "body": "Todo el contenido del sitio (textos, imágenes, gráficos, logotipos, iconos, código fuente) es propiedad exclusiva de Emir Sen, salvo mención contraria. Queda prohibida toda reproducción, representación, modificación, publicación o adaptación de la totalidad o parte de los elementos del sitio sin autorización escrita previa de Emir Sen."
       },
       {
-        "title": "Responsabilidad",
-        "body": "Agency SAS se esfuerza por ofrecer información exacta pero no puede garantizar su exhaustividad. El usuario la utiliza bajo su exclusiva responsabilidad."
+        "title": "4. Limitación de responsabilidad",
+        "body": "Emir Sen se esfuerza por proporcionar información precisa en el sitio. Sin embargo, no podrá ser considerado responsable de las omisiones, inexactitudes o carencias en la actualización, ya sean de su responsabilidad o de terceros que le proporcionan dicha información."
       },
       {
-        "title": "Contacto",
-        "body": "Para cualquier pregunta sobre este aviso legal, puedes contactarnos en contact@agency.example.com."
+        "title": "5. Enlaces",
+        "body": "El sitio puede contener enlaces a otros sitios web. Emir Sen no ejerce ningún control sobre el contenido de estos sitios de terceros y declina toda responsabilidad en cuanto a su contenido."
+      },
+      {
+        "title": "6. Legislación aplicable",
+        "body": "Cualquier litigio relacionado con el uso del sitio está sujeto a la legislación francesa. Se atribuye jurisdicción exclusiva a los tribunales competentes de París, Francia."
+      },
+      {
+        "title": "7. Contacto",
+        "body": "Para cualquier pregunta relativa al presente aviso legal:<br><br><strong>Email:</strong> <a href=\"mailto:contact@agency.example.com\">contact@agency.example.com</a><br><strong>Correo:</strong> Emir Sen, 60 rue François 1er, 75008 París, Francia"
       }
     ]
   },
   "privacy": {
     "meta": {
       "title": "Política de privacidad — Agency",
-      "description": "Política de privacidad de Agency: tratamiento de datos personales, cookies y derechos RGPD."
+      "description": "Política de privacidad de Agency: recogida de datos personales, finalidades, derechos RGPD y cookies."
     },
     "title": "Política de privacidad",
     "breadcrumb": "Privacidad",
     "sections": [
       {
-        "title": "Responsable del tratamiento",
-        "body": "El responsable del tratamiento de los datos recogidos en este sitio es Agency SAS, 12 rue de la République, 75001 París. Escríbenos a contact@agency.example.com para cualquier consulta."
+        "title": "1. Responsable del tratamiento",
+        "body": "El responsable del tratamiento de los datos personales recogidos en <strong>agency.example.com</strong> es:<br><br><strong>Emir Sen</strong><br>Empresario individual<br>60 rue François 1er, 75008 París, Francia<br>Contacto: <a href=\"mailto:contact@agency.example.com\">contact@agency.example.com</a>"
       },
       {
-        "title": "Datos recogidos",
-        "body": "Solo recogemos los datos necesarios para tramitar tu solicitud: nombre, email, empresa (opcional), asunto y mensaje. No recogemos datos sensibles."
+        "title": "2. Datos recogidos",
+        "body": "Al utilizar el formulario de contacto, recogemos los siguientes datos:<br><br>• <strong>Nombre</strong><br>• <strong>Dirección de correo electrónico</strong><br><br>Estos datos se recogen cuando rellena y envía el formulario de contacto. No se recoge ningún otro dato personal de forma automática."
       },
       {
-        "title": "Finalidades y base legal",
-        "body": "Los datos se tratan para responder a tu solicitud y establecer una relación comercial. La base legal es tu consentimiento explícito."
+        "title": "3. Finalidad del tratamiento",
+        "body": "Los datos personales recogidos tienen como única finalidad responder a su solicitud de contacto o información. No se utilizan para ningún otro fin (prospección comercial, reventa a terceros, elaboración de perfiles, etc.)."
       },
       {
-        "title": "Plazo de conservación",
-        "body": "Tus datos se conservan 3 años desde el último contacto. Más allá, se eliminan o anonimizan."
+        "title": "4. Base legal",
+        "body": "El tratamiento de sus datos personales se basa en su consentimiento (artículo 6.1.a del RGPD), expresado al enviar el formulario de contacto, y en la ejecución de medidas precontractuales a su solicitud (artículo 6.1.b del RGPD)."
       },
       {
-        "title": "Tus derechos",
-        "body": "Conforme al RGPD, dispones de derecho de acceso, rectificación, supresión, limitación, oposición y portabilidad. Escríbenos a contact@agency.example.com para ejercerlos."
+        "title": "5. Destinatarios de los datos",
+        "body": "Los datos recogidos a través del formulario de contacto se envían por email exclusivamente a Emir Sen. No se comunican a ningún tercero, subcontratista o socio. No se almacena ningún dato en una base de datos ni en un CRM."
       },
       {
-        "title": "Cookies",
-        "body": "Este sitio no utiliza cookies publicitarias ni tracking de terceros. Solo se usan cookies técnicas necesarias, sin identificación personal."
+        "title": "6. Plazo de conservación",
+        "body": "Los datos enviados a través del formulario se conservan en nuestra bandeja de correo electrónico durante el tiempo necesario para tramitar su solicitud. A falta de una relación comercial establecida, los datos se eliminan en un plazo máximo de 3 años desde su último contacto, de conformidad con las recomendaciones de la CNIL."
+      },
+      {
+        "title": "7. Sus derechos",
+        "body": "De conformidad con el <strong>Reglamento General de Protección de Datos (RGPD)</strong>, usted dispone de los siguientes derechos:<br><br>• <strong>Derecho de acceso</strong> a sus datos personales<br>• <strong>Derecho de rectificación</strong><br>• <strong>Derecho de supresión</strong> (\"derecho al olvido\")<br>• <strong>Derecho a la limitación</strong> del tratamiento<br>• <strong>Derecho de oposición</strong><br>• <strong>Derecho a la portabilidad</strong> de datos<br><br>Para ejercer estos derechos, envíe su solicitud por email a <a href=\"mailto:contact@agency.example.com\">contact@agency.example.com</a> adjuntando una copia de su documento de identidad. Nos comprometemos a responder en el plazo de un mes.<br><br>En caso de litigio, puede presentar una reclamación ante la <strong>CNIL</strong>: <a href=\"https://www.cnil.fr\" target=\"_blank\" rel=\"noopener noreferrer\">www.cnil.fr</a>"
+      },
+      {
+        "title": "8. Cookies",
+        "body": "Este sitio no utiliza cookies publicitarias, cookies de seguimiento ni cookies de terceros. Solo se pueden almacenar en su navegador cookies estrictamente necesarias para el funcionamiento técnico del sitio (preferencia de idioma, preferencia de tema claro/oscuro). Estas cookies técnicas no requieren su consentimiento."
+      },
+      {
+        "title": "9. Transferencias fuera de la UE",
+        "body": "El sitio está alojado por GitHub, Inc. (Estados Unidos). Los datos transmitidos a través del formulario de contacto pueden transitar por servidores situados fuera de la Unión Europea. GitHub se adhiere al Marco de Privacidad de Datos UE-EE.UU. (DPF), garantizando un nivel de protección adecuado conforme a los requisitos del RGPD."
+      },
+      {
+        "title": "10. Modificación de la política",
+        "body": "La presente política de privacidad puede ser modificada en cualquier momento. La fecha de la última actualización se indica a continuación. Le invitamos a consultarla regularmente. Última actualización: abril de 2026."
       }
     ]
   },
@@ -1031,5 +1055,75 @@
     "skipToContent": "Ir al contenido principal",
     "language": "Idioma",
     "home": "Inicio"
+  },
+  "services": {
+    "meta": {
+      "title": "Nuestros servicios — Agency",
+      "description": "Creación de sitios web, SEO, e-commerce Shopify, Google Ads, redes sociales. Descubre todos nuestros servicios."
+    },
+    "hero": {
+      "eyebrow": "Nuestros servicios",
+      "title": "Todo lo que necesitas para triunfar en línea.",
+      "subtitle": "Sitios web, SEO, publicidad, redes sociales. Nos encargamos de todo para que puedas concentrarte en tu negocio."
+    },
+    "breadcrumb": "Servicios",
+    "categories": {
+      "web": {
+        "title": "Creación de sitios web",
+        "subtitle": "Un sitio profesional que trabaja por ti, 24/7."
+      },
+      "marketing": {
+        "title": "Marketing digital",
+        "subtitle": "Atrae clientes con SEO, Google Ads y redes sociales."
+      }
+    },
+    "cards": {
+      "vitrine": {
+        "tag": "WordPress",
+        "title": "Sitio vitrina",
+        "desc": "Un sitio profesional con Salient, fácil de gestionar, optimizado SEO."
+      },
+      "ecommerce": {
+        "tag": "Shopify",
+        "title": "Tienda e-commerce",
+        "desc": "Vende en línea con una tienda Shopify a medida. Pago seguro, catálogo optimizado."
+      },
+      "surMesure": {
+        "tag": "Next.js",
+        "title": "Sitio a medida",
+        "desc": "Rendimiento absoluto, diseño sin límites. Para proyectos ambiciosos."
+      },
+      "seo": {
+        "tag": "SEO",
+        "title": "Posicionamiento Google",
+        "desc": "Auditoría, optimización técnica, contenido y link building. Te posicionamos en Google."
+      },
+      "ads": {
+        "tag": "SEA",
+        "title": "Google Ads",
+        "desc": "Campañas segmentadas que traen clientes, no solo clics. ROI medible."
+      },
+      "social": {
+        "tag": "Social",
+        "title": "Redes sociales",
+        "desc": "TikTok, Instagram, YouTube Shorts. Estrategia, creación de contenido, publicación diaria."
+      }
+    },
+    "cta": "Descubrir",
+    "ctaBanner": {
+      "title": "¿No sabes qué necesitas?",
+      "subtitle": "Llámanos o rellena el formulario. Te aconsejamos gratis sobre la mejor solución para tu negocio.",
+      "button": "Hablar de mi proyecto"
+    }
+  },
+  "service": {
+    "trustProjects": "6 proyectos entregados",
+    "trustSatisfaction": "100% clientes satisfechos",
+    "trustLocation": "París y toda Francia",
+    "callFree": "Llamada gratuita",
+    "orCallUs": "O llámanos",
+    "quoteFooter": "Presupuesto gratis en 48h · Sin compromiso",
+    "approachEyebrow": "Nuestro enfoque",
+    "processEyebrow": "Simple y eficaz"
   }
 }

@@ -6,6 +6,8 @@ type Props = {
   subtitle: string;
   buttonLabel: string;
   href: string;
+  orCallLabel: string;
+  footerNote: string;
 };
 
 export default function FinalCta({
@@ -13,6 +15,8 @@ export default function FinalCta({
   subtitle,
   buttonLabel,
   href,
+  orCallLabel,
+  footerNote,
 }: Props) {
   return (
     <div className="relative overflow-hidden rounded-2xl border border-[var(--color-border)] bg-[var(--color-bg-elev)] p-10 text-center shadow-lg sm:p-14">
@@ -36,11 +40,11 @@ export default function FinalCta({
             {buttonLabel} &rarr;
           </ButtonLink>
           <ButtonLink href="tel:+33000000000" variant="ghost">
-            <Phone size={16} /> Ou appelez-nous
+            <Phone size={16} /> {orCallLabel}
           </ButtonLink>
         </div>
         <p className="mt-4 text-xs text-[var(--color-fg-muted)]">
-          Devis gratuit sous 48h &middot; Aucun engagement
+          {footerNote}
         </p>
       </div>
     </div>

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import GradientHeading from "@/components/atoms/GradientHeading";
+import Reveal from "../atoms/Reveal";
 
 type Step = {
   step: string;
@@ -8,33 +9,25 @@ type Step = {
 };
 
 type Props = {
+  eyebrow: string;
   title: string;
   steps: Step[];
 };
 
-export default function ProcessSteps({ title, steps }: Props) {
+export default function ProcessSteps({ eyebrow, title, steps }: Props) {
   return (
     <>
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-80px" }}
-        transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-        className="text-center"
-      >
-        <p className="text-sm font-medium uppercase tracking-widest text-[var(--color-accent)]">
-          Simple & efficace
-        </p>
-        <GradientHeading as={2} size="md" className="mt-3">
-          {title}
-        </GradientHeading>
-      </motion.div>
-      <div className="relative mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        {/* Connecting line on desktop */}
-        <div
-          aria-hidden
-          className="absolute left-0 right-0 top-6 hidden h-px bg-gradient-to-r from-transparent via-[var(--color-accent)]/40 to-transparent lg:block"
-        />
+      <Reveal>
+        <div className="text-center">
+          <p className="text-sm font-medium uppercase tracking-widest text-[var(--color-accent)]">
+            Simple & efficace
+          </p>
+          <GradientHeading as={2} size="md" className="mt-3">
+            {title}
+          </GradientHeading>
+        </div>
+      </Reveal>
+      <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {steps.map((step, i) => (
           <motion.div
             key={step.step}
