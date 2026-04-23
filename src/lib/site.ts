@@ -3,6 +3,7 @@ export const SITE = {
   domain: "https://agency.example.com",
   email: "contact@agency.example.com",
   phone: "+33 6 03 00 44 95",
+  phones: ["+33 6 03 00 44 95", "+33 7 83 70 46 19"],
   address: {
     street: "60 rue François 1er",
     city: "Paris",

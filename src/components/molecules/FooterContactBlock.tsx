@@ -15,14 +15,16 @@ export default function FooterContactBlock() {
             {SITE.email}
           </a>
         </li>
-        <li>
-          <a
-            href={`tel:${SITE.phone.replace(/\s/g, "")}`}
-            className="hover:text-[var(--color-accent)]"
-          >
-            {SITE.phone}
-          </a>
-        </li>
+        {SITE.phones.map((phone) => (
+          <li key={phone}>
+            <a
+              href={`tel:${phone.replace(/\s/g, "")}`}
+              className="hover:text-[var(--color-accent)]"
+            >
+              {phone}
+            </a>
+          </li>
+        ))}
         <li>
           {SITE.address.street}
           <br />

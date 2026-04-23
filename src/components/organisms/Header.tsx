@@ -240,6 +240,16 @@ export default function Header() {
         </div>
       </div>
 
+      {/* Mobile nav backdrop: blurs and dims the page behind the menu; clicking it closes the menu. */}
+      <button
+        type="button"
+        aria-label={t("nav.closeMenu")}
+        onClick={() => setOpen(false)}
+        className={`fixed inset-0 -z-10 bg-black/40 backdrop-blur-md transition-opacity duration-300 md:hidden ${
+          open ? "opacity-100" : "pointer-events-none opacity-0"
+        }`}
+      />
+
       {/* Mobile nav */}
       {open && (
         <nav

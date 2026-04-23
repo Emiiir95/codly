@@ -135,14 +135,16 @@ export default function Footer() {
                     {SITE.email}
                   </a>
                 </li>
-                <li>
-                  <a
-                    href={`tel:${SITE.phone.replace(/\s/g, "")}`}
-                    className="text-sm/6 text-fg-muted hover:text-fg"
-                  >
-                    {SITE.phone}
-                  </a>
-                </li>
+                {SITE.phones.map((phone) => (
+                  <li key={phone}>
+                    <a
+                      href={`tel:${phone.replace(/\s/g, "")}`}
+                      className="text-sm/6 text-fg-muted hover:text-fg"
+                    >
+                      {phone}
+                    </a>
+                  </li>
+                ))}
                 <li className="text-sm/6 text-fg-muted">
                   {SITE.address.street}
                   <br />

@@ -35,12 +35,23 @@ export default function ContactInfoCard() {
           <p className="text-xs uppercase tracking-widest text-[var(--color-fg-muted)]">
             {t("contact.info.phoneLabel")}
           </p>
-          <a
-            href={`tel:${SITE.phone.replace(/\s/g, "")}`}
-            className="mt-1 block text-sm text-[var(--color-fg)] transition-colors hover:text-[var(--color-accent)]"
-          >
-            {SITE.phone}
-          </a>
+          <div className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-0.5 text-sm">
+            {SITE.phones.map((phone, i) => (
+              <span key={phone} className="flex items-center gap-2">
+                {i > 0 && (
+                  <span aria-hidden className="text-[var(--color-fg-muted)]">
+                    |
+                  </span>
+                )}
+                <a
+                  href={`tel:${phone.replace(/\s/g, "")}`}
+                  className="text-[var(--color-fg)] transition-colors hover:text-[var(--color-accent)]"
+                >
+                  {phone}
+                </a>
+              </span>
+            ))}
+          </div>
         </div>
       </div>
 
