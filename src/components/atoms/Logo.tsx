@@ -5,7 +5,7 @@ type Props = {
   label?: string;
 };
 
-export default function Logo({ href, label = "Agency" }: Props) {
+export default function Logo({ href, label = "Codly" }: Props) {
   return (
     <Link
       href={href}

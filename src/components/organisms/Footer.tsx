@@ -158,7 +158,7 @@ export default function Footer() {
         <div className="mt-16 border-t border-border pt-8 sm:mt-20 lg:mt-24">
           <div className="flex flex-col items-center justify-between gap-2 text-sm/6 text-fg-muted sm:flex-row">
             <p>
-              © {year} Agency. {t("footer.rights")}
+              © {year} Codly. {t("footer.rights")}
             </p>
             <p>{t("footer.madeIn")}</p>
           </div>

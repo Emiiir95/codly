@@ -1,7 +1,7 @@
 export const SITE = {
-  name: "Agency",
-  domain: "https://agency.example.com",
-  email: "contact@agency.example.com",
+  name: "Codly",
+  domain: "https://codly.fr",
+  email: "contact@codly.fr",
   phone: "+33 6 03 00 44 95",
   phones: ["+33 6 03 00 44 95", "+33 7 83 70 46 19"],
   address: {

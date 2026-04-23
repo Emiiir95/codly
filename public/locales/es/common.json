@@ -33,7 +33,7 @@
   },
   "home": {
     "meta": {
-      "title": "Agency — Agencia web y SEO: creación de sitios y posicionamiento Google",
+      "title": "Codly — Agencia web y SEO: creación de sitios y posicionamiento Google",
       "description": "Agencia web especializada en la creación de sitios web profesionales y el posicionamiento SEO en Google. Sitios corporativos, e-commerce, rediseños y SEO a medida para empresas ambiciosas."
     },
     "hero": {
@@ -70,7 +70,7 @@
       "learnMore": "Saber más"
     },
     "why": {
-      "eyebrow": "Por qué Agency",
+      "eyebrow": "Por qué Codly",
       "title": "Una agencia web que mide el impacto, no la cantidad.",
       "subtitle": "Rechazamos lo aproximado. Cada decisión de diseño, cada línea de código y cada keyword están elegidas para servir tus objetivos de negocio.",
       "items": [
@@ -125,7 +125,7 @@
           "role": "CEO, Atelier Nova"
         },
         {
-          "quote": "Un sitio moderno, ultra rápido y perfectamente posicionado. Agency cumplió cada compromiso, en tiempo y en presupuesto.",
+          "quote": "Un sitio moderno, ultra rápido y perfectamente posicionado. Codly cumplió cada compromiso, en tiempo y en presupuesto.",
           "author": "Julien Morel",
           "role": "Fundador, Studio Kairos"
         },
@@ -168,9 +168,9 @@
       "button": "Empezar mi proyecto"
     },
     "content": {
-      "intro": "Agency es una agencia web francesa especializada en la creación de sitios web profesionales y en el posicionamiento natural en Google. Diseñamos experiencias digitales de alto rendimiento para pymes y scale-ups que quieren convertir su sitio en un verdadero motor de adquisición.",
+      "intro": "Codly es una agencia web francesa especializada en la creación de sitios web profesionales y en el posicionamiento natural en Google. Diseñamos experiencias digitales de alto rendimiento para pymes y scale-ups que quieren convertir su sitio en un verdadero motor de adquisición.",
       "paragraphs": [
-        "Un sitio web moderno ya no es un escaparate estático. Es un activo de negocio que debe atraer, convencer y convertir. En Agency diseñamos sitios WordPress, tiendas Shopify y plataformas a medida con diseño cuidado, arquitectura SEO friendly y rendimiento impecable.",
+        "Un sitio web moderno ya no es un escaparate estático. Es un activo de negocio que debe atraer, convencer y convertir. En Codly diseñamos sitios WordPress, tiendas Shopify y plataformas a medida con diseño cuidado, arquitectura SEO friendly y rendimiento impecable.",
         "El posicionamiento Google está en el centro de nuestro enfoque. Desde los primeros mockups trabajamos la estructura semántica, las etiquetas Hn, los datos estructurados Schema.org, los Core Web Vitals y la arquitectura de contenido.",
         "Ya sea un sitio WordPress, una tienda Shopify, un desarrollo a medida, Google Ads o redes sociales, nuestra metodología es la misma: escuchar, medir, diseñar, entregar, iterar."
       ]
@@ -178,7 +178,7 @@
   },
   "serviceWeb": {
     "meta": {
-      "title": "Creación de sitio web profesional — Agency",
+      "title": "Creación de sitio web profesional — Codly",
       "description": "Creación de sitios web a medida: WordPress, Shopify, Next.js. Diseño moderno, SEO integrado, entrega rápida."
     },
     "hero": {
@@ -267,7 +267,7 @@
   },
   "serviceVitrine": {
     "meta": {
-      "title": "Sitio vitrina WordPress profesional — Agency",
+      "title": "Sitio vitrina WordPress profesional — Codly",
       "description": "Creación de sitio vitrina WordPress con Salient. Diseño único, SEO integrado, rendimiento óptimo."
     },
     "hero": {
@@ -356,7 +356,7 @@
   },
   "serviceEcommerce": {
     "meta": {
-      "title": "Tienda e-commerce Shopify — Agency",
+      "title": "Tienda e-commerce Shopify — Codly",
       "description": "Creación de tienda Shopify a medida. Catálogo, pago seguro, SEO e-commerce. Vende en línea ahora."
     },
     "hero": {
@@ -445,7 +445,7 @@
   },
   "serviceSurMesure": {
     "meta": {
-      "title": "Sitio web a medida Next.js — Agency",
+      "title": "Sitio web a medida Next.js — Codly",
       "description": "Desarrollo web a medida con Next.js, React, Tailwind. Rendimiento absoluto, SEO nativo, sin límites técnicos."
     },
     "hero": {
@@ -534,7 +534,7 @@
   },
   "serviceSeo": {
     "meta": {
-      "title": "Agencia SEO — Agency",
+      "title": "Agencia SEO — Codly",
       "description": "SEO técnico, contenido y link building. Posicionamos tu sitio en el top de Google."
     },
     "hero": {
@@ -623,7 +623,7 @@
   },
   "serviceAds": {
     "meta": {
-      "title": "Google Ads — Agency",
+      "title": "Google Ads — Codly",
       "description": "Campañas Google Ads optimizadas: segmentación precisa, anuncios impactantes, ROI maximizado."
     },
     "hero": {
@@ -712,7 +712,7 @@
   },
   "serviceSocial": {
     "meta": {
-      "title": "Gestión redes sociales TikTok & Instagram — Agency",
+      "title": "Gestión redes sociales TikTok & Instagram — Codly",
       "description": "Estrategia social media, creación de contenidos TikTok, Instagram Reels y YouTube Shorts."
     },
     "hero": {
@@ -801,11 +801,11 @@
   },
   "blog": {
     "meta": {
-      "title": "Blog — Consejos web, SEO y marketing digital — Agency",
-      "description": "Consejos, guías y estudios de caso sobre creación de sitios web, SEO Google, Google Ads y redes sociales. El blog de la agencia Agency."
+      "title": "Blog — Consejos web, SEO y marketing digital — Codly",
+      "description": "Consejos, guías y estudios de caso sobre creación de sitios web, SEO Google, Google Ads y redes sociales. El blog de la agencia Codly."
     },
     "hero": {
-      "eyebrow": "El blog Agency",
+      "eyebrow": "El blog Codly",
       "title": "Recursos para impulsar tu presencia online.",
       "subtitle": "Guías prácticas, estudios de caso y consejos de expertos sobre creación de sitios, SEO, Google Ads y redes sociales."
     },
@@ -833,7 +833,7 @@
   },
   "realisations": {
     "meta": {
-      "title": "Realizaciones y portfolio — Agency, agencia web y SEO",
+      "title": "Realizaciones y portfolio — Codly, agencia web y SEO",
       "description": "Descubre nuestras realizaciones: sitios web, tiendas e-commerce, estrategias SEO y campañas digitales. Proyectos reales, resultados medibles."
     },
     "hero": {
@@ -854,19 +854,19 @@
   },
   "about": {
     "meta": {
-      "title": "Sobre nosotros — Agency, agencia web y SEO en París",
-      "description": "Agency es una agencia web independiente con sede en París. Especializada en creación de sitios y posicionamiento Google, acompañamos a marcas ambiciosas."
+      "title": "Sobre nosotros — Codly, agencia web y SEO en París",
+      "description": "Codly es una agencia web independiente con sede en París. Especializada en creación de sitios y posicionamiento Google, acompañamos a marcas ambiciosas."
     },
     "hero": {
       "eyebrow": "Sobre nosotros",
       "title": "La agencia web que rechaza las medias tintas.",
-      "subtitle": "Fundada en 2018 en París, Agency acompaña a las empresas que quieren convertir la web en una verdadera palanca de crecimiento."
+      "subtitle": "Fundada en 2018 en París, Codly acompaña a las empresas que quieren convertir la web en una verdadera palanca de crecimiento."
     },
     "breadcrumb": "Sobre nosotros",
     "sections": [
       {
         "title": "Una agencia web independiente y comprometida",
-        "body": "Agency nació de una convicción simple: es posible entregar sitios web elegantes, performantes y perfectamente posicionados, sin compromisos. Independientes, elegimos a nuestros clientes igual que elegimos nuestras herramientas: con exigencia."
+        "body": "Codly nació de una convicción simple: es posible entregar sitios web elegantes, performantes y perfectamente posicionados, sin compromisos. Independientes, elegimos a nuestros clientes igual que elegimos nuestras herramientas: con exigencia."
       },
       {
         "title": "Un equipo pluridisciplinar",
@@ -905,8 +905,8 @@
   },
   "contact": {
     "meta": {
-      "title": "Contacto — Agency, tu agencia web y SEO",
-      "description": "Contacta con Agency para tu proyecto de creación de sitio web o posicionamiento Google. Presupuesto en 48 horas, auditoría SEO gratuita."
+      "title": "Contacto — Codly, tu agencia web y SEO",
+      "description": "Contacta con Codly para tu proyecto de creación de sitio web o posicionamiento Google. Presupuesto en 48 horas, auditoría SEO gratuita."
     },
     "hero": {
       "eyebrow": "Contacto",
@@ -935,7 +935,7 @@
       "submit": "Enviar mi mensaje",
       "submitting": "Enviando…",
       "success": "¡Gracias! Tu mensaje se ha enviado, te respondemos en 48 horas.",
-      "error": "Ha ocurrido un error. Inténtalo de nuevo o escríbenos a contact@agency.example.com.",
+      "error": "Ha ocurrido un error. Inténtalo de nuevo o escríbenos a contact@codly.fr.",
       "errors": {
         "name": "Tu nombre es obligatorio (mínimo 2 caracteres).",
         "email": "Se requiere un email válido.",
@@ -954,15 +954,15 @@
   },
   "legal": {
     "meta": {
-      "title": "Aviso legal — Agency",
-      "description": "Aviso legal del sitio Agency: editor, alojamiento, propiedad intelectual, responsabilidad y contacto."
+      "title": "Aviso legal — Codly",
+      "description": "Aviso legal del sitio Codly: editor, alojamiento, propiedad intelectual, responsabilidad y contacto."
     },
     "title": "Aviso legal",
     "breadcrumb": "Aviso legal",
     "sections": [
       {
         "title": "1. Editor del sitio",
-        "body": "El sitio accesible en <strong>agency.example.com</strong> es editado por:<br><br><strong>Emir Sen</strong><br>Empresario individual (auto-entrepreneur)<br>SIRET: 983 251 810 00013<br>RCS París: 983 251 810<br><br><strong>Domicilio social:</strong> 60 rue François 1er, 75008 París, Francia<br><strong>Director de la publicación:</strong> Emir Sen<br><strong>Contacto:</strong> <a href=\"mailto:contact@agency.example.com\">contact@agency.example.com</a><br><strong>Tel.:</strong> +33 6 03 00 44 95 / +33 7 83 70 46 19"
+        "body": "El sitio accesible en <strong>codly.fr</strong> es editado por:<br><br><strong>Emir Sen</strong><br>Empresario individual (auto-entrepreneur)<br>SIRET: 983 251 810 00013<br>RCS París: 983 251 810<br><br><strong>Domicilio social:</strong> 60 rue François 1er, 75008 París, Francia<br><strong>Director de la publicación:</strong> Emir Sen<br><strong>Contacto:</strong> <a href=\"mailto:contact@codly.fr\">contact@codly.fr</a><br><strong>Tel.:</strong> +33 6 03 00 44 95 / +33 7 83 70 46 19"
       },
       {
         "title": "2. Alojamiento",
@@ -986,21 +986,21 @@
       },
       {
         "title": "7. Contacto",
-        "body": "Para cualquier pregunta relativa al presente aviso legal:<br><br><strong>Email:</strong> <a href=\"mailto:contact@agency.example.com\">contact@agency.example.com</a><br><strong>Correo:</strong> Emir Sen, 60 rue François 1er, 75008 París, Francia"
+        "body": "Para cualquier pregunta relativa al presente aviso legal:<br><br><strong>Email:</strong> <a href=\"mailto:contact@codly.fr\">contact@codly.fr</a><br><strong>Correo:</strong> Emir Sen, 60 rue François 1er, 75008 París, Francia"
       }
     ]
   },
   "privacy": {
     "meta": {
-      "title": "Política de privacidad — Agency",
-      "description": "Política de privacidad de Agency: recogida de datos personales, finalidades, derechos RGPD y cookies."
+      "title": "Política de privacidad — Codly",
+      "description": "Política de privacidad de Codly: recogida de datos personales, finalidades, derechos RGPD y cookies."
     },
     "title": "Política de privacidad",
     "breadcrumb": "Privacidad",
     "sections": [
       {
         "title": "1. Responsable del tratamiento",
-        "body": "El responsable del tratamiento de los datos personales recogidos en <strong>agency.example.com</strong> es:<br><br><strong>Emir Sen</strong><br>Empresario individual<br>60 rue François 1er, 75008 París, Francia<br>Contacto: <a href=\"mailto:contact@agency.example.com\">contact@agency.example.com</a>"
+        "body": "El responsable del tratamiento de los datos personales recogidos en <strong>codly.fr</strong> es:<br><br><strong>Emir Sen</strong><br>Empresario individual<br>60 rue François 1er, 75008 París, Francia<br>Contacto: <a href=\"mailto:contact@codly.fr\">contact@codly.fr</a>"
       },
       {
         "title": "2. Datos recogidos",
@@ -1024,7 +1024,7 @@
       },
       {
         "title": "7. Sus derechos",
-        "body": "De conformidad con el <strong>Reglamento General de Protección de Datos (RGPD)</strong>, usted dispone de los siguientes derechos:<br><br>• <strong>Derecho de acceso</strong> a sus datos personales<br>• <strong>Derecho de rectificación</strong><br>• <strong>Derecho de supresión</strong> (\"derecho al olvido\")<br>• <strong>Derecho a la limitación</strong> del tratamiento<br>• <strong>Derecho de oposición</strong><br>• <strong>Derecho a la portabilidad</strong> de datos<br><br>Para ejercer estos derechos, envíe su solicitud por email a <a href=\"mailto:contact@agency.example.com\">contact@agency.example.com</a> adjuntando una copia de su documento de identidad. Nos comprometemos a responder en el plazo de un mes.<br><br>En caso de litigio, puede presentar una reclamación ante la <strong>CNIL</strong>: <a href=\"https://www.cnil.fr\" target=\"_blank\" rel=\"noopener noreferrer\">www.cnil.fr</a>"
+        "body": "De conformidad con el <strong>Reglamento General de Protección de Datos (RGPD)</strong>, usted dispone de los siguientes derechos:<br><br>• <strong>Derecho de acceso</strong> a sus datos personales<br>• <strong>Derecho de rectificación</strong><br>• <strong>Derecho de supresión</strong> (\"derecho al olvido\")<br>• <strong>Derecho a la limitación</strong> del tratamiento<br>• <strong>Derecho de oposición</strong><br>• <strong>Derecho a la portabilidad</strong> de datos<br><br>Para ejercer estos derechos, envíe su solicitud por email a <a href=\"mailto:contact@codly.fr\">contact@codly.fr</a> adjuntando una copia de su documento de identidad. Nos comprometemos a responder en el plazo de un mes.<br><br>En caso de litigio, puede presentar una reclamación ante la <strong>CNIL</strong>: <a href=\"https://www.cnil.fr\" target=\"_blank\" rel=\"noopener noreferrer\">www.cnil.fr</a>"
       },
       {
         "title": "8. Cookies",
@@ -1042,7 +1042,7 @@
   },
   "notFound": {
     "meta": {
-      "title": "Página no encontrada — Agency",
+      "title": "Página no encontrada — Codly",
       "description": "La página solicitada no existe. Vuelve al inicio o explora nuestros servicios."
     },
     "code": "404",
@@ -1058,7 +1058,7 @@
   },
   "services": {
     "meta": {
-      "title": "Nuestros servicios — Agency",
+      "title": "Nuestros servicios — Codly",
       "description": "Creación de sitios web, SEO, e-commerce Shopify, Google Ads, redes sociales. Descubre todos nuestros servicios."
     },
     "hero": {

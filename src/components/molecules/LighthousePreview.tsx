@@ -5,7 +5,7 @@ export default function LighthousePreview() {
     <div className="card animate-float p-6">
       <div className="space-y-4">
         <div className="flex items-center justify-between text-xs text-[var(--color-fg-muted)]">
-          <span className="font-mono">agency.example.com</span>
+          <span className="font-mono">codly.fr</span>
           <span className="rounded-full bg-emerald-50 px-2 py-0.5 font-mono text-emerald-700 ring-1 ring-emerald-200">
             100/100
           </span>
