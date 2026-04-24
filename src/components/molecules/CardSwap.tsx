@@ -6,7 +6,7 @@ import React, {
   useRef,
   type HTMLAttributes,
 } from "react";
-import gsap from "gsap";
+import { animate, type AnimationPlaybackControls } from "framer-motion";
 
 type CardProps = HTMLAttributes<HTMLDivElement> & {
   customClass?: string;
@@ -37,18 +37,17 @@ const makeSlot = (
   zIndex: total - i,
 });
 
-const placeNow = (el: HTMLElement, slot: Slot, skew: number) =>
-  gsap.set(el, {
-    x: slot.x,
-    y: slot.y,
-    z: slot.z,
-    xPercent: -50,
-    yPercent: -50,
-    skewY: skew,
-    transformOrigin: "center center",
-    zIndex: slot.zIndex,
-    force3D: true,
-  });
+const applyTransform = (
+  el: HTMLElement,
+  x: number,
+  y: number,
+  z: number,
+  skew: number,
+) => {
+  el.style.transform = `translate(-50%, -50%) translate3d(${x}px, ${y}px, ${z}px) skewY(${skew}deg)`;
+};
+
+type Ease = [number, number, number, number];
 
 type Props = {
   width?: number | string;
@@ -82,7 +81,7 @@ export default function CardSwap({
     () =>
       easing === "elastic"
         ? {
-            ease: "elastic.out(0.6,0.9)",
+            ease: [0.34, 1.56, 0.64, 1] as Ease,
             durDrop: 2,
             durMove: 2,
             durReturn: 2,
@@ -90,7 +89,7 @@ export default function CardSwap({
             returnDelay: 0.05,
           }
         : {
-            ease: "power1.inOut",
+            ease: [0.4, 0, 0.6, 1] as Ease,
             durDrop: 0.8,
             durMove: 0.8,
             durReturn: 0.8,
@@ -104,13 +103,10 @@ export default function CardSwap({
 
   const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
   const order = useRef<number[]>([]);
-  const tlRef = useRef<gsap.core.Timeline | null>(null);
+  const activeAnims = useRef<AnimationPlaybackControls[]>([]);
+  const phaseTimeouts = useRef<number[]>([]);
   const intervalRef = useRef<number | undefined>(undefined);
-  // Holds the latest `swap` implementation so event handlers attached on
-  // the container can trigger it without re-registering on every render.
   const swapRef = useRef<(() => void) | null>(null);
-  // Blocks new swaps while one is running — prevents overlapping GSAP
-  // timelines when the user spam-clicks the stack.
   const isAnimatingRef = useRef(false);
   const container = useRef<HTMLDivElement>(null);
 
@@ -124,84 +120,100 @@ export default function CardSwap({
     order.current = Array.from({ length: total }, (_, i) => i);
 
     els.forEach((el, i) => {
-      placeNow(el, makeSlot(i, cardDistance, verticalDistance, total), skewAmount);
+      const s = makeSlot(i, cardDistance, verticalDistance, total);
+      applyTransform(el, s.x, s.y, s.z, skewAmount);
+      el.style.zIndex = String(s.zIndex);
+      el.style.transformOrigin = "center center";
     });
+
+    const cancelActive = () => {
+      activeAnims.current.forEach((a) => a.stop());
+      activeAnims.current = [];
+      phaseTimeouts.current.forEach((id) => window.clearTimeout(id));
+      phaseTimeouts.current = [];
+    };
 
     const swap = () => {
       if (order.current.length < 2) return;
-      if (isAnimatingRef.current) return; // debounce spam clicks
+      if (isAnimatingRef.current) return;
 
       const [front, ...rest] = order.current;
       const elFront = els[front];
       if (!elFront) return;
 
       isAnimatingRef.current = true;
-      const tl = gsap.timeline({
-        onComplete: () => {
-          isAnimatingRef.current = false;
-        },
-      });
-      tlRef.current = tl;
 
-      tl.to(elFront, {
-        y: "+=500",
+      // Phase 1 — drop front from slot 0 (x=0, y=0, z=0) down by 500px.
+      const dropAnim = animate(0, 500, {
         duration: config.durDrop,
         ease: config.ease,
+        onUpdate: (v) => applyTransform(elFront, 0, v, 0, skewAmount),
       });
+      activeAnims.current.push(dropAnim);
 
-      tl.addLabel("promote", `-=${config.durDrop * config.promoteOverlap}`);
-      rest.forEach((idx, i) => {
-        const el = els[idx];
-        if (!el) return;
-        const slot = makeSlot(i, cardDistance, verticalDistance, total);
-        tl.set(el, { zIndex: slot.zIndex }, "promote");
-        tl.to(
-          el,
-          {
-            x: slot.x,
-            y: slot.y,
-            z: slot.z,
-            duration: config.durMove,
-            ease: config.ease,
-          },
-          `promote+=${i * 0.15}`,
-        );
-      });
+      const promoteDelayMs = config.durDrop * (1 - config.promoteOverlap) * 1000;
 
-      const backSlot = makeSlot(
-        total - 1,
-        cardDistance,
-        verticalDistance,
-        total,
-      );
-      tl.addLabel("return", `promote+=${config.durMove * config.returnDelay}`);
-      tl.call(
-        () => {
-          gsap.set(elFront, { zIndex: backSlot.zIndex });
-        },
-        undefined,
-        "return",
-      );
-      tl.to(
-        elFront,
-        {
-          x: backSlot.x,
-          y: backSlot.y,
-          z: backSlot.z,
+      // Phase 2 — promote rest[i] from slot (i+1) to slot i, with stagger.
+      const promoteId = window.setTimeout(() => {
+        rest.forEach((idx, i) => {
+          const el = els[idx];
+          if (!el) return;
+          const fromSlot = makeSlot(i + 1, cardDistance, verticalDistance, total);
+          const toSlot = makeSlot(i, cardDistance, verticalDistance, total);
+          el.style.zIndex = String(toSlot.zIndex);
+          const stagId = window.setTimeout(() => {
+            const anim = animate(0, 1, {
+              duration: config.durMove,
+              ease: config.ease,
+              onUpdate: (t) => {
+                const x = fromSlot.x + (toSlot.x - fromSlot.x) * t;
+                const y = fromSlot.y + (toSlot.y - fromSlot.y) * t;
+                const z = fromSlot.z + (toSlot.z - fromSlot.z) * t;
+                applyTransform(el, x, y, z, skewAmount);
+              },
+            });
+            activeAnims.current.push(anim);
+          }, i * 150);
+          phaseTimeouts.current.push(stagId);
+        });
+      }, promoteDelayMs);
+      phaseTimeouts.current.push(promoteId);
+
+      // Phase 3 — return dropped front to back slot.
+      const returnStartMs = promoteDelayMs + config.durMove * config.returnDelay * 1000;
+      const backSlot = makeSlot(total - 1, cardDistance, verticalDistance, total);
+      const returnId = window.setTimeout(() => {
+        elFront.style.zIndex = String(backSlot.zIndex);
+        const anim = animate(0, 1, {
           duration: config.durReturn,
           ease: config.ease,
-        },
-        "return",
-      );
+          onUpdate: (t) => {
+            const x = backSlot.x * t;
+            const y = 500 + (backSlot.y - 500) * t;
+            const z = backSlot.z * t;
+            applyTransform(elFront, x, y, z, skewAmount);
+          },
+        });
+        activeAnims.current.push(anim);
+      }, returnStartMs);
+      phaseTimeouts.current.push(returnId);
 
-      tl.call(() => {
+      // Release the lock after the full choreography has played out.
+      const totalMs =
+        Math.max(
+          config.durDrop * 1000,
+          promoteDelayMs + (rest.length - 1) * 150 + config.durMove * 1000,
+          returnStartMs + config.durReturn * 1000,
+        ) + 50;
+      const releaseId = window.setTimeout(() => {
         order.current = [...rest, front];
-      });
+        isAnimatingRef.current = false;
+      }, totalMs);
+      phaseTimeouts.current.push(releaseId);
     };
 
     swapRef.current = swap;
 
-    // Auto-play only when we're not in click-to-advance mode.
     if (!clickToAdvance) {
       swap();
       intervalRef.current = window.setInterval(swap, delay);
@@ -210,14 +222,14 @@ export default function CardSwap({
     const node = container.current;
     if (pauseOnHover && node && !clickToAdvance) {
       const pause = () => {
-        tlRef.current?.pause();
+        activeAnims.current.forEach((a) => a.pause());
         if (intervalRef.current !== undefined) {
           clearInterval(intervalRef.current);
           intervalRef.current = undefined;
         }
       };
       const resume = () => {
-        tlRef.current?.play();
+        activeAnims.current.forEach((a) => a.play());
         intervalRef.current = window.setInterval(swap, delay);
       };
       node.addEventListener("mouseenter", pause);
@@ -228,12 +240,14 @@ export default function CardSwap({
         if (intervalRef.current !== undefined) {
           clearInterval(intervalRef.current);
         }
+        cancelActive();
       };
     }
     return () => {
       if (intervalRef.current !== undefined) {
         clearInterval(intervalRef.current);
       }
+      cancelActive();
     };
   }, [
     childArr.length,
@@ -274,7 +288,6 @@ export default function CardSwap({
           onClick={(e) => {
             onCardClick?.(i);
             if (clickToAdvance) {
-              // Stop duplicate fire — container handler will swap.
               e.stopPropagation();
               swapRef.current?.();
             }

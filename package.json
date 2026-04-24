@@ -12,7 +12,6 @@
     "flag-icons": "^7.5.0",
     "framer-motion": "^12.38.0",
     "gray-matter": "^4.0.3",
-    "gsap": "^3.15.0",
     "i18next": "^26.0.3",
     "isomorphic-dompurify": "^3.9.0",
     "lucide-react": "^1.8.0",
