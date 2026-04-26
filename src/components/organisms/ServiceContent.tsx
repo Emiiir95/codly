@@ -176,15 +176,6 @@ export default function ServiceContent({ serviceId }: Props) {
         />
       </Section>
 
-      {/* Visual showcase */}
-      <Section>
-        <ServiceShowcase
-          title={t(`${ns}.hero.title`)}
-          subtitle={t(`${ns}.hero.subtitle`)}
-          images={visuals.showcase}
-        />
-      </Section>
-
       {/* Mid CTA */}
       <Reveal>
         <MidCta
